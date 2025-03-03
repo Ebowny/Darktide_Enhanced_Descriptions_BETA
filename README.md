@@ -2,9 +2,14 @@ My sincere thanks to comrad deluxghost for the opportunity to make this mod!
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 
 # Enhanced Descriptions
-## version: 2.5
+## version: 3.1b
 ## Enhanced Descriptions - Merged mod. Included TALENTS, CURIOS, WEAPON PERKS and BLESSINGS.
 
+- Added Russian translation.
+- Added Russian and some English Penances.
+- The structure has been slightly changed to match the new 3-language version.
+
+version: 3.0b
 - Added French version from comrade Ebo.
 - Added some Blessings I missed for Relic Blade.
 
