@@ -1,6 +1,6 @@
 ---@diagnostic disable: undefined-global, undefined-field
 
-			-- ============ DO NOT DO ANYTHING BELOW! ============ --
+			-- ============ DO NOT DO ANYTHING ABOVE! ============ --
 
 local mod = get_mod("Enhanced_descriptions")
 
@@ -10,7 +10,6 @@ local options = {
 	is_togglable = true,
 	options = {
 		widgets = {
-				--[+ MENUS Module +]--
 			{name = mod:localize("enable_menus_file"),
 				setting_id = "enable_menus_file",
 				default_value = true,
@@ -24,7 +23,6 @@ local options = {
 					return mod:get("enable_menus_file") or true
 				end
 			},
-				--[+ CURIOS Module +]--
 			{name = mod:localize("enable_curious_file"),
 				setting_id = "enable_curious_file",
 				default_value = true,
@@ -38,7 +36,6 @@ local options = {
 					return mod:get("enable_curious_file") or true
 				end
 			},
-				--[+ PENANCES Module +]--
 			{name = mod:localize("enable_penances_file"),
 				setting_id = "enable_penances_file",
 				default_value = true,
@@ -52,7 +49,6 @@ local options = {
 					return mod:get("enable_penances_file") or true
 				end
 			},
-				--[+ WEAPONS Module +]--
 			{name = mod:localize("enable_weapons_file"),
 				setting_id = "enable_weapons_file",
 				default_value = true,
@@ -66,7 +62,6 @@ local options = {
 					return mod:get("enable_weapons_file") or true
 				end
 			},
-				--[+ TALENTS Module +]--
 			{name = mod:localize("enable_talents_file"),
 				setting_id = "enable_talents_file",
 				default_value = true,
@@ -80,7 +75,6 @@ local options = {
 					return mod:get("enable_talents_file") or true
 				end
 			},
-				--[+ NAMES Module - Weapons and Enemies +]--
 			{name = mod:localize("enable_names_file"),
 				setting_id = "enable_names_file",
 				default_value = true,
@@ -94,7 +88,6 @@ local options = {
 					return mod:get("enable_names_file") or true
 				end
 			},
-				--[+ NAMES Module - Talents and Blessings +]--
 			{name = mod:localize("enable_names_tal_bless_file"),
 				setting_id = "enable_names_tal_bless_file",
 				default_value = false,
@@ -108,11 +101,9 @@ local options = {
 					return mod:get("enable_names_tal_bless_file") or true
 				end
 			},
-				--[+ ENHANCED DESCRIPTIONS +]--
 			{setting_id = "enhanced_descriptions_",
 				type = "group",
 				sub_widgets = {
-						--[+ ENHANCED DESCRIPTIONS - Psyker + Zealot +]--
 					{name = mod:localize("enhanced_descriptions_enabled"),
 					setting_id = "enhanced_descriptions_enabled",
 					default_value = true,
@@ -126,7 +117,6 @@ local options = {
 						return mod:get("enhanced_descriptions_enabled") or true
 					end
 					},
-						--[+ ENHANCED DESCRIPTIONS - Veteran + Ogryn +]--
 					{name = mod:localize("enhanced_descriptions_enabled2"),
 					setting_id = "enhanced_descriptions_enabled2",
 					default_value = true,
@@ -140,7 +130,6 @@ local options = {
 						return mod:get("enhanced_descriptions_enabled2") or true
 					end
 					},
-						--[+ ENHANCED DESCRIPTIONS - Nodes +]--
 					{name = mod:localize("enhanced_descriptions_nodes_enabled"),
 					setting_id = "enhanced_descriptions_nodes_enabled",
 					default_value = true,
@@ -152,20 +141,6 @@ local options = {
 					end,
 					get = function()
 						return mod:get("enhanced_descriptions_nodes_enabled") or true
-					end
-					},
-						--[+ ENHANCED DESCRIPTIONS - Penances +]--
-					{name = mod:localize("enhanced_descriptions_penances_enabled"),
-					setting_id = "enhanced_descriptions_penances_enabled",
-					default_value = true,
-					type = "checkbox",
-					description = mod:localize("enhanced_descriptions_penances_enabled_description"),
-					
-					change = function(new_value)
-						mod:set("enhanced_descriptions_penances_enabled", new_value)
-					end,
-					get = function()
-						return mod:get("enhanced_descriptions_penances_enabled") or true
 					end
 					},
 				},

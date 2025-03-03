@@ -10,7 +10,7 @@ local InputUtils = require("scripts/managers/input/input_utils")
 local localizations = {
 	mod_name = {
 		en = "Enhanced Descriptions",
-		-- fr = "Descriptions avancées", -- ???
+		-- fr = "Descriptions avancées",
 		ru = "Улучшенные описания",
 	},
 	mod_description = {
@@ -62,38 +62,36 @@ local localizations = {
 		ru = "Этот модуль выделяет слова Талантов и немного улучшает описания некоторых из них. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 	},
 	enable_penances_file = {
-		en = "{#color(15, 15, 15)}(Toggle \"Penances\" module){#reset()}",
+		en = "Toggle \"Penances\" module",
 		-- fr = "",
 		ru = "Модуль «Искупления»",
 	},
 	enable_penances_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} This module highlights the Words and Numbers of the Penances. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
+		en = "This module highlights the Words and Numbers of the Penances. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль выделяет слова Искуплений и немного переписывает некоторые из них. Названия талантов берутся из модуля с исправленными названиями талантов! Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		ru = "Этот модуль выделяет слова Искуплений и немного переписывает некоторые из них. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 	},
 
 	-- FOR RUSSIAN VERSION ONLY!
 	enable_names_file = {
-		en = "{#color(15, 15, 15)}(Toggle \"Names of enemies and weapons\" module){#reset()}",
+		en = "Toggle \"Names of enemies and weapons\" module",
 		-- fr = "",
 		ru = "Модуль «Названия врагов и оружия»",
 	},
 	enable_names_file_description = { -- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()}",
-		-- en = "This module changes the names of weapons and enemies. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
+		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()} This module changes the names of weapons and enemies. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Этот модуль меняет названия некоторых врагов и видов брони, а также улучшает названия некоторого оружия, моделей и кузниц. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 	},
 	enable_names_tal_bless_file = {
-		en = "{#color(15, 15, 15)}(Toggle \"Names of Talents and Blessings\" module){#reset()}",
+		en = "Toggle \"Names of Talents and Blessings\" module",
 		-- fr = "",
 		ru = "Модуль «Названия талантов и благословений»",
 	},
 	enable_names_tal_bless_file_description = {	-- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()}",
-		-- en = "This module changes the names of Talents and Blessings. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
+		en = "{#color(255, 35, 5)}FOR RUSSIAN VERSION ONLY!{#reset()} This module changes the names of Talents and Blessings. You can disable this module if you don't need it.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
 		-- fr = "Ce module met en évidence les numéros des contrats de Melk. Vous pouvez désactiver ce module si vous n'en avez pas besoin.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset()}\n{# color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Этот модуль меняет названия некоторых Талантов и Благословений. Вы можете конечно отключить этот модуль, но тогда названия талантов в Расширенных описаниях и в Искуплениях не будут совпадать. Более правильный перевод, но может немного ухудшать понимание вами других игроков и другими игроками вас, т.к. будет чуть сложнее соотносить названия.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
+		ru = "Этот модуль меняет названия некоторых Талантов и Благословений. Более правильный перевод, но может немного ухудшать понимание вами других игроков и другими игроками вас, т.к. будет сложнее соотносить названия. Вы можете отключить этот модуль, если он вам не нужен.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 	},
 
 --[+ Enhanced Descriptions - Talents +]--
@@ -133,21 +131,10 @@ local localizations = {
 		fr = "Si vous n'avez pas besoin des descriptions étendues pour les noeuds, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
 		ru = "Если вам не нужны Расширенные описания узлов Талантов, вы можете их отключить.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
 	},
---[+ Enhanced Descriptions - Penances +]--
-	enhanced_descriptions_penances_enabled = {
-		en = "{#color(15, 15, 15)}(Penances){#reset()}",
-		-- fr = "",
-		ru = "Искупления",
-	},
-	enhanced_descriptions_penances_enabled_description = {	-- LA DESCRIPTION EN FRANÇAIS DOIT ÊTRE CORRIGÉE !!!
-		en = "{#color(255, 35, 5)}BETA! FOR NOW ONLY FOR THE RUSSIAN VERSION!{#reset()} If you don't need Extended Descriptions for Penances, you can Disable them. Added some tips for completing Penances.\n{#color(255, 155, 55)}But you have to Reload mods by pressing CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* To enable this feature, you need to go to the Darktide Mod Framework options and enable Developer Mode.{#reset()}",
-		-- fr = "Si vous n'avez pas besoin des descriptions étendues pour les noeuds, vous pouvez les désactiver.\n{#color(255, 155, 55)}Mais vous devez recharger les mods en appuyant sur CTRL+SHIFT+R !{#reset ()}\n{#color(100, 100, 100)}* Pour activer cette fonctionnalité, vous devez accéder aux options de Darktide Mod Framework et activer le mode développeur.{#reset()}",
-		ru = "Если вам не нужны Расширенные описания Искуплений, вы можете их отключить. Добавлены некоторые советы по выполнению Искуплений. Названия талантов берутся из модуля с исправленными названиями талантов.\n{#color(255, 155, 55)}Но вам придется перезагрузить моды, нажав CTRL+SHIFT+R!{#reset()}\n{#color(100, 100, 100)}* Чтобы включить эту функцию, вам нужно перейти в настройки Darktide Mod Framework и включить Режим разработчика.{#reset()}",
-	},
 	enhdesc_colour = {
 		en = "",
-		fr = "",
-		ru = "",
+		-- fr = "",
+		-- ru = "",
 	},
 
 --[+Main+]--
@@ -178,7 +165,6 @@ local localizations = {
 	},
 	coherency_colour = {
 		en = " Coherency",
-		-- fr = "",
 		ru = " Сплочённость",
 	},
 
@@ -269,7 +255,6 @@ local localizations = {
 --[+Psyker+]--
 	class_psyker_colour = {
 		en = " Psyker",
-		-- fr = "",
 		ru = " Псайкер",
 	},
 	precision_colour = {
@@ -281,7 +266,6 @@ local localizations = {
 --[+Ogryn+]--
 	class_ogryn_colour = {
 		en = " Ogryn",
-		-- fr = "",
 		ru = " Огрин",
 	},
 	fnp_colour = {
@@ -303,7 +287,6 @@ local localizations = {
 --[+Zealot+]--
 	class_zealot_colour = {
 		en = " Zealot",
-		-- fr = "",
 		ru = " Изувер",
 	},
 	fury_colour = {
@@ -325,7 +308,6 @@ local localizations = {
 --[+Veteran+]--
 	class_veteran_colour = {
 		en = " Veteran",
-		-- fr = "",
 		ru = " Ветеран",
 	},
 	focus_colour = {
@@ -374,27 +356,22 @@ local localizations = {
 	--[+Difficulty+]--
 	sedition_colour = {
 		en = "Sedition",
-		-- fr = "",
 		ru = "Мятеж",
 	},
 	uprising_colour = {
 		en = "Uprising",
-		-- fr = "",
 		ru = "Восстание",
 	},
 	malice_colour = {
 		en = "Malice",
-		-- fr = "",
 		ru = "Злоба",
 	},
 	heresy_colour = {
 		en = "Heresy",
-		-- fr = "",
 		ru = "Ересь",
 	},
 	damnation_colour = {
 		en = "Damnation",
-		-- fr = "",
 		ru = "Проклятие",
 	},
 
