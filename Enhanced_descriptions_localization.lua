@@ -369,7 +369,7 @@ local localizations = {
 		en = " Psyker",
 		-- fr = "",
 		ru = " Псайкер",
-		["zh-cn"] = " 靈能者",
+		["zh-tw"] = " 靈能者",
 		["zh-cn"] = " 灵能者",
 	},
 	precision_colour = {
