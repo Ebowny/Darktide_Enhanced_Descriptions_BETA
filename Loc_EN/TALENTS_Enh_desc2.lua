@@ -1003,25 +1003,37 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-1 - Just Getting Started +]--
-	local ED_OGR_Keystone_1_1_rgb = iu_actit(table.concat({
+	--[+ Keystone 1-1 - Don't Feel a Thing +]--
+	-- local ED_OGR_Keystone_1_1_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 1-2 - Just Getting Started +]--
+	local ED_OGR_Keystone_1_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- Stacks additively with related buffs from \"Indomitable\"/\"Bull Rush\", \"Point-Blank Barrage\", and Celerity Stimm.",
 		"- Does currently not have a HUD icon.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-2 - Unstoppable +]--
-	local ED_OGR_Keystone_1_2_rgb = iu_actit(table.concat({
+	--[+ Keystone 1-3 - Unstoppable +]--
+	local ED_OGR_Keystone_1_3_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- For example, with 160 Max Toughness and \"Smash 'Em!\" equipped, Ogryn replenishes 160x(0.1+0.2)=48 Toughness on killing a single enemy.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-3 - Brutish Momentum +]--
-	local ED_OGR_Keystone_1_3_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- Light attacks cannot generate Stacks (this requires Heavy Melee attacks), they can only maintain the current Stack count.",
-	}, "\n"), enhdesc_col)
+	--[+ Keystone 1-4 - Great Cleaver +]--
+	-- local ED_OGR_Keystone_1_4_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+		-- "- ",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 1-5 - Impactful +]--
+	-- local ED_OGR_Keystone_1_5_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+		-- "- ",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Feel No Pain +]--
 	local ED_OGR_Keystone_2_rgb = iu_actit(table.concat({
@@ -1069,8 +1081,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- For the remaining weapons, the Talent procs per single shot fired.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-1 - Maximum Firepower +]--
-	local ED_OGR_Keystone_3_1_rgb = iu_actit(table.concat({
+	--[+ Keystone 3-1 - Back Off! +]--
+	-- local ED_OGR_Keystone_3_1_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+		-- "- Additionally to Ogryn's base Ability Cooldown rate of 1 second per second, reduces the remaining Ability Cooldown by 2 seconds per second for 2 seconds when Burst Limiter Override procs. This results in a total Cooldown Reduction of 6 seconds per proc (2 seconds from base rate + 2x2 seconds from Talent).",
+	-- 	"-"..can_be_refr_dur_active_dur,
+	-- 	"- Procs additionally to Concentration Stimm's Cooldown Reduction effect of 3 seconds per second.",
+	-- 	doesnt_interact_w_c_a_r_from_curio,
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 3-2 - Maximum Firepower +]--
+	local ED_OGR_Keystone_3_2_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- Additionally to Ogryn's base Ability Cooldown rate of 1 second per second, reduces the remaining Ability Cooldown by 2 seconds per second for 2 seconds when Burst Limiter Override procs. This results in a total Cooldown Reduction of 6 seconds per proc (2 seconds from base rate + 2x2 seconds from Talent).",
 		"-"..can_be_refr_dur_active_dur,
@@ -1078,15 +1099,24 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-2 - Good Shootin' +]--
-	local ED_OGR_Keystone_3_2_rgb = iu_actit(table.concat({
+	--[+ Keystone 3-3 - Good Shootin' +]--
+	local ED_OGR_Keystone_3_3_rgb = iu_actit(table.concat({
 		ppp___ppp,
 		"- If a shooting action entails multiple shots (Ripper Guns and Heavy Stubbers left-clicks) and if one of these shots Crits, then all subsequent shots of that action will be converted into Crit shots.",
 		"- For Heavy Stubbers' alt fire (full auto), any Crit shot granted by this Talent procs the guaranteed Crit sequence of 6 shots.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 3-3 - More Burst Limiter Overrides! +]--
-	-- local ED_OGR_Keystone_3_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	--[+ Keystone 3-4 - Heat of Battle +]--
+	-- local ED_OGR_Keystone_3_4_rgb = iu_actit(table.concat({
+		-- ppp___ppp,
+	-- 	"- .",
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 3-5 - Good Shootin' +]--
+	-- local ED_OGR_Keystone_3_5_rgb = iu_actit(table.concat({
+	-- 	ppp___ppp,
+	-- 	"- .",
+	-- }, "\n"), enhdesc_col)
 
 --[+ +PASSIVES+ +]--
 	--[+ Passive 1 - Furious +]--
@@ -1491,6 +1521,8 @@ return {
 	ED_OGR_Keystone_1_1_rgb = ED_OGR_Keystone_1_1_rgb,
 	ED_OGR_Keystone_1_2_rgb = ED_OGR_Keystone_1_2_rgb,
 	ED_OGR_Keystone_1_3_rgb = ED_OGR_Keystone_1_3_rgb,
+	ED_OGR_Keystone_1_4_rgb = ED_OGR_Keystone_1_4_rgb,
+	ED_OGR_Keystone_1_5_rgb = ED_OGR_Keystone_1_5_rgb,
 	ED_OGR_Keystone_2_rgb = ED_OGR_Keystone_2_rgb,
 	ED_OGR_Keystone_2_1_rgb = ED_OGR_Keystone_2_1_rgb,
 	ED_OGR_Keystone_2_2_rgb = ED_OGR_Keystone_2_2_rgb,
@@ -1499,6 +1531,8 @@ return {
 	ED_OGR_Keystone_3_1_rgb = ED_OGR_Keystone_3_1_rgb,
 	ED_OGR_Keystone_3_2_rgb = ED_OGR_Keystone_3_2_rgb,
 	ED_OGR_Keystone_3_3_rgb = ED_OGR_Keystone_3_3_rgb,
+	ED_OGR_Keystone_3_4_rgb = ED_OGR_Keystone_3_4_rgb,
+	ED_OGR_Keystone_3_5_rgb = ED_OGR_Keystone_3_5_rgb,
 
 	ED_OGR_Passive_0_rgb = ED_OGR_Passive_0_rgb,
 	ED_OGR_Passive_1_rgb = ED_OGR_Passive_1_rgb,

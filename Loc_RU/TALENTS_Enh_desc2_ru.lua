@@ -1002,25 +1002,38 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-1 - Just Getting Started +]--
+	--[+ Keystone 1-1 - Don't Feel a Thing +]--
 	local ED_OGR_Keystone_1_1_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
 		-- "- Stacks additively with related buffs from \"Indomitable\"/\"Bull Rush\", \"Point-Blank Barrage\", and Celerity Stimm.",
 		-- "- Does currently not have a HUD icon.",
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-2 - Unstoppable +]--
+	--[+ Keystone 1-2 - Just Getting Started +]--
 	local ED_OGR_Keystone_1_2_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
+		-- "- Stacks additively with related buffs from \"Indomitable\"/\"Bull Rush\", \"Point-Blank Barrage\", and Celerity Stimm.",
+		-- "- Does currently not have a HUD icon.",
+	}, "\n"), enhdesc_col)
+
+	--[+ Keystone 1-3 - Unstoppable +]--
+	local ED_OGR_Keystone_1_3_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
 		-- "- For example, with 160 Max Toughness and \"Smash 'Em!\" equipped, Ogryn replenishes 160x(0.1+0.2)=48 Toughness on killing a single enemy.",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
-	--[+ Keystone 1-3 - Brutish Momentum +]--
-	local ED_OGR_Keystone_1_3_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	--[+ Keystone 1-4 - Brutish Momentum +]--
+	-- local ED_OGR_Keystone_1_4_rgb_ru = iu_actit(table.concat({
+		-- ppp______ppp,
 		-- "- Light attacks cannot generate Stacks (this requires Heavy Melee attacks), they can only maintain the current Stack count.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
+
+	--[+ Keystone 1-5 - Brutish Momentum +]--
+	-- local ED_OGR_Keystone_1_5_rgb_ru = iu_actit(table.concat({
+		-- ppp______ppp,
+		-- "- Light attacks cannot generate Stacks (this requires Heavy Melee attacks), they can only maintain the current Stack count.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Feel No Pain +]--
 	local ED_OGR_Keystone_2_rgb_ru = iu_actit(table.concat({
@@ -1490,6 +1503,8 @@ return {
 	ED_OGR_Keystone_1_1_rgb_ru = ED_OGR_Keystone_1_1_rgb_ru,
 	ED_OGR_Keystone_1_2_rgb_ru = ED_OGR_Keystone_1_2_rgb_ru,
 	ED_OGR_Keystone_1_3_rgb_ru = ED_OGR_Keystone_1_3_rgb_ru,
+	ED_OGR_Keystone_1_4_rgb_ru = ED_OGR_Keystone_1_4_rgb_ru,
+	ED_OGR_Keystone_1_5_rgb_ru = ED_OGR_Keystone_1_5_rgb_ru,
 	ED_OGR_Keystone_2_rgb_ru = ED_OGR_Keystone_2_rgb_ru,
 	ED_OGR_Keystone_2_1_rgb_ru = ED_OGR_Keystone_2_1_rgb_ru,
 	ED_OGR_Keystone_2_2_rgb_ru = ED_OGR_Keystone_2_2_rgb_ru,
