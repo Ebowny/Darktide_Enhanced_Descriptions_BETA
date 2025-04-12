@@ -128,12 +128,12 @@ local localization_templates = {
 		--[+ Russian +]--
 	create_template("hud_hadron_craft1_ext_ru", {"loc_crafting_error_no_consecrate"}, {"ru"}, function(locale, value) return "Максимальный уровень редкости!" end),
 		--[+ Traditional Chinese +]--
-	create_template("hud_hadron_craft1_ext_tw", {"loc_crafting_error_no_consecrate"}, {"zh-tw"}, function(locale, value) return "已升級至最高稀有度!" end),
+	create_template("hud_hadron_craft1_ext_tw", {"loc_crafting_error_no_consecrate"}, {"zh-tw"}, function(locale, value) return "以聖化至最高稀有度!" end),
 	
 		--[+ Russian +]--
 	create_template("hud_hadron_craft2_ext_ru", {"loc_crafting_error_max_power"}, {"ru"}, function(locale, value) return "Максимальный уровень силы!" end),
 		--[+ Traditional Chinese +]--
-	create_template("hud_hadron_craft2_ext_tw", {"loc_crafting_error_max_power"}, {"zh-tw"}, function(locale, value) return "已升級至最高等級!" end),
+	create_template("hud_hadron_craft2_ext_tw", {"loc_crafting_error_max_power"}, {"zh-tw"}, function(locale, value) return "以強化至最高等級!" end),
 	
 		--[+ Russian +]--
 	create_template("hud_hadron_craft3_ext_ru", {"loc_mastery_crafting_sacrifice_weapon_title",}, {"ru",}, function(locale, value) return "Пожертвовать оружие" end), -- Жертвенное оружие
@@ -384,13 +384,13 @@ local localization_templates = {
 	-- create_template("reading_data_ext_ru", {"loc_wait_reason_read_from_disk"}, {"ru"}, function(locale, value) return "Получение инквизиционных данных" end),
 	create_template("reading_data_ext_ru", {"loc_wait_reason_read_from_disk"}, {"ru"}, function(locale, value) return "Попытка исправить ошибки 3001, 3013, 2014..." end),
 		--[+ Traditional Chinese +]--
-	create_template("reading_data_ext_tw", {"loc_wait_reason_read_from_disk"}, {"zh-tw"}, function(locale, value) return "嘗試修正錯誤 3001, 3013, 2014...S" end),
+	create_template("reading_data_ext_tw", {"loc_wait_reason_read_from_disk"}, {"zh-tw"}, function(locale, value) return "嘗試修正錯誤 3001, 3013, 2014..." end),
 
 	--[+ Dedicated Server - Выделенный сервер +]--
 		--[+ Russian +]--
 	create_template("dedicated_server_ext_ru", {"loc_wait_reason_dedicated_server"}, {"ru"}, function(locale, value) return "Выдаём рекаф и брикеты" end),
 		--[+ Traditional Chinese +]--
-	create_template("dedicated_server_ext_tw", {"loc_wait_reason_dedicated_server"}, {"zh-tw"}, function(locale, value) return "正在發放補給品C" end),
+	create_template("dedicated_server_ext_tw", {"loc_wait_reason_dedicated_server"}, {"zh-tw"}, function(locale, value) return "正在發放補給品" end),
 	-- create_template("dedicated_server_ext_ru", {"loc_wait_reason_dedicated_server"}, {"ru"}, function(locale, value) return "Попытка обновить магазин чаще, чем раз в две недели..." end),
 
 	--[+ Waiting for other player(s) - Ожидание других игроков +]--
