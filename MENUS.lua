@@ -92,8 +92,7 @@ local localization_templates = {
 		--[+ Russian +]--
 	create_template("contract_melk_reward_label_ext_ru", {"loc_contracts_contract_reward_label",}, {"ru",}, function(locale, value) return "Награда за выполнение:" end),
 		--[+ 獎勵 - Traditional Chinese +]--
-
-	-- I think here missing the melee weapon?
+	create_template("contract_melk_reward_label_ext_tw", {"loc_contracts_contract_reward_label",}, {"zh-tw",}, function(locale, value) return "獎勵" end), -- Not sure where to use it.
 
 		--[+ Russian +]--
 	create_template("contract_melk_gen_goods_rand_rang_weap_ext_ru", {"loc_contracts_view_general_goods_random_ranged_weapon",}, {"ru",}, function(locale, value) return "Неизвестное оружие дальнего боя" end),
@@ -217,32 +216,32 @@ local localization_templates = {
 
 
 	-- [+ UPRISING - ВОССТАНИЕ +]--
-		create_template("mission_board_danger_2_ext_en", {"loc_mission_board_danger_low"}, {"en"}, function(locale, value) return COLORS_KWords.uprising_rgb end),
+	create_template("mission_board_danger_2_ext_en", {"loc_mission_board_danger_low"}, {"en"}, function(locale, value) return COLORS_KWords.uprising_rgb end),
 		--[+ Russian +]--
-		create_template("mission_board_danger_2_ext_ru", {"loc_mission_board_danger_low"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.uprising_rgb_ru end),
+	create_template("mission_board_danger_2_ext_ru", {"loc_mission_board_danger_low"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.uprising_rgb_ru end),
 		--[+  起義 - Traditional Chinese +]--
 	create_template("mission_board_danger_2_ext_tw", {"loc_mission_board_danger_low"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.uprising_rgb_tw end),
 
 	-- [+ MALICE - ЗЛОБА +]--
-		create_template("mission_board_danger_3_ext_en", {"loc_mission_board_danger_medium"}, {"en"}, function(locale, value) return COLORS_KWords.malice_rgb end),
+	create_template("mission_board_danger_3_ext_en", {"loc_mission_board_danger_medium"}, {"en"}, function(locale, value) return COLORS_KWords.malice_rgb end),
 		--[+ Russian +]--
-		create_template("mission_board_danger_3_ext_ru", {"loc_mission_board_danger_medium"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.malice_rgb_ru end),
+	create_template("mission_board_danger_3_ext_ru", {"loc_mission_board_danger_medium"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.malice_rgb_ru end),
 		--[+  惡毒 - Traditional Chinese +]--
-		create_template("mission_board_danger_3_ext_tw", {"loc_mission_board_danger_medium"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.malice_rgb_tw end),
+	create_template("mission_board_danger_3_ext_tw", {"loc_mission_board_danger_medium"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.malice_rgb_tw end),
 
 	-- [+ HERESY - ЕРЕСЬ +]--
-		create_template("mission_board_danger_4_ext_en", {"loc_mission_board_danger_high"}, {"en"}, function(locale, value) return COLORS_KWords.heresy_rgb end),
+	create_template("mission_board_danger_4_ext_en", {"loc_mission_board_danger_high"}, {"en"}, function(locale, value) return COLORS_KWords.heresy_rgb end),
 		--[+ Russian +]--
-		create_template("mission_board_danger_4_ext_ru", {"loc_mission_board_danger_high"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.heresy_rgb_ru end),
+	create_template("mission_board_danger_4_ext_ru", {"loc_mission_board_danger_high"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.heresy_rgb_ru end),
 		--[+  異端 - Traditional Chinese +]--
-		create_template("mission_board_danger_4_ext_tw", {"loc_mission_board_danger_high"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.heresy_rgb_tw end),
+	create_template("mission_board_danger_4_ext_tw", {"loc_mission_board_danger_high"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.heresy_rgb_tw end),
 
 	-- [+ DAMNATION - ПРОКЛЯТИЕ +]--
-		create_template("mission_board_danger_5_ext_en", {"loc_mission_board_danger_highest"}, {"en"}, function(locale, value) return COLORS_KWords.damnation_rgb end),
+	create_template("mission_board_danger_5_ext_en", {"loc_mission_board_danger_highest"}, {"en"}, function(locale, value) return COLORS_KWords.damnation_rgb end),
 		--[+ Russian +]--
-		create_template("mission_board_danger_5_ext_ru", {"loc_mission_board_danger_highest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.damnation_rgb_ru end),
+	create_template("mission_board_danger_5_ext_ru", {"loc_mission_board_danger_highest"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.damnation_rgb_ru end),
 		--[+  詛咒 - Traditional Chinese +]--
-		create_template("mission_board_danger_5_ext_tw", {"loc_mission_board_danger_highest"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.damnation_rgb_tw end),
+	create_template("mission_board_danger_5_ext_tw", {"loc_mission_board_danger_highest"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.damnation_rgb_tw end),
 
 
 --[+ ++INVENTORY++ +]--
@@ -319,7 +318,7 @@ local localization_templates = {
 			--[+ Russian +]--
 	create_template("inventory_weapon_perk_title_ext_ru", {"loc_inventory_menu_favorite_item"}, {"ru"}, function(locale, value) return "Избранное" end), -- руоф Добавить в избранное
 			--[+ Traditional Chinese +]--
-	-- create_template("inventory_weapon_perk_title_ext_tw", {"loc_inventory_menu_favorite_item"}, {"zh-tw"}, function(locale, value) return "最愛" end),
+	create_template("inventory_weapon_perk_title_ext_tw", {"loc_inventory_menu_favorite_item"}, {"zh-tw"}, function(locale, value) return "最愛" end),
 
 		--[+ Perk +]--
 			--[+ Russian +]--
