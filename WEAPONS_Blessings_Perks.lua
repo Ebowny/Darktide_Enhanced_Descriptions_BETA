@@ -1157,222 +1157,308 @@ local localization_templates = {
 	--[+ Ranged - Дальний бой +]--
 		--[+ Raking Fire +]--
 			-- Autopistol, Infantry Autoguns, Laspistols -- 32.5% | 35% | 37.5% | 40%
-	create_template("weap_wbr000_desc_ext_en", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." when shooting Enemies in the back." end), -- damage: +40% -- colors
-	--[+ French +]--
-	create_template("weap_wbr000_desc_ext_fr", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." lorsque vous tirez dans le dos des ennemies." end),
-	--[+ Russian +]-- Огонь по тылам -- руоф Обстрел
-	create_template("weap_wbr000_desc_ext_ru", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." при стрельбе врагам в спину." end),
+			create_template("weap_wbr000_desc_ext_en", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." when shooting Enemies in the back." end), -- damage: +40% -- colors
+			--[+ French +]--
+			create_template("weap_wbr000_desc_ext_fr", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." lorsque vous tirez dans le dos des ennemies." end),
+			--[+ Russian +]-- Огонь по тылам -- руоф Обстрел
+			create_template("weap_wbr000_desc_ext_ru", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." при стрельбе врагам в спину." end),
+			--[+ Traditional Chinese - 掃射 +]--
+			-- 撕裂者自動手槍, 步兵自動槍, 重型雷射手槍 -- 32.5% | 35% | 37.5% | 40%
+			create_template("weap_wbr000_desc_ext_tw", {"loc_trait_bespoke_allow_flanking_and_increased_damage_when_flanking_desc"}, {"zh-tw"}, function(locale, value) return "從側翼或背後射擊敵人時 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."。" end),
 
 		--[+ Dumdum +]--
 			-- Infantry Autoguns, Laspistols, Recon Lasguns -- 4.5% | 5% | 5.5% | 6% (up to +30%)
-	create_template("weap_wbr001_desc_ext_en", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." Close Range "..COLORS_KWords.Damage_rgb.." on Repeated Hit. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- damage: +6%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr001_desc_ext_fr", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés lors d'un coup répété. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Дум-дум  -- руоф Дамдам
-	create_template("weap_wbr001_desc_ext_ru", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров при повторной атаке. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr001_desc_ext_en", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." Close Range "..COLORS_KWords.Damage_rgb.." on Repeated Hit. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- damage: +6%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr001_desc_ext_fr", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés lors d'un coup répété. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Дум-дум  -- руоф Дамдам
+			create_template("weap_wbr001_desc_ext_ru", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров при повторной атаке. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 達姆彈 +]--
+			-- 步兵自動槍, 重型雷射手槍, 偵查雷射槍 -- 4.5% | 5% | 5.5% | 6% (up to +30%)
+			create_template("weap_wbr001_desc_ext_tw", {"loc_trait_bespoke_consecutive_hits_increases_close_damage_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內，\n連續命中時 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Hit & Run /  Hit and Run +]--
 			-- Braced Autoguns, Combat Shotguns, Double-Barrel Shotgun, Infantry Autoguns, Recon Lasguns -- 0.7 | 0.8 | 0.9 | 1
-		create_template("weap_wbr067_ext_en", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"en"}, function(locale, value) return "Hit and Run" end), -- &->and
-	create_template("weap_wbr067_desc_ext_en", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"en"}, function(locale, value) return "Immune to Ranged Attacks for "..COLORS_Numbers.time_var_rgb.." second on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters." end), -- time: 1.0 -- s->second -- colors
-	--[+ French +]--
-	create_template("weap_wbr067_desc_ext_fr", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"fr"}, function(locale, value) return "Immunité contre les attaques à distance pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres." end),
-	--[+ Russian +]-- Бей и беги
-	create_template("weap_wbr067_desc_ext_ru", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"ru"}, function(locale, value) return "Иммунитет к дальнобойным атакам на "..COLORS_Numbers.time_var_rgb.." секунду при убийстве на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
-
+			create_template("weap_wbr067_ext_en", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"en"}, function(locale, value) return "Hit and Run" end), -- &->and
+			create_template("weap_wbr067_desc_ext_en", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"en"}, function(locale, value) return "Immune to Ranged Attacks for "..COLORS_Numbers.time_var_rgb.." second on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters." end), -- time: 1.0 -- s->second -- colors
+			--[+ French +]--
+			create_template("weap_wbr067_desc_ext_fr", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"fr"}, function(locale, value) return "Immunité contre les attaques à distance pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres." end),
+			--[+ Russian +]-- Бей и беги
+			create_template("weap_wbr067_desc_ext_ru", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"ru"}, function(locale, value) return "Иммунитет к дальнобойным атакам на "..COLORS_Numbers.time_var_rgb.." секунду при убийстве на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
+			--[+ Traditional Chinese - 游擊 +]--
+			-- 槍托自動槍, 戰鬥霰彈槍, 雙管霰彈槍, 步兵自動槍, 偵查雷射槍 -- 0.7 | 0.8 | 0.9 | 1
+			create_template("weap_wbr067_desc_ext_tw", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人時，\n獲得對遠程攻擊的免疫效果，持續 "..COLORS_Numbers.time_var_rgb.." 秒。" end),
+	
 		--[+ Sustained Fire +]--
 			-- Autopistol, Electrokinetic Staff, Helbore Lasguns, Infantry Autoguns, Recon Lasguns, Stub Revolvers, Voidblast Staff, Voidstrike Staff -- 14% | 16% | 18% | 20%
-	create_template("weap_wbr068_desc_ext_en", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." on Second, Third and Fourth shots in a Salvo."..COLORS_KWords.Trauma_note_rgb end), -- damage: +20% -- colors
-	--[+ French +]--
-	create_template("weap_wbr068_desc_ext_fr", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." lors des "..COLORS_Numbers.n_2e_rgb..", "..COLORS_Numbers.n_3e_rgb..", "..COLORS_Numbers.n_4e_rgb.." tirs d'une salve." end),
-	--[+ Russian +]-- Непрерывная стрельба -- руоф Непрерывный огонь
-	create_template("weap_wbr068_desc_ext_ru", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." для второго, третьего и четвёртого выстрела залпа."..COLORS_KWords_ru.Trauma_note_rgb_ru end),
-
+			create_template("weap_wbr068_desc_ext_en", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." on Second, Third and Fourth shots in a Salvo."..COLORS_KWords.Trauma_note_rgb end), -- damage: +20% -- colors
+			--[+ French +]--
+			create_template("weap_wbr068_desc_ext_fr", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." lors des "..COLORS_Numbers.n_2e_rgb..", "..COLORS_Numbers.n_3e_rgb..", "..COLORS_Numbers.n_4e_rgb.." tirs d'une salve." end),
+			--[+ Russian +]-- Непрерывная стрельба -- руоф Непрерывный огонь
+			create_template("weap_wbr068_desc_ext_ru", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." для второго, третьего и четвёртого выстрела залпа."..COLORS_KWords_ru.Trauma_note_rgb_ru end),
+			--[+ Traditional Chinese - 持續射擊 +]--
+			-- 撕裂者自動手槍, 電流立場法杖, 重型雷射槍, 步兵自動槍, 偵查雷射槍, 突擊手槍, 虛空爆裂立場法杖, 虛空打擊立場法杖 -- 14% | 16% | 18% | 20%
+			create_template("weap_wbr068_desc_ext_tw", {"loc_trait_bespoke_followup_shots_ranged_damage_desc"}, {"zh-tw"}, function(locale, value) return "齊射的第二、三與第四發射擊，\n獲得 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."。" .. COLORS_KWords_tw.Trauma_note_rgb_tw end),
+	
 		--[+ Punishing Salvo +]--
 			-- Infantry Autoguns, Recon Lasguns -- 35% | 40% | 45% | 50%
-	create_template("weap_wbr069_desc_ext_en", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Weakspot_dmg_rgb.." on Second, Third and Fourth shots in a Salvo." end), -- damage: +50% -- colors
-	--[+ French +]--
-	create_template("weap_wbr069_desc_ext_fr", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." lors des "..COLORS_Numbers.n_2e_rgb..", "..COLORS_Numbers.n_3e_rgb..", "..COLORS_Numbers.n_4e_rgb.." tirs d'une salve." end),
-	--[+ Russian +]-- Карательный залп
-	create_template("weap_wbr069_desc_ext_ru", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." для второго, третьего и четвёртого выстрела залпа." end),
+			create_template("weap_wbr069_desc_ext_en", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Weakspot_dmg_rgb.." on Second, Third and Fourth shots in a Salvo." end), -- damage: +50% -- colors
+			--[+ French +]--
+			create_template("weap_wbr069_desc_ext_fr", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." lors des "..COLORS_Numbers.n_2e_rgb..", "..COLORS_Numbers.n_3e_rgb..", "..COLORS_Numbers.n_4e_rgb.." tirs d'une salve." end),
+			--[+ Russian +]-- Карательный залп
+			create_template("weap_wbr069_desc_ext_ru", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.." для второго, третьего и четвёртого выстрела залпа." end),
+			--[+ Traditional Chinese - 懲罰齊射 +]--
+			-- 步兵自動槍, 偵查雷射槍 -- 35% | 40% | 45% | 50%
+			create_template("weap_wbr069_desc_ext_tw", {"loc_trait_bespoke_followup_shots_ranged_weakspot_damage_desc"}, {"zh-tw"}, function(locale, value) return "齊射的第二、三與第四發射擊，\n獲得 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.."。" end),
 
 		--[+ Fire Frenzy +]--
 			-- Boltgun, Braced Autoguns, Combat Shotguns, Heavy Stubbers, Infantry Autoguns, Ripper Guns -- 7% | 8% | 9% | 10% (up to +50%)
-	create_template("weap_wbr070_desc_ext_en", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmgcls_var_rgb.." Close "..COLORS_KWords.Damage_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds after killing an enemy at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- close_damage: +10%, time: 3.5, stacks: 5 -- rewrite -- colors
-	--[+ French +]--
-	create_template("weap_wbr070_desc_ext_fr", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"fr"}, function(locale, value) return "Gagnez "..COLORS_Numbers.dmgcls_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Неистовая стрельба -- руоф Огненное неистовство
-	create_template("weap_wbr070_desc_ext_ru", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmgcls_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции на "..COLORS_Numbers.time_var_rgb.." секунды после убийства врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr070_desc_ext_en", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmgcls_var_rgb.." Close "..COLORS_KWords.Damage_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds after killing an enemy at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- close_damage: +10%, time: 3.5, stacks: 5 -- rewrite -- colors
+			--[+ French +]--
+			create_template("weap_wbr070_desc_ext_fr", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"fr"}, function(locale, value) return "Gagnez "..COLORS_Numbers.dmgcls_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Неистовая стрельба -- руоф Огненное неистовство
+			create_template("weap_wbr070_desc_ext_ru", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmgcls_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции на "..COLORS_Numbers.time_var_rgb.." секунды после убийства врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 烈火熱焰 +]--
+			-- 爆彈槍, 槍托自動槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍, 撕裂者自動手槍 -- 7% | 8% | 9% | 10% (up to +50%)
+			create_template("weap_wbr070_desc_ext_tw", {"loc_trait_bespoke_increase_close_damage_on_close_kill_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人，\n"..COLORS_Numbers.dmgcls_var_rgb.." "..COLORS_KWords_tw.Damage_melee_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Deathspitter +]--
 			-- Braced Autoguns, Combat Shotguns, Heavy Stubbers, Infantry Autoguns, Recon Lasguns -- 5% | 5.5% | 6% | 6.5% (up to +32.5%) | 3.5s
 			-- Double-Barrel Shotgun -- 5% | 5.5% | 6% | 6.5% (up to +32.5%) | 5s
-	create_template("weap_wbr071_desc_ext_en", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. Up to "..COLORS_Numbers.n_5_rgb.." Stacks."..COLORS_KWords.Pwr_note_rgb end), -- power_level: 6.5%, time: 3.5, stacks: 5 -- rewrite -- colors -- Note
-	--[+ French +]--
-	create_template("weap_wbr071_desc_ext_fr", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres. Se cumule jusqu'à "..COLORS_Numbers.n_5_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
-	--[+ Russian +]-- Смертоплюй -- руоф Смертоносец
-	create_template("weap_wbr071_desc_ext_ru", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. До "..COLORS_Numbers.n_5_rgb.." зарядов."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			create_template("weap_wbr071_desc_ext_en", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. Up to "..COLORS_Numbers.n_5_rgb.." Stacks."..COLORS_KWords.Pwr_note_rgb end), -- power_level: 6.5%, time: 3.5, stacks: 5 -- rewrite -- colors -- Note
+			--[+ French +]--
+			create_template("weap_wbr071_desc_ext_fr", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres. Se cumule jusqu'à "..COLORS_Numbers.n_5_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
+			--[+ Russian +]-- Смертоплюй -- руоф Смертоносец
+			create_template("weap_wbr071_desc_ext_ru", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. До "..COLORS_Numbers.n_5_rgb.." зарядов."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			--[+ Traditional Chinese - 死亡噴吐 +]--
+			-- 槍托自動槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍, 偵查雷射槍 -- 5% | 5.5% | 6% | 6.5% (up to +32.5%) | 3.5s
+			-- 雙管霰彈槍 -- 5% | 5.5% | 6% | 6.5% (up to +32.5%) | 5s
+			create_template("weap_wbr071_desc_ext_tw", {"loc_trait_bespoke_increase_power_on_close_kill_desc"}, {"zh-tw"}, function(locale, value) return "在"..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，上限 "..COLORS_Numbers.n_5_rgb.." 層。" .. COLORS_KWords_tw.Pwr_note_rgb_tw end),
 
 		--[+ Stripped Down +]--
 			-- Braced Autoguns, Infantry Autoguns, Recon Lasguns -- 80% | 70% | 60% | 50%
-	create_template("weap_wbr072_desc_ext_en", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"en"}, function(locale, value) return "Gain Ranged Attack Immunity while Sprinting with over "..COLORS_Numbers.stam_var_rgb.." "..COLORS_KWords.Stamina_rgb.."."..COLORS_KWords.Fire_n_trap_note_rgb end), -- stamina: 50% -- colors
-	--[+ French +]--
-	create_template("weap_wbr072_desc_ext_fr", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"fr"}, function(locale, value) return "Gagnez une immunité contre les attaques à distance lorsque vous courez avec plus de "..COLORS_Numbers.stam_var_rgb.." d'"..COLORS_KWords_fr.Stamina_rgb_fr.."." end),
-	--[+ Russian +]-- Сбросить лишнее -- руоф Срез
-	create_template("weap_wbr072_desc_ext_ru", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"ru"}, function(locale, value) return "Вы получаете иммунитет от атак дальнего боя при беге с уровнем "..COLORS_KWords_ru.Stamina_rgb_ru.." превышающим "..COLORS_Numbers.stam_var_rgb.."."..COLORS_KWords_ru.Fire_n_trap_note_rgb_ru end),
+			create_template("weap_wbr072_desc_ext_en", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"en"}, function(locale, value) return "Gain Ranged Attack Immunity while Sprinting with over "..COLORS_Numbers.stam_var_rgb.." "..COLORS_KWords.Stamina_rgb.."."..COLORS_KWords.Fire_n_trap_note_rgb end), -- stamina: 50% -- colors
+			--[+ French +]--
+			create_template("weap_wbr072_desc_ext_fr", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"fr"}, function(locale, value) return "Gagnez une immunité contre les attaques à distance lorsque vous courez avec plus de "..COLORS_Numbers.stam_var_rgb.." d'"..COLORS_KWords_fr.Stamina_rgb_fr.."." end),
+			--[+ Russian +]-- Сбросить лишнее -- руоф Срез
+			create_template("weap_wbr072_desc_ext_ru", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"ru"}, function(locale, value) return "Вы получаете иммунитет от атак дальнего боя при беге с уровнем "..COLORS_KWords_ru.Stamina_rgb_ru.." превышающим "..COLORS_Numbers.stam_var_rgb.."."..COLORS_KWords_ru.Fire_n_trap_note_rgb_ru end),
+			--[+ Traditional Chinese - 輕裝 +]--
+			-- 槍托自動槍, 步兵自動槍, 偵查雷射槍 -- 80% | 70% | 60% | 50%
+			create_template("weap_wbr072_desc_ext_tw", {"loc_trait_bespoke_increased_sprint_speed_desc"}, {"zh-tw"}, function(locale, value) return "當衝刺時 "..COLORS_KWords_tw.Stamina_c_r_rgb_tw.." 超過 "..COLORS_Numbers.stam_var_rgb.." 時，\n將獲得對遠程攻擊的免疫效果。" .. COLORS_KWords_tw.Fire_n_trap_note_rgb_tw end),
 
 		--[+ Speedload +]--
 			-- Autopistol -- 7% | 8% | 9% | 10% (up to +50%) | 2s
 			-- Braced Autoguns, Infantry Autoguns -- 7% | 8% | 9% | 10% (up to +50%) | 2.5s 
 			-- Double-Barrel Shotgun, Laspistols, Recon Lasguns -- 7% | 8% | 9% | 10% (up to +50%) | 3s
 			-- Stub Revolvers -- 7% | 8% | 9% | 10% (up to +50%) | 4s
-		create_template("weap_wbr073_desc_ext_en", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." Reload Speed for "..COLORS_Numbers.time_var_rgb.." seconds after Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- reload_speed: 10%, time: 2.5, stacks: 5 -- rewrite -- colors -- Note
-	--[+ French +]--
-		create_template("weap_wbr073_desc_ext_fr", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." de vitesse de rechargement pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-		--[+ Russian +]-- Быстрая перезарядка -- руоф Скоростная загрузка
-		create_template("weap_wbr073_desc_ext_ru", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." к скорости перезарядки на "..COLORS_Numbers.time_var_rgb.." секунды после убийства врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr073_desc_ext_en", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." Reload Speed for "..COLORS_Numbers.time_var_rgb.." seconds after Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- reload_speed: 10%, time: 2.5, stacks: 5 -- rewrite -- colors -- Note
+			--[+ French +]--
+			create_template("weap_wbr073_desc_ext_fr", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." de vitesse de rechargement pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Быстрая перезарядка -- руоф Скоростная загрузка
+			create_template("weap_wbr073_desc_ext_ru", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.reload_var_rgb.." к скорости перезарядки на "..COLORS_Numbers.time_var_rgb.." секунды после убийства врага на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 快速裝彈 +]--
+			-- 撕裂者自動手槍 -- 7% | 8% | 9% | 10% (up to +50%) | 2s
+			-- 槍托自動槍, 步兵自動槍 -- 7% | 8% | 9% | 10% (up to +50%) | 2.5s
+			-- 雙管霰彈槍, 重型雷射手槍, 偵查雷射槍 -- 7% | 8% | 9% | 10% (up to +50%) | 3s
+			-- 快拔左輪手槍-- 7% | 8% | 9% | 10% (up to +50%) | 4s
+			create_template("weap_wbr073_desc_ext_tw", {"loc_trait_bespoke_reload_speed_on_slide_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人後，\n"..COLORS_Numbers.reload_var_rgb.." 換彈速度，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Terrifying Barrage +]--
 			-- Autopistol, Boltgun, Braced Autoguns, Combat Shotguns, Double-Barrel Shotgun, Electrokinetic Staff, Heavy Stubbers, Infantry Autoguns, Inferno Staff, Kickback, Ripper Guns, Stub Revolvers, Voidblast Staff, Voidstrike Staff -- 15 | 20 | 25 | 30
-	create_template("weap_wbr074_desc_ext_en", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"en"}, function(locale, value) return "Suppress Enemies on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters." end), -- rewrite -- colors 5m->5meters
-	--[+ French +]--
-	create_template("weap_wbr074_desc_ext_fr", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"fr"}, function(locale, value) return "Infligez Suppression aux ennemies lors d'une élimination jusqu'à une distance de "..COLORS_Numbers.n_12_5_rgb.." mètres." end),
-	--[+ Russian +]-- Устрашающий обстрел -- руоф Устрашающий натиск
-	create_template("weap_wbr074_desc_ext_ru", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"ru"}, function(locale, value) return "Вы подавляете врагов после убийства на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
-
+			create_template("weap_wbr074_desc_ext_en", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"en"}, function(locale, value) return "Suppress Enemies on Kill at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters." end), -- rewrite -- colors 5m->5meters
+			--[+ French +]--
+			create_template("weap_wbr074_desc_ext_fr", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"fr"}, function(locale, value) return "Infligez Suppression aux ennemies lors d'une élimination jusqu'à une distance de "..COLORS_Numbers.n_12_5_rgb.." mètres." end),
+			--[+ Russian +]-- Устрашающий обстрел -- руоф Устрашающий натиск
+			create_template("weap_wbr074_desc_ext_ru", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"ru"}, function(locale, value) return "Вы подавляете врагов после убийства на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
+			--[+ Traditional Chinese - 恐怖阻擊 +]--
+			-- 撕裂者自動手槍, 爆彈槍, 槍托自動槍, 戰鬥霰彈槍, 雙管霰彈槍, 電流立場法杖, 重型雷射手槍, 步兵自動槍, 偵查雷射槍, 撕裂者自動手槍, 快拔左輪手槍, 虛空爆裂立場法杖, 虛空打擊立場法杖 -- 15 | 20 | 25 | 30
+			create_template("weap_wbr074_desc_ext_tw", {"loc_trait_bespoke_suppression_on_close_kill_desc"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人後，\n對 "..COLORS_Numbers.n_8_rgb.." 公尺內敵人造成壓制效果。" end),
+	
 		--[+ Roaring Advance +]--
 			-- Braced Autoguns -- 10% | 15% | 20% | 25% (up to ~76%)
 			-- Heavy Stubbers -- 7% | 8% | 9% | 10% (up to ~41%)
-	create_template("weap_wbr075_desc_ext_en", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.movspd_var_rgb.." Movement Speed Reduction for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- movement_speed: 25%, ammo: 5%, stacks: 5 -- s->seconds -- colors
-	--[+ French +]--
-	create_template("weap_wbr075_desc_ext_fr", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.movspd_var_rgb.." de réduction de vitesse de déplacement pour chaque "..COLORS_Numbers.ammo_var_rgb.." du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Ревущее наступление
-	create_template("weap_wbr075_desc_ext_ru", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.movspd_var_rgb.." от эффекта замедления скорости движения за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
-
+			create_template("weap_wbr075_desc_ext_en", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.movspd_var_rgb.." Movement Speed Reduction for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- movement_speed: 25%, ammo: 5%, stacks: 5 -- s->seconds -- colors
+			--[+ French +]--
+			create_template("weap_wbr075_desc_ext_fr", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.movspd_var_rgb.." de réduction de vitesse de déplacement pour chaque "..COLORS_Numbers.ammo_var_rgb.." du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Ревущее наступление
+			create_template("weap_wbr075_desc_ext_ru", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.movspd_var_rgb.." от эффекта замедления скорости движения за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 咆哮突進 +]--
+			-- 槍托自動槍 -- 10% | 15% | 20% | 25% (up to ~76%)
+			-- 雙鏈重型機槍 -- 7% | 8% | 9% | 10% (up to ~41%)
+			create_template("weap_wbr075_desc_ext_tw", {"loc_trait_bespoke_movement_speed_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n"..COLORS_Numbers.movspd_var_rgb.." 的移動速度懲罰，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
+	
 		--[+ Ceaseless Barrage +]--
 			-- Braced Autoguns, Heavy Stubbers -- 20% & 6% | 20% & 6% | 20% & 6% | 20% & 6% (up to +100% & +30%)
-	create_template("weap_wbr076_desc_ext_en", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.spprsn_var_rgb.." Suppression and "..COLORS_Numbers.dmgvsprsd_var_rgb.." "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- suppression: +20%, damage_vs_suppressed: +6%, ammo: 2.5%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr076_desc_ext_fr", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.spprsn_var_rgb.." de suppression et "..COLORS_Numbers.dmgvsprsd_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemies sous suppression pour chaque "..COLORS_Numbers.ammo_var_rgb.." du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Непрерывный обстрел -- руоф Беспощадный натиск
-	create_template("weap_wbr076_desc_ext_ru", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.spprsn_var_rgb.." к подавлению и "..COLORS_Numbers.dmgvsprsd_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." по подавленным врагам за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr076_desc_ext_en", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.spprsn_var_rgb.." Suppression and "..COLORS_Numbers.dmgvsprsd_var_rgb.." "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- suppression: +20%, damage_vs_suppressed: +6%, ammo: 2.5%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr076_desc_ext_fr", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.spprsn_var_rgb.." de suppression et "..COLORS_Numbers.dmgvsprsd_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemies sous suppression pour chaque "..COLORS_Numbers.ammo_var_rgb.." du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Непрерывный обстрел -- руоф Беспощадный натиск
+			create_template("weap_wbr076_desc_ext_ru", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.spprsn_var_rgb.." к подавлению и "..COLORS_Numbers.dmgvsprsd_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." по подавленным врагам за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 持續阻擊 +]--
+			-- 槍托自動槍, 雙鏈重型機槍 -- 20% & 6% | 20% & 6% | 20% & 6% | 20% & 6% (up to +100% & +30%)	
+			create_template("weap_wbr076_desc_ext_tw", {"loc_trait_bespoke_suppression_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n獲得 "..COLORS_Numbers.spprsn_var_rgb.." 壓制效果強度，\n並對被壓制的敵人造成 "..COLORS_Numbers.dmgvsprsd_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Inspiring Barrage +]--
 			-- Autopistol, Boltgun, Braced Autoguns, Flamer, Heavy Stubbers, Ripper Guns -- 1% | 2% | 3% | 4% (up to 20%)
-	create_template("weap_wbr077_desc_ext_en", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords.Toughness_rgb.." for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- toughness: +4%, ammo: 10%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr077_desc_ext_fr", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr.." pour chaque "..COLORS_Numbers.ammo_var_rgb.." du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Вдохновляющий обстрел -- руоф Вдохновляющий натиск
-	create_template("weap_wbr077_desc_ext_ru", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr077_desc_ext_en", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords.Toughness_rgb.." for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- toughness: +4%, ammo: 10%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr077_desc_ext_fr", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr.." pour chaque "..COLORS_Numbers.ammo_var_rgb.." du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Вдохновляющий обстрел -- руоф Вдохновляющий натиск
+			create_template("weap_wbr077_desc_ext_ru", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 振奮彈幕 +]--
+			-- 撕裂者自動手槍, 爆彈槍, 槍托自動槍, 重型雷射槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍 -- 1% | 2% | 3% | 4% (up to 20%)
+			create_template("weap_wbr077_desc_ext_tw", {"loc_trait_bespoke_toughness_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n恢復 "..COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.."，上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Ghost +]--
 			-- Infantry Lasguns, Laspistols, Vigilant Autoguns -- 0.6 | 0.8 | 1 | 1.2
-	create_template("weap_wbr078_desc_ext_en", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"en"}, function(locale, value) return "Immune to Ranged Attacks for "..COLORS_Numbers.time_var_rgb.." seconds on "..COLORS_KWords.Weakspothit_rgb.."." end), -- time: 1.2 -- colors
-	--[+ French +]--
-	create_template("weap_wbr078_desc_ext_fr", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"fr"}, function(locale, value) return "Immunité contre les attaques à distance pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."." end),
-	--[+ Russian +]-- Призрак
-	create_template("weap_wbr078_desc_ext_ru", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"ru"}, function(locale, value) return "Иммунитет к дальнобойным атакам на "..COLORS_Numbers.time_var_rgb.." секунды при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru.."." end),
+			create_template("weap_wbr078_desc_ext_en", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"en"}, function(locale, value) return "Immune to Ranged Attacks for "..COLORS_Numbers.time_var_rgb.." seconds on "..COLORS_KWords.Weakspothit_rgb.."." end), -- time: 1.2 -- colors
+			--[+ French +]--
+			create_template("weap_wbr078_desc_ext_fr", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"fr"}, function(locale, value) return "Immunité contre les attaques à distance pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."." end),
+			--[+ Russian +]-- Призрак
+			create_template("weap_wbr078_desc_ext_ru", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"ru"}, function(locale, value) return "Иммунитет к дальнобойным атакам на "..COLORS_Numbers.time_var_rgb.." секунды при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru.."." end),
+			--[+ Traditional Chinese - 幽靈 +]--
+			-- 步兵雷射槍, 雷射手槍, 機動自動槍 -- 0.6 | 0.8 | 1 | 1.2
+			create_template("weap_wbr078_desc_ext_tw", {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_weakspot_desc"}, {"zh-tw"}, function(locale, value) return "命中 "..COLORS_KWords_tw.Weakspothits_rgb_tw.." 時，\n獲得對遠程攻擊的免疫效果，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。" end),
 
 		--[+ Surgical +]--
 			-- Boltgun, Kickback, Vigilant Autoguns -- 0.35s | 0.3s | 0.25s | 0.2s
 			-- Stub Revolvers, Bolt Pistol, Helbore Lasguns -- 0.45s | 0.4s | 0.35s | 0.3s
-	create_template("weap_wbr079_desc_ext_en", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for every "..COLORS_Numbers.time_var_rgb.." seconds while aiming. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Discharges all Stacks upon firing." end), -- crit_chance: +10%, time: 0.2, stacks: 10 -- colors second->seconds
-	--[+ French +]--
-	create_template("weap_wbr079_desc_ext_fr", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." chaque fois de vous passez "..COLORS_Numbers.time_var_rgb.." secondes à viser. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Tous les cumuls sont déchargés lorsque vous tirez." end),
-	--[+ Russian +]-- Снайперская точность -- руоф Зоркость
-	create_template("weap_wbr079_desc_ext_ru", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." каждые "..COLORS_Numbers.time_var_rgb.." секунды пока вы целитесь во врагов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Все заряды сбрасываются при стрельбе." end),
+			create_template("weap_wbr079_desc_ext_en", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for every "..COLORS_Numbers.time_var_rgb.." seconds while aiming. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Discharges all Stacks upon firing." end), -- crit_chance: +10%, time: 0.2, stacks: 10 -- colors second->seconds
+			--[+ French +]--
+			create_template("weap_wbr079_desc_ext_fr", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." chaque fois de vous passez "..COLORS_Numbers.time_var_rgb.." secondes à viser. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Tous les cumuls sont déchargés lorsque vous tirez." end),
+			--[+ Russian +]-- Снайперская точность -- руоф Зоркость
+			create_template("weap_wbr079_desc_ext_ru", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." каждые "..COLORS_Numbers.time_var_rgb.." секунды пока вы целитесь во врагов. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз. Все заряды сбрасываются при стрельбе." end),
+			--[+ Traditional Chinese - 精確打擊 +]--
+			-- 爆彈槍, 槍托自動槍, 戰鬥霰彈槍, 雙鏈重型機槍, 步兵自動槍 -- 0.35s | 0.3s | 0.25s | 0.2s
+			create_template("weap_wbr079_desc_ext_tw", {"loc_trait_bespoke_crit_chance_based_on_aim_time_desc"}, {"zh-tw"}, function(locale, value) return "持續瞄準時，\n每 "..COLORS_Numbers.time_var_rgb.." 秒 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n上限為 "..COLORS_Numbers.stacks_var_rgb.." 層，射擊後將重置所有層數。" end),
 
 		--[+ Crucian Roulette +]--
 			-- Stub Revolvers -- 4.5% | 5% | 5.5% | 6%
 			-- Vigilant Autoguns -- 0.45% | 0.5% | 0.55% | 0.6%
-	create_template("weap_wbr080_desc_ext_en", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for each expended round in your weapon. Resets on reload." end), -- crit_chance: +0.6% -- colors
-	--[+ French +]--
-	create_template("weap_wbr080_desc_ext_fr", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour chaque munition utilisée dans votre arme. Se réinitialise lorsque vous rechargez." end),
-	--[+ Russian +]-- Круцианская рулетка
-	create_template("weap_wbr080_desc_ext_ru", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждый израсходованный патрон в вашем оружии. Сбрасывается при перезарядке." end),
+			create_template("weap_wbr080_desc_ext_en", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for each expended round in your weapon. Resets on reload." end), -- crit_chance: +0.6% -- colors
+			--[+ French +]--
+			create_template("weap_wbr080_desc_ext_fr", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour chaque munition utilisée dans votre arme. Se réinitialise lorsque vous rechargez." end),
+			--[+ Russian +]-- Круцианская рулетка
+			create_template("weap_wbr080_desc_ext_ru", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждый израсходованный патрон в вашем оружии. Сбрасывается при перезарядке." end),
+			--[+ Traditional Chinese - 克魯錫安輪盤 +]--
+			-- 快拔左輪手槍 -- 4.5% | 5% | 5.5% | 6%
+			-- 機動自動槍 -- 0.45% | 0.5% | 0.55% | 0.6%
+			create_template("weap_wbr080_desc_ext_tw", {"loc_trait_bespoke_crit_chance_based_on_ammo_left_desc"}, {"zh-tw"}, function(locale, value) return "每消耗一發彈藥 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。\n在重新裝填時重置效果。" end),
 
 		--[+ Deadly Accurate +]--
 			-- Bolt Pistol, Infantry Lasguns, Vigilant Autoguns -- 70% | 80% | 90% | 100%
-	create_template("weap_wbr081_desc_ext_en", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." "..COLORS_KWords.Crit_rgb.." "..COLORS_KWords.Weakspot_dmg_rgb.."." end), -- crit_weakspot_damage: +100% -- colors
-	--[+ French +]--
-	create_template("weap_wbr081_desc_ext_fr", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." de "..COLORS_KWords_fr.Crit_dmg_r_rgb_fr.." sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."." end),
-	--[+ Russian +]-- Смертоностная точность
-	create_template("weap_wbr081_desc_ext_ru", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." к "..COLORS_KWords_ru.Crit_rgb_ru.." "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.."." end),
+			create_template("weap_wbr081_desc_ext_en", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." "..COLORS_KWords.Crit_rgb.." "..COLORS_KWords.Weakspot_dmg_rgb.."." end), -- crit_weakspot_damage: +100% -- colors
+			--[+ French +]--
+			create_template("weap_wbr081_desc_ext_fr", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." de "..COLORS_KWords_fr.Crit_dmg_r_rgb_fr.." sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."." end),
+			--[+ Russian +]-- Смертоностная точность
+			create_template("weap_wbr081_desc_ext_ru", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.critwkspdmg_var_rgb.." к "..COLORS_KWords_ru.Crit_rgb_ru.." "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru.."." end),
+			--[+ Traditional Chinese - 致命精準 +]--
+			-- 爆彈槍, 步兵雷射槍, 機動自動槍 -- 70% | 80% | 90% | 100%
+			create_template("weap_wbr081_desc_ext_tw", {"loc_trait_bespoke_crit_weakspot_finesse_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Crit_rgb_tw.." 時 "..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." "..COLORS_Numbers.critwkspdmg_var_rgb.."。" end),
 
 		--[+ No Respite +]--
 			-- Combat Shotguns, Helbore Lasguns, Infantry Lasguns, Vigilant Autoguns -- 14% | 16% | 18% | 20% (up to +140%)
-	create_template("weap_wbr082_desc_ext_en", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"en"}, function(locale, value) return "Up to "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." on Hit to "..COLORS_KWords.Staggered_rgb.." Enemy. The more powerful the effect on the enemy, the more "..COLORS_KWords.Damage_rgb.." they receive." end), -- damage: +20% -- rewrite -- colors
-	--[+ French +]--
-	create_template("weap_wbr082_desc_ext_fr", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"fr"}, function(locale, value) return "Jusqu'à "..COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." lors d'un coup sur un ennemi qui "..COLORS_KWords_fr.Staggered_rgb_fr..". Le plus l'ennemie "..COLORS_KWords_fr.Staggered_rgb_fr.." le plus il reçoit de "..COLORS_KWords_fr.Damage_rgb_fr.."." end),
-	--[+ Russian +]-- Без передышки -- руоф Нет отдыху
-	create_template("weap_wbr082_desc_ext_ru", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"ru"}, function(locale, value) return "До "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе по "..COLORS_KWords_ru.Stuns_rgb_ru.." врагам. Чем сильнее эффект на противнике, тем большую прибавку к "..COLORS_KWords_ru.Damage_rgb_ru.." вы получаете против них." end),
+			create_template("weap_wbr082_desc_ext_en", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"en"}, function(locale, value) return "Up to "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." on Hit to "..COLORS_KWords.Staggered_rgb.." Enemy. The more powerful the effect on the enemy, the more "..COLORS_KWords.Damage_rgb.." they receive." end), -- damage: +20% -- rewrite -- colors
+			--[+ French +]--
+			create_template("weap_wbr082_desc_ext_fr", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"fr"}, function(locale, value) return "Jusqu'à "..COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." lors d'un coup sur un ennemi qui "..COLORS_KWords_fr.Staggered_rgb_fr..". Le plus l'ennemie "..COLORS_KWords_fr.Staggered_rgb_fr.." le plus il reçoit de "..COLORS_KWords_fr.Damage_rgb_fr.."." end),
+			--[+ Russian +]-- Без передышки -- руоф Нет отдыху
+			create_template("weap_wbr082_desc_ext_ru", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"ru"}, function(locale, value) return "До "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе по "..COLORS_KWords_ru.Stuns_rgb_ru.." врагам. Чем сильнее эффект на противнике, тем большую прибавку к "..COLORS_KWords_ru.Damage_rgb_ru.." вы получаете против них." end),
+			--[+ Traditional Chinese - 刻不容緩 +]--
+			-- 戰鬥霰彈槍, 偵查雷射槍, 步兵雷射槍, 機動自動槍 -- 14% | 16% | 18% | 20% (up to +140%)
+			create_template("weap_wbr082_desc_ext_tw", {"loc_trait_bespoke_stagger_count_bonus_damage_desc"}, {"zh-tw"}, function(locale, value) return "攻擊 "..COLORS_KWords_tw.Stuns_rgb_tw.." 敵人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."。\n依據效果強度，你對其 "..COLORS_KWords_tw.Damage_rgb_tw.." 越高。" end),
 
 		--[+ Opening Salvo +]--
 			-- Infantry Lasguns, Vigilant Autoguns -- 14% | 16% | 18% | 20%
-	create_template("weap_wbr083_desc_ext_en", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." on Salvo's First shot."..COLORS_KWords.Pwr_note_rgb end), -- power_level: +20% -- colors
-	--[+ French +]--
-	create_template("weap_wbr083_desc_ext_fr", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." lors du premier tir d'une salve."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
-	--[+ Russian +]-- Первый выстрел залпа  -- руоф Открывающий залп
-	create_template("weap_wbr083_desc_ext_ru", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." для первого выстрела залпа."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			create_template("weap_wbr083_desc_ext_en", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." on Salvo's First shot."..COLORS_KWords.Pwr_note_rgb end), -- power_level: +20% -- colors
+			--[+ French +]--
+			create_template("weap_wbr083_desc_ext_fr", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." lors du premier tir d'une salve."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
+			--[+ Russian +]-- Первый выстрел залпа  -- руоф Открывающий залп
+			create_template("weap_wbr083_desc_ext_ru", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." для первого выстрела залпа."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			--[+ Traditional Chinese - 開啟齊射 +]--
+			-- 步兵雷射槍, 機動自動槍 -- 14% | 16% | 18% | 20%
+			create_template("weap_wbr083_desc_ext_tw", {"loc_trait_bespoke_power_bonus_on_first_shot_desc"}, {"zh-tw"}, function(locale, value) return "齊射的第一發射擊 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."。" .. COLORS_KWords_tw.Pwr_note_rgb_tw end),
 
 		--[+ Headhunter +]--
 			-- Infantry Lasguns, Vigilant Autoguns -- 14% | 16% | 18% | 20% (up to +100%)
 			-- Recon Lasguns -- 3.5% | 4% | 4.5% | 5% (up to +20%)
-	create_template("weap_wbr084_desc_ext_en", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." on "..COLORS_KWords.Weakspothit_rgb.." until your next "..COLORS_KWords.Crit_hit_rgb..". Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- crit_chance: +20%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr084_desc_ext_fr", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.." jusqu'à votre prochain "..COLORS_KWords_fr.Crit_hit_rgb_fr..". Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Охотник за головами
-	create_template("weap_wbr084_desc_ext_ru", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru..". Расходуется при следующем "..COLORS_KWords_ru.Crit_chance_r_rgb_ru..". Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr084_desc_ext_en", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." on "..COLORS_KWords.Weakspothit_rgb.." until your next "..COLORS_KWords.Crit_hit_rgb..". Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- crit_chance: +20%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr084_desc_ext_fr", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_fr.Crit_chance_rgb_fr.." sur un "..COLORS_KWords_fr.Weakspothit_rgb_fr.." jusqu'à votre prochain "..COLORS_KWords_fr.Crit_hit_rgb_fr..". Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Охотник за головами
+			create_template("weap_wbr084_desc_ext_ru", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru..". Расходуется при следующем "..COLORS_KWords_ru.Crit_chance_r_rgb_ru..". Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 獵頭者 +]--
+			-- 步兵雷射槍, 機動自動槍 -- 14% | 16% | 18% | 20% (up to +100%)
+			-- 偵查雷射槍 -- 3.5% | 4% | 4.5% | 5% (up to +20%)
+			create_template("weap_wbr084_desc_ext_tw", {"loc_trait_bespoke_weakspot_stacking_crit_chance_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Weakspothits_rgb_tw.." "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n在下一次 "..COLORS_KWords_tw.Crit_rgb_tw.." 時消耗一層，\n上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Between the Eyes +]--
 			-- Infantry Lasguns, Laspistols, Vigilant Autoguns -- 2.4 | 2.8 | 3.2 | 3.6
-	create_template("weap_wbr085_desc_ext_en", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"en"}, function(locale, value) return "Gain Suppression Immunity for "..COLORS_Numbers.time_var_rgb.." seconds on "..COLORS_KWords.Weakspothit_rgb.."." end), -- time: 3.6 -- s->seconds -- colors
-	--[+ French +]--
-	create_template("weap_wbr085_desc_ext_fr", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"fr"}, function(locale, value) return "Gagnez une immunité à la suppression pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."." end),
-	--[+ Russian +]-- Промеж глаз
-	create_template("weap_wbr085_desc_ext_ru", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"ru"}, function(locale, value) return "Вы получаете иммунитет к подавлению на "..COLORS_Numbers.time_var_rgb.." секунды при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru.."." end),
+			create_template("weap_wbr085_desc_ext_en", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"en"}, function(locale, value) return "Gain Suppression Immunity for "..COLORS_Numbers.time_var_rgb.." seconds on "..COLORS_KWords.Weakspothit_rgb.."." end), -- time: 3.6 -- s->seconds -- colors
+			--[+ French +]--
+			create_template("weap_wbr085_desc_ext_fr", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"fr"}, function(locale, value) return "Gagnez une immunité à la suppression pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr.."." end),
+			--[+ Russian +]-- Промеж глаз
+			create_template("weap_wbr085_desc_ext_ru", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"ru"}, function(locale, value) return "Вы получаете иммунитет к подавлению на "..COLORS_Numbers.time_var_rgb.." секунды при выстрелах в "..COLORS_KWords_ru.Weakspot_rgb_ru.."." end),
+			--[+ Traditional Chinese - 正中眉心 +]--
+			-- 步兵雷射槍, 雷射手槍, 機動自動槍 -- 2.4 | 2.8 | 3.2 | 3.6
+			create_template("weap_wbr085_desc_ext_tw", {"loc_trait_bespoke_suppression_negation_on_weakspot_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Weakspothits_rgb_tw.." 免疫壓制效果，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。" end),
 
 		--[+ Blaze Away +]--
 			-- Autopistol, Flamer, Heavy Stubbers, Ripper Guns, Grenadier Gauntlet, Inferno Staff, Kickback, Plasma Gun, Rumbler -- 5% | 6% | 7% | 8% (up to +40%)
-	create_template("weap_wbr086_desc_ext_en", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times."..COLORS_KWords.Pwr_note_rgb end), -- power_level: +8%, ammo: 10%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr086_desc_ext_fr", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour chaque "..COLORS_Numbers.ammo_var_rgb.."  du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
-	--[+ Russian +]-- Стрельба без устали -- руоф Энтузиазм
-	create_template("weap_wbr086_desc_ext_ru", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			create_template("weap_wbr086_desc_ext_en", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times."..COLORS_KWords.Pwr_note_rgb end), -- power_level: +8%, ammo: 10%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr086_desc_ext_fr", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour chaque "..COLORS_Numbers.ammo_var_rgb.."  du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
+			--[+ Russian +]-- Стрельба без устали -- руоф Энтузиазм
+			create_template("weap_wbr086_desc_ext_ru", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			--[+ Traditional Chinese - 連續發射 +]--
+			-- 撕裂者自動手槍, 噴火器, 雙鏈重型機槍, 撕裂槍, 擲彈兵臂鎧, 烈焰力場法杖, 反衝槍, 電漿槍, 震盪槍 -- 5% | 6% | 7% | 8% (up to +40%)
+			create_template("weap_wbr086_desc_ext_tw", {"loc_trait_bespoke_power_bonus_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords_tw.Pwr_note_rgb_tw end),
 
 		--[+ Powderburn +]--
 			-- Autopistol -- 14% & 28% & -28% | 16% & 32% & -32% | 18% & 36% & -36% | 20% & 40% & -40%
-	create_template("weap_wbr087_desc_ext_en", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies, "..COLORS_Numbers.spprsn_var_rgb.." Suppression and "..COLORS_Numbers.recoil_red_var_rgb.." Recoil on at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters." end), -- damage: +20%, suppression: +40%, recoil_reduction: -40% -- colors
-	--[+ French +]--
-	create_template("weap_wbr087_desc_ext_fr", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemies subissant Suppression, "..COLORS_Numbers.spprsn_var_rgb.." de suppression et "..COLORS_Numbers.recoil_red_var_rgb.." de recul jusqu'à une distance de "..COLORS_Numbers.n_12_5_rgb.." mètres." end),
-	--[+ Russian +]-- Пороховой ожог
-	create_template("weap_wbr087_desc_ext_ru", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." против подавленных врагов, "..COLORS_Numbers.spprsn_var_rgb.." к подавлению и "..COLORS_Numbers.recoil_red_var_rgb.." к отдаче на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
+			create_template("weap_wbr087_desc_ext_en", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Damage_rgb.." against Suppressed Enemies, "..COLORS_Numbers.spprsn_var_rgb.." Suppression and "..COLORS_Numbers.recoil_red_var_rgb.." Recoil on at a distance of up to "..COLORS_Numbers.n_12_5_rgb.." meters." end), -- damage: +20%, suppression: +40%, recoil_reduction: -40% -- colors
+			--[+ French +]--
+			create_template("weap_wbr087_desc_ext_fr", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemies subissant Suppression, "..COLORS_Numbers.spprsn_var_rgb.." de suppression et "..COLORS_Numbers.recoil_red_var_rgb.." de recul jusqu'à une distance de "..COLORS_Numbers.n_12_5_rgb.." mètres." end),
+			--[+ Russian +]-- Пороховой ожог
+			create_template("weap_wbr087_desc_ext_ru", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." против подавленных врагов, "..COLORS_Numbers.spprsn_var_rgb.." к подавлению и "..COLORS_Numbers.recoil_red_var_rgb.." к отдаче на дистанции до "..COLORS_Numbers.n_12_5_rgb.." метров." end),
+			--[+ Traditional Chinese - 火藥灼傷 +]--
+			-- 撕裂者自動手槍 -- 14% & 28% & -28% | 16% & 32% & -32% | 18% & 36% & -36% | 20% & 40% & -40%
+			create_template("weap_wbr087_desc_ext_tw", {"loc_trait_bespoke_recoil_reduction_and_suppression_increase_on_close_kills_desc"}, {"zh-tw"}, function(locale, value) return COLORS_Numbers.n_12_5_rgb.." 公尺內，\n對被壓制的敵人 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."，\n"..COLORS_Numbers.spprsn_var_rgb.." 壓制強度，降低 "..COLORS_Numbers.recoil_red_var_rgb.." 後座力。" end),
 
 		--[+ Cavalcade +]--
 			-- Autopistol, Boltgun, Ripper Guns -- 3.5% | 4% | 4.5% | 5% (up to +25%)
-	create_template("weap_wbr088_desc_ext_en", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- crit_chance: +20%, ammo: 10%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr088_desc_ext_fr", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour chaque "..COLORS_Numbers.ammo_var_rgb.."  du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
-	--[+ Russian +]-- Кавалькада
-	create_template("weap_wbr088_desc_ext_ru", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			create_template("weap_wbr088_desc_ext_en", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for every "..COLORS_Numbers.ammo_var_rgb.." of magazine spent during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times." end), -- crit_chance: +20%, ammo: 10%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr088_desc_ext_fr", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pour chaque "..COLORS_Numbers.ammo_var_rgb.."  du chargeur utilisé en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois." end),
+			--[+ Russian +]-- Кавалькада
+			create_template("weap_wbr088_desc_ext_ru", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждые "..COLORS_Numbers.ammo_var_rgb.." магазина, потраченных во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз." end),
+			--[+ Traditional Chinese - 接連不斷 +]--
+			-- 撕裂者自動手槍, 爆彈槍, 撕裂槍 -- 3.5% | 4% | 4.5% | 5% (up to +25%)
+			create_template("weap_wbr088_desc_ext_tw", {"loc_trait_bespoke_stacking_crit_bonus_on_continuous_fire_desc"}, {"zh-tw"}, function(locale, value) return "持續射擊時，每消耗 "..COLORS_Numbers.ammo_var_rgb.." 彈藥，\n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" end),
 
 		--[+ Pinning Fire +]--
 			-- Autopistol, Boltgun -- 4.25% | 4.5% | 4.75% | 5% (up to +25%)
-	create_template("weap_wbr089_desc_ext_en", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every Enemy you "..COLORS_KWords.Stagger_rgb..". Stacks "..COLORS_Numbers.stacks_var_rgb.." times."..COLORS_KWords.Pwr_note_rgb end), -- power_level: +8%, stacks: 5 -- colors
-	--[+ French +]--
-	create_template("weap_wbr089_desc_ext_fr", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour chaque ennemie que vous faites "..COLORS_KWords_fr.Staggering_rgb_fr..". Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
-	--[+ Russian +]-- Подавляющий огонь -- руоф Схватывающий огонь
-	create_template("weap_wbr089_desc_ext_ru", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждого "..COLORS_KWords_ru.Stun_rgb_ru.." вами врага. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
-
+			create_template("weap_wbr089_desc_ext_en", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every Enemy you "..COLORS_KWords.Stagger_rgb..". Stacks "..COLORS_Numbers.stacks_var_rgb.." times."..COLORS_KWords.Pwr_note_rgb end), -- power_level: +8%, stacks: 5 -- colors
+			--[+ French +]--
+			create_template("weap_wbr089_desc_ext_fr", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"fr"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour chaque ennemie que vous faites "..COLORS_KWords_fr.Staggering_rgb_fr..". Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.Pwr_note_rgb_fr end),
+			--[+ Russian +]-- Подавляющий огонь -- руоф Схватывающий огонь
+			create_template("weap_wbr089_desc_ext_ru", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждого "..COLORS_KWords_ru.Stun_rgb_ru.." вами врага. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз."..COLORS_KWords_ru.Pwr_note_rgb_ru end),
+			--[+ Traditional Chinese - 鉗制射擊 +]--
+			-- 撕裂者自動手槍, 爆彈槍 -- 4.25% | 4.5% | 4.75% | 5% (up to +25%)
+			create_template("weap_wbr089_desc_ext_tw", {"loc_trait_bespoke_stacking_power_bonus_on_staggering_enemies_desc"}, {"zh-tw"}, function(locale, value) return "使敵人 "..COLORS_KWords_tw.Stun_rgb_tw.." 時 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n上限為 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords_tw.Pwr_note_rgb_tw end),
+	
 		--[+ Run 'n' Gun - Run and Gun +]--
 			-- Bolt Pistol, Electrokinetic Staff, Inferno Staff, Kickback, Stub Revolvers, Voidblast Staff, Voidstrike Staff -- 6% | 9% | 12% | 15% | -30%
 			-- Double-Barrel Shotgun -- 6% | 9% | 12% | 15% | -10%
-	create_template("weap_wbr090_desc_ext_en", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"en"}, function(locale, value) return "You can Hipfire with this weapon while Sprinting. "..COLORS_Numbers.dmgnr_var_rgb.." Close "..COLORS_KWords.Damage_rgb.." while Sprinting. Also reduces weapon Spread at all times by "..COLORS_Numbers.weapsprd_var_rgb..".{#color(105, 105, 105)}(<< vanilla typo, I can’t fix it.){#reset()}" end), -- damage_near: +15%, weapon_spread: 30% -- colors
-	--[+ French +]--
-	create_template("weap_wbr090_desc_ext_fr", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"fr"}, function(locale, value) return "Vous pouvez tirer à l'aveugle avec cette arme en courant. "..COLORS_Numbers.dmgnr_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés en courant. Réduit également l'angle de tir des armes de "..COLORS_Numbers.weapsprd_var_rgb.." en toute circonstance." end),
-	--[+ Russian +]-- Стреляй и беги
-	create_template("weap_wbr090_desc_ext_ru", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"ru"}, function(locale, value) return "Вы можете с этим оружием вести огонь от бедра на бегу. "..COLORS_Numbers.dmgnr_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции пока вы бежите. Также уменьшается разброс оружия на "..COLORS_Numbers.weapsprd_var_rgb.."." end),
-
+			create_template("weap_wbr090_desc_ext_en", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"en"}, function(locale, value) return "You can Hipfire with this weapon while Sprinting. "..COLORS_Numbers.dmgnr_var_rgb.." Close "..COLORS_KWords.Damage_rgb.." while Sprinting. Also reduces weapon Spread at all times by "..COLORS_Numbers.weapsprd_var_rgb..".{#color(105, 105, 105)}(<< vanilla typo, I can’t fix it.){#reset()}" end), -- damage_near: +15%, weapon_spread: 30% -- colors
+			--[+ French +]--
+			create_template("weap_wbr090_desc_ext_fr", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"fr"}, function(locale, value) return "Vous pouvez tirer à l'aveugle avec cette arme en courant. "..COLORS_Numbers.dmgnr_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." rapprochés en courant. Réduit également l'angle de tir des armes de "..COLORS_Numbers.weapsprd_var_rgb.." en toute circonstance." end),
+			--[+ Russian +]-- Стреляй и беги
+			create_template("weap_wbr090_desc_ext_ru", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"ru"}, function(locale, value) return "Вы можете с этим оружием вести огонь от бедра на бегу. "..COLORS_Numbers.dmgnr_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." на ближней дистанции пока вы бежите. Также уменьшается разброс оружия на "..COLORS_Numbers.weapsprd_var_rgb.."." end),
+			--[+ Traditional Chinese - 連跑帶打 +]--
+			-- 爆彈槍, 電流力場法杖, 烈焰力場法杖, 反衝槍, 撕裂者自動手槍, 虛空爆裂法杖, 虛空打擊法杖 -- 6% | 9% | 12% | 15% | -30%
+			-- 雙管霰彈槍 -- 6% | 9% | 12% | 15% | -10%
+			create_template("weap_wbr090_desc_ext_tw", {"loc_trait_bespoke_allow_hipfire_while_sprinting_and_bonus_stats_desc"}, {"zh-tw"}, function(locale, value) return "衝刺時可以腰射。\n衝刺期間近距離傷害 "..COLORS_Numbers.dmgnr_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw.."，\n並減少 "..COLORS_Numbers.weapsprd_var_rgb.." 武器散布。" end),
+	
 		--[+ Puncture +]--
 			-- Boltgun, Bolt Pistol -- 1 | 2 | 3 | 4
 	create_template("weap_wbr091_desc_ext_en", {"loc_trait_bespoke_bleed_on_ranged_desc"}, {"en"}, function(locale, value) return COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_KWords.Bleed_rgb.." to enemies on Ranged hits." end), -- stacks: 4 -- colors
