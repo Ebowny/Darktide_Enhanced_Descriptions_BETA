@@ -1179,6 +1179,81 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "- During calculation, Stacks multiplicatively with Damage buffs and Power level buffs from Weapon Blessings.",
 	}, "\n"), enhdesc_col)
 
+	--[+ Passive 9 - Payback Time +]--
+	local ED_OGR_Passive_9_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
+		-- "- Increases any Damage when taking a Damaging Melee hit or Blocking a Melee hit.",
+		stacks_add_w_oth_dmg,
+		can_be_refr_dur_active_dur,
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 10 - Pumped Up +]--
+	local ED_OGR_Passive_10_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 11 - Focused Fighter +]--
+	local ED_OGR_Passive_11_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 12 - Strongman +]--
+	local ED_OGR_Passive_12_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 13 - Can't Hit Me...Again - Can't Hit Me... Again +]--
+	local ED_OGR_Passive_13_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 14 - Keep Shooting +]--
+	local ED_OGR_Passive_14_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 15 - Beat Them Back +]--
+	local ED_OGR_Passive_15_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 16 - Strike True +]--
+	local ED_OGR_Passive_16_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		-- "- ",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 17 - Slam +]--
+	local ED_OGR_Passive_17_rgb_ru = iu_actit(table.concat({
+		ppp___ppp,
+		"- Stacks additively with \"Crunch!\" and other related Stagger buffs from Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 18 - Ammo Stash +]--
+	-- local ED_OGR_Passive_18_rgb_ru = iu_actit(table.concat({ },"\n"), enhdesc_col)
+
+	--[+ Passive 19 - Big Boom +]--
+	local ED_OGR_Passive_19_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
+		-- "- Stacks additively with the \"Blast Zone\" Weapon Blessing.",
+		-- "- This increases the radii of both the inner epicenter and the outer maximum of explosions.",
+		-- "- Note that this Talent also increases the radius of explosions that are created by Melee attacks (e.g. Power Maul activated attacks). In this case, Stacks additively with the \"Power Surge\" Weapon Blessing.",
+	}, "\n"), enhdesc_col)
+
+	--[+ Passive 20 - Crunch! +]--
+	local ED_OGR_Passive_20_rgb_ru = iu_actit(table.concat({
+		ppp______ppp,
+		-- "- Stacks additively with other related Damage buffs and Stagger buffs (from \"Slam\" and Weapon Blessings), and multiplicatively with Power level buffs from Weapon Blessings.",
+		-- "- \"Fully charged\" means that you have to hold the button until the Heavy attack is executed automatically.",
+		-- "- Only applies to Heavy attacks of Melee weapons (and Grenadier Gauntlet heavies).",
+	}, "\n"), enhdesc_col)
+
 -- ENDED HERE
 
 	--[+ Passive 00 - Reloaded and Ready +]--
@@ -1186,20 +1261,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		ppp______ppp,
 		stacks_add_w_oth_dmg,
 		-- "- The forced Reload of \"Point-Blank Barrage\" procs this Talent (even if the weapon's clip is full).",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 000 - Slam +]--
-	local ED_OGR_Passive_000_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
-		-- "- Stacks additively with \"Crunch!\" and other related Stagger buffs from Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 10 - Crunch! +]--
-	local ED_OGR_Passive_10_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
-		-- "- Stacks additively with other related Damage buffs and Stagger buffs (from \"Slam\" and Weapon Blessings), and multiplicatively with Power level buffs from Weapon Blessings.",
-		-- "- \"Fully charged\" means that you have to hold the button until the Heavy attack is executed automatically.",
-		-- "- Only applies to Heavy attacks of Melee weapons (and Grenadier Gauntlet heavies).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - Batter +]--
@@ -1221,9 +1282,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "- Stacks additively with related buffs from \"Point-Blank Barrage\", the small Reload Speed node, Weapon Perks, and Celerity Stimm.",
 		-- "- Can proc on Melee and Ranged attacks, Pushes, Explosions, and Staggering Abilities (\"Loyal Protector\", \"Pained Outburst\").",
 	}, "\n"), enhdesc_col)
-
-	--[+ Passive 13 - Ammo Stash +]--
-	-- local ED_OGR_Passive_13_rgb_ru = iu_actit(table.concat({ },"\n"), enhdesc_col)
 
 	--[+ Passive 14 - Hard Knocks +]--
 	local ED_OGR_Passive_14_rgb_ru = iu_actit(table.concat({
@@ -1308,14 +1366,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		stacks_add_w_oth_rend_brit,
 	}, "\n"), enhdesc_col)
 
-	--[+ Passive 23 - Payback Time +]--
-	local ED_OGR_Passive_23_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
-		-- "- Increases any Damage when taking a Damaging Melee hit or Blocking a Melee hit.",
-		stacks_add_w_oth_dmg,
-		can_be_refr_dur_active_dur,
-	}, "\n"), enhdesc_col)
-
 	--[+ Passive 24 - Bruiser +]--
 	local ED_OGR_Passive_24_rgb_ru = iu_actit(table.concat({
 		ppp______ppp,
@@ -1323,14 +1373,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "- This is 1.2 seconds for \"Indomitable\"/\"Bull Rush\", 1.8 seconds for \"Loyal Protector\", and 3.2 seconds for \"Point-Blank Barrage\".",
 		procs_add_conc_stim_rem_cd_red,
 		doesnt_interact_w_c_a_r_from_curio,
-	}, "\n"), enhdesc_col)
-
-	--[+ Passive 25 - Big Boom +]--
-	local ED_OGR_Passive_25_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
-		-- "- Stacks additively with the \"Blast Zone\" Weapon Blessing.",
-		-- "- This increases the radii of both the inner epicenter and the outer maximum of explosions.",
-		-- "- Note that this Talent also increases the radius of explosions that are created by Melee attacks (e.g. Power Maul activated attacks). In this case, Stacks additively with the \"Power Surge\" Weapon Blessing.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 26 - Massacre +]--
