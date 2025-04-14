@@ -2199,24 +2199,110 @@ local localization_templates = {
 	--[+ Passive 6 - Furious +]--
 		-- create_template("talent_tree_ogr_pas_006_desc_en", {"loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"}, {"en"}, function(locale, value) return "{damage:%s} "..COLORS_KWords.Damage_rgb.." on your next Melee Attack is gained for each Enemy you hit during the same Melee Attack."..TALENTS_Enh_desc2.ED_OGR_Passive_6_rgb end), -- damage: +2.5% -- colors
 	create_template("talent_tree_ogr_pas_006_desc_en", {"loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"}, {"en"}, function(locale, value) return "You gain "..COLORS_Numbers.n_1_rgb.." Stack of {damage:%s} "..COLORS_KWords.Damage_rgb.." for each enemy Hit during a Single Melee Attack. Up to "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." "..COLORS_KWords.Damage_rgb.." at "..COLORS_Numbers.n_10_rgb.." Stacks. Calculated separately for each Attack."..TALENTS_Enh_desc2.ED_OGR_Passive_6_rgb end), -- damage: +2.5% -- colors
-	--[+ French +]--!!!^^^REWRITED^^^!!!
+	--[+ French +]--!!!↑↑↑REWRITED↑↑↑!!!
 	-- create_template("talent_tree_ogr_pas_006_desc_fr", {"loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." sur votre prochaine attaque de mêlée est gagné pour chaque ennemi touché lors de la même attaque de mêlée puissante."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_1_rgb_fr end),
 	--[+ Russian +]-- Разъярённый -- руоф Разъяренный
 	create_template("talent_tree_ogr_pas_006_desc_ru", {"loc_talent_ogryn_damage_per_enemy_hit_previous_new_desc"}, {"ru"}, function(locale, value) return "Вы получаете "..COLORS_Numbers.n_1_rgb.." заряд {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." за каждого поражённого врага в течение одной атаки ближнего боя. До "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." при "..COLORS_Numbers.n_10_rgb.." зарядах. Рассчитывается отдельно для каждой атаки."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_6_rgb_ru end),
 
 	--[+ Passive 7 - Towering Presence +]--
 	create_template("talent_tree_ogr_pas_007_desc_en", {"loc_talent_ogryn_bigger_coherency_radius_desc"}, {"en"}, function(locale, value) return "{radius:%s} "..COLORS_KWords.Coherency_rgb.." radius."..TALENTS_Enh_desc2.ED_OGR_Passive_7_rgb end), -- radius: +50%
-	--[+ French +]--
+	--[+ French +]--!!!
 	-- create_template("talent_tree_ogr_pas_007_desc_fr", {"loc_talent_ogryn_bigger_coherency_radius_desc"}, {"fr"}, function(locale, value) return "{radius:%s} de rayon de syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_19_rgb_fr end),
 	--[+ Russian +]-- Величественное присутствие -- руоф Выдающееся присутствие
 	create_template("talent_tree_ogr_pas_007_desc_ru", {"loc_talent_ogryn_bigger_coherency_radius_desc"}, {"ru"}, function(locale, value) return "{radius:%s} к радиусу "..COLORS_KWords_ru.Coherency_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_7_rgb_ru end),
 
 	--[+ Passive 8 - Soften Them Up +]--
 	create_template("talent_tree_ogr_pas_008_desc_en", {"loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"}, {"en"}, function(locale, value) return "{damage:%s} "..COLORS_KWords.Damage_rgb.." taken by Enemies for {duration:%s} seconds after receiving "..COLORS_KWords.Damage_rgb.." from your Melee Attacks."..TALENTS_Enh_desc2.ED_OGR_Passive_8_rgb end), -- damage: +15%, duration: 5 -- colors
-	--[+ French +]--
+	--[+ French +]--!!!
 	-- create_template("talent_tree_ogr_pas_008_desc_fr", {"loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes est subit par les ennemis que vous frappez."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_9_rgb_fr end),
 	--[+ Russian +]-- Ослабь их -- руоф Упокоить их
 	create_template("talent_tree_ogr_pas_008_desc_ru", {"loc_talent_ogryn_targets_recieve_damage_increase_debuff_new_desc"}, {"ru"}, function(locale, value) return "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." получаемому врагами в течение {duration:%s} секунд после получения "..COLORS_KWords_ru.Dmg_a_rgb_ru.." от ваших атак ближнего боя."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_8_rgb_ru end),
+
+-- EXTENDED MAIN DESCRIPTIONS. NOT TESTED IN THE GAME! ↓↓↓↓↓
+
+	--[+ Passive 9 - Payback Time +]--
+	create_template("talent_tree_ogr_pas_009_desc_en", {"loc_talent_ogryn_revenge_damage_desc"}, {"en"}, function(locale, value) return "{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds on taking a Melee hit, on Blocking a Melee hit, and on successfully Dodging enemy Melee or Ranged attacks (except Gunners, Reaper, Sniper), and Disabler attacks (Pox Hound jump, Trapper net, Mutant grab)."..TALENTS_Enh_desc2.ED_OGR_Passive_9_rgb end), -- damage: +20%, duration: 5 -- s->seconds -- colors
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_009_desc_fr", {"loc_talent_ogryn_revenge_damage_desc"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes après avoir été touché par une attaque de mêlée."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_23_rgb_fr end),
+	--[+ Russian +]-- Время расплаты 
+	create_template("talent_tree_ogr_pas_009_desc_ru", {"loc_talent_ogryn_revenge_damage_desc"}, {"ru"}, function(locale, value) return "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд при получении или блокировании удара в ближнем бою, при успешном уклонении от атак противника в ближнем или дальнем бою (кроме атак Пулемётчиков, Жнецов и Снайперов), а также атак обездвиживающих врагов (прыжок Гончей, сетка Ловца, захват Мутанта)."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_9_rgb_ru end),
+
+	--[+ Passive 10 - Pumped Up +]--
+	create_template("talent_tree_ogr_pas_010_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s} "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance while above {:%s} max "..COLORS_KWords.Stamina_rgb.."." end), -- : +15%, : 75% -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_10_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_010_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Качок
+	create_template("talent_tree_ogr_pas_010_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." пока ваша "..COLORS_KWords_ru.Stamina_c_r_rgb_ru.." выше {:%s}." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_10_rgb_ru
+
+	--[+ Passive 11 - Focused Fighter +]--
+	create_template("talent_tree_ogr_pas_011_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s}+4% "..COLORS_KWords.Damage_rgb.." Resistance from Melee Attacks after your Successful Melee Attack. You gain "..COLORS_Numbers.n_1_rgb.." Stack per swing, Up to {:%s}5. Stacks are removed upon taking "..COLORS_KWords.Damage_rgb.." from a Melee Attack." end), -- : +4%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_11_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_011_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Сосредоточенный боец
+	create_template("talent_tree_ogr_pas_011_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." от атак ближнего боя после успешной вашей атаки ближнего боя. Вы получаете "..COLORS_Numbers.n_1_rgb.." заряд за удар, вплоть до {:%s}. Заряды сбрасываются при получении "..COLORS_KWords_ru.Dmg_a_rgb_ru.." от атак ближнего боя." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_11_rgb_ru
+
+	--[+ Passive 12 - Strongman +]--
+	create_template("talent_tree_ogr_pas_012_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s}+10% "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance on Elite or Special Kill. Lasts {:%s}5 seconds." end), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_12_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_012_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Силач
+	create_template("talent_tree_ogr_pas_012_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." после убийства элитного врага или специалиста. Длится {:%s} секунд." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_12_rgb_ru
+
+	--[+ Passive 13 - Can't Hit Me...Again - Can't Hit Me... Again +]--
+	create_template("talent_tree_ogr_pas_013_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s}+20% "..COLORS_KWords.Health_rgb.." and "..COLORS_KWords.Toughness_rgb.." "..COLORS_KWords.Damage_rgb.." Resistance vs Ranged for {:%s}2.5 seconds after getting hit by a Ranged Attack (including hits by Beast of Nurgle vomit, Flamers' direct fire, and Bombers' grenade direct impact). Cooldown {:%s}4 seconds." end), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_13_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_013_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Попробуй попади... снова
+	create_template("talent_tree_ogr_pas_013_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." против атак дальнего боя в течение {:%s} секунд после попадания вражеского снаряда в вас (включая попадание рвоты Зверя Нургла, а также прямые попадания огнём Огнемётчика и гранатой Гренадёра). Восстановление {:%s} секунды." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_13_rgb_ru
+
+	--[+ Passive 14 - Keep Shooting +]--
+	create_template("talent_tree_ogr_pas_014_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s}+15% Reload Speed when reloading an Empty Clip." end), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_14_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_014_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Продолжай стрелять
+	create_template("talent_tree_ogr_pas_014_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s} к скорости перезарядки при перезарядке пустого магазина." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_14_rgb_ru
+
+	--[+ Passive 15 - Beat Them Back +]--
+	create_template("talent_tree_ogr_pas_015_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s}+15% Melee "..COLORS_KWords.Damage_rgb.." on Successful Heavy Melee Attack. Lasts {:%s}5 seconds." end), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_15_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_015_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Дай им отпор
+	create_template("talent_tree_ogr_pas_015_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." ближнего боя при успешной тяжёлой атаке ближнего боя. Длится {:%s} секунд." end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_15_rgb_ru
+
+	--[+ Passive 16 - Strike True +]--
+	create_template("talent_tree_ogr_pas_016_desc_en", {"loc_talent_ogryn_ _desc"}, {"en"}, function(locale, value) return "{:%s}+10% Melee "..COLORS_KWords.Weakspot_rgb.." "..COLORS_KWords.Strength_rgb.."."..COLORS_KWords.Pwr_note_rgb end), -- : +10%, : 5 -- colors ..TALENTS_Enh_desc2.ED_OGR_Passive_16_rgb
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_016_desc_fr", {"loc_talent_ogryn_ _desc"}, {"fr"}, function(locale, value) return "" end), -- ..TALENTS_Enh_desc2_fr.ED_OGR_Passive_ _rgb_fr
+	--[+ Russian +]-- Меткий удар
+	create_template("talent_tree_ogr_pas_016_desc_ru", {"loc_talent_ogryn_ _desc"}, {"ru"}, function(locale, value) return "{:%s}+10% к  "..COLORS_KWords_ru.Strength_rgb_ru.." атак ближнего боя при попадании в "..COLORS_KWords_ru.Weakspot_rgb_ru.."."..COLORS_KWords_ru.Pwr_note_rgb_ru end), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_16_rgb_ru
+
+	--[+ Passive 17 - Slam +]--!!!
+	create_template("talent_tree_ogr_pas_017_desc_en", {"loc_talent_ogryn_melee_stagger_ _desc"}, {"en"}, function(locale, value) return "{stagger:%s} "..COLORS_KWords.Impact_rgb.." bonus on Melee Attacks. {:%s}5% "..COLORS_KWords.Stamina_rgb.." replenished when "..COLORS_KWords.Staggering_rgb.." an enemy with a Melee Attack. Cooldown {:%s}1 second."..TALENTS_Enh_desc2.ED_OGR_Passive_17_rgb end), -- stagger: +25% -- colors
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_017_desc_fr", {"loc_talent_ogryn_melee_stagger_ _desc"}, {"fr"}, function(locale, value) return "{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus sur les attaques de mêlée."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_8_rgb_fr end),
+	--[+ Russian +]-- Оплеуха -- руоф Хлопок
+	create_template("talent_tree_ogr_pas_017_desc_ru", {"loc_talent_ogryn_melee_stagger_ _desc"}, {"ru"}, function(locale, value) return "{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов от атак ближнего боя. {:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восполняется, после "..COLORS_KWords_ru.Staggering_rgb_ru.." врага атакой ближнего боя. Восстановление {:%s} секунда."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_17_rgb_ru end),
+
+	--[+ Passive 18 - Ammo Stash +]--
+	create_template("talent_tree_ogr_pas_018_desc_en", {"loc_talent_ogryn_increased_ammo_desc"}, {"en"}, function(locale, value) return "{max_ammo:%s} to your Maximum Ammo reserve, rounds down." end), -- max_ammo: +25% -- rewrite
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_018_desc_fr", {"loc_talent_ogryn_increased_ammo_desc"}, {"fr"}, function(locale, value) return "Augmente votre réserve de munitions maximale de {max_ammo:%s}, arrondi à l'inférieur." end),
+	--[+ Russian +]-- Схрон патронов 
+	create_template("talent_tree_ogr_pas_018_desc_ru", {"loc_talent_ogryn_increased_ammo_desc"}, {"ru"}, function(locale, value) return "{max_ammo:%s} к максимальному количеству боеприпасов в резерве. Округляется в меньшую сторону." end),
+
+	--[+ Passive 19 - Big Boom +]--
+	create_template("talent_tree_ogr_pas_019_desc_en", {"loc_talent_ogryn_increase_explosion_radius_desc"}, {"en"}, function(locale, value) return "{explosion_radius:%s} to the radius of any explosions you cause."..TALENTS_Enh_desc2.ED_OGR_Passive_19_rgb end), -- explosion_radius: +27.5%
+	--[+ French +]--!!!
+	-- create_template("tale nt_tree_ogr_pas_019_desc_fr", {"loc_talent_ogryn_increase_explosion_radius_desc"}, {"fr"}, function(locale, value) return "Augmentez le rayon d'explosion de {explosion_radius:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_25_rgb_fr end),
+	--[+ Russian +]-- Большой бабах 
+	create_template("talent_tree_ogr_pas_019_desc_ru", {"loc_talent_ogryn_increase_explosion_radius_desc"}, {"ru"}, function(locale, value) return "{explosion_radius:%s} к радиусу любых взрывов, вызванных вами."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_19_rgb_ru end),
+
+	--[+ Passive 20 - Crunch! +]--
+	create_template("talent_tree_ogr_pas_020_desc_en", {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_desc"}, {"en"}, function(locale, value) return "Based on charge time, your charged Melee Attack gains:\n{damage:%s} "..COLORS_KWords.Damage_rgb.." and\n{stagger:%s} "..COLORS_KWords.Impact_rgb.."."..TALENTS_Enh_desc2.ED_OGR_Passive_20_rgb end), -- damage: +40%, stagger: +40% -- &->and -- colors
+	--[+ French +]--!!!
+	-- create_template("talent_tree_ogr_pas_020_desc_fr", {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_desc"}, {"fr"}, function(locale, value) return "Sur une attaque de mêlée puissante complètement chargée :\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." bonus et\n{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_10_rgb_fr end),
+	--[+ Russian +]-- Хрусь! -- руоф Хрясь!
+	create_template("talent_tree_ogr_pas_020_desc_ru", {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_desc"}, {"ru"}, function(locale, value) return "В зависимости от времени заряжания, ваша заряженная атака ближнего боя получает прибавку:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_20_rgb_ru end),
 
 -- ENDED HERE
 
@@ -2226,20 +2312,6 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_002_desc_fr", {"loc_talent_ogryn_ranged_damage_on_reload_desc"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance pendant {duration:%s} secondes lors du rechargement."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_2_rgb_fr end),
 	--[+ Russian +]-- Перезаряжен и готов -- руоф Заряжен и готов
 	create_template("talent_tree_ogr_pas_002_desc_ru", {"loc_talent_ogryn_ranged_damage_on_reload_desc"}, {"ru"}, function(locale, value) return "{damage:%s} к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд после перезарядки оружия."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_2_rgb_ru end),
-
-	--[+ Passive 8 - Slam +]--
-	create_template("talent_tree_ogr_pas_008_desc_en", {"loc_talent_ogryn_melee_stagger_desc"}, {"en"}, function(locale, value) return "{stagger:%s} "..COLORS_KWords.Impact_rgb.." bonus on Melee Attacks."..TALENTS_Enh_desc2.ED_OGR_Passive_8_rgb end), -- stagger: +25% -- colors
-	--[+ French +]--
-	create_template("talent_tree_ogr_pas_008_desc_fr", {"loc_talent_ogryn_melee_stagger_desc"}, {"fr"}, function(locale, value) return "{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus sur les attaques de mêlée."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_8_rgb_fr end),
-	--[+ Russian +]-- Оплеуха -- руоф Хлопок
-	create_template("talent_tree_ogr_pas_008_desc_ru", {"loc_talent_ogryn_melee_stagger_desc"}, {"ru"}, function(locale, value) return "{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов от атак ближнего боя."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_8_rgb_ru end),
-
-	--[+ Passive 10 - Crunch! +]--
-	create_template("talent_tree_ogr_pas_010_desc_en", {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_desc"}, {"en"}, function(locale, value) return "On fully charged Melee Attack:\n{damage:%s} "..COLORS_KWords.Damage_rgb.." bonus and\n{stagger:%s} "..COLORS_KWords.Impact_rgb.." bonus."..TALENTS_Enh_desc2.ED_OGR_Passive_10_rgb end), -- damage: +40%, stagger: +40% -- &->and -- colors
-	--[+ French +]--
-	create_template("talent_tree_ogr_pas_010_desc_fr", {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_desc"}, {"fr"}, function(locale, value) return "Sur une attaque de mêlée puissante complètement chargée :\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." bonus et\n{stagger:%s} d'"..COLORS_KWords_fr.Impact_rgb_fr.." bonus."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_10_rgb_fr end),
-	--[+ Russian +]-- Хрусь! -- руоф Хрясь!
-	create_template("talent_tree_ogr_pas_010_desc_ru", {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger_desc"}, {"ru"}, function(locale, value) return "Полностью заряженная атака ближнего боя получает:\n{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." и\n{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_10_rgb_ru end),
 
 	--[+ Passive 11 - Batter +]--
 	create_template("talent_tree_ogr_pas_011_desc_en", {"loc_talent_ogryn_bleed_on_multiple_hit_desc"}, {"en"}, function(locale, value) return "Inflict {stacks:%s} Stacks of "..COLORS_KWords.Bleed_rgb.." on Heavy Melee Hit. Up to "..COLORS_Numbers.n_16_rgb.." Max "..COLORS_KWords.Bleed_rgb.." Stacks on a target."..TALENTS_Enh_desc2.ED_OGR_Passive_11_rgb end), -- stacks: +4 -- colors
@@ -2254,13 +2326,6 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_012_desc_fr", {"loc_talent_ogryn_reload_speed_on_multiple_hits_desc"}, {"fr"}, function(locale, value) return "{reload_speed:%s} Vitesse de rechargement pendant {duration:%s} secondes en touchant {multi_hit:%s} ennemis ou plus avec une seule attaque."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_12_rgb_fr end),
 	--[+ Russian +]-- Задающий ритм -- руоф Водитель ритма
 	create_template("talent_tree_ogr_pas_012_desc_ru", {"loc_talent_ogryn_reload_speed_on_multiple_hits_desc"}, {"ru"}, function(locale, value) return "Вы получаете {reload_speed:%s} к скорости перезарядки на {duration:%s} секунд, если ударили за раз {multi_hit:%s} или больше врагов."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_12_rgb_ru end),
-
-	--[+ Passive 13 - Ammo Stash +]--
-	create_template("talent_tree_ogr_pas_013_desc_en", {"loc_talent_ogryn_increased_ammo_desc"}, {"en"}, function(locale, value) return "Increase your Maximum Ammo reserve by {max_ammo:%s}, rounds down." end), -- max_ammo: +25% -- rewrite
-	--[+ French +]--
-	create_template("talent_tree_ogr_pas_013_desc_fr", {"loc_talent_ogryn_increased_ammo_desc"}, {"fr"}, function(locale, value) return "Augmente votre réserve de munitions maximale de {max_ammo:%s}, arrondi à l'inférieur." end),
-	--[+ Russian +]-- Схрон патронов 
-	create_template("talent_tree_ogr_pas_013_desc_ru", {"loc_talent_ogryn_increased_ammo_desc"}, {"ru"}, function(locale, value) return "{max_ammo:%s} к максимальному количеству боеприпасов в резерве. Округляется в меньшую сторону." end),
 
 	--[+ Passive 14 - Hard Knocks +]--
 	create_template("talent_tree_ogr_pas_014_desc_en", {"loc_talent_ogryn_big_bully_heavy_hits_desc"}, {"en"}, function(locale, value) return "{damage:%s} "..COLORS_KWords.Damage_rgb.." to your next Heavy Melee Attack on Enemy "..COLORS_KWords.Stagger_rgb..". Stacks {stacks:%s} times. Lasts {duration:%s} seconds. The larger the Enemy, the more Stacks are earned."..TALENTS_Enh_desc2.ED_OGR_Passive_14_rgb end), -- damage: +1%, stacks: 25, duration: 10 -- s->seconds -- colors
@@ -2318,26 +2383,12 @@ local localization_templates = {
 	--[+ Russian +]-- Доминируй -- руоф Господство
 	create_template("talent_tree_ogr_pas_022_desc_ru", {"loc_talent_ogryn_rending_on_elite_kills_desc"}, {"ru"}, function(locale, value) return "{rending_multiplier:%s} к "..COLORS_KWords_ru.Rending_rgb_ru.." на {duration:%s} секунд после убийства элитного врага."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_22_rgb_ru end),
 
-	--[+ Passive 23 - Payback Time +]--
-	create_template("talent_tree_ogr_pas_023_desc_en", {"loc_talent_ogryn_revenge_damage_desc"}, {"en"}, function(locale, value) return "{damage:%s} "..COLORS_KWords.Damage_rgb.." for {duration:%s} seconds after being Hit by a Melee Attack."..TALENTS_Enh_desc2.ED_OGR_Passive_23_rgb end), -- damage: +20%, duration: 5 -- s->seconds -- colors
-	--[+ French +]--
-	create_template("talent_tree_ogr_pas_023_desc_fr", {"loc_talent_ogryn_revenge_damage_desc"}, {"fr"}, function(locale, value) return "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant {duration:%s} secondes après avoir été touché par une attaque de mêlée."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_23_rgb_fr end),
-	--[+ Russian +]-- Время расплаты 
-	create_template("talent_tree_ogr_pas_023_desc_ru", {"loc_talent_ogryn_revenge_damage_desc"}, {"ru"}, function(locale, value) return "{damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." на {duration:%s} секунд после того как вы получили "..COLORS_KWords_ru.Dmg_rgb_ru.." в ближнем бою или заблокировали атаку."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_23_rgb_ru end),
-
 	--[+ Passive 24 - Bruiser +]--
 	create_template("talent_tree_ogr_pas_024_desc_en", {"loc_talent_ogryn_cooldown_on_elite_kills_desc"}, {"en"}, function(locale, value) return "{cooldown:%s} "..COLORS_KWords.Combat_ability_cd_rgb.." Reduction when you or an Ally in "..COLORS_KWords.Coherency_rgb.." kill an Elite Enemy."..TALENTS_Enh_desc2.ED_OGR_Passive_24_rgb end), -- cooldown: 4% -- colors
 	--[+ French +]--
 	create_template("talent_tree_ogr_pas_024_desc_fr", {"loc_talent_ogryn_cooldown_on_elite_kills_desc"}, {"fr"}, function(locale, value) return "{cooldown:%s} de réduction de "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." quand vous ou un allié en syntonie effectués une élimination d'élite."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_24_rgb_fr end),
 	--[+ Russian +]-- Бугай 
 	create_template("talent_tree_ogr_pas_024_desc_ru", {"loc_talent_ogryn_cooldown_on_elite_kills_desc"}, {"ru"}, function(locale, value) return "На {cooldown:%s} сокращается время "..COLORS_KWords_ru.Combat_ability_cd_rgb_ru..", если вы или союзник в "..COLORS_KWords_ru.Coherency_rgb_ru.." убиваете элитного врага."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_24_rgb_ru end),
-
-	--[+ Passive 25 - Big Boom +]--
-	create_template("talent_tree_ogr_pas_025_desc_en", {"loc_talent_ogryn_increase_explosion_radius_desc"}, {"en"}, function(locale, value) return "Increase explosion radius by {explosion_radius:%s}."..TALENTS_Enh_desc2.ED_OGR_Passive_25_rgb end), -- explosion_radius: +22.5%
-	--[+ French +]--
-	create_template("talent_tree_ogr_pas_025_desc_fr", {"loc_talent_ogryn_increase_explosion_radius_desc"}, {"fr"}, function(locale, value) return "Augmentez le rayon d'explosion de {explosion_radius:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Passive_25_rgb_fr end),
-	--[+ Russian +]-- Большой бабах 
-	create_template("talent_tree_ogr_pas_025_desc_ru", {"loc_talent_ogryn_increase_explosion_radius_desc"}, {"ru"}, function(locale, value) return "{explosion_radius:%s} к радиусу любых, вызванных вами, взрывов."..TALENTS_Enh_desc2_ru.ED_OGR_Passive_25_rgb_ru end),
 
 	--[+ Passive 26 - Massacre +]--
 	create_template("talent_tree_ogr_pas_026_desc_en", {"loc_talent_ogryn_crit_chance_on_kill_desc"}, {"en"}, function(locale, value) return "{crit_chance:%s} "..COLORS_KWords.Crit_chance_rgb.." for {duration:%s} seconds is granted by killing an enemy. Stacks {max_stacks:%s} times."..TALENTS_Enh_desc2.ED_OGR_Passive_26_rgb end), -- crit_chance: +1%, duration: 6, max_stacks: 8 -- rewrite -- s->seconds -- colors
