@@ -814,7 +814,7 @@ local localization_templates = {
 			--[+ Traditional Chinese - 燃燒靈魂 +]--
 			-- 烈焰力場巨劍, 烈焰力場劍, 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
 			-- The staff is currently using this description, 
-			-- The Force Greatsword doesn't seem to be correctly recognized yet.
+			-- The Force Greatsword doesn't seem to be correctly recognized yet(only zh-tw).
 			create_template("weap_wbm043_desc_ext_tw", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層。" end),
 
 		--[+ Unstable Power +]--
