@@ -1105,8 +1105,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
 --[+ +PASSIVES+ +]--
 	--[+ Passive 1 - Lynchpin +]--
-	local ED_OGR_Passive_1_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_1_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Increases Ogryn's base amount of Coherency Toughness Regenerated (CTR) while in Coherency by 50%:",
 		-- "_______________________________",
 		-- "Allies: | CTR:				  | After 5 seconds:",
@@ -1115,77 +1115,77 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "		  3|  7.50 -> 11.25 | 56.25(HUD:~57)",
 		-- "_______________________________",
 		-- "- Stacks additively with Ogryn's Aura \"Stay Close!\", keystone \"Feel No Pain\" (including \"Toughest!\"), Toughness Regeneration Speed from Curios, and Veteran's small Talent node \"Inspiring Presence\".",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 2 - Heavyweight +]--
-	local ED_OGR_Passive_2_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_2_rgb_ru = iu_actit(table.concat({
+		-- ppp______ppp,
 		-- "- Increases all Damage against Bulwark, Crusher, Plague Ogryn, and Reaper.",
-		stacks_add_w_oth_dmg,
+		-- stacks_add_w_oth_dmg,
 		-- "- Also reduces both Toughness and Health Damage taken from Bulwark, Crusher, Plague Ogryn, and Reaper.",
-		stacks_mult_w_other_dmg_red_buffs,
-	}, "\n"), enhdesc_col)
+		-- stacks_mult_w_other_dmg_red_buffs,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 3 - Steady Grip +]--
-	local ED_OGR_Passive_3_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_3_rgb_ru = iu_actit(table.concat({
+		-- ppp______ppp,
 		-- "- Does not interact with Coherency Toughness Regeneration.",
-		z_eff_of_this_tougn_rep,
+		-- z_eff_of_this_tougn_rep,
 		-- "- \"Braced\" refers to an action keyword in Ranged Weapon profiles.",
 		-- "- Using a Weapon's alt fire, like zooming or firing when zoomed in, activates the buff.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 4 - Smash 'Em! +]--
-	local ED_OGR_Passive_4_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_4_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Replenishes Toughness when hitting exactly ONE enemy with a Heavy Melee attack.",
 		-- "- Also procs on Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		-- "- If the hit enemy dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
 		-- "- For example, with 90 Max Toughness and if the attacked enemy dies, Ogryn would replenish 90x(0.2+0.05)=22.5 Toughness.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
+	-- 	z_eff_of_this_tougn_rep,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 5 - The Best Defence +]--
-	local ED_OGR_Passive_5_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_5_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Also procs on melee special actions of Ripper Guns, Grenadier Gauntlet (melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		-- "- If one of the hit enemies dies, the Toughness amount replenished from the Talent is added to Ogryn's base 5% of Maximum Toughness gained on Melee kill.",
 		-- "- For example, with 140 Max Toughness and if two of the attacked enemies die, Ogryn would replenish 140x(0.2+0.05+0.05)=42 Toughness.",
-		z_eff_of_this_tougn_rep,
-	}, "\n"), enhdesc_col)
+	-- 	z_eff_of_this_tougn_rep,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 6 - Furious +]--
-	local ED_OGR_Passive_6_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_6_rgb_ru = iu_actit(table.concat({
+		-- ppp______ppp,
 		-- "- Stacks last until next Melee attack and are consumed even if the Melee attack hits nothing.",
 		-- "- Per Stack, increases Melee Damage by 2.5%.",
-		stacks_add_w_oth_dmg,
+		-- stacks_add_w_oth_dmg,
 		-- "- Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback can also proc this Talent.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 7 - Towering Presence +]--
-	local ED_OGR_Passive_7_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_7_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Increases Ogryn's Base Coherency radius of 8 to 12 meters.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Soften Them Up +]--
-	local ED_OGR_Passive_8_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
-		can_be_refr_dur_active_dur,
+	-- local ED_OGR_Passive_8_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
+		-- can_be_refr_dur_active_dur,
 		-- "- Can also be applied with Melee special actions of Ripper Guns, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		-- "- Does not Stack with the same Talent from another Ogryn.",
 		-- "- The debuff Stacks additively with the related Damage taken debuff from Pickaxe special actions (+10%), and multiplicatively with \"Valuable Distraction\".",
 		-- "- During calculation, Stacks multiplicatively with Damage buffs and Power level buffs from Weapon Blessings.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 9 - Payback Time +]--
-	local ED_OGR_Passive_9_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_9_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Increases any Damage when taking a Damaging Melee hit or Blocking a Melee hit.",
-		stacks_add_w_oth_dmg,
-		can_be_refr_dur_active_dur,
-	}, "\n"), enhdesc_col)
+	-- 	stacks_add_w_oth_dmg,
+	-- 	can_be_refr_dur_active_dur,
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Pumped Up +]--
 	-- local ED_OGR_Passive_10_rgb_ru = iu_actit(table.concat({
@@ -1230,33 +1230,33 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - Slam +]--
-	local ED_OGR_Passive_17_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_17_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Stacks additively with \"Crunch!\" and other related Stagger buffs from Weapon Blessings, and multiplicatively with Power level buffs from Weapon Blessings.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 18 - Ammo Stash +]--
 	-- local ED_OGR_Passive_18_rgb_ru = iu_actit(table.concat({ },"\n"), enhdesc_col)
 
 	--[+ Passive 19 - Big Boom +]--
-	local ED_OGR_Passive_19_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_19_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Stacks additively with the \"Blast Zone\" Weapon Blessing.",
 		-- "- This increases the radii of both the inner epicenter and the outer maximum of explosions.",
 		-- "- Note that this Talent also increases the radius of explosions that are created by Melee attacks (e.g. Power Maul activated attacks). In this case, Stacks additively with the \"Power Surge\" Weapon Blessing.",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - Crunch! +]--
-	local ED_OGR_Passive_20_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_20_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Stacks additively with other related Damage buffs and Stagger buffs (from \"Slam\" and Weapon Blessings), and multiplicatively with Power level buffs from Weapon Blessings.",
 		-- "- \"Fully charged\" means that you have to hold the button until the Heavy attack is executed automatically.",
 		-- "- Only applies to Heavy attacks of Melee weapons (and Grenadier Gauntlet heavies).",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Passive 21 - Batter +]--
-	local ED_OGR_Passive_21_rgb_ru = iu_actit(table.concat({
-		ppp______ppp,
+	-- local ED_OGR_Passive_21_rgb_ru = iu_actit(table.concat({
+	-- 	ppp______ppp,
 		-- "- Can't apply Bleed through shields.",
 		-- "- Also procs on Melee special actions from Ripper Gun, Grenadier Gauntlet (Melee part), Rumbler, Heavy Stubbers, and Kickback.",
 		-- "- Bleed: Same as other sources of Bleed. Lasts 1.5 seconds. Ticks every 0.5 seconds. Refreshes duration on Stack application. Above average armor Damage modifiers across the board, low armor Damage modifier against Carapace.",
@@ -1265,7 +1265,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		-- "-- Blessings (if procced with Weapon before or during Burn's active duration):",
 		-- "--- Melee: \"Skullcrusher\" (while Staggered), \"Slaughterer\", and \"Tenderiser\" (Bleed ticks don't consume Stacks).",
 		-- "--- Ranged: \"Blaze Away\", \"Explosive Offensive\", \"Deathspitter\", \"Fire Frenzy\", and \"Full Bore\".",
-	}, "\n"), enhdesc_col)
+	-- }, "\n"), enhdesc_col)
 
 -- ENDED HERE
 
