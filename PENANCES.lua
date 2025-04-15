@@ -35,27 +35,27 @@ end
 --[+ Russian +]--
 local complete_1_mission_on_sedition_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше."
 --[+ Traditional Chinese +]--
-local complete_1_mission_on_sedition_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.sedition_rgb_tw.." 或更高難度的任務。"
+local complete_1_mission_on_sedition_threat_tw = "完成 "..COLORS_KWords_tw.sedition_rgb_tw.." 或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 --[+ Russian +]--
 local complete_1_mission_on_uprising_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше."
 --[+ Traditional Chinese +]--
-local complete_1_mission_on_uprising_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.uprising_rgb_tw.." 或更高難度的任務。"
+local complete_1_mission_on_uprising_threat_tw = "完成 "..COLORS_KWords_tw.uprising_rgb_tw.." 或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 --[+ Russian +]--
 local complete_1_mission_on_malice_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше."
 --[+ Traditional Chinese +]--
-local complete_1_mission_on_malice_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.malice_rgb_tw.." 或更高難度的任務。"
+local complete_1_mission_on_malice_threat_tw = "完成 "..COLORS_KWords_tw.malice_rgb_tw.." 或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 --[+ Russian +]--
 local complete_1_mission_on_heresy_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше."
 --[+ Traditional Chinese +]--
-local complete_1_mission_on_heresy_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.heresy_rgb_tw.." 或更高難度的任務。"
+local complete_1_mission_on_heresy_threat_tw = "完成 "..COLORS_KWords_tw.heresy_rgb_tw.." 或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 --[+ Russian +]--
 local complete_1_mission_on_damnation_threat_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше."
 --[+ Traditional Chinese +]--
-local complete_1_mission_on_damnation_threat_tw = "完成 "..COLORS_Numbers.target_rgb.." 次 "..COLORS_KWords_tw.damnation_rgb_tw.." 或更高難度的任務。"
+local complete_1_mission_on_damnation_threat_tw = "完成 "..COLORS_KWords_tw.damnation_rgb_tw.." 或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。"
 
 --[+ Define localization templates +]--
 local localization_templates = {
@@ -183,215 +183,286 @@ local localization_templates = {
 			create_template("ach_acc_7_ext_desc_tw", {"loc_achievement_path_of_trust_x_description"}, {"zh-tw"}, function(locale, value) return "完成第 "..COLORS_Numbers.target_rgb.." 章的互信團體。" end),
 
 		--[+ Don't Let Me Down, Criminal -  +]-- -- руоф Не подведите меня, преступники
-		--[+ Russian +]--
-		create_template("ach_acc_2_ext_ru", {"loc_achievement_prologue_name"}, {"ru"}, function(locale, value) return "Не подведи меня, преступник" end),
-		--[+ Traditional Chinese - 別讓我失望，罪犯 +]--
-		create_template("ach_acc_2_ext_tw", {"loc_achievement_prologue_name"}, {"zh-tw"}, function(locale, value) return "別讓我失望，罪犯" end),
+			--[+ Russian +]--
+			create_template("ach_acc_2_ext_ru", {"loc_achievement_prologue_name"}, {"ru"}, function(locale, value) return "Не подведи меня, преступник" end),
+			--[+ Traditional Chinese - 別讓我失望，罪犯 +]--
+			create_template("ach_acc_2_ext_tw", {"loc_achievement_prologue_name"}, {"zh-tw"}, function(locale, value) return "別讓我失望，罪犯" end),
 
 		--[+ Complete the Prologue. +]-- -- руоф Закончить пролог.
-		create_template("ach_acc_2_ext_desc_en", {"loc_achievement_prologue_description"}, {"en"}, function(locale, value) return "Complete the "..COLORS_KW_Penances.Prologue_p_rgb.."." end),
-		--[+ Russian +]--
-		create_template("ach_acc_2_ext_desc_ru", {"loc_achievement_prologue_description"}, {"ru"}, function(locale, value) return "Пройти "..COLORS_KW_Penances_ru.Prolog_p_rgb_ru.."." end),
-		--[+ Traditional Chinese - 完成序章 +]--
-		create_template("ach_acc_2_ext_desc_tw", {"loc_achievement_prologue_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_KW_Penances_tw.Prologue_p_rgb.."。" end),
+			create_template("ach_acc_2_ext_desc_en", {"loc_achievement_prologue_description"}, {"en"}, function(locale, value) return "Complete the "..COLORS_KW_Penances.Prologue_p_rgb.."." end),
+			--[+ Russian +]--
+			create_template("ach_acc_2_ext_desc_ru", {"loc_achievement_prologue_description"}, {"ru"}, function(locale, value) return "Пройти "..COLORS_KW_Penances_ru.Prolog_p_rgb_ru.."." end),
+			--[+ Traditional Chinese - 完成序章 +]--
+			create_template("ach_acc_2_ext_desc_tw", {"loc_achievement_prologue_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_KW_Penances_tw.Prologue_p_rgb.."。" end),
 
 		--[+ Unconsidered Trifles +]-- -- руоф Непродуманные мелочи
-		--[+ Russian +]--
-		create_template("ach_acc_4_ext_ru", {"loc_achievement_unlock_gadgets_name"}, {"ru"}, function(locale, value) return "Неучтённые мелочи" end),
-		--[+ Traditional Chinese - 不被考慮的瑣事 +]--
-		create_template("ach_acc_4_ext_tw", {"loc_achievement_unlock_gadgets_name"}, {"zh-tw"}, function(locale, value) return "小零碎" end),
+			--[+ Russian +]--
+			create_template("ach_acc_4_ext_ru", {"loc_achievement_unlock_gadgets_name"}, {"ru"}, function(locale, value) return "Неучтённые мелочи" end),
+			--[+ Traditional Chinese - 不被考慮的瑣事 +]--
+			create_template("ach_acc_4_ext_tw", {"loc_achievement_unlock_gadgets_name"}, {"zh-tw"}, function(locale, value) return "小零碎" end),
 
 		--[+ Unlock your first Curio slot. -  +]-- -- руоф Открыть вашу первую ячейку для устройства.
-		create_template("ach_acc_4_ext_desc_en", {"loc_achievement_unlock_gadgets_description"}, {"en"}, function(locale, value) return "Unlock your first "..COLORS_KW_Penances.Curio_p_rgb.." slot." end),
-		--[+ Russian +]--
-		create_template("ach_acc_4_ext_desc_ru", {"loc_achievement_unlock_gadgets_description"}, {"ru"}, function(locale, value) return "Разблокируйте вашу первую ячейку "..COLORS_KW_Penances_ru.Curio_p_rgb_ru.."." end),
-		--[+ Traditional Chinese - 解鎖第一個小物件插槽 +]--
-		create_template("ach_acc_4_ext_desc_tw", {"loc_achievement_unlock_gadgets_description"}, {"zh-tw"}, function(locale, value) return "解鎖第一個珍品槽" end),
+			create_template("ach_acc_4_ext_desc_en", {"loc_achievement_unlock_gadgets_description"}, {"en"}, function(locale, value) return "Unlock your first "..COLORS_KW_Penances.Curio_p_rgb.." slot." end),
+			--[+ Russian +]--
+			create_template("ach_acc_4_ext_desc_ru", {"loc_achievement_unlock_gadgets_description"}, {"ru"}, function(locale, value) return "Разблокируйте вашу первую ячейку "..COLORS_KW_Penances_ru.Curio_p_rgb_ru.."." end),
+			--[+ Traditional Chinese - 解鎖第一個小物件插槽 +]--
+			create_template("ach_acc_4_ext_desc_tw", {"loc_achievement_unlock_gadgets_description"}, {"zh-tw"}, function(locale, value) return "解鎖第一個珍品槽" end),
 
 		--[+ Call to Arms -  +]-- -- руоф К оружию!
-		--[+ Russian +]--
-		create_template("ach_acc_3_ext_ru", {"loc_achievement_basic_training_name"}, {"ru"}, function(locale, value) return "Призыв к оружию" end),
-		--[+ Traditional Chinese - 戰爭召喚 +]--
-		create_template("ach_acc_3_ext_tw", {"loc_achievement_basic_training_name"}, {"zh-tw"}, function(locale, value) return "戰爭召喚" end),
+			--[+ Russian +]--
+			create_template("ach_acc_3_ext_ru", {"loc_achievement_basic_training_name"}, {"ru"}, function(locale, value) return "Призыв к оружию" end),
+			--[+ Traditional Chinese - 戰爭召喚 +]--
+			create_template("ach_acc_3_ext_tw", {"loc_achievement_basic_training_name"}, {"zh-tw"}, function(locale, value) return "戰爭召喚" end),
 
 		--[+ Complete Basic Training. +]-- -- руоф Завершите базовое обучение.
-		create_template("ach_acc_3_ext_desc_en", {"loc_achievement_basic_training_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_KW_Penances.Base_tut_p_rgb.."." end),
-		--[+ Russian +]--
-		create_template("ach_acc_3_ext_desc_ru", {"loc_achievement_basic_training_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_KW_Penances_ru.Base_tut_p_rgb_ru.."." end),
-		--[+ Traditional Chinese - 完成基礎訓練 +]--
-		create_template("ach_acc_3_ext_desc_tw", {"loc_achievement_basic_training_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_KW_Penances_tw.Psykhanium_p_rgb.." 的 "..COLORS_KW_Penances_tw.Base_tut_p_rgb.."。" end),
+			create_template("ach_acc_3_ext_desc_en", {"loc_achievement_basic_training_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_KW_Penances.Base_tut_p_rgb.."." end),
+			--[+ Russian +]--
+			create_template("ach_acc_3_ext_desc_ru", {"loc_achievement_basic_training_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_KW_Penances_ru.Base_tut_p_rgb_ru.."." end),
+			--[+ Traditional Chinese - 完成基礎訓練 +]--
+			create_template("ach_acc_3_ext_desc_tw", {"loc_achievement_basic_training_description"}, {"zh-tw"}, function(locale, value) return "完成 "..COLORS_KW_Penances_tw.Psykhanium_p_rgb.." 的 "..COLORS_KW_Penances_tw.Base_tut_p_rgb.."。" end),
 
 		--[+ Well met, Whippersnapper -  +]-- -- руоф Какая приятная встреча, молокосос
-		--[+ Russian +]--
-		create_template("ach_acc_5_ext_ru", {"loc_achievement_unlock_contracts_name"}, {"ru"}, function(locale, value) return "Рад встрече, молокосос" end),
-		--[+ Traditional Chinese - 幸會，狂妄的小子 +]--
-		create_template("ach_acc_5_ext_tw", {"loc_achievement_unlock_contracts_name"}, {"zh-tw"}, function(locale, value) return "幸會，狂妄的小子" end),
+			--[+ Russian +]--
+			create_template("ach_acc_5_ext_ru", {"loc_achievement_unlock_contracts_name"}, {"ru"}, function(locale, value) return "Рад встрече, молокосос" end),
+			--[+ Traditional Chinese - 幸會，狂妄的小子 +]--
+			create_template("ach_acc_5_ext_tw", {"loc_achievement_unlock_contracts_name"}, {"zh-tw"}, function(locale, value) return "幸會，狂妄的小子" end),
 
 		--[+ Unlock access to Sire Melk's Requisitorium. -  +]-- -- руоф Получить доступ к реквизиториуму сира Мелка.
-		create_template("ach_acc_5_ext_desc_en", {"loc_achievement_unlock_contracts_description"}, {"en"}, function(locale, value) return "Unlock access to "..COLORS_KW_Penances.Sir_melk_p_rgb.."." end),
-		--[+ Russian +]--
-		create_template("ach_acc_5_ext_desc_ru", {"loc_achievement_unlock_contracts_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Sir_melk_p_rgb_ru.."." end),
-		--[+ Traditional Chinese - 解鎖梅爾克領主的物品 +]--
-		create_template("ach_acc_5_ext_desc_tw", {"loc_achievement_unlock_contracts_description"}, {"zh-tw"}, function(locale, value) return "解鎖 "..COLORS_KW_Penances_tw.Sir_melk_p_rgb.." 。" end),
+			create_template("ach_acc_5_ext_desc_en", {"loc_achievement_unlock_contracts_description"}, {"en"}, function(locale, value) return "Unlock access to "..COLORS_KW_Penances.Sir_melk_p_rgb.."." end),
+			--[+ Russian +]--
+			create_template("ach_acc_5_ext_desc_ru", {"loc_achievement_unlock_contracts_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Sir_melk_p_rgb_ru.."." end),
+			--[+ Traditional Chinese - 解鎖梅爾克領主的物品 +]--
+			create_template("ach_acc_5_ext_desc_tw", {"loc_achievement_unlock_contracts_description"}, {"zh-tw"}, function(locale, value) return "解鎖 "..COLORS_KW_Penances_tw.Sir_melk_p_rgb.." 。" end),
 
 		--[+ Hail the Omnissiah! - Слава Омниссии! +]--
-		--[+ Russian +]--
-		-- create_template("ach_acc_6_ext_ru", {"loc_achievement_unlock_crafting_name"}, {"ru"}, function(locale, value) return "Слава Омниссии!" end),
-		--[+ Traditional Chinese - 歐姆尼賽亞萬歲！ +]--
-		-- create_template("ach_acc_6_ext_tw", {"loc_achievement_unlock_crafting_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞萬歲！" end),
+			--[+ Russian +]--
+			-- create_template("ach_acc_6_ext_ru", {"loc_achievement_unlock_crafting_name"}, {"ru"}, function(locale, value) return "Слава Омниссии!" end),
+			--[+ Traditional Chinese - 歐姆尼賽亞萬歲！ +]--
+			-- create_template("ach_acc_6_ext_tw", {"loc_achievement_unlock_crafting_name"}, {"zh-tw"}, function(locale, value) return "歐姆尼賽亞萬歲！" end),
 
 		--[+ Unlock access to the Shrine of the Omnissiah. -  +]-- руоф Откройте доступ к святилищу Омниссии.
-		create_template("ach_acc_6_ext_desc_en", {"loc_achievement_unlock_crafting_description"}, {"en"}, function(locale, value) return "Unlock access to the "..COLORS_KW_Penances.Omnissia_p_rgb.."." end),
-		--[+ Russian +]--
-		create_template("ach_acc_6_ext_desc_ru", {"loc_achievement_unlock_crafting_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Omnissia_p_rgb_ru.."." end),
-		--[+ Traditional Chinese - 解鎖歐姆尼賽亞聖所 +]--
-		create_template("ach_acc_6_ext_desc_tw", {"loc_achievement_unlock_crafting_description"}, {"zh-tw"}, function(locale, value) return "解鎖 "..COLORS_KW_Penances_tw.Omnissia_p_rgb.." 。" end),
+			create_template("ach_acc_6_ext_desc_en", {"loc_achievement_unlock_crafting_description"}, {"en"}, function(locale, value) return "Unlock access to the "..COLORS_KW_Penances.Omnissia_p_rgb.."." end),
+			--[+ Russian +]--
+			create_template("ach_acc_6_ext_desc_ru", {"loc_achievement_unlock_crafting_description"}, {"ru"}, function(locale, value) return "Разблокируйте доступ в "..COLORS_KW_Penances_ru.Omnissia_p_rgb_ru.."." end),
+			--[+ Traditional Chinese - 解鎖歐姆尼賽亞聖所 +]--
+			create_template("ach_acc_6_ext_desc_tw", {"loc_achievement_unlock_crafting_description"}, {"zh-tw"}, function(locale, value) return "解鎖 "..COLORS_KW_Penances_tw.Omnissia_p_rgb.." 。" end),
 
 --[+ ++CLASSES - КЛАССЫ++ +]--
 	--[+ +VETERAN - ВЕТЕРАН+ +]--
 	create_template("ach_class_vet_0_ext_en", {"loc_class_veteran_title"}, {"en"}, function(locale, value) return COLORS_KWords.cls_vet_rgb end),
 	--[+ Russian +]--
 	create_template("ach_class_vet_0_ext_ru", {"loc_class_veteran_title"}, {"ru"}, function(locale, value) return COLORS_KWords_ru.cls_vet_rgb_ru end),
+	--[+ Traditional Chinese +]--
+	create_template("ach_class_vet_0_ext_tw", {"loc_class_veteran_title"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.cls_vet_rgb_tw end),
 
 	--[+ ПРОГРЕСС +]--
-		--[+ Stay Accurate - Будь точным +]-- -- руоф Держи прицел
-	--[+ Russian +]--
+	--[+ Stay Accurate - Будь точным +]-- -- руоф Держи прицел
+		--[+ Russian +]--
 		create_template("ach_class_vet_7_ext_ru", {"loc_achievement_veteran_2_easy_1_name"}, {"ru"}, function(locale, value) return "Будь точным" end),
+		--[+ Traditional Chinese +]--
+		create_template("ach_class_vet_7_ext_tw", {"loc_achievement_veteran_2_easy_1_name"}, {"zh-tw"}, function(locale, value) return "保持精準" end),
 
-			--[+ Kill 350 enemies with ranged weakspot hits. +]-- -- руоф Убейте врагов (350) попаданиями по слабым местам с дальнего расстояния.
+		--[+ Kill 350 enemies with ranged weakspot hits. +]-- -- руоф Убейте врагов (350) попаданиями по слабым местам с дальнего расстояния.
 			create_template("ach_class_vet_7_ext_desc_en", {"loc_achievement_veteran_2_easy_1_description"}, {"en"}, function(locale, value) return "Kill "..COLORS_Numbers.target_rgb.." enemies with ranged "..COLORS_KWords.Weakspothits_rgb.."."..TALENTS_Enh_desc_penances.ED_Headshot_rgb end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_7_ext_desc_ru", {"loc_achievement_veteran_2_easy_1_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов в "..COLORS_KWords_ru.Weakspot_rgb_ru.." из дальнобойного оружия."..TALENTS_Enh_desc_penances_ru.ED_Headshot_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_7_ext_desc_tw", {"loc_achievement_veteran_2_easy_1_description"}, {"zh-tw"}, function(locale, value) return "使用遠程武器 "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
-		--[+ On Target (1-3) +]-- -- руоф Держи прицел
-	--[+ Russian +]--
-		-- create_template("ach_class_vet_14_ext_ru", {"loc_achievement_group_class_veteran_2_1_name"}, {"ru"}, function(locale, value) return "В прицеле (1-3)" end),
+		--[+ On Target (1) +]-- -- руоф Держи прицел
+			--[+ Russian +]--
+			-- create_template("ach_class_vet_14_ext_ru", {"loc_achievement_group_class_veteran_2_1_name"}, {"ru"}, function(locale, value) return "В прицеле (1-3)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_14_ext_tw", {"loc_achievement_group_class_veteran_2_1_name"}, {"zh-tw"}, function(locale, value) return "使命必達 (1)" end),
+
+		--[+ On Target (2) +]--
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_15_ext_tw", {"loc_achievement_group_class_veteran_2_2_name"}, {"zh-tw"}, function(locale, value) return "使命必達 (2)" end),
+
+		--[+ On Target (3) +]--
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_16_ext_tw", {"loc_achievement_group_class_veteran_2_3_name"}, {"zh-tw"}, function(locale, value) return "使命必達 (3)" end),
+
 
 		--[+ For The Emperor (1-3) +]-- -- руоф За императора (1-3)
-	--[+ Russian +]--
-													-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-		-- create_template("ach_red_vet_8_ext_ru", {"loc_group_class_challenges_veteran_2_1-3_name", "loc_group_class_challenges_zealot_2_1-3_name", "loc_group_class_challenges_psyker_2_1-3_name", "loc_group_class_challenges_ogryn_2_1-3_name"}, {"ru"}, function(locale, value) return "За императора (1-3)" end),
+			--[+ Russian +]--
+			-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
+			-- create_template("ach_red_vet_8_ext_ru", {"loc_group_class_challenges_veteran_2_1-3_name", "loc_group_class_challenges_zealot_2_1-3_name", "loc_group_class_challenges_psyker_2_1-3_name", "loc_group_class_challenges_ogryn_2_1-3_name"}, {"ru"}, function(locale, value) return "За императора (1-3)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_red_vet_8_ext_tw", {"loc_group_class_challenges_veteran_2_1-3_name", "loc_group_class_challenges_zealot_2_1-3_name", "loc_group_class_challenges_psyker_2_1-3_name", "loc_group_class_challenges_ogryn_2_1-3_name"}, {"zh-tw"}, function(locale, value) return "為了皇帝 (1-3)" end),
 
 		--[+ Promotion Material (1) +]-- -- руоф Материалы пропаганды (1)
-	--[+ Russian +]--
-													-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-		create_template("ach_class_vet_9_ext_ru", {"loc_group_veteran_2_rank_4_difficulty_3_name", "loc_group_zealot_2_rank_4_difficulty_3_name", "loc_group_psyker_2_rank_4_difficulty_3_name", "loc_group_ogryn_2_rank_4_difficulty_3_name"}, {"ru"}, function(locale, value) return "Задания для продвижения (1)" end),
+			--[+ Russian +]--
+			-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
+			create_template("ach_class_vet_9_ext_ru", {"loc_group_veteran_2_rank_4_difficulty_3_name", "loc_group_zealot_2_rank_4_difficulty_3_name", "loc_group_psyker_2_rank_4_difficulty_3_name", "loc_group_ogryn_2_rank_4_difficulty_3_name"}, {"ru"}, function(locale, value) return "Задания для продвижения (1)" end),
+			--[+ Traditional Chinese 樹立榜樣 (1) +]--
+			create_template("ach_class_vet_9_ext_tw", {"loc_group_veteran_2_rank_4_difficulty_3_name", "loc_group_zealot_2_rank_4_difficulty_3_name", "loc_group_psyker_2_rank_4_difficulty_3_name", "loc_group_ogryn_2_rank_4_difficulty_3_name"}, {"zh-tw"}, function(locale, value) return "樹立榜樣 (1)" end),
 
 		--[+ Promotion Material (2) +]-- -- руоф Материалы пропаганды (2)
-	--[+ Russian +]--
-													-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-		create_template("ach_class_vet_10_ext_ru", {"loc_group_veteran_2_rank_5_difficulty_4_name", "loc_group_zealot_2_rank_5_difficulty_4_name", "loc_group_psyker_2_rank_5_difficulty_4_name", "loc_group_ogryn_2_rank_5_difficulty_4_name"}, {"ru"}, function(locale, value) return "Задания для продвижения (2)" end),
+			--[+ Russian +]--
+			-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
+			create_template("ach_class_vet_10_ext_ru", {"loc_group_veteran_2_rank_5_difficulty_4_name", "loc_group_zealot_2_rank_5_difficulty_4_name", "loc_group_psyker_2_rank_5_difficulty_4_name", "loc_group_ogryn_2_rank_5_difficulty_4_name"}, {"ru"}, function(locale, value) return "Задания для продвижения (2)" end),
+			--[+ Traditional Chinese 樹立榜樣 (2) +]--
+			create_template("ach_class_vet_10_ext_tw", {"loc_group_veteran_2_rank_5_difficulty_4_name", "loc_group_zealot_2_rank_5_difficulty_4_name", "loc_group_psyker_2_rank_5_difficulty_4_name", "loc_group_ogryn_2_rank_5_difficulty_4_name"}, {"zh-tw"}, function(locale, value) return "樹立榜樣 (2)" end),
 
 		--[+ First Steps (1-2) +]-- руоф Первые шаги (1-2)
-	--[+ Russian +]--
-													-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
-		-- create_template("ach_class_vet_5_ext_ru", {"loc_group_veteran_2_rank_1-2_difficulty_1-2_name", "loc_group_zealot_2_rank_1_difficulty_1-2_name", "loc_group_psyker_2_rank_1_difficulty_1-2_name", "loc_group_ogryn_2_rank_1_difficulty_1-2_name"}, {"ru"}, function(locale, value) return "Первые шаги (1-2)" end),
+			--[+ Russian +]--
+			-- ВЕТЕРАН, ИЗУВЕР, ПСАЙКЕР, ОГРИН !!!
+			-- create_template("ach_class_vet_5_ext_ru", {"loc_group_veteran_2_rank_1-2_difficulty_1-2_name", "loc_group_zealot_2_rank_1_difficulty_1-2_name", "loc_group_psyker_2_rank_1_difficulty_1-2_name", "loc_group_ogryn_2_rank_1_difficulty_1-2_name"}, {"ru"}, function(locale, value) return "Первые шаги (1-2)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_class_vet_5_ext_tw", {"loc_group_veteran_2_rank_1-2_difficulty_1-2_name", "loc_group_zealot_2_rank_1_difficulty_1-2_name", "loc_group_psyker_2_rank_1_difficulty_1-2_name", "loc_group_ogryn_2_rank_1_difficulty_1-2_name"}, {"zh-tw"}, function(locale, value) return "初步步驟 (1-2)" end),
 
-			--[+ Complete the following Penances as the Veteran. +]-- -- руоф Выполнить следующие искупления за Ветерана.
+		--[+ Complete the following Penances as the Veteran. +]-- -- руоф Выполнить следующие искупления за Ветерана.
 			create_template("ach_class_vet_14_ext_desc_en", {"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"en"}, function(locale, value) return "Complete the following Penances as the "..COLORS_KWords.cls_vet_rgb.."." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_14_ext_desc_ru", {"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"ru"}, function(locale, value) return "Завершите следующие Искупления "..COLORS_KWords_ru.cls_vet2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_14_ext_desc_tw", {"loc_achievement_group_class_veteran_2_description", "loc_group_class_challenges_veteran_2_x_description", "loc_group_veteran_2_rank_4_difficulty_3_description", "loc_group_veteran_2_rank_5_difficulty_4_description", "loc_group_veteran_2_rank_1_difficulty_1_description", "loc_group_veteran_2_rank_2_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." 完成以下懺悔。" end),
 
 		--[+ Veteran Master of War +]-- -- руоф Ветеран — знаток войны
-	--[+ Russian +]--
-		create_template("ach_class_vet_141_ext_ru", {"loc_achievement_class_meta_name"}, {"ru"}, function(locale, value) return "{class_name} — мастер войны" end),
-
-			--[+ Complete 5 out of the following Penances. +]-- -- руоф Выполните часть (5) из следующих искуплений.
+			--[+ Russian +]--
+			create_template("ach_class_vet_141_ext_ru", {"loc_achievement_class_meta_name"}, {"ru"}, function(locale, value) return "{class_name} — мастер войны" end),
+			--[+ Traditional Chinese - 戰爭大師 +]--
+			create_template("ach_class_vet_141_ext_tw", {"loc_achievement_class_meta_name"}, {"zh-tw"}, function(locale, value) return "{class_name} 戰爭大師" end),
+			
+		--[+ Complete 5 out of the following Penances. +]-- -- руоф Выполните часть (5) из следующих искуплений.
 			create_template("ach_class_vet_14_ext_desc_en", {"loc_achievement_class_meta_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_Numbers.target_rgb.." out of the following Penances." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_14_ext_desc_ru", {"loc_achievement_class_meta_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." следующих Искуплений." end),
+			--[+ Traditional Chinese - 完成 5 個懺悔 +]--
+			create_template("ach_class_vet_14_ext_desc_tw", {"loc_achievement_class_meta_description"}, {"zh-tw"}, function(locale, value) return "完成以下任意 "..COLORS_Numbers.target_rgb.." 個苦修。" end),
 
 		--[+ Vantage Point +]-- -- руоф Точка обзора
-	--[+ Russian +]--
-		create_template("ach_class_vet_3_1_ext_ru", {"loc_achievement_missions_veteran_2_objective_1_name"}, {"ru"}, function(locale, value) return "Выгодная позиция" end),
+			--[+ Russian +]--
+			create_template("ach_class_vet_3_1_ext_ru", {"loc_achievement_missions_veteran_2_objective_1_name"}, {"ru"}, function(locale, value) return "Выгодная позиция" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_3_1_ext_tw", {"loc_achievement_missions_veteran_2_objective_1_name"}, {"zh-tw"}, function(locale, value) return "有利地形 (1)" end),
 
-			--[+ As a Veteran, complete at least one Mission of each type. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа.
+		--[+ As a Veteran, complete at least one Mission of each type. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа.
 			create_template("ach_class_vet_3_1_ext_desc_en", {"loc_achievement_missions_veteran_2_objective_1_description"}, {"en"}, function(locale, value) return "As a "..COLORS_KWords.cls_vet_rgb..", complete at least one Mission of each type.." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_3_1_ext_desc_ru", {"loc_achievement_missions_veteran_2_objective_1_description"}, {"ru"}, function(locale, value) return "Завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_vet2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_3_1_ext_desc_tw", {"loc_achievement_missions_veteran_2_objective_1_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.."，完成以下任務 "..COLORS_Numbers.n_1_rgb.." 次。" end),
 
 		--[+ Vantage Point (2) +]-- -- руоф Точка обзора (2)
-	--[+ Russian +]--
-		create_template("ach_class_vet_3_2_ext_ru", {"loc_achievement_missions_veteran_2_objective_2_name"}, {"ru"}, function(locale, value) return "Выгодная позиция (2)" end),
+			--[+ Russian +]--
+			create_template("ach_class_vet_3_2_ext_ru", {"loc_achievement_missions_veteran_2_objective_2_name"}, {"ru"}, function(locale, value) return "Выгодная позиция (2)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_3_2_ext_tw", {"loc_achievement_missions_veteran_2_objective_2_name"}, {"zh-tw"}, function(locale, value) return "有利地形 (2)" end),
 
-			--[+ As a Veteran, complete a Mission of each type on Uprising Threat or higher. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
+		--[+ As a Veteran, complete a Mission of each type on Uprising Threat or higher. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 			create_template("ach_class_vet_3_2_ext_desc_en", {"loc_achievement_missions_veteran_2_objective_2_description"}, {"en"}, function(locale, value) return "As a "..COLORS_KWords.cls_vet_rgb..", complete a Mission of each type on "..COLORS_KWords.malice_rgb.." Threat or higher." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_3_2_ext_desc_ru", {"loc_achievement_missions_veteran_2_objective_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_vet2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_3_2_ext_desc_tw", {"loc_achievement_missions_veteran_2_objective_2_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." ，\n在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，完成以下任務 "..COLORS_Numbers.n_3_rgb.." 次。" end),
 
 		--[+ Vantage Point (3) +]-- -- руоф Точка обзора (3)
-	--[+ Russian +]--
-		create_template("ach_class_vet_3_3_ext_ru", {"loc_achievement_missions_veteran_2_objective_3_name"}, {"ru"}, function(locale, value) return "Выгодная позиция (3)" end),
+			--[+ Russian +]--
+			create_template("ach_class_vet_3_3_ext_ru", {"loc_achievement_missions_veteran_2_objective_3_name"}, {"ru"}, function(locale, value) return "Выгодная позиция (3)" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_3_3_ext_tw", {"loc_achievement_missions_veteran_2_objective_3_name"}, {"zh-tw"}, function(locale, value) return "有利地形 (3)" end),
 
-			--[+ As a Veteran, complete a Mission of each type on Heresy Threat or higher. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
+		--[+ As a Veteran, complete a Mission of each type on Heresy Threat or higher. +]-- -- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа при угрозе «Ересь» или выше.
 			create_template("ach_class_vet_3_3_ext_desc_en", {"loc_achievement_missions_veteran_2_objective_3_description"}, {"en"}, function(locale, value) return "As a "..COLORS_KWords.cls_vet_rgb..", complete a Mission of each type on "..COLORS_KWords.heresy_rgb.." Threat or higher." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_3_3_ext_desc_ru", {"loc_achievement_missions_veteran_2_objective_3_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, завершите по одной миссии каждого типа "..COLORS_KWords_ru.cls_vet2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_3_3_ext_desc_tw", {"loc_achievement_missions_veteran_2_objective_3_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." ，在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度下，\n完成以下任務 "..COLORS_Numbers.n_4_rgb.." 次。" end),
 
 		--[+ Fire Down Range +]-- -- руоф Заградительный огонь
-	--[+ Russian +]--
-		create_template("ach_class_vet_12_ext_ru", {"loc_achievement_veteran_2_medium_2_name"}, {"ru"}, function(locale, value) return "Дистанция ведения стрельбы" end),
+			--[+ Russian +]--
+			create_template("ach_class_vet_12_ext_ru", {"loc_achievement_veteran_2_medium_2_name"}, {"ru"}, function(locale, value) return "Дистанция ведения стрельбы" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_12_ext_tw", {"loc_achievement_veteran_2_medium_2_name"}, {"zh-tw"}, function(locale, value) return "順風射擊" end),
 
-			--[+ On Malice Threat or higher, kill 100 enemies that are over 30 meters away. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (100) на расстоянии дальше 30 м.
+		--[+ On Malice Threat or higher, kill 100 enemies that are over 30 meters away. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (100) на расстоянии дальше 30 м.
 			create_template("ach_class_vet_12_ext_desc_en", {"loc_achievement_veteran_2_medium_2_description"}, {"en"}, function(locale, value) return "On "..COLORS_KWords.malice_rgb.." Threat or higher, kill "..COLORS_Numbers.target_rgb.." enemies that are over "..COLORS_Numbers.dist_rgb.." meters away." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_12_ext_desc_ru", {"loc_achievement_veteran_2_medium_2_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, убейте "..COLORS_Numbers.target_rgb.." врагов, находящихся на расстоянии более "..COLORS_Numbers.dist_rgb.." метров от вас." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_12_ext_desc_tw", {"loc_achievement_veteran_2_medium_2_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n擊殺 "..COLORS_Numbers.target_rgb.." 名距離 "..COLORS_Numbers.dist_rgb.." 公尺以上的敵人。" end),
 
 		--[+ Prove Your Worth (1-5) +]--
-	--[+ Russian +]--
-		-- create_template("ach_class_vet_4_ext_ru", {"loc_missions_veteran_2_easy_difficulty_5_name"}, {"ru"}, function(locale, value) return "Докажи, чего стоишь (1-5)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_vet_4_ext_ru", {"loc_missions_veteran_2_easy_difficulty_5_name"}, {"ru"}, function(locale, value) return "Докажи, чего стоишь (1-5)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_class_vet_4_ext_tw", {"loc_missions_veteran_2_easy_difficulty_5_name"}, {"zh-tw"}, function(locale, value) return "證明你的價值 (1-5)" end),
 
-			--[+ Complete 1 Missions on Sedition Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
+		--[+ Complete 1 Missions on Sedition Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Мятеж» или выше.
 			-- create_template("ach_class_vet_4_1_ext_desc_en", {"loc_missions_veteran_2_easy_difficulty_1_description"}, {"en"}, function(locale, value) return complete_1_mission_on_sedition_threat end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_4_1_ext_desc_ru", {"loc_missions_veteran_2_easy_difficulty_1_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_sedition_threat_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_4_1_ext_desc_tw", {"loc_missions_veteran_2_easy_difficulty_1_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_sedition_threat_tw end),
 
-			--[+ Complete 1 Missions on Uprising Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Восстание» или выше.
+		--[+ Complete 1 Missions on Uprising Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Восстание» или выше.
 			-- create_template("ach_class_vet_4_2_ext_desc_en", {"loc_missions_veteran_2_easy_difficulty_2_description"}, {"en"}, function(locale, value) return complete_1_mission_on_uprising_threat end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_4_2_ext_desc_ru", {"loc_missions_veteran_2_easy_difficulty_2_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_uprising_threat_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_4_2_ext_desc_tw", {"loc_missions_veteran_2_easy_difficulty_2_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_uprising_threat_tw end),
 
-			--[+ Complete 1 Missions on Malice Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Злоба» или выше.
+		--[+ Complete 1 Missions on Malice Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Злоба» или выше.
 			-- create_template("ach_class_vet_4_3_ext_desc_en", {"loc_missions_veteran_2_easy_difficulty_3_description"}, {"en"}, function(locale, value) return complete_1_mission_on_malice_threat end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_4_3_ext_desc_ru", {"loc_missions_veteran_2_easy_difficulty_3_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_malice_threat_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_4_3_ext_desc_tw", {"loc_missions_veteran_2_easy_difficulty_3_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_malice_threat_tw end),
 
-			--[+ Complete 1 Missions on Heresy Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Ересь» или выше.
+		--[+ Complete 1 Missions on Heresy Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Ересь» или выше.
 			-- create_template("ach_class_vet_4_4_ext_desc_en", {"loc_missions_veteran_2_easy_difficulty_4_description"}, {"en"}, function(locale, value) return complete_1_mission_on_heresy_threat end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_4_4_ext_desc_ru", {"loc_missions_veteran_2_easy_difficulty_4_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_heresy_threat_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_4_4_ext_desc_tw", {"loc_missions_veteran_2_easy_difficulty_4_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_heresy_threat_tw end),
 
-			--[+ Complete 1 Missions on Damnation Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
+		--[+ Complete 1 Missions on Damnation Threat or higher. +]-- -- руоф Выполните задания (1) при угрозе «Проклятие» или выше.
 			-- create_template("ach_class_vet_4_5_ext_desc_en", {"loc_missions_veteran_2_easy_difficulty_5_description"}, {"en"}, function(locale, value) return complete_1_mission_on_damnation_threat end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_4_5_ext_desc_ru", {"loc_missions_veteran_2_easy_difficulty_5_description"}, {"ru"}, function(locale, value) return complete_1_mission_on_damnation_threat_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_4_5_ext_desc_tw", {"loc_missions_veteran_2_easy_difficulty_5_description"}, {"zh-tw"}, function(locale, value) return complete_1_mission_on_damnation_threat_tw end),
 
 		--[+ Through The Mud (1-6) +]-- -- руоф Из грязи (1-6)
-	--[+ Russian +]--
-		-- create_template("ach_class_vet_2_ext_ru", {"loc_achievement_missions_veteran_2_1_name"}, {"ru"}, function(locale, value) return "Из грязи в князи (1)" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_vet_2_ext_ru", {"loc_achievement_missions_veteran_2_1_name"}, {"ru"}, function(locale, value) return "Из грязи в князи (1)" end),
+			--[+ Traditional Chinese +]--
+			-- create_template("ach_class_vet_2_ext_tw", {"loc_achievement_missions_veteran_2_1_name"}, {"zh-tw"}, function(locale, value) return "穿越泥沼 (1)" end),
 
-			--[+ Complete 100 Missions as a Veteran. +]-- -- руоф Выполнить Ветераном задания: 100.
+		--[+ Complete 100 Missions as a Veteran. +]-- -- руоф Выполнить Ветераном задания: 100.
 			create_template("ach_class_vet_2_ext_desc_en", {"loc_achievement_missions_veteran_2_x_description"}, {"en"}, function(locale, value) return "Complete "..COLORS_Numbers.target_rgb.." Missions as a "..COLORS_KWords.cls_vet_rgb.."." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_class_vet_2_ext_desc_ru", {"loc_achievement_missions_veteran_2_x_description"}, {"ru"}, function(locale, value) return "Завершите "..COLORS_Numbers.target_rgb.." миссий "..COLORS_KWords_ru.cls_vet2_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_class_vet_2_ext_desc_tw", {"loc_achievement_missions_veteran_2_x_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KWords_tw.cls_vet_rgb_tw.." 完成 "..COLORS_Numbers.target_rgb.." 次任務。" end),
 
 		--[+ On Overwatch - На чеку +]-- -- руоф Под прикрытием
-	--[+ Russian +]--
-		create_template("ach_red_vet_5_ext_ru", {"loc_achievement_veteran_2_no_melee_damage_taken_name"}, {"ru"}, function(locale, value) return "На чеку" end),
+			--[+ Russian +]--
+			create_template("ach_red_vet_5_ext_ru", {"loc_achievement_veteran_2_no_melee_damage_taken_name"}, {"ru"}, function(locale, value) return "На чеку" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_red_vet_5_ext_tw", {"loc_achievement_veteran_2_no_melee_damage_taken_name"}, {"zh-tw"}, function(locale, value) return "掩護射擊" end),
 
-			--[+ Complete a full Mission on Malice Threat or higher without taking any melee damage. +]-- -- руоф При угрозе «Злоба» или выше полностью завершите задание, не получив урона в ближнем бою.
+		--[+ Complete a full Mission on Malice Threat or higher without taking any melee damage. +]-- -- руоф При угрозе «Злоба» или выше полностью завершите задание, не получив урона в ближнем бою.
 			create_template("ach_red_vet_5_ext_desc_en", {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"en"}, function(locale, value) return "Complete a full Mission on "..COLORS_KWords.malice_rgb.." Threat or higher without taking any melee "..COLORS_KWords.Damage_rgb.."."..TALENTS_Enh_desc_penances.ED_No_dmg_taken_corrupt_rgb end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_red_vet_5_ext_desc_ru", {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, завершите полностью миссию без получения урона в ближнем бою."..TALENTS_Enh_desc_penances_ru.ED_No_dmg_taken_corrupt_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_red_vet_5_ext_desc_tw", {"loc_achievement_veteran_2_no_melee_damage_taken_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n完成一次任務且不受到近戰傷害。" end),
 
 		--[+ One In the Chamber +]-- -- руоф Последний патрон
-	--[+ Russian +]--
-		create_template("ach_red_vet_4_ext_ru", {"loc_achievement_veteran_2_kills_with_last_round_in_mag_name"}, {"ru"}, function(locale, value) return "Последний в обойме" end),
+			--[+ Russian +]--
+			create_template("ach_red_vet_4_ext_ru", {"loc_achievement_veteran_2_kills_with_last_round_in_mag_name"}, {"ru"}, function(locale, value) return "Последний в обойме" end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_red_vet_4_ext_tw", {"loc_achievement_veteran_2_kills_with_last_round_in_mag_name"}, {"zh-tw"}, function(locale, value) return "最後一發" end),
 
-			--[+ Kill 8 enemies with the last round in your clip during a single Mission on Malice Threat or higher. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (8) последним боеприпасом в магазине за одно задание.
+		--[+ Kill 8 enemies with the last round in your clip during a single Mission on Malice Threat or higher. +]-- -- руоф При угрозе «Злоба» или выше убейте врагов (8) последним боеприпасом в магазине за одно задание.
 			create_template("ach_red_vet_4_ext_desc_en", {"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"en"}, function(locale, value) return "Kill "..COLORS_Numbers.target_rgb.." enemies with the last round in your clip during a single Mission on "..COLORS_KWords.malice_rgb.." Threat or higher." end),
-	--[+ Russian +]--
+			--[+ Russian +]--
 			create_template("ach_red_vet_4_ext_desc_ru", {"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов последним патроном в обойме в течение одной миссии на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше." end),
+			--[+ Traditional Chinese +]--
+			create_template("ach_red_vet_4_ext_desc_tw", {"loc_achievement_veteran_2_kills_with_last_round_in_mag_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度下，\n使用最後一發子彈擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Make Every Shot Count - Сделай каждый выстрел важным +]-- -- руоф Стрельба наверняка
 	--[+ Russian +]--
