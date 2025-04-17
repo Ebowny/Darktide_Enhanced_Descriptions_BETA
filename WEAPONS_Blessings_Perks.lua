@@ -1600,12 +1600,12 @@ local localization_templates = {
 
 		--[+ Blazing Spirit +]--
 			-- Voidblast Staff, Voidstrike Staff -- 1 | 2 | 3 | 4
-			create_template("weap_wbr002_desc_ext_en", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"en"}, function(locale, value) return "Enemy gains "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_KWords.Soulblaze_rgb.." on "..COLORS_KWords.Crit_hit_rgb..". Up to "..COLORS_Numbers.n_6_rgb.." Stacks." end), -- stacks: 4 -- colors
+			create_template("weap_wbr002_desc_ext_en", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"en"}, function(locale, value) return "Enemy gains "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_KWords.Soulblaze_rgb.." on "..COLORS_KWords.Crit_hit_rgb.."." end), -- stacks: 4 -- colors -- REMOVED: [Up to "..COLORS_Numbers.n_6_rgb.." Stacks.] because for some reason this description is used for the Psyker Greatsword, but it has 12 stacks max. Fatshark FFS!
 			--[+ French +]--
-			create_template("weap_wbr002_desc_ext_fr", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"fr"}, function(locale, value) return "L'ennemie gagne "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_KWords_fr.Soulblaze_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..". Jusqu'à "..COLORS_Numbers.n_6_rgb.." cumuls." end),
+			create_template("weap_wbr002_desc_ext_fr", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"fr"}, function(locale, value) return "L'ennemie gagne "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_KWords_fr.Soulblaze_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr.."." end), -- Jusqu'à "..COLORS_Numbers.n_6_rgb.." cumuls.
 			--[+ Russian +]-- Пылающий дух -- руоф Пламенный дух
-			create_template("weap_wbr002_desc_ext_ru", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru..". Вплоть до "..COLORS_Numbers.n_6_rgb.." зарядов." end),
-			--[+ Traditional Chinese - 燃燒靈魂 +]-- Duplicate?
+			create_template("weap_wbr002_desc_ext_ru", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru.."." end), --  Вплоть до "..COLORS_Numbers.n_6_rgb.." зарядов.
+			--[+ Traditional Chinese - 燃燒靈魂 +]-- Duplicate? -- NOPE! This is Ranged loc_trait_bespoke_warpfire_burn_on_crit_desc, other one is Melee loc_trait_bespoke_warp_burninating_on_crit_desc.
 			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
 			-- The staff is currently using the weap_wbm043_desc_ext_tw
 			-- create_template("weap_wbr002_desc_ext_tw", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"}, function(locale, value) return "敵人於 "..COLORS_KWords_tw.Crit_hit_rgb_tw.." 時會獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."，上限 "..COLORS_Numbers.n_6_rgb.." 層。" end),
