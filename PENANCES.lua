@@ -786,7 +786,7 @@ local localization_templates = {
 			create_template("ach_class_vet_8_ext_desc_ru", {"loc_achievement_veteran_kills_with_improved_tag_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, отмеченных с помощью ключевого таланта "..COLORS_KW_Penances_ru.fcs_trg_rgb_ru.."." end),
 			--[+ Traditional Chinese +]--
 			-- 擊殺500名被「鎖定目標！」標記的敵人
-			create_template("ach_class_vet_8_ext_desc_tw", {"loc_achievement_veteran_kills_with_improved_tag_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名被"..COLORS_KW_Penances_tw.KeyStone_p_rgb.."『"..COLORS_KW_Penances_tw.fcs_trg_rgb.."』標記的敵人。" end),
+			create_template("ach_class_vet_8_ext_desc_tw", {"loc_achievement_veteran_kills_with_improved_tag_description"}, {"zh-tw"}, function(locale, value) return "擊殺 "..COLORS_Numbers.target_rgb.." 名被 "..COLORS_KW_Penances_tw.KeyStone_p_rgb.."『"..COLORS_KW_Penances_tw.fcs_trg_rgb.."』標記的敵人。" end),
 
 
 	--[+ +ZEALOT - ИЗУВЕР+ +]--

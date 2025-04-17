@@ -812,10 +812,10 @@ local localization_templates = {
 			--[+ Russian +]-- Пылающий дух
 			create_template("weap_wbm043_desc_ext_ru", {"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru..", вплоть до "..COLORS_Numbers.maxstks_var_rgb.." зарядов." end),
 			--[+ Traditional Chinese - 燃燒靈魂 +]--
-			-- 烈焰力場巨劍, 烈焰力場劍, 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
-			-- The staff is currently using this description, 
-			-- The Force Greatsword doesn't seem to be correctly recognized yet(only zh-tw).
-			create_template("weap_wbm043_desc_ext_tw", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層。" end),
+			-- 烈焰力場巨劍, 烈焰力場劍(無效), 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
+			-- The staff is currently using this description in zh-tw, 
+			-- and the Force Greatsword not used in zh-tw.
+			create_template("weap_wbm043_desc_ext_tw", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層，烈焰力場巨劍 "..COLORS_Numbers.n_12_rgb.." 層。" end),
 
 		--[+ Unstable Power +]--
 			-- Blaze Force Greatsword, Force Swords -- 3.5% | 4% | 4.5% | 5% (up to +20%)
@@ -1538,7 +1538,8 @@ local localization_templates = {
 			--[+ Russian +]-- Энергетический всплеск -- руоф Импульс
 			create_template("weap_wbr096_desc_ext_ru", {"loc_trait_bespoke_double_shot_on_primary_crit_and_crit_chance_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." в дальнем бою. Вы выпускаете "..COLORS_Numbers.value_var_rgb.." снаряда при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru.." основной атакой." end),
 			--[+ Traditional Chinese - 湧動 +]--
-			-- 電流力場法杖, 虛空爆破力場法杖, 虛空打擊力場法杖 -- 2% | 3% | 4% | 5%
+			-- 電流力場法杖, 虛空爆破力場法杖, 虛空打擊力場法杖(無效) -- 2% | 3% | 4% | 5%
+			-- The Voidstrike Staff not used in zh-tw.
 			create_template("weap_wbr096_desc_ext_tw", {"loc_trait_bespoke_double_shot_on_primary_crit_and_crit_chance_desc"}, {"zh-tw"}, function(locale, value) return "遠程攻擊 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.." 。\n當主攻擊 "..COLORS_KWords_tw.Crit_rgb_tw.." 會自動發射 "..COLORS_Numbers.value_var_rgb.." 次。" end),
 
 		--[+ Warp Flurry +]-- 
@@ -1605,9 +1606,8 @@ local localization_templates = {
 			create_template("weap_wbr002_desc_ext_fr", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"fr"}, function(locale, value) return "L'ennemie gagne "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_KWords_fr.Soulblaze_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr.."." end), -- Jusqu'à "..COLORS_Numbers.n_6_rgb.." cumuls.
 			--[+ Russian +]-- Пылающий дух -- руоф Пламенный дух
 			create_template("weap_wbr002_desc_ext_ru", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru.."." end), --  Вплоть до "..COLORS_Numbers.n_6_rgb.." зарядов.
-			--[+ Traditional Chinese - 燃燒靈魂 +]-- Duplicate? -- NOPE! This is Ranged loc_trait_bespoke_warpfire_burn_on_crit_desc, other one is Melee loc_trait_bespoke_warp_burninating_on_crit_desc.
+			--[+ Traditional Chinese - 燃燒靈魂 +]-- 這個說明同時也被套用在烈焰力場巨劍，但是他最多12層。
 			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
-			-- The staff is currently using the weap_wbm043_desc_ext_tw
 			-- create_template("weap_wbr002_desc_ext_tw", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"}, function(locale, value) return "敵人於 "..COLORS_KWords_tw.Crit_hit_rgb_tw.." 時會獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."，上限 "..COLORS_Numbers.n_6_rgb.." 層。" end),
 
 		--[+ Penetrating Flame +]--
