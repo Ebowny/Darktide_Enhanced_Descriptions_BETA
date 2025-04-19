@@ -707,7 +707,7 @@ local localization_templates = {
 			create_template("weap_wbm034_desc_ext_ru", {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"ru"}, function(locale, value) return "Цель получает "..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru..", если уже "..COLORS_KWords_ru.Stunned_rgb_ru..", вплоть до "..COLORS_Numbers.n_8_rgb.." зарядов. Длится "..COLORS_Numbers.time_var_rgb.." секунд." end),
 			--[+ Traditional Chinese - 碎顱者 +]--
 			-- 作戰大槌&板盾, 惡棍棒, 輾壓者, 『惡魔之爪』劍, 廁所鏟, 動力錘, 工兵鏟, 電擊錘, 雷鎚 -- 1 | 2 | 3 | 4
-			create_template("weap_wbm034_desc_ext_tw", {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"zh-tw"}, function(locale, value) return "對111 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人，\n使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw end),
+			create_template("weap_wbm034_desc_ext_tw", {"loc_trait_bespoke_staggered_targets_receive_increased_damage_debuff_desc"}, {"zh-tw"}, function(locale, value) return "對 "..COLORS_KWords_tw.Staggered_rgb_tw.." 的敵人，\n使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Damage_rgb_tw end),
 
 		--[+ Thunderstrike +]--
 			-- Battle Maul and Shield, Crusher, Devil's Claw Swords, Power Maul, Sapper Shovels, Thunder Hammers -- 1 | 2 | 3 | 4
