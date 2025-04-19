@@ -1929,101 +1929,157 @@ local localization_templates = {
 			create_template("ach_red_ogr_5_ext_desc_tw", {"loc_achievement_ogryn_2_bull_rushed_100_enemies_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
-	--[+ Russian +]--
-		-- create_template("ach_red_ogr_6_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"ru"}, function(locale, value) return "Меня не остановить!" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_ogr_6_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"ru"}, function(locale, value) return "Меня не остановить!" end),
+			--[+ Traditional Chinese 別讓我停下 +]--
+			-- create_template("ach_red_ogr_6_ext_tw", {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"}, {"zh-tw"}, function(locale, value) return "別讓我停下" end),
 
-			--[+ Move 40 metres with Bull Rush in under 20s on Heresy Threat or higher. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше переместитесь на 40 м с помощью «Бычьего натиска» менее чем за 20 с.
-	--[+ Russian +]--
+		--[+ Move 40 metres with Bull Rush in under 20s on Heresy Threat or higher. (Private Game: Penance can only be completed in a private game) +]-- руоф При угрозе «Ересь» или выше переместитесь на 40 м с помощью «Бычьего натиска» менее чем за 20 с.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_6_ext_desc_ru", {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"ru"}, function(locale, value) return "Переместитесь на "..COLORS_Numbers.target_rgb.." метров с помощью способности "..COLORS_KW_Penances_ru.bull_rush_rgb_ru.." или "..COLORS_KW_Penances_ru.bull_rush4_rgb_ru.." в течение "..COLORS_Numbers.time_wind_rgb.." секунд на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше."..TALENTS_Enh_desc_penances_ru.ED_Dont_stop_me_now_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 在異端或更高威脅度下，在20秒內使用蠻牛衝撞移動40公尺。
+			create_template("ach_red_ogr_6_ext_desc_tw", {"loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n於 "..COLORS_Numbers.time_wind_rgb.." 秒內，使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』技能移動累計 "..COLORS_Numbers.target_rgb.." 公尺。" ..TALENTS_Enh_desc_penances_tw.ED_Dont_stop_me_now_rgb_tw end),
 
 		--[+ Can't Catch Me! +]-- руоф Меня не поймать
-	--[+ Russian +]--
-		create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"ru"}, function(locale, value) return "Меня не поймать!" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"ru"}, function(locale, value) return "Меня не поймать!" end),
+			--[+ Traditional Chinese 抓不到我！ +]--
+			-- create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"}, {"zh-tw"}, function(locale, value) return "抓不到我！" end),
 
-			--[+ Kill 2500 enemies while at 7 stacks or higher of Feel No Pain. +]-- руоф Убейте врагов (2500), сохраняя не менее 7 ед. заряда «Неболита».
-	--[+ Russian +]--
+		--[+ Kill 2500 enemies while at 7 stacks or higher of Feel No Pain. +]-- руоф Убейте врагов (2500), сохраняя не менее 7 ед. заряда «Неболита».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_feel_no_pain_kills_at_max_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов, имея не менее "..COLORS_Numbers.n_7_rgb.." зарядов ключевого таланта "..COLORS_KW_Penances_ru.feelnop_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在疊加了7或以上層數的麻木時擊殺2500名敵人。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_feel_no_pain_kills_at_max_description"}, {"zh-tw"}, function(locale, value) return "在擁有不少於 "..COLORS_Numbers.n_7_rgb.." 層"..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.feelnop_rgb_tw.."』效果時，擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Eat This! +]-- руоф Получи!
-	--[+ Russian +]--
-		create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"ru"}, function(locale, value) return "На, подавись!" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"ru"}, function(locale, value) return "На, подавись!" end),
+			--[+ Traditional Chinese 嚐嚐這個！ +]--
+			create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"}, {"zh-tw"}, function(locale, value) return "嚐嚐這個！" end),
 
-			--[+ Kill 75 Specialists or Elites with the Big Friendly Rock. +]-- руоф Убейте особых или элитных врагов (75) с помощью «Большого дружелюбного валуна».
-	--[+ Russian +]--
+		--[+ Kill 75 Specialists or Elites with the Big Friendly Rock. +]-- руоф Убейте особых или элитных врагов (75) с помощью «Большого дружелюбного валуна».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." элитных врагов или специалистов с помощью блица "..COLORS_KW_Penances_ru.bigfriendro_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 使用投石問路擊殺75名專家或精英。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bigfriendro_rgb_tw.."』擊殺 "..COLORS_Numbers.target_rgb.." 名精英或專家敵人。" end),
 
 		--[+ Pile On +]-- руоф Навались
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_team_heavy_aura_kills_name"}, {"ru"}, function(locale, value) return "Навались" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_team_heavy_aura_kills_name"}, {"ru"}, function(locale, value) return "Навались" end),
+			--[+ Traditional Chinese 堆起來 +]--
 
-			--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
-	--[+ Russian +]--
+		--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_team_heavy_aura_kills_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов заряженными атаками, находясь под действием ауры "..COLORS_KW_Penances_ru.bonebraura_rgb_ru..". Убийства заряженными атаками, совершённые членами команды также засчитываются." end),
+			--[+ Traditional Chinese +]--
+			-- 在碎骨者光環效果啟動時使用重攻擊擊殺5000名敵人。由小隊成員造成的重攻擊擊殺也算。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_team_heavy_aura_kills_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bonebraura_rgb_tw.."』效果內，\n以蓄力攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。\n隊友的蓄力擊殺也會計算。" end),
 
 		--[+ Sustained Fire +]-- руоф Непрерывный огонь
-	--[+ Russian +]--
-		create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"ru"}, function(locale, value) return "Непрерывные удары" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"ru"}, function(locale, value) return "Непрерывные удары" end),
+			--[+ Traditional Chinese 猛攻 +]--
+			create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_name"}, {"zh-tw"}, function(locale, value) return "猛攻" end),
 
-			--[+ Kill 5000 enemies with heavy attacks, while maintaining 5 stacks of Heavy Hitter. +]-- руоф Убейте врагов (5000) мощными атаками, удерживая 5 зарядов «Тяжеловеса».
-	--[+ Russian +]--
+		--[+ Kill 5000 enemies with heavy attacks, while maintaining 5 stacks of Heavy Hitter. +]-- руоф Убейте врагов (5000) мощными атаками, удерживая 5 зарядов «Тяжеловеса».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." врагов заряженными атаками, удерживая "..COLORS_Numbers.n_5_rgb.." зарядов ключевого таланта "..COLORS_KW_Penances_ru.heavyhitter_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- !! This description is not used in zh-tw. !! --
+			-- 在重拳出擊層數疊滿時，使用重擊擊殺5000名敵人。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_description"}, {"zh-tw"}, function(locale, value) return "在維持 "..COLORS_KW_Penances_tw.KeyStone_p_rgb_tw.."『"..COLORS_KW_Penances_tw.heavyhitter_rgb_tw.."』達到 "..COLORS_Numbers.n_5_rgb.." 層的狀態下，使用蓄力攻擊擊殺 "..COLORS_Numbers.target_rgb.." 名敵人。" end),
 
 		--[+ Clear the Path +]-- руоф Расчисти путь
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_2_medium_1_name"}, {"ru"}, function(locale, value) return "Расчисти путь" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_2_medium_1_name"}, {"ru"}, function(locale, value) return "Расчисти путь" end),
+			--[+ Traditional Chinese 掃清道路 +]--
+			create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_2_medium_1_name"}, {"zh-tw"}, function(locale, value) return "掃清道路" end),
 
-			--[+ On Malice Threat or higher, knock down 3 Ranged enemies using Bull Rush, 25 times. +]-- руоф При угрозе «Злоба» или выше сбейте с ног врагов (3) с дистанционной атакой с помощью «Бычьего натиска» 25 р.
-	--[+ Russian +]--
+		--[+ On Malice Threat or higher, knock down 3 Ranged enemies using Bull Rush, 25 times. +]-- руоф При угрозе «Злоба» или выше сбейте с ног врагов (3) с дистанционной атакой с помощью «Бычьего натиска» 25 р.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_2_medium_1_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше, "..COLORS_Numbers.target_rgb.." раз сбейте с ног "..COLORS_Numbers.num_enemies_rgb.." врагов с дальнобойным оружием, используя способность "..COLORS_KW_Penances_ru.bull_rush_rgb_ru.." или "..COLORS_KW_Penances_ru.bull_rush4_rgb_ru.."." end),
+			--[+ Traditional Chinese +]--
+			-- 在惡意威脅度或更高難度下，使用蠻牛沖撞擊倒3個遠程敵人25次。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_2_medium_1_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n擊倒 "..COLORS_Numbers.num_enemies_rgb.." 名持遠程武器的敵人 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Crowd Control +]-- руоф Сдерживание толпы
-	--[+ Russian +]--
-		-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"ru"}, function(locale, value) return "Сдерживание толпы" end),
+			--[+ Russian +]--
+			-- create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"ru"}, function(locale, value) return "Сдерживание толпы" end),
+			--[+ Traditional Chinese 群體控制 +]--
+			-- create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_grenade_frag_group_of_enemies_name"}, {"zh-tw"}, function(locale, value) return "群體控制" end),
 
-			--[+ With one Frag Bomb kill 25 enemies, 25 times. +]-- руоф Убейте врагов (25) одной «Осколочной бомбой» 25 р.
-	--[+ Russian +]--
+		--[+ With one Frag Bomb kill 25 enemies, 25 times. +]-- руоф Убейте врагов (25) одной «Осколочной бомбой» 25 р.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_grenade_frag_group_of_enemies_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.amount_var_rgb.." врагов одной осколочной гранатой от блица "..COLORS_KW_Penances_ru.fragbomb_rgb_ru..". Повторите это задание "..COLORS_Numbers.target_rgb.." раз." end),
+			--[+ Traditional Chinese +]--
+			-- 使用一顆破片炸彈擊殺25名敵人25次。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_grenade_frag_group_of_enemies_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.fragbomb_rgb_tw.."』，單次擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人。\n共需達成 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ Spray and Pray (To the Emperor) +]-- руоф Стреляй и восхваляй (Императора)
-	--[+ Russian +]--
-		create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"ru"}, function(locale, value) return "Стреляй и молись (Императору)" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"ru"}, function(locale, value) return "Стреляй и молись (Императору)" end),
+			--[+ Traditional Chinese 掃射，然後向帝皇祈禱吧 +]--
+			-- create_template("ach_class_ogr_11_ext_tw", {"loc_achievement_ogryn_kills_during_barrage_threshold_name"}, {"zh-tw"}, function(locale, value) return "掃射，然後向帝皇祈禱吧" end),
 
-			--[+ Kill 25 enemies, 50 times, during a single activation of Point-Blank Barrage. +]-- руоф Убейте врагов (25) 50 р. во время однократной активации «Решительного натиска».
-	--[+ Russian +]--
+		--[+ Kill 25 enemies, 50 times, during a single activation of Point-Blank Barrage. +]-- руоф Убейте врагов (25) 50 р. во время однократной активации «Решительного натиска».
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_kills_during_barrage_threshold_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.amount_var_rgb.." врагов за однократное применение способности "..COLORS_KW_Penances_ru.pbbarrage_rgb_ru..". Повторите это задание "..COLORS_Numbers.target_rgb.." раз." end),
+			--[+ Traditional Chinese +]--
+			-- 於同一次貼身火力效果期間，擊殺25名敵人50次。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_kills_during_barrage_threshold_description"}, {"zh-tw"}, function(locale, value) return "使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.pbbarrage_rgb_tw.."』一次擊殺 "..COLORS_Numbers.amount_var_rgb.." 名敵人。\n完成此目標共需達成 "..COLORS_Numbers.target_rgb.." 次。" end),
 
 		--[+ You Can't Hide from Us! +]-- руоф От нас не спрятаться!
-	--[+ Russian +]--
-		create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_team_suppressed_aura_kills_name"}, {"ru"}, function(locale, value) return "Тебе от нас не спрятаться!" end),
+			--[+ Russian +]--
+			create_template("ach_class_ogr_11_ext_ru", {"loc_achievement_ogryn_team_suppressed_aura_kills_name"}, {"ru"}, function(locale, value) return "Тебе от нас не спрятаться!" end),
+			--[+ Traditional Chinese 你躲不掉的！ +]--
 
-			--[+ Kill 7500 suppressed enemies while under the effect of Coward Culling. Kills made by any affected team member also count. +]-- руоф Убейте ослабленных врагов (7500), находясь под действием «Трусливые отбросы». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
-	--[+ Russian +]--
+		--[+ Kill 7500 suppressed enemies while under the effect of Coward Culling. Kills made by any affected team member also count. +]-- руоф Убейте ослабленных врагов (7500), находясь под действием «Трусливые отбросы». Убийства, совершенные любым членом команды под действием эффекта, тоже учитываются.
+			--[+ Russian +]--
 			create_template("ach_class_ogr_11_ext_desc_ru", {"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"ru"}, function(locale, value) return "Убейте "..COLORS_Numbers.target_rgb.." подавленных врагов, находясь под эффектом ауры "..COLORS_KW_Penances_ru.cowculaura_rgb_ru..". Убийства, совершённые любым членом команды под действием эффекта ауры, также учитываются." end),
+			--[+ Traditional Chinese +]--
+			-- 在優勝劣汰效果啟動時擊殺7500名被壓制的敵人。由獲得效果的小隊成員造成的擊殺也算。
+			create_template("ach_class_ogr_11_ext_desc_tw", {"loc_achievement_ogryn_team_suppressed_aura_kills_description"}, {"zh-tw"}, function(locale, value) return "在 "..COLORS_KW_Penances_tw.Aura_p_rgb_tw.."『"..COLORS_KW_Penances_tw.cowculaura_rgb_tw.."』效果內，擊殺 "..COLORS_Numbers.target_rgb.." 名被壓制的敵人。\n隊友在光環下所造成的擊殺同樣會被計算。" end),
 
 		--[+ Something In Your Eye - У тебя что-то в глазу +]-- руоф Нечто в твоих глазах
-	--[+ Russian +]--
-		create_template("ach_red_ogr_3_ext_ru", {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"}, {"ru"}, function(locale, value) return "У тебя что-то в глазу" end),
+			--[+ Russian +]--
+			create_template("ach_red_ogr_3_ext_ru", {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"}, {"ru"}, function(locale, value) return "У тебя что-то в глазу" end),
+			--[+ Traditional Chinese 你眼睛裡有東西 +]--
 
-			--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]-- руоф Убейте осквернителя, попав ему в глаз гранатой.
-	--[+ Russian +]--
+		--[+ Kill a Corruptor by hitting it in the eye with your grenade box. +]-- руоф Убейте осквернителя, попав ему в глаз гранатой.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_3_ext_desc_ru", {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"}, {"ru"}, function(locale, value) return "Убейте Осквернителя, попав ему ящиком с гранатами в глаз."..TALENTS_Enh_desc_penances_ru.ED_Something_in_your_eye_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 使用手雷擊中腐蝕者的眼睛來殺死它。
+			create_template("ach_red_ogr_3_ext_desc_tw", {"loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"}, {"zh-tw"}, function(locale, value) return "用 "..COLORS_KW_Penances_tw.Blitz_p_rgb_tw.."『"..COLORS_KW_Penances_tw.big_box_rgb_tw.."』直接擊中腐蝕者眼睛將其擊殺。" ..TALENTS_Enh_desc_penances_tw.ED_Something_in_your_eye_rgb_tw end),
 
 		--[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес
-	--[+ Russian +]--
-		-- create_template("ach_red_ogr_7_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"ru"}, function(locale, value) return "Чемпион-тяжеловес" end),
+			--[+ Russian +]--
+			-- create_template("ach_red_ogr_7_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"ru"}, function(locale, value) return "Чемпион-тяжеловес" end),
+			--[+ Traditional Chinese 重量級冠軍 +]--
+			-- create_template("ach_red_ogr_7_ext_tw", {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_name"}, {"zh-tw"}, function(locale, value) return "重量級冠軍" end),
 
-			--[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
-	--[+ Russian +]--
+		--[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_7_ext_desc_ru", {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"ru"}, function(locale, value) return "На сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше, сбейте с ног "..COLORS_Numbers.target_rgb.." любых вражеских огрина одним зарядом способности  "..COLORS_KW_Penances_ru.bull_rush_rgb_ru.." или "..COLORS_KW_Penances_ru.bull_rush4_rgb_ru..". Огринами являются: Бастион, Дробитель, Жнец и Чумной огрин."..TALENTS_Enh_desc_penances_ru.ED_Heavyweight_champion_rgb_ru end),
+			--[+ Traditional Chinese +]--
+			-- 以異教徒或以上威脅度，用1次蠻牛衝撞擊倒4個歐格林敵人（堡壘、粉碎者、瘟疫歐格林和/或收割者）。
+			create_template("ach_red_ogr_7_ext_desc_tw", {"loc_achievement_ogryn_2_bull_rushed_4_ogryns_description"}, {"zh-tw"}, function(locale, value) return "在『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度中，\n使用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n單次衝鋒擊倒 "..COLORS_Numbers.target_rgb.." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。" ..TALENTS_Enh_desc_penances_tw.ED_Heavyweight_champion_rgb_tw end),
 
 		--[+ I'm in Charge - Я главный +]-- руоф Я главнее
-	--[+ Russian +]--
-		create_template("ach_red_ogr_2_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"}, {"ru"}, function(locale, value) return "Я главный" end),
+			--[+ Russian +]--
+			create_template("ach_red_ogr_2_ext_ru", {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"}, {"ru"}, function(locale, value) return "Я главный" end),
+			--[+ Traditional Chinese 對衝 +]--
 
-			--[+ Use Bull Rush to interrupt a Plague Ogryn's charge. +]-- руоф Используйте «Бычий натиск», чтобы прервать рывок Чумного Огрина.
-	--[+ Russian +]--
+		--[+ Use Bull Rush to interrupt a Plague Ogryn's charge. +]-- руоф Используйте «Бычий натиск», чтобы прервать рывок Чумного Огрина.
+			--[+ Russian +]--
 			create_template("ach_red_ogr_2_ext_desc_ru", {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_description"}, {"ru"}, function(locale, value) return "Используйте способность "..COLORS_KW_Penances_ru.bull_rush_rgb_ru.." или "..COLORS_KW_Penances_ru.bull_rush4_rgb_ru..", чтобы прервать рывок Чумного Огрина."..TALENTS_Enh_desc_penances_ru.ED_Im_in_charge_rgb_ru end),
-
+			--[+ Traditional Chinese +]--
+			-- 使用蠻牛衝撞來中斷瘟疫歐格林的衝鋒。
+			create_template("ach_red_ogr_2_ext_desc_tw", {"loc_achievement_ogryn_2_bull_rushed_charging_ogryn_description"}, {"zh-tw"}, function(locale, value) return "用 "..COLORS_KW_Penances_tw.Ability_p_rgb_tw.."『"..COLORS_KW_Penances_tw.bull_rush_rgb_tw.."』或『"..COLORS_KW_Penances_tw.bull_rush4_rgb_tw.."』，\n中斷瘟疫歐格林的衝鋒。" ..TALENTS_Enh_desc_penances_tw.ED_Im_in_charge_rgb_tw end),
 
 	--[+ +TACTICAL - ТАКТИЧЕСКИЕ+ +]--
 		--[+ OFFENSIVE - АТАКА +]--

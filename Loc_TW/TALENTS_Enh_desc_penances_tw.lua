@@ -4,21 +4,21 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
---[+ ++ENHANCED DESCRIPTIONS - РАСШИРЕННЫЕ ОПИСАНИЯ++ +]--
+--[+ ++ENHANCED DESCRIPTIONS - 增強苦修描述 ++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 
---[+ +PENANCES - ИСКУПЛЕНИЯ+ +]--
-	--[+ +VETERAN - 老兵 + +]--
+--[++ PENANCES - 苦修 ++]--
+	--[++VETERAN - 老兵 ++]--
 		--[+ Stay Accurate - 保持精準 +]--
-		--[+ Adept Assassin - Адепт-ассасин +]-- -- руоф Искусный убийца
-		--[+ Deadeye +]-- руоф Меткий глаз
-		--[+ Marked For Death - Отмеченные на смерть +]-- -- руоф Отмечены смертью
+		--[+ Adept Assassin - 老練刺客 +]--
+		--[+ Deadeye 神射手 +]--
+		--[+ Marked For Death - 死亡標記 +]--
 	local ED_Headshot_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"{#color(177, 144, 0)}+++ 瞄準敵人的頭部射擊。+++{#reset()}",
 	}, "\n"), enhdesc_col)
 
-	--[+ On Overwatch - 掩護射擊 +]-- -- руоф Под прикрытием
+	--[+ On Overwatch - 掩護射擊 +]--
 	local ED_No_dmg_taken_corrupt_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"+++ 小心所有腐敗來源！+++",
@@ -33,7 +33,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- 首次打光子彈時只要不再開火，補充彈藥將不被計算。",
 	}, "\n"), enhdesc_col)
 	
-
 	--[+ Be Methodical - 有條不紊 +]--
 	local ED_On_heresy_volley_rgb_tw = iu_actit(table.concat({
 		"\n",
@@ -57,7 +56,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"+++ 壓制敵人的效果會在退出潛行模式後生效。+++",
 	}, "\n"), enhdesc_col)
 
-	--[+ + ZEALOT + +]--
+	--[++ ZEALOT - 狂信徒 ++]--
 	--[+ Blessed be Thine Aim - 聖佑汝之瞄準 +]--
 	local ED_Blessed_be_thine_aim_rgb_tw = iu_actit(table.concat({
 		"\n",
@@ -73,7 +72,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 	
-	--[+ ++PSYKER - ПСАЙКЕР++ +]--
+	--[++ PSYKER - 靈能者 ++]--
 	--[+ Unleash the Warp - 亞空間釋放 +]--
 	local ED_Unleash_warp_rgb_tw = iu_actit(table.concat({
 		"\n",
@@ -81,7 +80,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		" - 法杖的主攻、次要攻擊。",
 		" - 靈能劍的特殊攻擊、爆炸天賦。",
 		" - 靈魂之火。",
-		-- " +++ - Учитываются варп-атаки из любого источника: основные и дополнительный атаки посохами, специальные атаки психосиловыми мечами, атаки взрывными талантами и Горение души. +++",
 	}, "\n"), enhdesc_col)
 
 
@@ -92,7 +90,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"請使用『靈能學者之怒』或『刺耳尖嘯』這兩個技能。",
 	}, "\n"), enhdesc_col)
 
-	--[+ Warp Battery +]-- 亞空間電池
+	--[+ Warp Battery - 亞空間電池 +]--
 	local ED_Warp_battery_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"+++ 任務進行中請完全不要使用主動技能！+++",
@@ -101,7 +99,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"同時閃擊『動能撕裂者』也非常有幫助。",
 	}, "\n"), enhdesc_col)
 
-	--[+ Pick n' Mix +]-- 每樣來點
+	--[+ Pick n' Mix - 每樣來點 +]-- 
 	local ED_Pick_n_mix_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"建議使用『顱腦崩裂』，搭配『動能共鳴』，",
@@ -109,30 +107,37 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	}, "\n"), enhdesc_col)
 
 
-	--[+ ++OGRYN - ОГРИН++ +]--
-	--[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
+	--[++ OGRYN - 歐格林 ++]--
+	--[+ Don't Stop Me Now! - 別讓我停下 +]-- 
 	local ED_Dont_stop_me_now_rgb_tw = iu_actit(table.concat({
-		-- " +++ - Самый простой способ: применить стимулятор Концентрации (жёлтый), потом применить способность «Неукротимый», пробежать 20 полных метров, способность быстро откатится и можно бежать дальше вперёд или назад.",
-		-- "- Не нажимайте кнопку [S](назад) или ПКМ(блок)! +++",
+		"\n",
+		"最簡單的做法：",
+		"使用『專注針（黃）』後，開技能『蠻牛衝撞』，",
+		"第一次衝刺完整 20 公尺後等技能冷卻，",
+		"接著可以使用第二次繼續往前或往後跑。"
 	}, "\n"), enhdesc_col)
 
 
-	--[+ Something In Your Eye - У тебя что-то в глазу +]-- руоф Нечто в твоих глазах
+	--[+ Something In Your Eye - 你眼睛裡有東西 +]-- 
 	local ED_Something_in_your_eye_rgb_tw = iu_actit(table.concat({
-		-- " +++ - Срабатывает обычно только с начальной «Большой коробкой боли», но иногда багуется и срабатывает с улучшенным ящиком «Бросай бомбы!» (в т.ч. не убивая Осквернителя).",
-		-- "- Осквернитель - это хаотический нарост с глазом в центре. На миссиях вы сначала будете сбивать три его щупальца, чтобы Осквернитель открыл свой глаз. +++",
+		"\n",
+		"僅限初始的「巨量傷害盒」，但有時候出bug導致「投彈完畢！」也會觸發（即使沒殺死）",
+		"\n",
+		"腐蝕者是一種混沌突變體，中央有一隻大眼睛。\n在任務中你需要先摧毀牠的三條觸手，牠才會張開眼睛"
 	}, "\n"), enhdesc_col)
 
-	--[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес
+	--[+ Heavyweight Champion - 重量級冠軍 +]-- 
 	local ED_Heavyweight_champion_rgb_tw = iu_actit(table.concat({
-		-- " +++ - Огрины могут быть в любых вариациях, главное, чтобы не менее 4 в группе.",
-		-- "- Учитывайте, что монстр Чумной огрин прерывает ваше движение. +++",
+		"\n",
+		"歐格林類型不拘，只要隊伍裡至少4名歐格林就可以。",
+		"小心瘟疫歐格林會中斷你的移動，影響操作節奏。"
 	}, "\n"), enhdesc_col)
 
-	--[+ I'm in Charge - Я главный +]-- руоф Я главнее
+	--[+ I'm in Charge - 對衝 +]--
 	local ED_Im_in_charge_rgb_tw = iu_actit(table.concat({
-		-- " +++ - Примените способность, когда Чумной Огрин побежит на вас или на союзника.",
-		-- "- Перед рывком Чумной Огрин сначала рычит, потом пригибается и бежит. +++",
+		"\n",
+		"當瘟疫歐格林朝你或隊友衝過來時，使用你的技能。",
+		"牠衝鋒前會先怒吼一聲，再壓低身體準備衝刺。"
 	}, "\n"), enhdesc_col)
 
 
