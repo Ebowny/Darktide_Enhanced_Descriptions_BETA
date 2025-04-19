@@ -527,10 +527,15 @@ local localization_templates = {
 	--[+ Russian +]--
 	create_template("talent_tree_oper_mod_001_en",{"loc_talent_warp_charge_low"}, {"ru"}, function(locale, value) return "Сопротивление опасности" end),
 
-	--[+ Ranged Damage Boost - Повышение урона дальнего боя +]--
-	-- create_template("talent_tree_oper_mod_004_en", {"loc_talent_ranged_damage_low"}, {"en"}, function(locale, value) return "Ranged Damage Boost" end), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
+	--[+ Ranged Damage Boost Low - Повышение урона дальнего боя малое +]--
+	create_template("talent_tree_oper_mod_004_en", {"loc_talent_ranged_damage_low"}, {"en"}, function(locale, value) return "Ranged Damage Boost Low" end), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
 	--[+ Russian +]--
-	create_template("talent_tree_oper_mod_004_ru", {"loc_talent_ranged_damage_low"}, {"ru"}, function(locale, value) return "Повышение урона дальнего боя" end),
+	create_template("talent_tree_oper_mod_004_ru", {"loc_talent_ranged_damage_low"}, {"ru"}, function(locale, value) return "Повышение урона дальнего боя малое" end),
+
+	--[+ Ranged Damage Boost Medium - Повышение урона дальнего боя среднее +]--
+	create_template("talent_tree_oper_mod_004_en", {"loc_talent_ranged_damage_medium"}, {"en"}, function(locale, value) return "Ranged Damage Boost Medium" end), -- ranged_damage:+5% -- Psyker, Ogryn, Veteran
+	--[+ Russian +]--
+	create_template("talent_tree_oper_mod_004_ru", {"loc_talent_ranged_damage_medium"}, {"ru"}, function(locale, value) return "Повышение урона дальнего боя среднее" end),
 
 	--[+ Reload Boost - Повышение скорости перезарядки +]--
 	-- create_template("talent_tree_oper_mod_011_en", {"loc_talent_reload_speed_low"}, {"en"}, function(locale, value) return "Reload Boost" end), -- reload_speed: +5% -- Ogryn, Veteran
@@ -1989,8 +1994,8 @@ local localization_templates = {
 
 	--[+ Passive 17 - Attention Seeker +]--
 	-- create_template("talent_tree_ogr_pas_017_en", {"loc_talent_ranged_enemies_taunt"}, {"en"}, function(locale, value) return "Attention Seeker" end),
-	--[+ Russian +]-- Искатель внимания -- руоф Внимание искателя
-	create_template("talent_tree_ogr_pas_017_ru", {"loc_talent_ranged_enemies_taunt"}, {"ru"}, function(locale, value) return "Искатель внимания" end),
+	--[+ Russian +]-- Провокатор -- руоф Внимание искателя
+	create_template("talent_tree_ogr_pas_017_ru", {"loc_talent_ranged_enemies_taunt"}, {"ru"}, function(locale, value) return "Провокатор" end),
 
 	--[+ Passive 18 - Get Stuck In +]--
 	-- create_template("talent_tree_ogr_pas_018_en", {"loc_talent_ogryn_bull_rush_movement_speed"}, {"en"}, function(locale, value) return "Get Stuck In" end),
