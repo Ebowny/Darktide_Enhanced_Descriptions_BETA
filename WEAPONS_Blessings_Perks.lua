@@ -957,7 +957,7 @@ local localization_templates = {
 			--[+ Russian +]-- Пылающий дух
 			create_template("weap_wbm043_desc_ext_ru", {"loc_trait_bespoke_warp_burninating_on_crit_desc"}, {"ru"}, function(locale, value) return COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Soulblaze_rgb_ru.." получает враг при "..COLORS_KWords_ru.Crit_hit_rgb_ru..", вплоть до "..COLORS_Numbers.maxstks_var_rgb.." зарядов." end),
 			--[+ Traditional Chinese - 燃燒靈魂 +]--
-			-- 烈焰力場巨劍, 烈焰力場劍(無效), 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
+			-- 虛空爆破力場法杖, 虛空打擊力場法杖 -- 1 | 2 | 3 | 4
 			-- The staff is currently using this description in zh-tw, 
 			-- and the Force Greatsword not used in zh-tw.
 			create_template("weap_wbm043_desc_ext_tw", {"loc_trait_bespoke_warpfire_burn_on_crit_desc"}, {"zh-tw"}, function(locale, value) return COLORS_KWords_tw.Crit_hit_rgb_tw.." 敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層的 "..COLORS_KWords_tw.Soulblaze_rgb_tw.."。\n上限 "..COLORS_Numbers.n_6_rgb.." 層，烈焰力場巨劍 "..COLORS_Numbers.n_12_rgb.." 層。" end),
