@@ -4814,7 +4814,7 @@ local localization_templates = {
 		-- {"loc_talent_veteran_big_game_hunter"}, {"zh-tw"},
 			-- loc_text("幹掉它!")),
 
---[+ ++OGRYN - ОГРИН++ +]--
+--[+ ++OGRYN - ОГРИН - 歐格林 ++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
 	--[+ Blitz 0 - Big Box of Hurt +]--
 	-- create_template("talent_tree_ogr_blitz0_000_en",
@@ -4824,6 +4824,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz0_000_ru",
 		{"loc_ability_ogryn_grenade_box"}, {"ru"},
 			loc_text("Большая коробка боли")),
+	--[+ Traditional Chinese - 巨量傷害盒 +]--
+	-- create_template("talent_tree_ogr_blitz0_000_tw",
+		-- {"loc_ability_ogryn_grenade_box"}, {"zh-tw"},
+			-- loc_text("巨量傷害盒")),
 
 	--[+ Blitz 1 - Big Friendly Rock +]--
 	-- create_template("talent_tree_ogr_blitz1_000_en",
@@ -4833,6 +4837,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_blitz1_000_ru",
 		-- {"loc_ability_ogryn_friend_rock"}, {"ru"},
 			-- loc_text("Большой дружелюбный валун")),
+	--[+ Traditional Chinese - 投石問路 +]--
+	-- create_template("talent_tree_ogr_blitz1_000_tw",
+		-- {"loc_ability_ogryn_friend_rock"}, {"zh-tw"},
+			-- loc_text("投石問路")),
 
 	--[+ Blitz 2 - Bombs Away! +]--
 	-- create_template("talent_tree_ogr_blitz2_000_en",
@@ -4842,6 +4850,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz2_000_ru",
 		{"loc_talent_bonebreaker_grenade_super_armor_explosion"}, {"ru"},
 			loc_text("Бросай бомбы!")),
+	--[+ Traditional Chinese - 投彈完畢! +]--
+	-- create_template("talent_tree_ogr_blitz2_000_tw",
+		-- {"loc_talent_bonebreaker_grenade_super_armor_explosion"}, {"zh-tw"},
+			-- loc_text("投彈完畢!")),
 
 	--[+ Blitz 3 - Frag Bomb +]--
 	-- create_template("talent_tree_ogr_blitz3_000_en",
@@ -4851,6 +4863,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_blitz3_000_ru",
 		{"loc_ability_ogryn_grenade_demolition"}, {"ru"},
 			loc_text("Фраг-бомба")),
+	--[+ Traditional Chinese - 破片炸彈 +]--
+	-- create_template("talent_tree_ogr_blitz3_000_tw",
+		-- {"loc_ability_ogryn_grenade_demolition"}, {"zh-tw"},
+			-- loc_text("破片炸彈")),
 
 --[+ +AURA - АУРА+ +]--
 	--[+ Aura 0 - Intimidating Presence +]--
@@ -4861,6 +4877,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura0_000_ru",
 		{"loc_talent_ogryn_2_base_4"}, {"ru"},
 			loc_text("Устрашающее присутствие")),
+	--[+ Traditional Chinese - 威嚇氣場 +]--
+	-- create_template("talent_tree_ogr_aura0_000_tw",
+		-- {"loc_talent_ogryn_2_base_4"}, {"zh-tw"},
+			-- loc_text("威嚇氣場")),
 
 	--[+ Aura 1 - Bonebreaker's Aura +]--
 	-- create_template("talent_tree_ogr_aura1_000_en",
@@ -4870,6 +4890,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_aura1_000_ru",
 		-- {"loc_talent_damage_aura"}, {"ru"},
 			-- loc_text("Аура костолома")),
+	--[+ Traditional Chinese - 破骨者之環 +]--
+	-- create_template("talent_tree_ogr_aura1_000_tw",
+		-- {"loc_talent_damage_aura"}, {"zh-tw"},
+			-- loc_text("破骨者之環")),
 
 	--[+ Aura 2 - Stay Close! +]--
 	-- create_template("talent_tree_ogr_aura2_000_en",
@@ -4879,6 +4903,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura2_000_ru",
 		{"loc_talent_ogryn_toughness_regen_aura"}, {"ru"},
 			loc_text("Держись рядом!")),
+	--[+ Traditional Chinese - 跟緊我! +]--
+	-- create_template("talent_tree_ogr_aura2_000_tw",
+		-- {"loc_talent_ogryn_toughness_regen_aura"}, {"zh-tw"},
+			-- loc_text("跟緊我!")),
 
 	--[+ Aura 3 - Coward Culling +]--
 	-- create_template("talent_tree_ogr_aura3_000_en",
@@ -4888,6 +4916,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_aura3_000_ru",
 		{"loc_talent_ogryn_damage_vs_suppressed"}, {"ru"},
 			loc_text("Отсев трусливых")),
+	--[+ Traditional Chinese - 優勝劣汰 +]--
+	-- create_template("talent_tree_ogr_aura3_000_tw",
+		-- {"loc_talent_ogryn_damage_vs_suppressed"}, {"zh-tw"},
+			-- loc_text("優勝劣汰")),
 
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 	--[+ Ability 0 - Bull Rush +]--
@@ -4898,6 +4930,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil0_000_ru",
 		{"loc_ability_ogryn_charge"}, {"ru"},
 			loc_text("Рывок быка")),
+	--[+ Traditional Chinese - 蠻牛衝撞 +]--
+	-- create_template("talent_tree_ogr_abil0_000_tw",
+		-- {"loc_ability_ogryn_charge"}, {"zh-tw"},
+			-- loc_text("蠻牛衝撞")),
 
 	--[+ Ability 1 - Indomitable +]--
 	-- create_template("talent_tree_ogr_abil1_000_en",
@@ -4907,6 +4943,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil1_000_ru",
 		{"loc_talent_ogryn_bull_rush_distance"}, {"ru"},
 			loc_text("Неукротимый")),
+	--[+ Traditional Chinese - 不屈不撓 +]--
+	-- create_template("talent_tree_ogr_abil1_000_tw",
+		-- {"loc_talent_ogryn_bull_rush_distance"}, {"zh-tw"},
+			-- loc_text("不屈不撓")),
 
 	--[+ Ability 1-1 - Stomping Boots +]--
 	-- create_template("talent_tree_ogr_abil1_001_en",
@@ -4916,6 +4956,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil1_001_ru",
 		{"loc_talent_ogryn_toughness_on_bull_rush"}, {"ru"},
 			loc_text("Топающие сапоги")),
+	--[+ Traditional Chinese - 跺殺之靴 +]--
+	-- create_template("talent_tree_ogr_abil1_001_tw",
+		-- {"loc_talent_ogryn_toughness_on_bull_rush"}, {"zh-tw"},
+			-- loc_text("跺殺之靴")),
 
 	--[+ Ability 1-2 - Trample +]--
 	-- create_template("talent_tree_ogr_abil1_002_en",
@@ -4925,6 +4969,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil1_002_ru",
 		{"loc_talent_ogryn_ability_charge_trample"}, {"ru"},
 			loc_text("Топот")),
+	--[+ Traditional Chinese - 踐踏 +]--
+	-- create_template("talent_tree_ogr_abil1_002_tw",
+		-- {"loc_talent_ogryn_ability_charge_trample"}, {"zh-tw"},
+			-- loc_text("踐踏")),
 
 	--[+ Ability 1-3 - Pulverise +]--
 	-- create_template("talent_tree_ogr_abil1_003_en",
@@ -4934,6 +4982,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil1_003_ru",
 		{"loc_talent_ogryn_bleed_on_bull_rush"}, {"ru"},
 			loc_text("Разбрызгивание")),
+	--[+ Traditional Chinese - 粉碎 +]--
+	-- create_template("talent_tree_ogr_abil1_003_tw",
+		-- {"loc_talent_ogryn_bleed_on_bull_rush"}, {"zh-tw"},
+			-- loc_text("粉碎")),
 
 	--[+ Ability 2 - Loyal Protector +]--
 	-- create_template("talent_tree_ogr_abil2_000_en",
@@ -4943,6 +4995,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_abil2_000_ru",
 		-- {"loc_ability_ogryn_taunt_shout"}, {"ru"},
 			-- loc_text("Верный защитник")),
+	--[+ Traditional Chinese - 忠誠守護者 +]--
+	-- create_template("talent_tree_ogr_abil2_000_tw",
+		-- {"loc_ability_ogryn_taunt_shout"}, {"zh-tw"},
+			-- loc_text("忠誠守護者")),
 
 	--[+ Ability 2-1 - Valuable Distraction +]--
 	-- create_template("talent_tree_ogr_abil2_001_en",
@@ -4952,6 +5008,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil2_001_ru",
 		{"loc_talent_ogryn_taunt_damage_taken_increase"}, {"ru"},
 			loc_text("Отвлекающий манёвр")),
+	--[+ Traditional Chinese - 重要干擾 +]--
+	-- create_template("talent_tree_ogr_abil2_001_tw",
+		-- {"loc_talent_ogryn_taunt_damage_taken_increase"}, {"zh-tw"},
+			-- loc_text("重要干擾")),
 
 	--[+ Ability 2-2 - Go Again +]--
 	-- create_template("talent_tree_ogr_abil2_002_en",
@@ -4961,6 +5021,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil2_002_ru",
 		{"loc_talent_ogryn_taunt_stagger_cd"}, {"ru"},
 			loc_text("Давай по новой!")),
+	--[+ Traditional Chinese - 再來! +]--
+	-- create_template("talent_tree_ogr_abil2_002_tw",
+		-- {"loc_talent_ogryn_taunt_stagger_cd"}, {"zh-tw"},
+			-- loc_text("再來!")),
 
 	--[+ Ability 2-3 - Big Lungs +]--
 	-- create_template("talent_tree_ogr_abil2_003_en",
@@ -4970,6 +5034,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil2_003_ru",
 		{"loc_talent_ogryn_taunt_radius_increase"}, {"ru"},
 			loc_text("Громогласный")),
+	--[+ Traditional Chinese - 強力肺活 +]--
+	-- create_template("talent_tree_ogr_abil2_003_tw",
+		-- {"loc_talent_ogryn_taunt_radius_increase"}, {"zh-tw"},
+			-- loc_text("強力肺活")),
 
 	--[+ Ability 3 - Point-Blank Barrage +]--
 	-- create_template("talent_tree_ogr_abil3_000_en",
@@ -4979,6 +5047,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil3_000_ru",
 		{"loc_talent_ogryn_combat_ability_special_ammo"}, {"ru"},
 			loc_text("Беспощадный обстрел в упор")),
+	--[+ Traditional Chinese - 貼身火力 +]--
+	-- create_template("talent_tree_ogr_abil3_000_tw",
+		-- {"loc_talent_ogryn_combat_ability_special_ammo"}, {"zh-tw"},
+			-- loc_text("貼身火力")),
 
 	--[+ Ability 3-1 - Bullet Bravado +]--
 	-- create_template("talent_tree_ogr_abil3_001_en",
@@ -4988,6 +5060,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil3_001_ru",
 		{"loc_talent_ogryn_special_ammo_toughness"}, {"ru"},
 			loc_text("Бравада стрелка")),
+	--[+ Traditional Chinese - 壯膽子彈 +]--
+	-- create_template("talent_tree_ogr_abil3_001_tw",
+		-- {"loc_talent_ogryn_special_ammo_toughness"}, {"zh-tw"},
+			-- loc_text("壯膽子彈")),
 
 	--[+ Ability 3-2 - Hail of Fire +]--
 	-- create_template("talent_tree_ogr_abil3_002_en",
@@ -4997,6 +5073,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil3_002_ru",
 		{"loc_talent_ogryn_special_ammo_armor_pen"}, {"ru"},
 			loc_text("Град огня")),
+	--[+ Traditional Chinese - 槍林彈雨 +]--
+	-- create_template("talent_tree_ogr_abil3_002_tw",
+		-- {"loc_talent_ogryn_special_ammo_armor_pen"}, {"zh-tw"},
+			-- loc_text("槍林彈雨")),
 
 	--[+ Ability 3-3 - Light 'em Up +]--
 	-- create_template("talent_tree_ogr_abil3_003_en",
@@ -5006,6 +5086,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_abil3_003_ru",
 		{"loc_talent_ogryn_special_ammo_fire_shots"}, {"ru"},
 			loc_text("Задай жару")),
+	--[+ Traditional Chinese - 集火射擊 +]--
+	-- create_template("talent_tree_ogr_abil3_003_tw",
+		-- {"loc_talent_ogryn_special_ammo_fire_shots"}, {"zh-tw"},
+			-- loc_text("集火射擊")),
 
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 	--[+ Keystone 1 - Heavy Hitter +]--
@@ -5016,6 +5100,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys1_000_ru",
 		{"loc_talent_ogryn_passive_heavy_hitter"}, {"ru"},
 			loc_text("Тяжёлый нападающий")),
+	--[+ Traditional Chinese - 重拳出擊 +]--
+	-- create_template("talent_tree_ogr_keys1_000_tw",
+		-- {"loc_talent_ogryn_passive_heavy_hitter"}, {"zh-tw"},
+			-- loc_text("重拳出擊")),
 
 	--[+ Keystone 1-1 - Just Getting Started +]--
 	-- create_template("talent_tree_ogr_keys1_001_en",
@@ -5025,6 +5113,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys1_001_ru",
 		{"loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed"}, {"ru"},
 			loc_text("Я только начал")),
+	--[+ Traditional Chinese - 熱身完畢 +]--
+	-- create_template("talent_tree_ogr_keys1_001_tw",
+		-- {"loc_talent_ogryn_heavy_hitter_max_stacks_improves_attack_speed"}, {"zh-tw"},
+			-- loc_text("熱身完畢")),
 
 	--[+ Keystone 1-2 - Unstoppable +]--
 	-- create_template("talent_tree_ogr_keys1_002_en",
@@ -5034,6 +5126,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys1_002_ru",
 		{"loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness"}, {"ru"},
 			loc_text("Неудержимый")),
+	--[+ Traditional Chinese - 越戰越勇 +]--
+	-- create_template("talent_tree_ogr_keys1_002_tw",
+		-- {"loc_talent_ogryn_heavy_hitter_max_stacks_improves_toughness"}, {"zh-tw"},
+			-- loc_text("越戰越勇")),
 
 	--[+ Keystone 1-3 - Brutish Momentum +]--
 	-- create_template("talent_tree_ogr_keys1_003_en",
@@ -5043,6 +5139,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys1_003_ru",
 		{"loc_talent_ogryn_heavy_hitter_light_attacks_refresh"}, {"ru"},
 			loc_text("Брутальный моментум")),
+	--[+ Traditional Chinese - 兇蠻打擊 +]--
+	-- create_template("talent_tree_ogr_keys1_003_tw",
+		-- {"loc_talent_ogryn_heavy_hitter_light_attacks_refresh"}, {"zh-tw"},
+			-- loc_text("兇蠻打擊")),
 
 	--[+ Keystone 2 - Feel No Pain +]--
 	-- create_template("talent_tree_ogr_keys2_000_en",
@@ -5052,6 +5152,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_keys2_000_ru",
 		-- {"loc_talent_ogryn_carapace_armor"}, {"ru"},
 			-- loc_text("Неболит")),
+	--[+ Traditional Chinese - 麻木 +]--
+	-- create_template("talent_tree_ogr_keys2_000_tw",
+		-- {"loc_talent_ogryn_carapace_armor"}, {"zh-tw"},
+			-- loc_text("麻木")),
 
 	--[+ Keystone 2-1 - Pained Outburst +]--
 	-- create_template("talent_tree_ogr_keys2_001_en",
@@ -5061,6 +5165,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_keys2_001_ru",
 		-- {"loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks"}, {"ru"},
 			-- loc_text("Вспышка боли")),
+	--[+ Traditional Chinese - 痛楚爆發 +]--
+	-- create_template("talent_tree_ogr_keys2_001_tw",
+		-- {"loc_talent_ogryn_carapace_armor_trigger_on_zero_stacks"}, {"zh-tw"},
+			-- loc_text("痛楚爆發")),
 
 	--[+ Keystone 2-2 - Strongest! +]--
 	-- create_template("talent_tree_ogr_keys2_002_en",
@@ -5070,6 +5178,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_keys2_002_ru",
 		-- {"loc_talent_ogryn_carapace_armor_add_stack_on_push"}, {"ru"},
 			-- loc_text("Сильнейший!")),
+	--[+ Traditional Chinese - 最強壯! +]--
+	-- create_template("talent_tree_ogr_keys2_002_tw",
+		-- {"loc_talent_ogryn_carapace_armor_add_stack_on_push"}, {"zh-tw"},
+			-- loc_text("最強壯!")),
 
 	--[+ Keystone 2-3 - Toughest! +]--
 	-- create_template("talent_tree_ogr_keys2_003_en",
@@ -5079,6 +5191,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys2_003_ru",
 		{"loc_talent_ogryn_carapace_armor_more_toughness"}, {"ru"},
 			loc_text("Стойкий!")),
+	--[+ Traditional Chinese - 最堅韌! +]--
+	-- create_template("talent_tree_ogr_keys2_003_tw",
+		-- {"loc_talent_ogryn_carapace_armor_more_toughness"}, {"zh-tw"},
+			-- loc_text("最堅韌!")),
 
 	--[+ Keystone 3 - Burst Limiter Override +]--
 	-- create_template("talent_tree_ogr_keys3_000_en",
@@ -5088,6 +5204,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys3_000_ru",
 		{"loc_talent_ogryn_chance_to_not_consume_ammo"}, {"ru"},
 			loc_text("Обход ограничителя очереди")),
+	--[+ Traditional Chinese - 爆限超載 +]--
+	-- create_template("talent_tree_ogr_keys3_000_tw",
+		-- {"loc_talent_ogryn_chance_to_not_consume_ammo"}, {"zh-tw"},
+			-- loc_text("爆限超載")),
 
 	--[+ Keystone 3-1 - Maximum Firepower +]--
 	-- create_template("talent_tree_ogr_keys3_001_en",
@@ -5097,6 +5217,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_keys3_001_ru",
 		-- {"loc_talent_ogryn_leadbelcher_grant_cooldown_reduction"}, {"ru"},
 			-- loc_text("Максимальная огневая мощь")),
+	--[+ Traditional Chinese - 最大火力 +]--
+	-- create_template("talent_tree_ogr_keys3_001_tw",
+		-- {"loc_talent_ogryn_leadbelcher_grant_cooldown_reduction"}, {"zh-tw"},
+			-- loc_text("最大火力")),
 
 	--[+ Keystone 3-2 - Good Shootin' +]--
 	-- create_template("talent_tree_ogr_keys3_002_en",
@@ -5106,6 +5230,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys3_002_ru",
 		{"loc_talent_ogryn_critical_leadbelcher"}, {"ru"},
 			loc_text("Хорошая стрельба")),
+	--[+ Traditional Chinese - 好槍法 +]--
+	-- create_template("talent_tree_ogr_keys3_002_tw",
+		-- {"loc_talent_ogryn_critical_leadbelcher"}, {"zh-tw"},
+			-- loc_text("好槍法")),
 
 	--[+ Keystone 3-3 - More Burst Limiter Overrides! +]--
 	-- create_template("talent_tree_ogr_keys3_003_en",
@@ -5115,6 +5243,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_keys3_003_ru",
 		{"loc_talent_ogryn_increased_leadbelcher_chance"}, {"ru"},
 			loc_text("Ещё больший обход ограничителя очереди!")),
+	--[+ Traditional Chinese - 爆限大超載! +]--
+	-- create_template("talent_tree_ogr_keys3_003_tw",
+		-- {"loc_talent_ogryn_increased_leadbelcher_chance"}, {"zh-tw"},
+			-- loc_text("爆限大超載!")),
 
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Furious +]--
@@ -5125,6 +5257,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_001_ru",
 		{"loc_talent_ogryn_damage_per_enemy_hit_previous"}, {"ru"},
 			loc_text("Разъярённый")),
+	--[+ Traditional Chinese - 怒不可遏 +]--
+	-- create_template("talent_tree_ogr_pas_001_tw",
+		-- {"loc_talent_ogryn_damage_per_enemy_hit_previous"}, {"zh-tw"},
+			-- loc_text("怒不可遏")),
 
 	--[+ Passive 2 - Reloaded and Ready +]--
 	-- create_template("talent_tree_ogr_pas_002_en",
@@ -5134,6 +5270,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_002_ru",
 		{"loc_talent_ogryn_ranged_damage_on_reload"}, {"ru"},
 			loc_text("Перезаряжен и готов")),
+	--[+ Traditional Chinese - 換彈完畢 +]--
+	-- create_template("talent_tree_ogr_pas_002_tw",
+		-- {"loc_talent_ogryn_ranged_damage_on_reload"}, {"zh-tw"},
+			-- loc_text("換彈完畢")),
 
 	--[+ Passive 3 - The Best Defence +]--
 	-- create_template("talent_tree_ogr_pas_003_en",
@@ -5143,6 +5283,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_003_ru",
 		-- {"loc_talent_ogryn_toughness_on_multiple"}, {"ru"},
 			-- loc_text("Лучшая защита")),
+	--[+ Traditional Chinese - 最好的防禦 +]--
+	-- create_template("talent_tree_ogr_pas_003_tw",
+		-- {"loc_talent_ogryn_toughness_on_multiple"}, {"zh-tw"},
+			-- loc_text("最好的防禦")),
 
 	--[+ Passive 4 - Heavyweight +]--
 	-- create_template("talent_tree_ogr_pas_004_en",
@@ -5152,6 +5296,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_004_ru",
 		-- {"loc_talent_ogryn_ogryn_fighter"}, {"ru"},
 			-- loc_text("Тяжеловес")),
+	--[+ Traditional Chinese - 重量級 +]--
+	-- create_template("talent_tree_ogr_pas_004_tw",
+		-- {"loc_talent_ogryn_ogryn_fighter"}, {"zh-tw"},
+			-- loc_text("重量級")),
 
 	--[+ Passive 5 - Steady Grip +]--
 	-- create_template("talent_tree_ogr_pas_005_en",
@@ -5161,6 +5309,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_005_ru",
 		{"loc_talent_ogryn_toughness_regen_while_bracing"}, {"ru"},
 			loc_text("Крепкий хват")),
+	--[+ Traditional Chinese - 穩固握持 +]--
+	-- create_template("talent_tree_ogr_pas_005_tw",
+		-- {"loc_talent_ogryn_toughness_regen_while_bracing"}, {"zh-tw"},
+			-- loc_text("穩固握持")),
 
 	--[+ Passive 6 - Smash 'Em! +]--
 	-- create_template("talent_tree_ogr_pas_006_en",
@@ -5170,6 +5322,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_006_ru",
 		{"loc_talent_ogryn_toughness_on_single_heavy"}, {"ru"},
 			loc_text("Круши их!")),
+	--[+ Traditional Chinese - 碾碎它們! +]--
+	-- create_template("talent_tree_ogr_pas_006_tw",
+		-- {"loc_talent_ogryn_toughness_on_single_heavy"}, {"zh-tw"},
+			-- loc_text("碾碎它們!")),
 
 	--[+ Passive 7 - Lynchpin +]--
 	-- create_template("talent_tree_ogr_pas_007_en",
@@ -5179,6 +5335,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_007_en",
 		{"loc_talent_ogryn_coherency_toughness_increase"}, {"ru"},
 			loc_text("Опора")),
+	--[+ Traditional Chinese - 關鍵人物 +]--
+	-- create_template("talent_tree_ogr_pas_007_tw",
+		-- {"loc_talent_ogryn_coherency_toughness_increase"}, {"zh-tw"},
+			-- loc_text("關鍵人物")),
 
 	--[+ Passive 8 - Slam +]--
 	-- create_template("talent_tree_ogr_pas_008_en",
@@ -5188,6 +5348,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_008_ru",
 		{"loc_talent_ogryn_melee_stagger"}, {"ru"},
 			loc_text("Оплеуха")),
+	--[+ Traditional Chinese - 猛擊 +]--
+	-- create_template("talent_tree_ogr_pas_008_tw",
+		-- {"loc_talent_ogryn_melee_stagger"}, {"zh-tw"},
+			-- loc_text("猛擊")),
 
 	--[+ Passive 9 - Soften Them Up +]--
 	-- create_template("talent_tree_ogr_pas_009_en",
@@ -5197,6 +5361,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_009_ru",
 		{"loc_talent_ogryn_targets_recieve_damage_increase_debuff"}, {"ru"},
 			loc_text("Ослабь их")),
+	--[+ Traditional Chinese - 削弱敵人 +]--
+	-- create_template("talent_tree_ogr_pas_009_tw",
+		-- {"loc_talent_ogryn_targets_recieve_damage_increase_debuff"}, {"zh-tw"},
+			-- loc_text("削弱敵人")),
 
 	--[+ Passive 10 - Crunch! +]--
 	-- create_template("talent_tree_ogr_pas_010_en",
@@ -5206,6 +5374,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_010_en",
 		{"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger"}, {"ru"},
 			loc_text("Хрусь!")),
+	--[+ Traditional Chinese - 嘎嘎! +]--
+	-- create_template("talent_tree_ogr_pas_010_tw",
+		-- {"loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger"}, {"zh-tw"},
+			-- loc_text("嘎嘎!")),
 
 	--[+ Passive 11 - Batter +]--
 	-- create_template("talent_tree_ogr_pas_011_en",
@@ -5215,6 +5387,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_011_ru",
 		{"loc_talent_ogryn_bleed_on_multiple_hit"}, {"ru"},
 			loc_text("Месиво")),
+	--[+ Traditional Chinese - 重毆 +]--
+	-- create_template("talent_tree_ogr_pas_011_tw",
+		-- {"loc_talent_ogryn_bleed_on_multiple_hit"}, {"zh-tw"},
+			-- loc_text("重毆")),
 
 	--[+ Passive 12 - Pacemaker +]--
 	-- create_template("talent_tree_ogr_pas_012_en",
@@ -5224,6 +5400,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_012_ru",
 		{"loc_talent_ogryn_reload_speed_on_multiple_hits"}, {"ru"},
 			loc_text("Задающий ритм")),
+	--[+ Traditional Chinese - 領跑者 +]--
+	-- create_template("talent_tree_ogr_pas_012_tw",
+		-- {"loc_talent_ogryn_reload_speed_on_multiple_hits"}, {"zh-tw"},
+			-- loc_text("領跑者")),
 
 	--[+ Passive 13 - Ammo Stash +]--
 	-- create_template("talent_tree_ogr_pas_013_en",
@@ -5233,6 +5413,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_013_ru",
 		{"loc_talent_ogryn_increased_ammo"}, {"ru"},
 			loc_text("Схрон патронов")),
+	--[+ Traditional Chinese - 彈藥儲存包 +]--
+	-- create_template("talent_tree_ogr_pas_013_tw",
+		-- {"loc_talent_ogryn_increased_ammo"}, {"zh-tw"},
+			-- loc_text("彈藥儲存包")),
 
 	--[+ Passive 14 - Hard Knocks +]--
 	-- create_template("talent_tree_ogr_pas_014_en",
@@ -5242,6 +5426,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_014_ru",
 		{"loc_talent_ogryn_big_bully_heavy_hits"}, {"ru"},
 			loc_text("Тяжёлые удары")),
+	--[+ Traditional Chinese - 沉重打擊 +]--
+	-- create_template("talent_tree_ogr_pas_014_tw",
+		-- {"loc_talent_ogryn_big_bully_heavy_hits"}, {"zh-tw"},
+			-- loc_text("沉重打擊")),
 
 	--[+ Passive 15 - Too Stubborn to Die +]--
 	-- create_template("talent_tree_ogr_pas_015_en",
@@ -5251,6 +5439,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_015_ru",
 		{"loc_talent_ogryn_toughness_gain_increase_on_low_health"}, {"ru"},
 			loc_text("Слишком упёртый, чтобы умереть")),
+	--[+ Traditional Chinese - 堅韌不屈 +]--
+	-- create_template("talent_tree_ogr_pas_015_tw",
+		-- {"loc_talent_ogryn_toughness_gain_increase_on_low_health"}, {"zh-tw"},
+			-- loc_text("堅韌不屈")),
 
 	--[+ Passive 16 - Delight in Destruction +]--
 	-- create_template("talent_tree_ogr_pas_016_en",
@@ -5260,6 +5452,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_016_ru",
 		{"loc_talent_ogryn_damage_reduction_per_bleed"}, {"ru"},
 			loc_text("Упоение в разрушении")),
+	--[+ Traditional Chinese - 毀滅之樂 +]--
+	-- create_template("talent_tree_ogr_pas_016_tw",
+		-- {"loc_talent_ogryn_damage_reduction_per_bleed"}, {"zh-tw"},
+			-- loc_text("毀滅之樂")),
 
 	--[+ Passive 17 - Attention Seeker +]--
 	-- create_template("talent_tree_ogr_pas_017_en",
@@ -5269,6 +5465,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_017_ru",
 		{"loc_talent_ranged_enemies_taunt"}, {"ru"},
 			loc_text("Провокатор")),
+	--[+ Traditional Chinese - 渴求關注 +]--
+	-- create_template("talent_tree_ogr_pas_017_tw",
+		-- {"loc_talent_ranged_enemies_taunt"}, {"zh-tw"},
+			-- loc_text("渴求關注")),
 
 	--[+ Passive 18 - Get Stuck In +]--
 	-- create_template("talent_tree_ogr_pas_018_en",
@@ -5278,6 +5478,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_018_ru",
 		{"loc_talent_ogryn_bull_rush_movement_speed"}, {"ru"},
 			loc_text("Очертя голову")),
+	--[+ Traditional Chinese - 全神貫注 +]--
+	-- create_template("talent_tree_ogr_pas_018_tw",
+		-- {"loc_talent_ogryn_bull_rush_movement_speed"}, {"zh-tw"},
+			-- loc_text("全神貫注")),
 
 	--[+ Passive 19 - Towering Presence +]--
 	-- create_template("talent_tree_ogr_pas_019_en",
@@ -5287,6 +5491,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_019_ru",
 		{"loc_talent_ogryn_bigger_coherency_radius"}, {"ru"},
 			loc_text("Величественное присутствие")),
+	--[+ Traditional Chinese - 卓越氣場 +]--
+	-- create_template("talent_tree_ogr_pas_019_tw",
+		-- {"loc_talent_ogryn_bigger_coherency_radius"}, {"zh-tw"},
+			-- loc_text("卓越氣場")),
 
 	--[+ Passive 20 - Unstoppable Momentum +]--
 	-- create_template("talent_tree_ogr_pas_020_en",
@@ -5296,6 +5504,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_020_ru",
 		-- {"loc_talent_ogryn_ranged_kill_grant_movement_speed"}, {"ru"},
 			-- loc_text("Неудержимый моментум")),
+	--[+ Traditional Chinese - 勢不可擋 +]--
+	-- create_template("talent_tree_ogr_pas_020_tw",
+		-- {"loc_talent_ogryn_ranged_kill_grant_movement_speed"}, {"zh-tw"},
+			-- loc_text("勢不可擋")),
 
 	--[+ Passive 21 - No Stopping Me! +]--
 	-- create_template("talent_tree_ogr_pas_021_en",
@@ -5305,6 +5517,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_021_ru",
 		-- {"loc_talent_ogryn_windup_is_uninterruptible"}, {"ru"},
 			-- loc_text("Меня не остановить!")),
+	--[+ Traditional Chinese - 誰敢攔我! +]--
+	-- create_template("talent_tree_ogr_pas_021_tw",
+		-- {"loc_talent_ogryn_windup_is_uninterruptible"}, {"zh-tw"},
+			-- loc_text("誰敢攔我!")),
 
 	--[+ Passive 22 - Dominate +]--
 	-- create_template("talent_tree_ogr_pas_022_en",
@@ -5314,6 +5530,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_022_ru",
 		{"loc_talent_ogryn_rending_on_elite_kills"}, {"ru"},
 			loc_text("Доминируй")),
+	--[+ Traditional Chinese - 主宰 +]--
+	-- create_template("talent_tree_ogr_pas_022_tw",
+		-- {"loc_talent_ogryn_rending_on_elite_kills"}, {"zh-tw"},
+			-- loc_text("主宰")),
 
 	--[+ Passive 23 - Payback Time +]--
 	-- create_template("talent_tree_ogr_pas_023_en",
@@ -5323,6 +5543,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_023_ru",
 		-- {"loc_talent_ogryn_revenge_damage"}, {"ru"},
 			-- loc_text("Время расплаты")),
+	--[+ Traditional Chinese - 報復時間 +]--
+	-- create_template("talent_tree_ogr_pas_023_tw",
+		-- {"loc_talent_ogryn_revenge_damage"}, {"zh-tw"},
+			-- loc_text("報復時間")),
 
 	--[+ Passive 24 - Bruiser +]--
 	-- create_template("talent_tree_ogr_pas_024_en",
@@ -5332,6 +5556,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_024_ru",
 		{"loc_talent_ogryn_cooldown_on_elite_kills"}, {"ru"},
 			loc_text("Бугай")),
+	--[+ Traditional Chinese - 格鬥兵 +]--
+	-- create_template("talent_tree_ogr_pas_024_tw",
+		-- {"loc_talent_ogryn_cooldown_on_elite_kills"}, {"zh-tw"},
+			-- loc_text("格鬥兵")),
 
 	--[+ Passive 25 - Big Boom +]--
 	-- create_template("talent_tree_ogr_pas_025_en",
@@ -5341,6 +5569,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_025_ru",
 		-- {"loc_talent_ogryn_increase_explosion_radius"}, {"ru"},
 			-- loc_text("Большой бабах")),
+	--[+ Traditional Chinese - 大爆炸 +]--
+	-- create_template("talent_tree_ogr_pas_025_tw",
+		-- {"loc_talent_ogryn_increase_explosion_radius"}, {"zh-tw"},
+			-- loc_text("大爆炸")),
 
 	--[+ Passive 26 - Massacre +]--
 	-- create_template("talent_tree_ogr_pas_026_en",
@@ -5350,6 +5582,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_026_ru",
 		-- {"loc_talent_ogryn_crit_chance_on_kill"}, {"ru"},
 			-- loc_text("Резня")),
+	--[+ Traditional Chinese - 屠殺 +]--
+	-- create_template("talent_tree_ogr_pas_026_tw",
+		-- {"loc_talent_ogryn_crit_chance_on_kill"}, {"zh-tw"},
+			-- loc_text("屠殺")),
 
 	--[+ Passive 27 - Implacable +]--
 	-- create_template("talent_tree_ogr_pas_027_en",
@@ -5359,6 +5595,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_027_ru",
 		-- {"loc_talent_ogryn_windup_reduces_damage_taken"}, {"ru"},
 			-- loc_text("Непоколебимый")),
+	--[+ Traditional Chinese - 利刃出鞘 +]--
+	-- create_template("talent_tree_ogr_pas_027_tw",
+		-- {"loc_talent_ogryn_windup_reduces_damage_taken"}, {"zh-tw"},
+			-- loc_text("利刃出鞘")),
 
 	--[+ Passive 28 - No Pushover +]--
 	-- create_template("talent_tree_ogr_pas_028_en",
@@ -5368,6 +5608,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_028_ru",
 		-- {"loc_talent_ogryn_blocking_reduces_push_cost"}, {"ru"},
 			-- loc_text("Не слабак")),
+	--[+ Traditional Chinese - 睚眥必報 +]--
+	-- create_template("talent_tree_ogr_pas_028_tw",
+		-- {"loc_talent_ogryn_blocking_reduces_push_cost"}, {"zh-tw"},
+			-- loc_text("睚眥必報")),
 
 	--[+ Passive 29 - Won't Give In +]--
 	-- create_template("talent_tree_ogr_pas_029_en",
@@ -5377,6 +5621,10 @@ local localization_templates = {
 	-- create_template("talent_tree_ogr_pas_029_ru",
 		-- {"loc_talent_ogryn_tanky_with_downed_allies"}, {"ru"},
 			-- loc_text("Не сдамся")),
+	--[+ Traditional Chinese - 絕不屈服 +]--
+	-- create_template("talent_tree_ogr_pas_029_tw",
+		-- {"loc_talent_ogryn_tanky_with_downed_allies"}, {"zh-tw"},
+			-- loc_text("絕不屈服")),
 
 	--[+ Passive 30 - Mobile Emplacement +]--
 	-- create_template("talent_tree_ogr_pas_030_en",
@@ -5386,7 +5634,10 @@ local localization_templates = {
 	create_template("talent_tree_ogr_pas_030_ru",
 		{"loc_talent_ogryn_bracing_reduces_damage_taken"}, {"ru"},
 			loc_text("Мобильная огневая точка")),
-
+	--[+ Traditional Chinese - 機動部屬 +]--
+	-- create_template("talent_tree_ogr_pas_030_tw",
+		-- {"loc_talent_ogryn_bracing_reduces_damage_taken"}, {"zh-tw"},
+			-- loc_text("機動部屬")),
 }
 
 --[+ Return the localization templates +]--
