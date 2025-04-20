@@ -1805,49 +1805,77 @@ local localization_templates = {
 		{"loc_talent_toughness_damage_reduction_medium"}, {"tw"},
 			loc_text("韌性減傷(中)")),
 
---[+ ++PSYKER - ПСАЙКЕР++ +]--
---[+ +BLITZ - БЛИЦ+ +]--
+--[+ ++PSYKER - ПСАЙКЕР - 靈能者 ++ +]--
+--[+ +BLITZ - БЛИЦ - 閃擊 + +]--
 	--[+ Blitz 0 - Brain Burst +]--
 	--[+ Russian +]-- Взрыв мозга -- руоф Взрыв разума
 	create_template("talent_tree_psy_blitz0_000_ru",
 		{"loc_ability_psyker_smite"}, {"ru"},
 			loc_text("Взрыв мозга")),
+	--[+ Traditional Chinese - 顱腦爆裂 +]--
+	create_template("talent_tree_psy_blitz0_000_tw",
+		{"loc_ability_psyker_smite"}, {"tw"},
+			loc_text("顱腦爆裂")),
 
 	--[+ Blitz 1 - Brain Rupture +]--
 	--[+ Russian +]-- Разрыв мозга
 	-- create_template("talent_tree_psy_blitz1_000_ru",
 		-- {"loc_talent_psyker_brain_burst_improved"}, {"ru"},
 			-- loc_text("Разрыв мозга")),
+	--[+ Traditional Chinese - 顱腦崩裂 +]--
+	create_template("talent_tree_psy_blitz1_000_tw",
+		{"loc_talent_psyker_brain_burst_improved"}, {"tw"},
+			loc_text("顱腦崩裂")),	
 
 	--[+ Blitz 1-1 - Kinetic Resonance +]--
 	--[+ Russian +]-- Кинетический резонанс
 	-- create_template("talent_tree_psy_blitz1_001_ru",
 		-- {"loc_talent_psyker_ability_increase_brain_burst_speed"}, {"ru"},
 			-- loc_text("Кинетический резонанс")),
+	--[+ Traditional Chinese - 動能共鳴 +]--
+	create_template("talent_tree_psy_blitz1_001_tw",
+		{"loc_talent_psyker_ability_increase_brain_burst_speed"}, {"tw"},
+			loc_text("動能共鳴")),
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
 	--[+ Russian +]-- Кинетический живодёр -- руоф Кинетический истребитель
 	create_template("talent_tree_psy_blitz1_002_ru",
 		{"loc_talent_psyker_smite_on_hit"}, {"ru"},
 			loc_text("Кинетический живодёр")),
+	--[+ Traditional Chinese - 動能剝皮者 +]--
+	create_template("talent_tree_psy_blitz1_002_tw",
+		{"loc_talent_psyker_smite_on_hit"}, {"tw"},
+			loc_text("動能剝皮者")),
 
 	--[+ Blitz 2 - Smite +]--
 	--[+ Russian +]-- Сокрушение
 	-- create_template("talent_tree_psy_blitz2_000_ru",
 		-- {"loc_ability_psyker_chain_lightning"}, {"ru"},
 			-- loc_text("Сокрушение")),
+	--[+ Traditional Chinese - 懲戒 +]--
+	create_template("talent_tree_psy_blitz2_000_tw",
+		{"loc_ability_psyker_chain_lightning"}, {"tw"},
+			loc_text("懲戒")),
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
 	--[+ Russian +]-- Гроза
 	-- create_template("talent_tree_psy_blitz2_001_en",
 		-- {"loc_talent_psyker_increased_chain_lightning_size"}, {"ru"},
 			-- loc_text("Гроза")),
+	--[+ Traditional Chinese - 閃電風暴 +]--
+	create_template("talent_tree_psy_blitz2_001_tw",
+		{"loc_talent_psyker_increased_chain_lightning_size"}, {"tw"},
+			loc_text("閃電風暴")),
 
 	--[+ Blitz 2-2 - Enfeeble +]--
 	--[+ Russian +]-- Ослабление
 	-- create_template("talent_tree_psy_blitz2_002_ru",
 		-- {"loc_talent_psyker_increased_chain_lightning_improved_target_buff"}, {"ru"},
 			-- loc_text("Ослабление")),
+	--[+ Traditional Chinese - 衰弱詛咒 +]--
+	create_template("talent_tree_psy_blitz2_002_tw",
+		{"loc_talent_psyker_increased_chain_lightning_improved_target_buff"}, {"tw"},
+			loc_text("衰弱詛咒")),
 
 	--[+ Blitz 2-3 - Charged Strike +]--
 	-- create_template("talent_tree_psy_blitz2_003_en",
@@ -1857,6 +1885,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_blitz2_003_ru",
 		-- {"loc_talent_psyker_chain_lightning_heavy_attacks"}, {"ru"},
 			-- loc_text("Заряженный удар")),
+	--[+ Traditional Chinese - 蓄力打擊 +]--
+	create_template("talent_tree_psy_blitz2_003_tw",
+		{"loc_talent_psyker_chain_lightning_heavy_attacks"}, {"tw"},
+			loc_text("蓄力打擊")),
 
 	--[+ Blitz 3 - Assail +]--
 	-- create_template("talent_tree_psy_blitz3_000_en",
@@ -1866,6 +1898,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_blitz3_000_ru",
 		-- {"loc_ability_psyker_blitz_throwing_knives"}, {"ru"},
 			-- loc_text("Нападение")),
+	--[+ Traditional Chinese - 靈能攻擊 +]--
+	create_template("talent_tree_psy_blitz3_000_tw",
+		{"loc_ability_psyker_blitz_throwing_knives"}, {"tw"},
+			loc_text("靈能攻擊")),
 
 	--[+ Blitz 3-1 - Ethereal Shards +]--
 	-- create_template("talent_tree_psy_blitz3_001_en",
@@ -1875,6 +1911,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz3_001_ru",
 		{"loc_talent_psyker_throwing_knives_pierce"}, {"ru"},
 			loc_text("Эфирные осколки")),
+	----[+ Traditional Chinese - 乙太碎片 +]--
+	create_template("talent_tree_psy_blitz3_001_tw",
+		{"loc_talent_psyker_throwing_knives_pierce"}, {"tw"},
+			loc_text("乙太碎片")),
 
 	--[+ Blitz 3-2 - Quick Shards +]--
 	-- create_template("talent_tree_psy_blitz3_002_en",
@@ -1884,8 +1924,12 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz3_002_ru",
 		{"loc_talent_psyker_throwing_knives_reduced_cooldown"}, {"ru"},
 			loc_text("Быстрые осколки")),
+	--[+ Traditional Chinese - 迅捷碎片 +]--
+	create_template("talent_tree_psy_blitz3_002_tw",
+		{"loc_talent_psyker_throwing_knives_reduced_cooldown"}, {"tw"},
+			loc_text("迅捷碎片")),
 
---[+ +AURA - АУРА+ +]--
+--[+ +AURA - АУРА - 光環 + +]--
 	--[+ Aura 0 - The Quickening +]--
 	-- create_template("talent_tree_psy_aura0_000_en",
 		-- {"loc_talent_psyker_aura_reduced_ability_cooldown"}, {"en"},
@@ -1894,6 +1938,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_aura0_000_ru",
 		-- {"loc_talent_psyker_aura_reduced_ability_cooldown"}, {"ru"},
 			-- loc_text("Ускорение")),
+	--[+ Traditional Chinese - 加速 +]--
+	-- create_template("talent_tree_psy_aura0_000_tw",
+		-- {"loc_talent_psyker_aura_reduced_ability_cooldown"}, {"tw"},
+			-- loc_text("加速")),
 
 	--[+ Aura 1 - Kinetic Presence +]--
 	-- create_template("talent_tree_psy_aura1_000_en",
@@ -1903,6 +1951,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_aura1_000_ru",
 		-- {"loc_talent_psyker_base_3"}, {"ru"},
 			-- loc_text("Кинетическое присутствие")),
+	--[+ Traditional Chinese - 動能釋放 +]--
+	-- create_template("talent_tree_psy_aura1_000_tw",
+		-- {"loc_talent_psyker_base_3"}, {"tw"},
+			-- loc_text("動能釋放")),
 
 	--[+ Aura 2 - Seer's Presence +]--
 	-- create_template("talent_tree_psy_aura2_000_en",
@@ -1912,6 +1964,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_aura2_000_ru",
 		-- {"loc_talent_psyker_cooldown_aura_improved"}, {"ru"},
 			-- loc_text("Присутствие провидца")),
+	--[+ Traditional Chinese - 先知之眼 +]--
+	-- create_template("talent_tree_psy_aura2_000_tw",
+		-- {"loc_talent_psyker_cooldown_aura_improved"}, {"tw"},
+			-- loc_text("先知之眼")),
 
 	--[+ Aura 3 - Prescience +]--
 	-- create_template("talent_tree_psy_aura3_000_en",
@@ -1921,6 +1977,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_aura3_000_ru",
 		-- {"loc_ability_psyker_gunslinger_aura"}, {"ru"},
 			-- loc_text("Предвидение")),
+	--[+ Traditional Chinese - 預兆 +]--
+	-- create_template("talent_tree_psy_aura3_000_tw",
+		-- {"loc_ability_psyker_gunslinger_aura"}, {"tw"},
+			-- loc_text("預兆")),
 
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
 	--[+ Ability 0 - Psykinetic's Wrath +]--
@@ -1931,6 +1991,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil0_000_ru",
 		{"loc_talent_psyker_2_combat"}, {"ru"},
 			loc_text("Гнев психокинетика")),
+	--[+ Traditional Chinese - 靈能學者之怒 +]--
+	create_template("talent_tree_psy_abil0_000_tw",
+		{"loc_talent_psyker_2_combat"}, {"tw"},
+			loc_text("靈能學者之怒")),
 
 	--[+ Ability 1 - Venting Shriek +]--
 	--create_template("talent_tree_psy_abil1_000_en",
@@ -1940,6 +2004,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_000_ru",
 		{"loc_talent_psyker_shout_vent_warp_charge"}, {"ru"},
 			loc_text("Сбрасывающий вопль")),
+	--[+ Traditional Chinese - 靈能尖嘯 +]--
+	create_template("talent_tree_psy_abil1_000_tw",
+		{"loc_talent_psyker_shout_vent_warp_charge"}, {"tw"},
+			loc_text("靈能尖嘯")),
 
 	--[+ Ability 1-1 - Becalming Eruption +]--
 	-- create_template("talent_tree_psy_abil1_001_en",
@@ -1949,6 +2017,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_001_ru",
 		{"loc_talent_psyker_shout_reduces_warp_charge_generation"}, {"ru"},
 			loc_text("Успокаивающее извержение")),
+	--[+ Traditional Chinese - 平靜进發 +]--
+	create_template("talent_tree_psy_abil1_001_tw",
+		{"loc_talent_psyker_shout_reduces_warp_charge_generation"}, {"tw"},
+			loc_text("平靜进發")),
 
 	--[+ Ability 1-2 - Warp Rupture +]--
 	-- create_template("talent_tree_psy_abil1_002_en",
@@ -1958,6 +2030,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_002_en",
 		{"loc_talent_psyker_shout_damage_per_warp_charge"}, {"ru"},
 			loc_text("Разрыв варпа")),
+	--[+ Traditional Chinese - 亞空間爆發 +]--
+	create_template("talent_tree_psy_abil1_002_tw",
+		{"loc_talent_psyker_shout_damage_per_warp_charge"}, {"tw"},
+			loc_text("亞空間爆發")),
 
 	--[+ Ability 1-3 - Warp Creeping Flames +]--
 	-- create_template("talent_tree_psy_abil1_003_en",
@@ -1967,6 +2043,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil1_003_ru",
 		{"loc_talent_psyker_warpfire_on_shout"}, {"ru"},
 			loc_text("Ползучее пламя")),
+	--[+ Traditional Chinese - 蔓延火焰 +]--
+	create_template("talent_tree_psy_abil1_003_tw",
+		{"loc_talent_psyker_warpfire_on_shout"}, {"tw"},
+			loc_text("蔓延火焰")),
 
 	--[+ Ability 2 - Telekine Shield +]--
 	-- create_template("talent_tree_psy_abil2_000_en",
@@ -1976,6 +2056,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil2_000_ru",
 		-- {"loc_talent_psyker_combat_ability_shield"}, {"ru"},
 			-- loc_text("Телекинетический щит")),
+	--[+ Traditional Chinese - 念力護盾 +]--
+	-- create_template("talent_tree_psy_abil2_000_tw",
+		-- {"loc_talent_psyker_combat_ability_shield"}, {"tw"},
+			-- loc_text("念力護盾")),
 
 	--[+ Ability 2-1 - Bolstered Shield +]--
 	-- create_template("talent_tree_psy_abil2_001_en",
@@ -1985,6 +2069,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil2_001_ru",
 		-- {"loc_talent_psyker_force_field_charges"}, {"ru"},
 			-- loc_text("Усиленный щит")),
+	--[+ Traditional Chinese - 強化護盾 +]--
+	-- create_template("talent_tree_psy_abil2_001_tw",
+		-- {"loc_talent_psyker_force_field_charges"}, {"tw"},
+			-- loc_text("強化護盾")),
 
 	--[+ Ability 2-2 - Enervating Threshold +]--
 	-- create_template("talent_tree_psy_abil2_002_en",
@@ -1994,6 +2082,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil2_002_ru",
 		-- {"loc_talent_psyker_force_field_stun_increased"}, {"ru"},
 			-- loc_text("Порог ослабления")),
+	--[+ Traditional Chinese - 衰弱界線 +]--
+	-- create_template("talent_tree_psy_abil2_002_tw",
+		-- {"loc_talent_psyker_force_field_stun_increased"}, {"tw"},
+			-- loc_text("衰弱界線")),
 
 	--[+ Ability 2-3 - Telekine Dome +]--
 	-- create_template("talent_tree_psy_abil2_003_en",
@@ -2003,6 +2095,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil2_003_ru",
 		-- {"loc_talent_psyker_force_field_dome"}, {"ru"},
 			-- loc_text("Телекинический купол")),
+	--[+ Traditional Chinese - 念力穹頂 +]--
+	-- create_template("talent_tree_psy_abil2_003_tw",
+		-- {"loc_talent_psyker_force_field_dome"}, {"tw"},
+			-- loc_text("念力穹頂")),
 
 	--[+ Ability 2-4 - Sanctuary +]--
 	-- create_template("talent_tree_psy_abil2_004_en",
@@ -2012,6 +2108,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil2_004_ru",
 		{"loc_talent_psyker_force_field_grants_toughness"}, {"ru"},
 			loc_text("Убежище")),
+	--[+ Traditional Chinese - 庇護所 +]--
+	-- create_template("talent_tree_psy_abil2_004_tw",
+		-- {"loc_talent_psyker_force_field_grants_toughness"}, {"tw"},
+			-- loc_text("庇護所")),
 
 	--[+ Ability 3 - Scrier's Gaze +]--
 	-- create_template("talent_tree_psy_abil3_000_en",
@@ -2021,6 +2121,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_000_ru",
 		{"loc_talent_psyker_combat_ability_overcharge_stance"}, {"ru"},
 			loc_text("Взор провидца")),
+	--[+ Traditional Chinese - 占卜者的注視 +]--
+	-- create_template("talent_tree_psy_abil3_000_tw",
+		-- {"loc_talent_psyker_combat_ability_overcharge_stance"}, {"tw"},
+			-- loc_text("占卜者的注視")),
 
 	--[+ Ability 3-1 - Endurance +]--
 	-- create_template("talent_tree_psy_abil3_001_en",
@@ -2030,6 +2134,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil3_001_ru",
 		-- {"loc_ability_psyker_overcharge_reduced_toughness_damage_taken"}, {"ru"},
 			-- loc_text("Выносливость")),
+	--[+ Traditional Chinese - 堅韌 +]--
+	-- create_template("talent_tree_psy_abil3_001_tw",
+		-- {"loc_ability_psyker_overcharge_reduced_toughness_damage_taken"}, {"tw"},
+			-- loc_text("堅韌")),
 
 	--[+ Ability 3-2 - Precognition +]--
 	-- create_template("talent_tree_psy_abil3_002_en",
@@ -2039,6 +2147,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_002_en",
 		{"loc_ability_psyker_overcharge_weakspot"}, {"ru"},
 			loc_text("Предвидение")),
+	--[+ Traditional Chinese - 預知未來 +]--
+	-- create_template("talent_tree_psy_abil3_002_tw",
+		-- {"loc_ability_psyker_overcharge_weakspot"}, {"tw"},
+			-- loc_text("預知未來")),
 
 	--[+ Ability 3-3 - Warp Speed +]--
 	-- create_template("talent_tree_psy_abil3_003_en",
@@ -2048,6 +2160,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil3_003_ru",
 		-- {"loc_ability_psyker_overcharge_movement_speed"}, {"ru"},
 			-- loc_text("Варп-скорость")),
+	--[+ Traditional Chinese - 亞空間加速 +]--
+	-- create_template("talent_tree_psy_abil3_003_tw",
+		-- {"loc_ability_psyker_overcharge_movement_speed"}, {"tw"},
+			-- loc_text("亞空間加速")),
 
 	--[+ Ability 3-4 - Reality Anchor +]--
 	-- create_template("talent_tree_psy_abil3_004_en",
@@ -2057,6 +2173,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_abil3_004_ru",
 		-- {"loc_ability_psyker_overcharge_reduced_warp_charge"}, {"ru"},
 			-- loc_text("Якорь реальности")),
+	--[+ Traditional Chinese - 現實錨點 +]--
+	-- create_template("talent_tree_psy_abil3_004_tw",
+		-- {"loc_ability_psyker_overcharge_reduced_warp_charge"}, {"tw"},
+			-- loc_text("現實錨點")),
 
 	--[+ Ability 3-5 - Warp Unbound +]--
 	-- create_template("talent_tree_psy_abil3_005_en",
@@ -2066,8 +2186,30 @@ local localization_templates = {
 	create_template("talent_tree_psy_abil3_005_ru",
 		{"loc_talent_psyker_overcharge_infinite_casting"}, {"ru"},
 			loc_text("Высвобождение варпа")),
+	--[+ Traditional Chinese - 亞空間突破 +]--
+	-- create_template("talent_tree_psy_abil3_005_tw",
+		-- {"loc_talent_psyker_overcharge_infinite_casting"}, {"tw"},
+			-- loc_text("亞空間突破")),
 
---[+ +KEYSTONES - КЛЮЧЕВЫЕ ТАЛАНТЫ+ +]--
+--[+ +KEYSTONES - КЛЮЧЕВЫЕ ТАЛАНТЫ - 鑰石 + +]--
+
+-- - Warp Siphon - 亞空間虹吸
+-- - Inner Tranquility - 平心靜氣
+-- - Essence Harvest - 吸精奪萃
+-- - Empyrean Empowerment - 至天高之力
+-- - In Fire Reborn - 涅槃
+-- - Psychic Vampire - 靈能吸血鬼
+-- - Warp Battery - 亞空間電池
+-- - Empowered Psionics - 靈能強化
+-- - Bio-Lodestone - 生物磁石
+-- - Psychic Leeching - 吸血閃電
+-- - Overpowering Souls - 吞靈強擊
+-- - Charged Up - 充能完畢
+-- - Disrupt Destiny - 擾動命運
+-- - Perfectionism - 完美主義
+-- - Purloin Providence - 盜竊天命
+-- - Lingering Influence - 持久影響
+-- - Cruel Fortune - 殘忍命運
 	--[+ Keystone 1 - Warp Siphon +]--
 	-- create_template("talent_tree_psy_keys1_000_en",
 		-- {"loc_talent_psyker_souls"}, {"en"},
@@ -2076,6 +2218,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_000_ru",
 		{"loc_talent_psyker_souls"}, {"ru"},
 			loc_text("Переливание варпа")),
+	--[+ Traditional Chinese - 亞空間虹吸 +]--
+	-- create_template("talent_tree_psy_keys1_000_tw",
+		-- {"loc_talent_psyker_souls"}, {"tw"},
+			-- loc_text("亞空間虹吸")),
 
 	--[+ Keystone 1-1 - Inner Tranquility +]--
 	-- create_template("talent_tree_psy_keys1_001_en",
@@ -2085,6 +2231,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys1_001_ru",
 		-- {"loc_talent_psyker_reduced_warp_charge_cost_venting_speed"}, {"ru"},
 			-- loc_text("Внутреннее спокойствие")),
+	--[+ Traditional Chinese - 平心靜氣 +]--
+	-- create_template("talent_tree_psy_keys1_001_tw",
+		-- {"loc_talent_psyker_reduced_warp_charge_cost_venting_speed"}, {"tw"},
+			-- loc_text("平心靜氣")),
 
 	--[+ Keystone 1-2 - Essence Harvest +]--
 	-- create_template("talent_tree_psy_keys1_002_en",
@@ -2094,6 +2244,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_002_ru",
 		{"loc_talent_psyker_toughness_regen_on_soul"}, {"ru"},
 			loc_text("Сбор сущностей")),
+	--[+ Traditional Chinese - 吸精奪萃 +]--
+	-- create_template("talent_tree_psy_keys1_002_tw",
+		-- {"loc_talent_psyker_toughness_regen_on_soul"}, {"tw"},
+			-- loc_text("吸精奪萃")),
 
 	--[+ Keystone 1-3 - Empyrean Empowerment +]--
 	-- create_template("talent_tree_psy_keys1_003_en",
@@ -2103,6 +2257,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_003_ru",
 		{"loc_talent_psyker_souls_increase_damage"}, {"ru"},
 			loc_text("Эмпирейское усиление")),
+	--[+ Traditional Chinese - 至天高之力 +]--
+	-- create_template("talent_tree_psy_keys1_003_tw",
+		-- {"loc_talent_psyker_souls_increase_damage"}, {"tw"},
+			-- loc_text("至天高之力")),
 
 	--[+ Keystone 1-4 - In Fire Reborn +]--
 	-- create_template("talent_tree_psy_keys1_004_en",
@@ -2112,6 +2270,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_004_ru",
 		{"loc_talent_psyker_warpfire_generates_souls"}, {"ru"},
 			loc_text("Возрождение в огне")),
+	--[+ Traditional Chinese - 涅槃 +]--
+	-- create_template("talent_tree_psy_keys1_004_tw",
+		-- {"loc_talent_psyker_warpfire_generates_souls"}, {"tw"},
+			-- loc_text("涅槃")),
 
 	--[+ Keystone 1-5 - Psychic Vampire +]--
 	-- create_template("talent_tree_psy_keys1_005_en",
@@ -2121,6 +2283,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys1_005_ru",
 		-- {"loc_talent_psyker_souls_on_kill_coop"}, {"ru"},
 			-- loc_text("Психический вампир")),
+	--[+ Traditional Chinese - 靈能吸血鬼 +]--
+	-- create_template("talent_tree_psy_keys1_005_tw",
+		-- {"loc_talent_psyker_souls_on_kill_coop"}, {"tw"},
+			-- loc_text("靈能吸血鬼")),
 
 	--[+ Keystone 1-6 - Warp Battery +]--
 	-- create_template("talent_tree_psy_keys1_006_en",
@@ -2130,6 +2296,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys1_006_ru",
 		-- {"loc_talent_psyker_increased_souls"}, {"ru"},
 			-- loc_text("Варп-аккумулятор")),
+	--[+ Traditional Chinese - 亞空間電池 +]--
+	-- create_template("talent_tree_psy_keys1_006_tw",
+		-- {"loc_talent_psyker_increased_souls"}, {"tw"},
+			-- loc_text("亞空間電池")),
 
 	--[+ Keystone 2 - Empowered Psionics +]--
 	-- create_template("talent_tree_psy_keys2_000_en",
@@ -2139,6 +2309,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys2_000_ru",
 		-- {"loc_talent_psyker_empowered_ability"}, {"ru"},
 			-- loc_text("Усиленные псионики")),
+	--[+ Traditional Chinese - 靈能強化 +]--
+	-- create_template("talent_tree_psy_keys2_000_tw",
+		-- {"loc_talent_psyker_empowered_ability"}, {"tw"},
+			-- loc_text("靈能強化")),
 
 	--[+ Keystone 2-1 - Bio-Lodestone +]--
 	-- create_template("talent_tree_psy_keys2_001_en",
@@ -2148,6 +2322,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys2_001_ru",
 		-- {"loc_talent_psyker_increase_empower_chain_lighting_chance"}, {"ru"},
 			-- loc_text("Биопритяжение")),
+	--[+ Traditional Chinese - 生物磁石 +]--
+	-- create_template("talent_tree_psy_keys2_001_tw",
+		-- {"loc_talent_psyker_increase_empower_chain_lighting_chance"}, {"tw"},
+			-- loc_text("生物磁石")),
 
 	--[+ Keystone 2-2 - Psychic Leeching +]--
 	-- create_template("talent_tree_psy_keys2_002_en",
@@ -2157,6 +2335,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_002_ru",
 		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies"}, {"ru"},
 			loc_text("Психическое высасывание")),
+	--[+ Traditional Chinese - 吸血閃電 +]--
+	-- create_template("talent_tree_psy_keys2_002_tw",
+		-- {"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies"}, {"tw"},
+			-- loc_text("吸血閃電")),
 
    --[+ Keystone 2-3 - Overpowering Souls +]--
 	-- create_template("talent_tree_psy_keys2_003_en",
@@ -2166,6 +2348,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys2_003_ru",
 		-- {"loc_talent_psyker_empowered_ability_on_elite_kills"}, {"ru"},
 			-- loc_text("Могучие души")),
+	--[+ Traditional Chinese - 吞靈強擊 +]--
+	-- create_template("talent_tree_psy_keys2_003_tw",
+		-- {"loc_talent_psyker_empowered_ability_on_elite_kills"}, {"tw"},
+			-- loc_text("吞靈強擊")),
 
 	--[+ Keystone 2-4 - Charged Up +]--
 	-- create_template("talent_tree_psy_keys2_004_en",
@@ -2175,6 +2361,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_004_ru",
 		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks"}, {"ru"},
 			loc_text("Заряженный")),
+	--[+ Traditional Chinese - 充能完畢 +]--
+	-- create_template("talent_tree_psy_keys2_004_tw",
+		-- {"loc_talent_psyker_increased_empowered_chain_lightning_stacks"}, {"tw"},
+			-- loc_text("充能完畢")),
 
 	--[+ Keystone 3 - Disrupt Destiny +]--
 	-- create_template("talent_tree_psy_keys3_000_en",
@@ -2184,6 +2374,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_000_ru",
 		{"loc_talent_psyker_marked_enemies_passive"}, {"ru"},
 			loc_text("Прерывание судьбы")),
+	--[+ Traditional Chinese - 擾動命運 +]--
+	-- create_template("talent_tree_psy_keys3_000_tw",
+		-- {"loc_talent_psyker_marked_enemies_passive"}, {"tw"},
+			-- loc_text("擾動命運")),
 
 	--[+ Keystone 3-1 - Perfectionism +]--
 	-- create_template("talent_tree_psy_keys3_001_en",
@@ -2193,6 +2387,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys3_001_ru",
 		-- {"loc_talent_psyker_mark_increased_max_stacks"}, {"ru"},
 			-- loc_text("Перфекционизм")),
+	--[+ Traditional Chinese - 完美主義 +]--
+	-- create_template("talent_tree_psy_keys3_001_tw",
+		-- {"loc_talent_psyker_mark_increased_max_stacks"}, {"tw"},
+			-- loc_text("完美主義")),
 
 	--[+ Keystone 3-2 - Purloin Providence +]--
 	-- create_template("talent_tree_psy_keys3_002_en",
@@ -2202,6 +2400,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_002_ru",
 		{"loc_talent_psyker_mark_kills_can_vent"}, {"ru"},
 			loc_text("Похищение провидения")),
+	--[+ Traditional Chinese - 盜竊天命 +]--
+	-- create_template("talent_tree_psy_keys3_002_tw",
+		-- {"loc_talent_psyker_mark_kills_can_vent"}, {"tw"},
+			-- loc_text("盜竊天命")),
 
 	--[+ Keystone 3-3 - Lingering Influence +]--
 	-- create_template("talent_tree_psy_keys3_003_en",
@@ -2211,6 +2413,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_003_ru",
 		{"loc_talent_psyker_mark_increased_duration"}, {"ru"},
 			loc_text("Длительное влияние")),
+	--[+ Traditional Chinese - 持久影響 +]--
+	-- create_template("talent_tree_psy_keys3_003_tw",
+		-- {"loc_talent_psyker_mark_increased_duration"}, {"tw"},
+			-- loc_text("持久影響")),
 
 	--[+ Keystone 3-4 - Cruel Fortune +]--
 	-- create_template("talent_tree_psy_keys3_004_en",
@@ -2220,8 +2426,38 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_keys3_004_ru",
 		-- {"loc_talent_psyker_mark_weakspot_stacks"}, {"ru"},
 			-- loc_text("Жестокая судьба")),
+	--[+ Traditional Chinese - 殘忍命運 +]--
+	-- create_template("talent_tree_psy_keys3_004_tw",
+		-- {"loc_talent_psyker_mark_weakspot_stacks"}, {"tw"},
+			-- loc_text("殘忍命運")),
 
 --[+ +PASSIVES - ПАССИВНЫЕ ТАЛАНТЫ+ +]--
+
+-- - Soulstealer - 靈魂竊賊
+-- - Mettle - 堅毅
+-- - Quietude - 心如止水
+-- - Warp Expenditure - 亞空間耗費
+-- - Perilous Combustion 險惡燃燒
+-- - Perfect Timing - 完美時機
+-- - Battle Meditation - 戰鬥冥想
+-- - Psykinetic's Aura - 靈能學者光環
+-- - Malefic Momentum - 惡意攻勢
+-- - Perilous Assault - 反噬突襲
+-- - Lightning Speed - 迅雷之勢 
+-- - Empyric Shock - 亞空間震波
+-- - By Crack of Bone - 骨折後遺症
+-- - Warp Splitting - 亞空間分裂
+-- - Unlucky for Some - 倒楣蛋
+-- - One with the Warp - 亞空間強化
+-- - Empathic Evasion - 反射閃避
+-- - Anticipation - 看破
+-- - Puppet Master - 傀儡師
+-- - Crystalline Will - 結晶意志
+-- - Warp Rider - 亞空間騎士
+-- - Kinetic Deflection - 動能偏斜
+-- - Tranquility Through Slaughter - 殺無赦，心祥和
+-- - Empyric Resolve - 亞空間意志
+-- - Penetration of the Soul - 靈魂穿透
 	--[+ Passive 1 - Soulstealer +]--
 	-- create_template("talent_tree_psy_pas_001_en",
 		-- {"loc_talent_psyker_toughness_on_warp_kill"}, {"en"},
@@ -2230,6 +2466,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_001_ru",
 		{"loc_talent_psyker_toughness_on_warp_kill"}, {"ru"},
 			loc_text("Похититель душ")),
+	--[+ Traditional Chinese - 靈魂竊賊 +]--
+	-- create_template("talent_tree_psy_pas_001_tw",
+		-- {"loc_talent_psyker_toughness_on_warp_kill"}, {"tw"},
+			-- loc_text("靈魂竊賊")),
 
 	--[+ Passive 2 - Mettle +]--
 	-- create_template("talent_tree_psy_pas_002_en",
@@ -2239,6 +2479,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_002_ru",
 		-- {"loc_talent_psyker_crits_regen_tougness_and_movement_speed"}, {"ru"},
 			-- loc_text("Ретивость")),
+	--[+ Traditional Chinese - 堅毅 +]--
+	-- create_template("talent_tree_psy_pas_002_tw",
+		-- {"loc_talent_psyker_crits_regen_tougness_and_movement_speed"}, {"tw"},
+			-- loc_text("堅毅")),
 
 	--[+ Passive 3 - Quietude +]--
 	-- create_template("talent_tree_psy_pas_003_en",
@@ -2248,6 +2492,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_003_ru",
 		{"loc_talent_psyker_toughness_from_vent"}, {"ru"},
 			loc_text("Спокойствие")),
+	--[+ Traditional Chinese - 心如止水 +]--
+	-- create_template("talent_tree_psy_pas_003_tw",
+		-- {"loc_talent_psyker_toughness_from_vent"}, {"tw"},
+			-- loc_text("心如止水")),
 
 	--[+ Passive 4 - Warp Expenditure +]--
 	-- create_template("talent_tree_psy_pas_004_en",
@@ -2257,6 +2505,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_004_ru",
 		{"loc_talent_psyker_warp_charge_generation_generates_toughness"}, {"ru"},
 			loc_text("Затраты варпа")),
+	--[+ Traditional Chinese - 亞空間耗費 +]--
+	-- create_template("talent_tree_psy_pas_004_tw",
+		-- {"loc_talent_psyker_warp_charge_generation_generates_toughness"}, {"tw"},
+			-- loc_text("亞空間耗費")),
 
 	--[+ Passive 5 - Perilous Combustion +]--
 	-- create_template("talent_tree_psy_pas_005_en",
@@ -2266,6 +2518,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_005_ru",
 		{"loc_talent_psyker_elite_kills_add_warpfire"}, {"ru"},
 			loc_text("Опасное возгорание")),
+	--[+ Traditional Chinese - 險惡燃燒 +]--
+	-- create_template("talent_tree_psy_pas_005_tw",
+		-- {"loc_talent_psyker_elite_kills_add_warpfire"}, {"tw"},
+			-- loc_text("險惡燃燒")),
 
 	--[+ Passive 6 - Perfect Timing +]--
 	-- create_template("talent_tree_psy_pas_006_en",
@@ -2275,6 +2531,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_006_ru",
 		{"loc_talent_psyker_crits_empower_next_attack"}, {"ru"},
 			loc_text("Идеальный момент")),
+	--[+ Traditional Chinese - 完美時機 +]--
+	-- create_template("talent_tree_psy_pas_006_tw",
+		-- {"loc_talent_psyker_crits_empower_next_attack"}, {"tw"},
+			-- loc_text("完美時機")),
 
 	--[+ Passive 7 - Battle Meditation +]--
 	-- create_template("talent_tree_psy_pas_007_en",
@@ -2284,6 +2544,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_007_ru",
 		-- {"loc_talent_psyker_base_2"}, {"ru"},
 			-- loc_text("Боевая медитация")),
+	--[+ Traditional Chinese - 戰鬥冥想 +]--
+	-- create_template("talent_tree_psy_pas_007_tw",
+		-- {"loc_talent_psyker_base_2"}, {"tw"},
+			-- loc_text("戰鬥冥想")),
 
 	--[+ Passive 8 - Wildfire +]--
 	-- create_template("talent_tree_psy_pas_008_en",
@@ -2293,6 +2557,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_008_ru",
 		{"loc_talent_psyker_warpfire_spread"}, {"ru"},
 			loc_text("Некотролируемый пожар")),
+	--[+ Traditional Chinese - 野火 +]--
+	-- create_template("talent_tree_psy_pas_008_tw",
+		-- {"loc_talent_psyker_warpfire_spread"}, {"tw"},
+			-- loc_text("野火")),
 
 	--[+ Passive 9 - Psykinetic's Aura +]--
 	-- create_template("talent_tree_psy_pas_009_en",
@@ -2302,6 +2570,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_009_ru",
 		-- {"loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency"}, {"ru"},
 			-- loc_text("Аура психокинетика")),
+	--[+ Traditional Chinese - 靈能學者光環 +]--
+	-- create_template("talent_tree_psy_pas_009_tw",
+		-- {"loc_talent_psyker_elite_kills_give_combat_ability_cd_coherency"}, {"tw"},
+			-- loc_text("靈能學者光環")),
 
 	--[+ Passive 10 - Mind in Motion +]--
 	-- create_template("talent_tree_psy_pas_010_en",
@@ -2311,6 +2583,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_010_ru",
 		{"loc_talent_psyker_venting_doesnt_slow"}, {"ru"},
 			loc_text("Разум в движении")),
+	--[+ Traditional Chinese - 靈能學者光環 +]--
+	-- create_template("talent_tree_psy_pas_010_tw",
+		-- {"loc_talent_psyker_venting_doesnt_slow"}, {"tw"},
+			-- loc_text("靈能學者光環")),
 
 	--[+ Passive 11 - Malefic Momentum +]--
 	-- create_template("talent_tree_psy_pas_011_en",
@@ -2320,6 +2596,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_011_ru",
 		{"loc_talent_psyker_kills_stack_other_weapon_damage"}, {"ru"},
 			loc_text("Пагубный импульс")),
+	--[+ Traditional Chinese - 惡意攻勢 +]--
+	-- create_template("talent_tree_psy_pas_011_tw",
+		-- {"loc_talent_psyker_kills_stack_other_weapon_damage"}, {"tw"},
+			-- loc_text("惡意攻勢")),
 
 	--[+ Passive 12 - Channeled Force +]--
 	-- create_template("talent_tree_psy_pas_012_en",
@@ -2329,6 +2609,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_012_ru",
 		-- {"loc_talent_psyker_force_staff_bonus"}, {"ru"},
 			-- loc_text("Направленная сила")),
+	--[+ Traditional Chinese - 靈能強化 +]--
+	-- create_template("talent_tree_psy_pas_012_tw",
+		-- {"loc_talent_psyker_force_staff_bonus"}, {"tw"},
+			-- loc_text("靈能強化")),
 
 	--[+ Passive 13 - Perilous Assault +]--
 	-- create_template("talent_tree_psy_pas_013_en",
@@ -2338,6 +2622,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_013_ru",
 		{"loc_talent_psyker_force_staff_melee_attack_bonus"}, {"ru"},
 			loc_text("Рискованное нападение")),
+	--[+ Traditional Chinese - 反噬突襲 +]--
+	-- create_template("talent_tree_psy_pas_013_tw",
+		-- {"loc_talent_psyker_force_staff_melee_attack_bonus"}, {"tw"},
+			-- loc_text("反噬突襲")),
 
 	--[+ Passive 14 - Lightning Speed +]--
 	-- create_template("talent_tree_psy_pas_014_en",
@@ -2347,6 +2635,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_014_ru",
 		-- {"loc_talent_psyker_melee_attack_speed"}, {"ru"},
 			-- loc_text("Молниеносная скорость")),
+	--[+ Traditional Chinese - 迅雷之勢 +]--
+	-- create_template("talent_tree_psy_pas_014_tw",
+		-- {"loc_talent_psyker_melee_attack_speed"}, {"tw"},
+			-- loc_text("迅雷之勢")),
 
 	--[+ Passive 15 - Souldrinker +]--
 	-- create_template("talent_tree_psy_pas_015_en",
@@ -2356,6 +2648,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_015_ru",
 		{"loc_talent_psyker_nearby_soulblaze_reduced_damage"}, {"ru"},
 			loc_text("Поглотитель душ")),
+	--[+ Traditional Chinese - 汲魂者 +]--
+	-- create_template("talent_tree_psy_pas_015_tw",
+		-- {"loc_talent_psyker_nearby_soulblaze_reduced_damage"}, {"tw"},
+			-- loc_text("汲魂者")),
 
 	--[+ Passive 16 - Empyric Shock +]--
 	-- create_template("talent_tree_psy_pas_016_en",
@@ -2365,6 +2661,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_016_ru",
 		-- {"loc_talent_psyker_force_staff_quick_attack_bonus"}, {"ru"},
 			-- loc_text("Эмпирический шок")),
+	--[+ Traditional Chinese - 亞空間震波 +]--
+	-- create_template("talent_tree_psy_pas_016_tw",
+		-- {"loc_talent_psyker_force_staff_quick_attack_bonus"}, {"tw"},
+			-- loc_text("亞空間震波")),
 
 	--[+ Passive 17 - By Crack of Bone +]--
 	-- create_template("talent_tree_psy_pas_017_en",
@@ -2374,6 +2674,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_017_ru",
 		-- {"loc_talent_psyker_melee_weaving"}, {"ru"},
 			-- loc_text("Треск костей")),
+	--[+ Traditional Chinese - 骨折後遺症 +]--
+	-- create_template("talent_tree_psy_pas_017_tw",
+		-- {"loc_talent_psyker_melee_weaving"}, {"tw"},
+			-- loc_text("骨折後遺症")),
 
 	--[+ Passive 18 - Warp Splitting +]--
 	-- create_template("talent_tree_psy_pas_018_en",
@@ -2383,6 +2687,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_018_ru",
 		-- {"loc_talent_psyker_cleave_from_peril"}, {"ru"},
 			-- loc_text("Расщепление варпа")),
+	--[+ Traditional Chinese - 亞空間分裂 +]--
+	-- create_template("talent_tree_psy_pas_018_tw",
+		-- {"loc_talent_psyker_cleave_from_peril"}, {"tw"},
+			-- loc_text("亞空間分裂")),
 
 	--[+ Passive 19 - Unlucky for Some +]--
 	-- create_template("talent_tree_psy_pas_019_en",
@@ -2392,6 +2700,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_019_ru",
 		{"loc_talent_psyker_restore_toughness_to_allies_when_ally_down"}, {"ru"},
 			loc_text("Не везёт некоторым")),
+	--[+ Traditional Chinese - 倒楣蛋 +]--
+	-- create_template("talent_tree_psy_pas_019_tw",
+		-- {"loc_talent_psyker_restore_toughness_to_allies_when_ally_down"}, {"tw"},
+			-- loc_text("倒楣蛋")),
 
 	--[+ Passive 20 - One with the Warp +]--
 	-- create_template("talent_tree_psy_pas_020_en",
@@ -2401,6 +2713,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_020_ru",
 		-- {"loc_talent_psyker_toughness_damage_reduction_from_warp_charge"}, {"ru"},
 			-- loc_text("Единство с варпом")),
+	--[+ Traditional Chinese - 亞空間強化 +]--
+	-- create_template("talent_tree_psy_pas_020_tw",
+		-- {"loc_talent_psyker_toughness_damage_reduction_from_warp_charge"}, {"tw"},
+			-- loc_text("亞空間強化")),
 
 	--[+ Passive 21 - Empathic Evasion +]--
 	-- create_template("talent_tree_psy_pas_21_en",
@@ -2410,6 +2726,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_21_ru",
 		-- {"loc_talent_psyker_dodge_after_crits"}, {"ru"},
 			-- loc_text("Эмпатическое уклонение")),
+	--[+ Traditional Chinese - 反射閃避 +]--
+	-- create_template("talent_tree_psy_pas_21_tw",
+		-- {"loc_talent_psyker_dodge_after_crits"}, {"tw"},
+			-- loc_text("反射閃避")),
 
 	--[+ Passive 22 - Anticipation +]--
 	-- create_template("talent_tree_psy_pas_022_en",
@@ -2419,6 +2739,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_022_ru",
 		-- {"loc_talent_psyker_improved_dodge"}, {"ru"},
 			-- loc_text("Предвкушение")),
+	--[+ Traditional Chinese - 看破 +]--
+	-- create_template("talent_tree_psy_pas_022_tw",
+		-- {"loc_talent_psyker_improved_dodge"}, {"tw"},
+			-- loc_text("看破")),
 
 	--[+ Passive 23 - Solidity +]--
 	-- create_template("talent_tree_psy_pas_023_en",
@@ -2428,6 +2752,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_023_ru",
 		{"loc_talent_psyker_increased_vent_speed"}, {"ru"},
 			loc_text("Устойчивость")),
+	--[+ Traditional Chinese - 心如止水 +]--
+	-- create_template("talent_tree_psy_pas_023_tw",
+		-- {"loc_talent_psyker_increased_vent_speed"}, {"tw"},
+			-- loc_text("心如止水")),
 
 	--[+ Passive 24 - Puppet Master +]--
 	-- create_template("talent_tree_psy_pas_024_en",
@@ -2437,6 +2765,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_024_en",
 		-- {"loc_talent_psyker_coherency_size_increase"}, {"ru"},
 			-- loc_text("Кукловод")),
+	--[+ Traditional Chinese - 傀儡師 +]--
+	-- create_template("talent_tree_psy_pas_024_tw",
+		-- {"loc_talent_psyker_coherency_size_increase"}, {"tw"},
+			-- loc_text("傀儡師")),
 
 	--[+ Passive 25 - Warp Rider +]--
 	-- create_template("talent_tree_psy_pas_025_en",
@@ -2446,6 +2778,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_025_ru",
 		{"loc_talent_psyker_damage_based_on_warp_charge"}, {"ru"},
 			loc_text("Всадник варпа")),
+	--[+ Traditional Chinese - 亞空間騎士 +]--
+	-- create_template("talent_tree_psy_pas_025_tw",
+		-- {"loc_talent_psyker_damage_based_on_warp_charge"}, {"tw"},
+			-- loc_text("亞空間騎士")),
 
 	--[+ Passive 26 - Crystalline Will +]--
 	-- create_template("talent_tree_psy_pas_027_en",
@@ -2455,6 +2791,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_027_ru",
 		-- {"loc_talent_psyker_alternative_peril_explosion"}, {"ru"},
 			-- loc_text("Чистая воля")),
+	--[+ Traditional Chinese - 結晶意志 +]--
+	-- create_template("talent_tree_psy_pas_027_tw",
+		-- {"loc_talent_psyker_alternative_peril_explosion"}, {"tw"},
+			-- loc_text("結晶意志")),
 
 	--[+ Passive 27 - Kinetic Deflection +]--
 	-- create_template("talent_tree_psy_pas_027_en",
@@ -2464,6 +2804,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_027_ru",
 		-- {"loc_talent_psyker_block_costs_warp_charge"}, {"ru"},
 			-- loc_text("Кинетическое отклонение")),
+	--[+ Traditional Chinese - 動能偏斜 +]--
+	-- create_template("talent_tree_psy_pas_027_tw",
+		-- {"loc_talent_psyker_block_costs_warp_charge"}, {"tw"},
+			-- loc_text("動能偏斜")),
 
 	--[+ Passive 28 - Tranquility Through Slaughter +]--
 	-- create_template("talent_tree_psy_pas_028_en",
@@ -2473,6 +2817,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_028_ru",
 		-- {"loc_talent_psyker_ranged_crits_vent"}, {"ru"},
 			-- loc_text("Спокойствие посредством убийств")),
+	--[+ Traditional Chinese - 殺無赦，心祥和 +]--
+	-- create_template("talent_tree_psy_pas_028_tw",
+		-- {"loc_talent_psyker_ranged_crits_vent"}, {"tw"},
+			-- loc_text("殺無赦，心祥和")),
 
 	--[+ Passive 29 - Empyric Resolve +]--
 	-- create_template("talent_tree_psy_pas_029_en",
@@ -2482,6 +2830,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_029_ru",
 		-- {"loc_talent_psyker_warp_glass_cannon"}, {"ru"},
 			-- loc_text("Эмпирическая решимость")),
+	--[+ Traditional Chinese - 亞空間意志 +]--
+	-- create_template("talent_tree_psy_pas_029_tw",
+		-- {"loc_talent_psyker_warp_glass_cannon"}, {"tw"},
+			-- loc_text("亞空間意志")),
 
 	--[+ Passive 30 - Penetration of the Soul +]--
 	-- create_template("talent_tree_psy_pas_030_en",
@@ -2489,6 +2841,9 @@ local localization_templates = {
 	--[+ Russian +]-- Проникновение в душу
 	-- create_template("talent_tree_psy_pas_030_ru",
 		-- {"loc_talent_psyker_warp_attacks_rending"}, {"en"} function(locale, value) return "Проникновение в душу")),
+	--[+ Traditional Chinese - 靈魂穿透 +]--
+	-- create_template("talent_tree_psy_pas_030_tw",
+		-- {"loc_talent_psyker_warp_attacks_rending"}, {"tw"} function(locale, value) return "靈魂穿透")),
 
 	--[+ Passive 31 - True Aim +]--
 	-- create_template("talent_tree_psy_pas_031_en",
@@ -2498,6 +2853,10 @@ local localization_templates = {
 	-- create_template("talent_tree_psy_pas_031_ru",
 		-- {"loc_talent_psyker_weakspot_grants_crit"}, {"ru"},
 			-- loc_text("Верная цель")),
+	--[+ Traditional Chinese - 精確瞄準 +]--
+	-- create_template("talent_tree_psy_pas_031_tw",
+		-- {"loc_talent_psyker_weakspot_grants_crit"}, {"tw"},
+			-- loc_text("精確瞄準")),
 
 	--[+ Passive 32 - Surety of Arms +]--
 	-- create_template("talent_tree_psy_pas_032_en",
@@ -2507,7 +2866,10 @@ local localization_templates = {
 	create_template("talent_tree_psy_pas_032_ru",
 		{"loc_talent_psyker_reload_speed_warp"}, {"ru"},
 			loc_text("Варп в залог")),
-
+	--[+ Traditional Chinese - 武器在手，信心我有。 +]--
+	-- create_template("talent_tree_psy_pas_032_tw",
+		-- {"loc_talent_psyker_reload_speed_warp"}, {"tw"},
+			-- loc_text("武器在手，信心我有。")),
 
 --[+ ++ZEALOT - ИЗУВЕР++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
