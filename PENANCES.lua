@@ -13,14 +13,16 @@ COLORS_KWords = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KWords")
 -- All Keywords are taken from this file by adding to the value "COLORS_KWords_ru.".
 -- For example, in the file "COLORS_KWords_ru.lua" the word Damage is replaced by Damage_rgb and to add the highlighted word to the text we write it as "..COLORS_KWords_ru.Damage_rgb.".
 COLORS_KW_Penances = mod:io_dofile("Enhanced_descriptions/Loc_EN/COLORS_KW_Penances")
+TALENTS_Enh_desc_penances = mod:io_dofile("Enhanced_descriptions/Loc_EN/TALENTS_Enh_desc_penances")
 
-	--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
+--[+ Translations +]-- Add a line with a file of Keywords translated into your language.
 --[+ French +]--
 COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr") -- French
 -- COLORS_KW_Penances_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KW_Penances_fr")
 --[+ Russian +]--
 COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
 COLORS_KW_Penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KW_Penances_ru")
+TALENTS_Enh_desc_penances_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/TALENTS_Enh_desc_penances_ru")
 
 --[+ Traditional Chinese +]--
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
