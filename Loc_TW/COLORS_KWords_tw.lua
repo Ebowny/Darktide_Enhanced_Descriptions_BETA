@@ -148,7 +148,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++電擊(Electrocuted)++]--
 	local electr_col = Color[mod:get("electrocuted_text_colour")](255, true)
 	local Electrocute_rgb_tw = iu_actit("電擊", electr_col)
-	local Electrocution_rgb_tw = iu_actit("眩暈", electr_col)
+	local Electrocution_rgb_tw = iu_actit("電擊", electr_col)
 	local Electrocuted_rgb_tw = iu_actit("被電擊", electr_col)
 	local Electrocutes_rgb_tw = iu_actit("電擊", electr_col)
 	local Electrcuting_rgb_tw = iu_actit("電擊中", electr_col)

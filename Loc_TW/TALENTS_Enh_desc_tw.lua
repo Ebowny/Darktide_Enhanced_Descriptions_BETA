@@ -21,7 +21,7 @@ local ppp___ppp = "\n+++-------------------------------------------------+++"
 local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除所有敵人的仇恨：若可能，近戰敵人會立即將仇恨轉移至其他目標；正在射擊的遠程敵人則會停止射擊，隨後若可能會重新鎖定目標。"
 local can_be_refr_dur_active_dur = "- 可在效果持續期間內重新觸發。"
 local doesnt_stack_aura_psy = "- 不會與另一位靈能者的相同光環效果疊加。"
-local doesnt_interact_w_c_a_r_from_curio = "- 不會與珍品提供的 "..COLORS_KWords_tw.Combat_ability_cd_rgb.." 效果互動，因為該效果只會縮短戰鬥技能的最大冷卻時間。"
+local doesnt_interact_w_c_a_r_from_curio = "- 不會與珍品提供的 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 效果互動，因為該效果只會縮短戰鬥技能的最大冷卻時間。"
 local dmg_is_incr_by = "- 傷害會受到撕裂、脆弱、「碎顱者」祝福（針對被踉蹌的敵人）以及「靈能強化」、「至天高之力」、「亞空間震波」、「擾動命運」、「惡意攻勢」、「完美時機」、「占卜者的注視」（含「預知未來」）、「亞空間騎士」、光環「動能釋放」（對精英單位）和小型遠程傷害節點的增益所提升。"
 local procs_on_succss_dodging = "- 在成功閃避敵方近戰或遠程攻擊（不含砲手、收割者、狙擊手），以及壓制型攻擊（瘟疫獵犬跳撲、陷阱兵網子、變種人擄抓）時觸發。"
 local red_both_tghns_n_health_dmg = "- 同時減少所受到的韌性與生命值傷害。"
@@ -38,17 +38,16 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 --[+ ++PSYKER++ +]--
 --[+ +BLITZ+ +]--
 	--[+ Blitz 0 - Brain Burst +]--
-	local ED_PSY_Blitz_0_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_PSY_Blitz_0_rgb_tw = iu_actit(table.concat({
+		"\n",
 		"- 無法爆擊。",
 		"- 基礎傷害：900。",
 		"- 永遠視為弱點命中。",
-		"- 對狂熱與不屈類型目標造成更高傷害。",
 		"{#color(255, 35, 5)}- 你可能會爆炸！反噬值達到 97% 或以上時請勿使用！{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1 - Brain Rupture +]--
-	local ED_PSY_Blitz_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Blitz_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 無法爆擊。",
 		"- 基礎傷害：1350。",
@@ -61,51 +60,49 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1-1 - Kinetic Resonance +]--
-	local ED_PSY_Blitz_1_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- 降低顱腦崩裂的主、副攻擊充能時間。",
-		"- 與「靈能強化」增益和敏捷興奮劑的充能時間減少效果相加疊加。",
-		"- 與「骨折後遺症」、「刺耳尖嘯」、「亞空間意志」、「平心靜氣」、「現實錨點」、小型反噬抗性節點、戰鬥興奮劑，以及「閃擊強化」事件（mutator）等相關增益做乘法疊加。",
+	local ED_PSY_Blitz_1_1_rgb_tw = iu_actit(table.concat({
+		"\n",
+		"- 縮短顱腦崩裂的蓄力時間。",
+		"- 蓄力時間縮短效果與天賦「強化靈能」及敏捷興奮劑加法疊加。",
+		"- 與「骨折後遺症」、「刺耳尖嘯」、「亞空間意志」、「平心靜氣」、「現實錨點」、反噬抗性、戰鬥興奮劑，以及「閃擊強化」事件等相關增益做乘法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 1-2 - Kinetic Flayer +]--
-	local ED_PSY_Blitz_1_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Blitz_1_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 由此天賦所觸發的「顱腦崩裂」攻擊，能享有「靈能強化」的傷害增益，而不會消耗其疊加。",
 		"{#color(255, 35, 5)}- 目前存在一個錯誤：當反噬值高於 97% 時，天賦會觸發並進入 15 秒冷卻，但敵人實際上不會受到任何傷害。{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2 - Smite +]--
-	local ED_PSY_Blitz_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
+	local ED_PSY_Blitz_2_rgb_tw = iu_actit(table.concat({
+		"\n",
+		"- 無法對巨獸或虛空護盾敵人造成踉蹌。",
+		"- 所有護甲中等穿透，甲殼護甲低穿透。",
 		"- 無法爆擊。",
 		"- 最遠射程：15 公尺。",
 		"- 只能鎖定敵人的軀幹部位。",
-		"- 無法對巨獸以及擁有主動力場護盾（void shield）的敵人造成踉蹌。",
-		"- 整體對各種裝甲傷害係數屬中等，對甲殼裝甲傷害係數偏低。",
 		dmg_is_incr_by,
-		"{#color(255, 35, 5)}- 只有在以充能攻擊讓反噬值剛好達到 100% 的同時再使用一般攻擊，才可能爆炸！{#reset()}",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
-	local ED_PSY_Blitz_2_1_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		"- 適用於懲戒的主要與次要攻擊。",
-		"- 將「懲戒」可連鎖到下一個目標的最遠距離由 5 公尺提升至 6 公尺。",
-		"- 同時也讓鎖定目標的最大距離增加 1 公尺，達到 16 公尺。",
+	local ED_PSY_Blitz_2_1_rgb_tw = iu_actit(table.concat({
+		"\n",
+		"-「懲戒」連鎖距離由 5m 提升 6m。",
+		"- 鎖定最大距離加 1m，共 16m。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2-2 - Enfeeble +]--
-	local ED_PSY_Blitz_2_2_rgb = iu_actit(table.concat({
-		ppp___ppp,
-		-- "- The debuff is being applied as long as the enemy is actively affected by \"Smite\".", -- 原程式碼已註解
-		"- 與「亞空間震波」或歐格林的「削弱敵人」、「重要干擾」或老兵的「鎖定目標!」等傷害承受增幅，及傷害增益，還有武器祝福提供的力量等級加成做乘法疊加。",
-		"- 與另一位靈能者施加的相同減益效果無法疊加。",
-		"- 任何可能對敵人造成感電效果的來源，若不是由「懲戒」或 「蓄力打擊」觸發，都不會啟動「衰弱詛咒」",
+	local ED_PSY_Blitz_2_2_rgb_tw = iu_actit(table.concat({
+		"\n",
+		"- 與「亞空間震波」或歐格林的「削弱敵人」、「重要干擾」或老兵的「鎖定目標!」的傷害易傷效果，還有武器祝福的威力加成做乘法疊加。",
+		"- 無法與其他靈能者「衰弱詛咒」疊加。",
+		"- 僅當「懲戒」或「蓄力打擊」觸發時，才會啟動「衰弱詛咒」。",
+		"- 其他電擊效果無法觸發「衰弱詛咒」。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 2-3 - Charged Strike +]--
-	local ED_PSY_Blitz_2_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Blitz_2_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每跳基礎傷害為 8。",
 		"- 傷害判定時間可持續最長 2 秒。",
@@ -115,7 +112,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3 - Assail +]--
-	local ED_PSY_Blitz_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Blitz_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 可爆擊。最多可同時穿透2 個敵人。",
 		"- 每次投射物消耗 1 發彈藥，並於每 3 秒回復 1 發。",
@@ -125,14 +122,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3-1 - Ethereal Shards +]--
-	local ED_PSY_Blitz_3_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Blitz_3_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 若「靈能強化」啟動，則可穿透的敵人數翻倍至最多 6 個。",
 		"- 甲殼裝甲預設無法被穿透。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3-2 - Quick Shards +]--
-	local ED_PSY_Blitz_3_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Blitz_3_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 將投射物的回充時間由 3 秒縮短為 2.1 秒。",
 		"- 不會與「閃擊強化」事件（mutator）產生互動。",
@@ -140,7 +137,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 --[+ +AURA+ +]--
 	--[+ Aura 0 - The Quickening +]--
-	local ED_PSY_Aura_0_rgb = iu_actit(table.concat({
+	local ED_PSY_Aura_0_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與珍品提供的戰鬥技能回復，以及可使技能冷卻縮短 20% 的任務事件（mutators）相加疊加。",
 		"- 這會將「靈能尖嘯」、「靈能學者之怒」的最大冷卻時間減少至 27.75 秒、「占卜者的注視」減少至 23.125 秒、「念力護盾」減少至 37 秒。",
@@ -148,14 +145,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 1 - Kinetic Presence +]--
-	local ED_PSY_Aura_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Aura_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		stacks_add_w_oth_dmg,
 		doesnt_stack_aura_psy,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Seer's Presence +]--
-	local ED_PSY_Aura_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Aura_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與珍品提供的戰鬥技能回復，以及可使技能冷卻縮短 20% 的任務事件相加疊加。",
 		"- 這會將「靈能尖嘯」、「靈能學者之怒」的最大冷卻時間減少至 27 秒、占卜者的注視」減少至 22.5 秒、「念力護盾」減少至 36 秒。",
@@ -163,7 +160,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Prescience +]--
-	local ED_PSY_Aura_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Aura_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 適用於所有能夠爆擊的攻擊。",
 		"- 與其他爆擊機率來源相加疊加。",
@@ -172,7 +169,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 --[+ +ABILITIES+ +]--
 	--[+ Ability 0 - Psykinetic's Wrath +]--
-	local ED_PSY_Ability_0_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_0_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 可以用來防止靈能者自我爆炸。",
 		"- 亞空間震波能穿透物體，範圍最遠可達30公尺，因此你可以透過牆壁將瘟疫獵犬從隊友身上震開。",
@@ -180,7 +177,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1 - Venting Shriek +]--
-	local ED_PSY_Ability_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 永遠只鎖定敵人軀幹部位。",
 		"- 可以在爆炸倒數中使用，以防止靈能者自我爆炸。",
@@ -191,13 +188,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Becalming Eruption +]--
-	local ED_PSY_Ability_1_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_1_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與「骨折後遺症」、「亞空間意志」、「平心靜氣」、「動能共鳴」等天賦、小型 「反噬抗性」 節點以及戰鬥興奮劑所提供的反噬值消耗減少效果做乘法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Warp Rupture +]--
-	local ED_PSY_Ability_1_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_1_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 對所有裝甲類型的傷害係數相同，但傷害隨距離而衰減。",
 		"- 基礎傷害會依反噬值而變動：",
@@ -213,7 +210,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-3 - Warp Creeping Flames +]--
-	local ED_PSY_Ability_1_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_1_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 施加到敵人身上的靈魂之火層數會隨靈能反噬變化：",
 		"_______________________________",
@@ -230,7 +227,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2 - Telekine Shield +]--
-	local ED_PSY_Ability_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 護盾生命值：20。",
 		"- 尺寸：寬 6 公尺，高 3.5 公尺。",
@@ -246,7 +243,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-1 - Bolstered Shield +]--
-	local ED_PSY_Ability_2_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_2_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 第二次充能的冷卻時間僅在第一次充能冷卻結束後開始計算。",
 		-- ppp___ppp,
@@ -254,7 +251,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Enervating Threshold +]--
-	local ED_PSY_Ability_2_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_2_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 不造成傷害。",
 		"- 每 0.55 秒施加一次震懾。",
@@ -267,7 +264,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - Telekine Dome +]--
-	local ED_PSY_Ability_2_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_2_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 球體半徑為 6 公尺。",
 		"- 可在所有角度防禦敵方攻擊。",
@@ -278,7 +275,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-4 - Sanctuary +]--
-	local ED_PSY_Ability_2_4_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_2_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 此恢復效果可疊加，若多個球體重疊則效果疊加。",
 		z_eff_of_this_tougn_rep,
@@ -288,7 +285,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3 - Scrier's Gaze +]--
-	local ED_PSY_Ability_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當技能處於超載階段時，冷卻時間會暫停。然而，其剩餘冷卻時間仍可透過觸發「靈能學者光環」或使用專注興奮劑來主動縮短。",
 		"- 最大冷卻時間可透過「先知之眼」、「亞空間虹吸」、來自珍品的戰鬥技能冷卻，以及降低技能冷卻時間 20% 的任務變異體來縮短。",
@@ -296,14 +293,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	-- [+ Ability 3-1 - Endurance +]--
-	local ED_PSY_Ability_3_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_3_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 不會在超載階段結束後持續存在。",
 		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	-- [+ Ability 3-2 - Precognition +]--
-	local ED_PSY_Ability_3_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_3_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與其他「弱點」與「技巧」增益效果相加計算。",
 		"- 「順劈目標」時，每次攻擊可多次觸發。",
@@ -311,14 +308,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Warp Speed +]--
-	local ED_PSY_Ability_3_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_3_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 不會在超載階段結束後持續存在。",
 		"- 與「擾動命運」、「堅毅」、「移動速度增幅」和武器祝福如「提速」的移動速度增益相加疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Reality Anchor +]--
-	local ED_PSY_Ability_3_4_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_3_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 不會在超載階段結束後持續存在。",
 		"- 與「骨折後遺症」、「亞空間意志」、「動能共鳴」、小型反噬抗性節點和戰鬥興奮劑的反噬值消耗減少效果做乘法疊加。",
@@ -326,7 +323,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-5 - Warp Unbound +]--
-	local ED_PSY_Ability_3_5_rgb = iu_actit(table.concat({
+	local ED_PSY_Ability_3_5_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
     	"- 超載結束後，允許靈能者在100%反噬值下執行反噬生成動作10秒而不會觸發自我爆炸。",
     	"- 請注意，當這10秒持續時間結束時，「占卜者的注視」的基本緩衝時間仍然適用，提供額外1.5秒的相同效果。",
@@ -334,7 +331,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Warp Siphon +]--
-	local ED_PSY_Keystone_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		can_be_refr_dur_active_dur,
 		"- 與珍品提供的戰鬥技能冷卻，以及可使技能冷卻縮短20%的任務事件（mutators）相加疊加。",
@@ -342,46 +339,46 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-1 - Inner Tranquility +]--
-	local ED_PSY_Keystone_1_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與自身線性疊加（1 個亞空間充能=6% 反噬消耗減少，2 個 = 12%，3 個 = 18%，等等），並與「骨折後遺症」、「亞空間意志」、「動能共鳴」、小型反噬抗性節點和戰鬥興奮劑的反噬消耗減少效果做乘法疊加。",
 		"- 因為使用戰鬥技能時所有亞空間充能都會消失，此天賦無法立即與「平心靜氣」和「現實錨點」疊加（除非靈能者在其持續期間內重新獲得亞空間充能）。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Essence Harvest +]--
-	local ED_PSY_Keystone_1_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 不會增加韌性回復量。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-3 - Empyrean Empowerment +]--
-	local ED_PSY_Keystone_1_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		stacks_add_w_oth_dmg,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-4 - In Fire Reborn +]--
-	local ED_PSY_Keystone_1_4_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當一個被靈魂之火影響的敵人被靈魂之火、靈能者或盟友擊殺時，你會獲得一個亞空間充能。",
 		"- 此效果無距離限制，並且所有裝備此天賦的靈能者都能受益。",
 	}, "\n"), enhdesc_col)
 	
 	--[+ Keystone 1-5 - Psychic Vampire +]--
-	local ED_PSY_Keystone_1_5_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_5_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 如果多個靈能者在彼此的協同範圍內，當其中一個觸發天賦時，所有靈能者都會獲得一個亞空間充能。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-6 - Warp Battery +]--
-	local ED_PSY_Keystone_1_6_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_1_6_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 將靈能者可持有的亞空間充能最大數量從4增加到6。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Brain Rupture +]--
-	local ED_PSY_Keystone_2_0_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_2_0_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		-- "- Consumes Stacks when attack connects with an enemy.",
 		"- 與其他適用的傷害增益做加法疊加。",
@@ -391,7 +388,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Smite +]--
-	local ED_PSY_Keystone_2_0_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_2_0_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		-- "- Consumes Stacks when releasing.",
 		"- 與其他適用的傷害增益做加法疊加。",
@@ -400,7 +397,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Assail +]--
-	local ED_PSY_Keystone_2_0_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_2_0_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		-- "- Consumes Stacks per thrown projectile.",
 		"- 允許在100%反噬時施放。",
@@ -408,23 +405,23 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-1 - Bio-Lodestone +]--
-	-- local ED_PSY_Keystone_2_1_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_PSY_Keystone_2_1_rgb_tw = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-2 - Psychic Leeching +]--
-	local ED_PSY_Keystone_2_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_2_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當「顱腦崩裂」命中、當「懲戒」開始施放或充能後，以及當「靈能攻擊」生成投射物時觸發。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-3 - Overpowering Souls +]--
-	-- local ED_PSY_Keystone_2_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_PSY_Keystone_2_3_rgb_tw = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-4 - Charged Up +]--
-	-- local ED_PSY_Keystone_2_4_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_PSY_Keystone_2_4_rgb_tw = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Keystone 3 - Disrupt Destiny +]--
-	local ED_PSY_Keystone_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 對標記的敵人造成傷害會刷新天賦的持續時間。",
 		"- 有效目標包括：渣滓/血痂暴徒、渣滓/血痂潛行者、渣滓射手、狂怒者、砲手、霰彈槍手和重錘兵。",
@@ -434,20 +431,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-1 - Perfectionism +]--
-	-- local ED_PSY_Keystone_3_1_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_PSY_Keystone_3_1_rgb_tw = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-2 - Purloin Providence +]--
-	local ED_PSY_Keystone_3_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_3_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 有2%的機率在同一次擊殺中觸發「戰鬥冥想」，總共移除 25% 的反噬。",
 	}, "\n"), enhdesc_col)
 	
 
 	--[+ Keystone 3-3 - Lingering Influence +]--
-	-- local ED_PSY_Keystone_3_3_rgb = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
+	-- local ED_PSY_Keystone_3_3_rgb_tw = iu_actit(table.concat({ "", }, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-4 - Cruel Fortune +]--
-	local ED_PSY_Keystone_3_4_rgb = iu_actit(table.concat({
+	local ED_PSY_Keystone_3_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 觸發於近戰、遠程、「顱腦崩裂」或「靈能攻擊」攻擊。",
 	}, "\n"), enhdesc_col)
@@ -455,7 +452,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 --[+ +PASSIVES+ +]--
 	--[+ Passive 1 - Soulstealer +]--
-	local ED_PSY_Passive_1_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 如果亞空間攻擊是近戰攻擊，天賦的7.5%效果會加到靈能者基礎的5%最大韌性獲得量上。",
 		"-- 例如，一個擁有 96最大韌性的靈能者使用啟動的靈能劍擊殺兩個敵人，會恢復96x(0.1+0.15)=24韌性。",
@@ -464,7 +461,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 2 - Mettle +]--
-	local ED_PSY_Passive_2_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每次爆擊攻擊只觸發一次，不論擊中多少敵人。",
 		z_eff_of_this_tougn_rep,
@@ -474,7 +471,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 3 - Quietude +]--
-	local ED_PSY_Passive_3_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每 1% 反噬平息恢復0.5%最大韌性。",
 		"- 觸發於主動或被動平息。",
@@ -483,7 +480,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 4 - Warp Expenditure +]--
-	local ED_PSY_Passive_4_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每1%反噬生成恢復0.25%最大韌性。",
 		"- 來自「平心靜氣」、「骨折後遺症」、「動能共鳴」、「現實錨點」和反噬抗性節點的反噬值消耗減少效果會降低此天賦的效能！",
@@ -491,7 +488,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 5 - Perilous Combustion +]--
-	local ED_PSY_Passive_5_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_5_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 疊加效果在距離被擊殺敵人最多4公尺內生效。",
 		"- 不會對被靈能者的靈魂之火傷害跳數擊殺的精英或特殊敵人生效。",
@@ -507,7 +504,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	
 
 	--[+ Passive 6 - Perfect Timing +]--
-	local ED_PSY_Passive_6_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_6_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 用近戰爆擊、遠程或靈能攻擊擊中敵人會獲得疊加效果。",
 		"- 順劈攻擊時每次攻擊會生成多個疊加效果。",
@@ -517,7 +514,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 7 - Battle Meditation +]--
-	local ED_PSY_Passive_7_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_7_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 從當前反噬值中移除10%反噬。",
 		"- 當敵人死於靈能者的近戰和遠程攻擊、傷害技能、持續傷害效果，或被靈能者推下懸崖進入地圖殺區時，有10%的機率觸發。",
@@ -526,7 +523,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Wildfire +]--
-	local ED_PSY_Passive_8_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_8_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每當受到至少2層靈魂之火影響的敵人死亡時，靈魂之火會擴散到5公尺範圍內的有效目標。",
 		"- 如果目標已經有4層或更多靈魂之火，則不會受到此天賦造成的靈魂之火疊加。",
@@ -543,7 +540,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 9 - Psykinetic's Aura +]--
-	local ED_PSY_Passive_9_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_9_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 對「靈能尖嘯」、「靈能學者之怒」為1.5秒，對「占卜者的注視」為1.25秒，對「念力護盾」為2秒。",
 		"- 不會與另一位靈能者的相同天賦疊加（每位靈能者觸發自己的天賦，分別減少冷卻時間）。",
@@ -552,13 +549,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Mind in Motion +]--
-	local ED_PSY_Passive_10_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_10_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 不會與移動速度增益效果產生互動。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - Malefic Momentum +]--
-	local ED_PSY_Passive_11_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_11_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		stacks_add_w_oth_dmg,
 		"- 每個增益效果的8秒持續時間從相應的擊殺開始計算，並可在持續期間內刷新。",
@@ -566,7 +563,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 12 - Channeled Force +]--
-	local ED_PSY_Passive_12_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_12_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 在使用任何靈能法杖進行至少95%充能的次要攻擊後，增加法杖主要攻擊的傷害。",
 		can_be_refr_dur_active_dur,
@@ -574,7 +571,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 13 - Perilous Assault +]--
-	local ED_PSY_Passive_13_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_13_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 這會減少切換物品槽（武器、閃擊技能、興奮劑、醫療包、彈藥箱、書籍等）時的操作時間：",
 		"_______________________________",
@@ -586,20 +583,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 14 - Lightning Speed +]--
-	local ED_PSY_Passive_14_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_14_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
     	"- 與敏捷興奮劑的相關攻擊速度增益做加法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 15 - Souldrinker +]--
-	local ED_PSY_Passive_15_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_15_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 爆擊機率無法在持續期間內刷新。",
 		"- 每次擊殺敵人時恢復最大韌性。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Empyric Shock +]--
-	local ED_PSY_Passive_16_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_16_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 對敵人施加一個減益效果，使其受到的亞空間攻擊傷害增加。",
 		can_be_refr_dur_active_dur,
@@ -611,14 +608,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - By Crack of Bone +]--
-	local ED_PSY_Passive_17_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_17_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 移除反噬時，順劈攻擊每次揮擊可多次觸發。與「戰鬥冥想」和「盜竊天命」同時觸發。",
 		"- 與「平心靜氣」、「亞空間意志」、「動能共鳴」、「現實錨點」、小型反噬抗性節點和戰鬥興奮劑的反噬值消耗減少效果做乘法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 18 - Warp Splitting +]--
-	local ED_PSY_Passive_18_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_18_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與反噬成比例縮放。",
 		"- 將攻擊的最大順劈傷害上限（近戰、遠程、「靈能攻擊」）提高最多 100%，從而允許攻擊順劈更多敵人。",
@@ -628,7 +625,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 19 - Unlucky for Some +]--
-	local ED_PSY_Passive_19_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_19_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當靈能者倒下時，恢復協同範圍內盟友的韌性。",
 		"- 當盟友或靈能者死亡時不會觸發。",
@@ -636,7 +633,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - One with the Warp +]--
-	local ED_PSY_Passive_20_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_20_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		stacks_mult_w_other_dmg_red_buffs,
 		"- 無論當前反噬值多少，始終提供至少 10% 的韌性傷害減免：",
@@ -648,7 +645,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 21 - Empathic Evasion +]--
-	local ED_PSY_Passive_21_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_21_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 用近戰爆擊、遠程或「靈能攻擊」擊中敵人會使靈能者進入 1 秒的「閃避狀態」，對抗遠程攻擊。",
 		can_be_refr_dur_active_dur,
@@ -656,7 +653,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 22 - Anticipation +]--
-	local ED_PSY_Passive_22_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_22_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 將靈能者的基礎閃避停留時間從0.2秒增加到0.3秒。",
 		"- 「閃避持續時間」指的是在閃避技術結束後，角色仍被視為處於對抗近戰攻擊的「閃避狀態」的時間窗口。這使得閃避窗口在玩家輸入時更具寬容性。",
@@ -665,20 +662,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 23 - Solidity +]--
-	local ED_PSY_Passive_23_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_23_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 僅適用於主動平息，對被動平息無效。",
 		"- 在計算過程中與敏捷興奮劑的平息增益做乘法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 24 - Puppet Master +]--
-	local ED_PSY_Passive_24_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_24_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 將基礎協同範圍從8公尺增加到12公尺。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 25 - Warp Rider +]--
-	local ED_PSY_Passive_25_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_25_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		stacks_add_w_oth_dmg,
 		"_______________________________",
@@ -689,7 +686,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 26 - Crystalline Will +]--
-	local ED_PSY_Passive_26_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_26_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 靈能者自我爆炸時，不會被擊倒，而是將一個生命段轉換為完全腐化。",
 		"- 無論該段是否已部分腐化，總是轉換一段。",
@@ -702,7 +699,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 27 - Kinetic Deflection +]--
-	local ED_PSY_Passive_27_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_27_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 反噬消耗減少增益（來自「平心靜氣」、「骨折後遺症」、「亞空間意志」、「內在平靜」、「現實錨點」和小型反噬抗性節點）增加了耐力消耗轉換為反噬的效率。",
     	"- 也增加了來自珍品、近戰武器特技和「偏斜」武器祝福（也適用於遠程攻擊）的格擋效率增益，以及來自敏捷興奮劑的耐力消耗減少增益。",
@@ -710,7 +707,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 28 - Tranquility Through Slaughter +]--
-	local ED_PSY_Passive_28_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_28_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 用常規遠程攻擊的爆擊移除當前反噬值的4%。",
 		"- 擊中護盾時觸發。",
@@ -720,7 +717,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 29 - Empyric Resolve +]--
-	local ED_PSY_Passive_29_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_29_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 減少40%反噬生成量。",
 		"- 與「骨折後遺症」、「平心靜氣」、「動能共鳴」、「現實錨點」、小型反噬抗性節點和戰鬥興奮劑的反噬消耗減少效果做乘法疊加。",
@@ -730,7 +727,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 30 - Penetration of the Soul +]--
-	local ED_PSY_Passive_30_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_30_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當反噬值達到或超過75%時，對亞空間攻擊賦予10%撕裂效果，提升對甲殼、片甲、狂熱者、不屈敵人的傷害。",
 		"- 僅影響靈能者自身的傷害。",
@@ -740,7 +737,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 31 - True Aim +]--
-	local ED_PSY_Passive_31_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_31_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每次用近戰、遠程、「靈能攻擊」和「顱腦崩裂」、「顱腦爆裂」攻擊命中弱點時生成1層弱點疊加。",
 		"- 順劈攻擊（例如虛空打擊法杖的充能射擊進入密集區域）一次最多可累積5層弱點疊加，但不會立即消耗保證的爆擊。",
@@ -749,7 +746,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 32 - Surety of Arms +]--
-	local ED_PSY_Passive_32_rgb = iu_actit(table.concat({
+	local ED_PSY_Passive_32_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"重新裝填時，增加25%裝填動畫速度。",
 		"與武器祝福提供的裝填速度增益做加法疊加。",
@@ -763,7 +760,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 --[+ ++ZEALOT++ +]--
 --[+ +BLITZ+ +]--
 	--[+ Blitz 0 - Stun Grenade(眩暈手雷) +]--
-	local ED_ZEA_Blitz_0_rgb = iu_actit(table.concat({
+	local ED_ZEA_Blitz_0_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 爆炸引信時間：1.5秒。",
 		"- 爆炸半徑：8米。",
@@ -777,7 +774,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 	
 	--[+ Blitz 1 - Stunstorm Grenade(眩暈風暴手雷) +]--
-	local ED_ZEA_Blitz_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Blitz_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 爆炸半徑增加至12米。",
 		"- 爆炸引信時間：1.5秒。",
@@ -792,7 +789,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 	
 	--[+ Blitz 2 - Immolation Grenade(獻祭手雷) +]--
-	local ED_ZEA_Blitz_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Blitz_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 引信時間：1.7秒。",
 		"- 火焰區域：持續15秒。半徑5米。敵人會避開該範圍。",
@@ -807,7 +804,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3 - Blades of Faith(信仰之刃) +]--
-	local ED_ZEA_Blitz_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Blitz_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 快速投擲。",
 		"- 彈藥補充：每次近戰處決菁英或特殊敵人可補充1把飛刀；小型彈藥補給補充2把飛刀；大型彈藥補給補充6把飛刀；彈藥箱補充全部飛刀。",
@@ -828,27 +825,27 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 --[+ +AURA+ +]--
 	--[+ Aura 0 - The Emperors's Will(帝皇之諭) +]--
 	--[+ Aura 1 - Benediction(恩賜) +]--
-	local ED_ZEA_Aura_0_n_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Aura_0_n_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		stacks_mult_w_other_dmg_red_buffs,
 		"- 不會與另一位狂信徒施放的同一光環效果重複疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Beacon of Purity(純潔信標) +]--
-	local ED_ZEA_Aura_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Aura_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 恢復速率足以抵銷法術書的腐蝕傷害，不過首次造成的40腐蝕傷害無法消除。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Loner(孤狼) +]--
-	local ED_ZEA_Aura_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Aura_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與「合抱成林」效果疊加時採加法計算，並在計算過程中與老兵小型天賦「鼓舞人心」或歐格林光環「保持靠近!」提供的韌性恢復速度採乘法計算。",
 		"- 需要符合協同韌性再生(Coherency Toughness Regeneration)的前提才能觸發。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1 - Fury of the Faithful(有信者之怒) +]--
-	local ED_ZEA_Ability_0_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_0_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 突進距離：",
 		"-- 基礎：7米。",
@@ -858,7 +855,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Redoubled Zeal(倍增狂熱) +]--
-	local ED_ZEA_Ability_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 突進：",
 		"-- 範圍：基礎7米；（輔助動作時）最遠可達21米。",
@@ -874,13 +871,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Redoubled Zeal(倍增狂熱) +]--
-	local ED_ZEA_Ability_1_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_1_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 第二段充能的冷卻只有在第一段充能完成冷卻後才會開始。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Invocation of Death(死亡禱文) +]--
-	local ED_ZEA_Ability_1_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_1_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每次觸發共減少12秒冷卻時間，",
 		"  其中包含基礎4秒加天賦提供4次，",
@@ -891,7 +888,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2 - Chorus of Spiritual Fortitude(不屈靈魂合唱) +]--
-	local ED_ZEA_Ability_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 範圍：10米。",
 		"- 在效果持續期間，可刷新對眩暈或無敵的免疫效果。",
@@ -901,7 +898,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-1 - Holy Cause(神聖事業) +]--
-	local ED_ZEA_Ability_2_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_2_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當Buff觸發時，只要盟友處於協同範圍內，就會獲得此Buff。",
 		stacks_mult_w_other_dmg_red_buffs,
@@ -909,7 +906,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Banishing Light(放逐之光) +]--
-	local ED_ZEA_Ability_2_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_2_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 這個天賦有三個效果：",
 		"-- 1. 讓脈衝可以對10米內、不可壓制的敵人造成踉蹌。若是巨獸或隊長/雙胞胎且距離小於4米，則在第1、3、5、7次脈衝時施加強制踉蹌，其餘不可壓制的敵人（小於4米）則每次脈衝都會被強制踉蹌。強制踉蹌持續2秒。",
@@ -919,7 +916,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-3 - Ecclesiarch's Call(教宗之喚) +]--
-	local ED_ZEA_Ability_2_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_2_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當Buff觸發時，只要盟友處於協同範圍內，就會獲得此Buff。",
 		stacks_add_w_oth_dmg,
@@ -927,7 +924,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-4 - Martyr's Purpose(殉道者之願) +]--
-	local ED_ZEA_Ability_2_4_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_2_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 倒地時不會觸發。",
 		"- 例如，若狂信徒的「不屈靈魂合唱」仍有55秒冷卻，且受到80點生命傷害，則剩餘冷卻55秒會被減少：60 x (80 x 0.01) = 48秒，最後只剩7秒。",
@@ -936,7 +933,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3 - Shroudfield(隱秘領域) +]--
-	local ED_ZEA_Ability_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		become_invis_drop_all_enemy_aggro,
 		"- 隱形時仍然可能受傷。",
@@ -946,10 +943,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-1 - Master-Crafted Shroudfield +]--
-	-- local ED_ZEA_Ability_3_1_rgb = iu_actit(table.concat({"",}, "\n"), enhdesc_col)
+	-- local ED_ZEA_Ability_3_1_rgb_tw = iu_actit(table.concat({"",}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-2 - Perfectionist(完美主義者) +]--
-	local ED_ZEA_Ability_3_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_3_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 提升的技巧傷害與其他相關Buff採加法疊加。",
 		"- 背刺傷害與「背刺者」、「隱秘領域」的加成採加法疊加，計算時再與其他傷害或武器威力加成採乘法疊加。",
@@ -958,7 +955,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Invigorating Revelation(振奮啟示) +]--
-	local ED_ZEA_Ability_3_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_3_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當隱形結束時，在接下來5秒內每秒恢復相當於最大韌性的8%。",
 		red_both_tghns_n_health_dmg,
@@ -967,7 +964,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-4 - Pious Cut-Throat(虔誠刺客) +]--
-	local ED_ZEA_Ability_3_4_rgb = iu_actit(table.concat({
+	local ED_ZEA_Ability_3_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 有0.2秒的內部冷卻時間。",
 		"- 「有信者之怒」與「隱秘領域」的冷卻因此被縮短至6秒（「完美主義者」下則為7.5秒），而「不屈靈魂合唱」則縮短至12秒。",
@@ -979,7 +976,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Blazing Piety(熾熱虔誠) +]--
-	local ED_ZEA_Keystone_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當狂信徒在8秒內未擊殺任何敵人時，系統會視其為脫離戰鬥狀態；脫離戰鬥後，狂怒疊加會隨時間逐漸下降，以愈來愈慢的速度一個一個消耗。",
 		"- 狂怒的持續時間可透過擊殺敵人來刷新。",
@@ -987,7 +984,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-1 - Stalwart(死忠) +]--
-	local ED_ZEA_Keystone_1_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_1_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當狂怒疊加達到25層時，會有兩個效果：",
 		"-- 1. 立即回復50%最大韌性。同時，只要維持25層狂怒，每擊殺1名敵人就額外回復2%最大韌性。",
@@ -998,27 +995,27 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Fury Rising(怒火升騰) +]--
-	local ED_ZEA_Keystone_1_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_1_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 順劈攻擊時，若觸發暴擊，可能一次生成多層狂怒。",
 		"- 攻擊護盾若發生暴擊，也能觸發此效果。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-3 - Infectious Zeal(迅疾狂熱) +]--
-	local ED_ZEA_Keystone_1_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_1_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		can_be_refr_dur_active_dur,
 		"- 不會與另一位狂信徒使用相同天賦重複疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-4 - Righteous Warrior(正義勇士) +]--
-	local ED_ZEA_Keystone_1_4_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_1_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 進一步提升所有可暴擊攻擊的爆擊機率，在「熾熱虔誠」原本的15%爆擊率基礎上再增幅（最終可達+25%）。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Martyrdom(殉道) +]--
-	local ED_ZEA_Keystone_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當血條中的任一段完全耗盡或被腐蝕時，該段即視為缺失。",
 		"- 在難度異端或詛咒下，狂信徒最高可擁有7段血量（基礎2段、來自珍品的+3段、以及「信仰之勇」的+2段），等同於可達成最多6層疊加。",
@@ -1027,7 +1024,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-1 - I Shall Not Fall(不滅意志) +]--
-	local ED_ZEA_Keystone_2_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_2_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每缺失一段血量，便獲得6.5%的韌性減傷（在異端、詛咒最高可達39%，更低難度則可達45.5%）。",
 		"- 與小型韌性減傷天賦採加法疊加。",
@@ -1035,14 +1032,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-2 - Maniac(狂燥之心) +]--
-	local ED_ZEA_Keystone_2_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_2_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每缺失一段血量時，使近戰武器攻擊動畫速度增加4%（在異端、詛咒最高可+24%，更低難度最高可+28%）。",
 		"- 與其他攻擊速度Buff採加法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3 - Inexorable Judgement(命定審判) +]--
-	local ED_ZEA_Keystone_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 在衝刺(Sprinting)時會以雙倍速度生成「命定審判」疊加。",
 		"- 只要以近戰或遠程攻擊命中敵人，就會清空目前所有「命定審判」疊加。",
@@ -1054,13 +1051,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-1 - Retributor's Stance(懲戒者姿態) +]--
-	local ED_ZEA_Keystone_3_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_3_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-2 - Inebriate's Poise(飄忽身形) +]--
-	local ED_ZEA_Keystone_3_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Keystone_3_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每成功閃避敵方近戰或遠程攻擊（除了砲手、收割者及狙擊手）與特殊束縛攻擊（如瘟疫獵犬撲擊、陷阱兵投網、變種人衝撞抓取）時，額外獲得3層「命定審判」。",
 		succss_dodge_means,
@@ -1070,7 +1067,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 --[+ +PASSIVES+ +]--
 	--[+ Passive 1 - Disdain(蔑視) +]--
-	local ED_ZEA_Passive_1_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 一次揮擊可能產生多層疊加。",
 		"- 疊加會一直存在，直到被消耗為止。",
@@ -1079,7 +1076,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 2 - Backstabber(背刺者) +]--
-	local ED_ZEA_Passive_2_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 解鎖背刺機制。",
 		"- 與「隱秘領域」以及「完美主義者」的背刺傷害加成採加法疊加。",
@@ -1088,7 +1085,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 3 - Anoint in Blood(鮮血受膏) +]--
-	local ED_ZEA_Passive_3_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當裝備遠程武器時，對12.5米內的敵人造成的任何傷害提高25%。",
 		stacks_add_w_oth_dmg,
@@ -1102,7 +1099,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 4 - Scourge(天災) +]--
-	local ED_ZEA_Passive_4_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 近戰攻擊的暴擊（包含遠程武器的近戰特殊動作）會對敵人施加2層流血。",
 		"- 無法透過護盾造成流血。",
@@ -1116,7 +1113,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 5 - Enemies Within, Enemies Without(內憂外患) +]--
-	local ED_ZEA_Passive_5_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_5_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 距離不受地形影響。",
 		"- 當狂信徒掛在懸崖邊或被變種人、瘟疫獵犬、陷阱兵、惡魔宿主、混沌魔物或納垢巨獸束縛時，此回復功能會暫停。",
@@ -1125,7 +1122,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 6 - Fortitude in Fellowship(合抱成林) +]--
-	local ED_ZEA_Passive_6_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_6_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 固定增加50%的協同基準值，提升協同範圍內每位隊友所提供的韌性再生量。",
 		"- 與「孤狼」的效果採加法疊加，最終計算時則與珍品提供的韌性再生速度、老兵的小型天賦「鼓舞人心」、歐格林光環「保持靠近!」等效果乘法相乘。",
@@ -1142,21 +1139,21 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 7 - Purge the Unclean(淨化不潔) +]--
-	local ED_ZEA_Passive_7_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_7_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與武器專長中的相同傷害加成採加法疊加，最終再與其他傷害增益或武器威力增幅乘法計算。",
 
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Blood Redemption(鮮血救贖) +]--
-	local ED_ZEA_Passive_8_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_8_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 將狂信徒近戰擊殺所回復的韌性，從基礎的5%提升至7.5%。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 9 - Bleed for the Emperor(為了帝皇) +]--
-	local ED_ZEA_Passive_9_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_9_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 僅在受到生命值傷害時觸發。",
 		"- 若本次傷害足以摧毀狂信徒的一整段血量，該次傷害將降低40%。",
@@ -1165,14 +1162,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Vicious Offering(惡毒贈禮) +]--
-	local ED_ZEA_Passive_10_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_10_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		z_eff_of_this_tougn_rep,
 		"- 例如，若狂信徒最大韌性為120，則每次使用重擊近戰擊殺敵人時，可回復120x(0.05+0.1)=18點韌性。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 11 - The Voice of Terra(泰拉之音) +]--
-	local ED_ZEA_Passive_11_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_11_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當使用遠程攻擊擊殺敵人時（包含「信仰之刃」），回復4%最大韌性。",
 		"- 與武器祝福「激勵彈幕」、「慰藉精準」、「榮耀獵手」同時生效。",
@@ -1180,14 +1177,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 12 - Restoring Faith(恢復信仰) +]--
-	local ED_ZEA_Passive_12_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_12_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 僅在受到生命值傷害時觸發（包含倒地時）。",
 		"- 最多可同時記錄10次受到的傷害，即便在恢復期間再次受到傷害，也會正確恢復。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 13 - Second Wind(精力復甦) +]--
-	local ED_ZEA_Passive_13_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_13_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 具有0.5秒的內部冷卻。",
 		z_eff_of_this_tougn_rep,
@@ -1197,7 +1194,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 14 - Enduring Faith(堅韌信仰) +]--
-	local ED_ZEA_Passive_14_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_14_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 近戰或遠程攻擊若觸發暴擊（包含武器特殊動作），則在4秒內獲得50%的韌性減傷。",
 		can_be_refr_dur_active_dur,
@@ -1205,7 +1202,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 15 - The Emperor's Bullet(帝皇之彈) +]--
-	local ED_ZEA_Passive_15_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_15_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當彈匣子彈量降至0時，在5秒內使近戰的踉蹌強度提升30%、近戰武器攻擊動作速度提升10%。",
 		"- 攻擊速度加成與「信仰狂亂」、「有信者之怒」、「命定審判」、「狂燥之心」以及敏捷興奮劑等相同類型的Buff以加法疊加。",
@@ -1213,7 +1210,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 16 - Dance of Death(死亡之舞) +]--
-	local ED_ZEA_Passive_16_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_16_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與武器祝福「連跑帶打」、「火藥灼傷」等相關增益採加法疊加。",
 		procs_on_succss_dodging,
@@ -1222,7 +1219,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 17 - Duellist(決鬥者) +]--
-	local ED_ZEA_Passive_17_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_17_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與其他弱點攻擊或技巧(Finesse)傷害加成採加法疊加，與武器威力增幅等效果則是乘法計算。",
 		procs_on_succss_dodging,
@@ -1231,7 +1228,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 18 - Until Death(死戰到底) +]--
-	local ED_ZEA_Passive_18_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_18_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 若此被動不在冷卻中，則在受到傷害時使狂信徒的生命值不會被降至1以下，並提供5秒無敵。",
 		"- 「無敵」意指狂信徒的血量不會低於1，但若血量高於1，依然會正常扣除（例如受到攻擊的同時被醫療箱回復）。",
@@ -1239,13 +1236,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 19 - Unremitting(不斷奮戰) +]--
-	local ED_ZEA_Passive_19_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_19_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與珍品、遠程與近戰武器、以及敏捷興奮劑提供的衝刺效率採乘法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 20 - Shield of Contempt(輕蔑之盾) +]--
-	local ED_ZEA_Passive_20_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_20_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		red_both_tghns_n_health_dmg,
 		"- 僅在受到生命值傷害時觸發（包含倒地時）。",
@@ -1258,7 +1255,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 21 - Thy Wrath be Swift(勃然大怒) +]--
-	local ED_ZEA_Passive_21_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_21_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 免疫來自近戰與遠程攻擊的眩暈與減速。",
 		"- 能無阻礙地穿越火焰區域。",
@@ -1268,7 +1265,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 22 - Good Balance(四平八穩) +]--
-	local ED_ZEA_Passive_22_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_22_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		red_both_tghns_n_health_dmg,
 		"- 可在持續時間內刷新。",
@@ -1279,7 +1276,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 23 - Desperation(背水一戰) +]--
-	local ED_ZEA_Passive_23_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_23_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"當耐力因衝刺、推擊或阻擋敵方近戰攻擊而降至0時，於接下來5秒內使近戰攻擊的傷害提升20%。",
 		can_be_refr_dur_active_dur,
@@ -1288,14 +1285,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 24 - Holy Revenant(吊命聖徒) +]--
-	local ED_ZEA_Passive_24_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_24_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 在「死戰到底」的5秒期間，造成的非近戰傷害有0.7%轉化為吸血量，近戰傷害則有2.1%轉化為吸血量。",
 		"- 當「死戰到底」結束時，最多可將這些吸血量轉化為相當於25%最大生命值的回復。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 25 - Sainted Gunslinger(封聖神射手) +]--
-	local ED_ZEA_Passive_25_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_25_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每次近戰擊殺可獲得一層疊加(最高5層)。",
 		"- 疊加會持續到進行換彈或裝填特殊彈藥(戰鬥霰彈槍)時被消耗。",
@@ -1305,7 +1302,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 26 - Hammer of Faith(信仰之錘) +]--
-	local ED_ZEA_Passive_26_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_26_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 提升近戰與遠程攻擊的踉蹌強度。",
 		"- 同時影響遠程武器的近戰特殊動作。",
@@ -1313,7 +1310,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 27 - Grievous Wounds(重傷) +]--
-	local ED_ZEA_Passive_27_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_27_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 近戰攻擊若擊中敵人弱點，踉蹌強度提高50%。",
 		"- 也影響遠程武器的近戰特殊動作。",
@@ -1321,7 +1318,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 28 - Ambuscade(伏擊) +]--
-	local ED_ZEA_Passive_28_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_28_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 解鎖「側面射擊(Flanking)」。",
 		"- 當側面射擊時，傷害增加30%。",
@@ -1330,7 +1327,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 29 - Punishment(懲罰) +]--
-	local ED_ZEA_Passive_29_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_29_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 每次近戰攻擊擊中3名以上敵人時，會獲得疊加(最多5層)。",
 		"- 疊加持續5秒，可在持續期間內刷新。",
@@ -1340,13 +1337,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 30 - Faithful Frenzy(信仰狂亂) +]--
-	local ED_ZEA_Passive_30_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_30_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與「有信者之怒」、「命定審判」、「狂燥之心」、「帝皇之彈」以及敏捷興奮劑等同類型的攻擊速度增益以加法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 31 - Sustained Assault(持續突擊) +]--
-	local ED_ZEA_Passive_31_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_31_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 近戰攻擊（包含遠程武器的近戰特殊動作）命中敵人時，會產生疊加(最多5層)。",
 		"- 與「重傷」、「信仰之錘」、「帝皇之彈」以及武器祝福的踉蹌加成採加法疊加，與武器威力加成採乘法計算。",
@@ -1355,7 +1352,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 32 - The Master's Retribution +]--
-	local ED_ZEA_Passive_32_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_32_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 若此技能不在冷卻狀態，當狂信徒遭到近戰攻擊時會立即釋放推擊，使攻擊者踉蹌(若可踉蹌)。",
 		"- 推擊範圍2.75米，且有效推擊角度僅約22°。",
@@ -1366,13 +1363,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 33 - Faith's Fortitude +]--
-	local ED_ZEA_Passive_33_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_33_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 與珍品提供的額外血量段效果以加法疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 34 - Swift Certainty +]--
-	local ED_ZEA_Passive_34_rgb = iu_actit(table.concat({
+	local ED_ZEA_Passive_34_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 固定提升5%的衝刺速度，並與「隱秘領域」、「勃然大怒」、小型移動速度天賦、以及武器祝福「提速」等提供的移動速度Buff採乘法相乘。",
 		"- 使狂信徒在耐力(Stamina)耗盡時，仍能維持衝刺躲避的狀態。一般而言，當以一定角度繞圈衝刺躲避射擊敵人(角度需至少70°)，一旦耐力歸0，敵人就能命中玩家；但本天賦可在無耐力的情況下依舊維持衝刺躲避。",
@@ -1381,167 +1378,167 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 
 -- In the list below, you also need to add a new entry or change an old one.
 return {
-	ED_PSY_Blitz_0_rgb = ED_PSY_Blitz_0_rgb,
-	ED_PSY_Blitz_1_rgb = ED_PSY_Blitz_1_rgb,
-	ED_PSY_Blitz_1_1_rgb = ED_PSY_Blitz_1_1_rgb,
-	ED_PSY_Blitz_1_2_rgb = ED_PSY_Blitz_1_2_rgb,
-	ED_PSY_Blitz_2_rgb = ED_PSY_Blitz_2_rgb,
-	ED_PSY_Blitz_2_1_rgb = ED_PSY_Blitz_2_1_rgb,
-	ED_PSY_Blitz_2_2_rgb = ED_PSY_Blitz_2_2_rgb,
-	ED_PSY_Blitz_2_3_rgb = ED_PSY_Blitz_2_3_rgb,
-	ED_PSY_Blitz_3_rgb = ED_PSY_Blitz_3_rgb,
-	ED_PSY_Blitz_3_1_rgb = ED_PSY_Blitz_3_1_rgb,
-	ED_PSY_Blitz_3_2_rgb = ED_PSY_Blitz_3_2_rgb,
+	ED_PSY_Blitz_0_rgb_tw = ED_PSY_Blitz_0_rgb_tw,
+	ED_PSY_Blitz_1_rgb_tw = ED_PSY_Blitz_1_rgb_tw,
+	ED_PSY_Blitz_1_1_rgb_tw = ED_PSY_Blitz_1_1_rgb_tw,
+	ED_PSY_Blitz_1_2_rgb_tw = ED_PSY_Blitz_1_2_rgb_tw,
+	ED_PSY_Blitz_2_rgb_tw = ED_PSY_Blitz_2_rgb_tw,
+	ED_PSY_Blitz_2_1_rgb_tw = ED_PSY_Blitz_2_1_rgb_tw,
+	ED_PSY_Blitz_2_2_rgb_tw = ED_PSY_Blitz_2_2_rgb_tw,
+	ED_PSY_Blitz_2_3_rgb_tw = ED_PSY_Blitz_2_3_rgb_tw,
+	ED_PSY_Blitz_3_rgb_tw = ED_PSY_Blitz_3_rgb_tw,
+	ED_PSY_Blitz_3_1_rgb_tw = ED_PSY_Blitz_3_1_rgb_tw,
+	ED_PSY_Blitz_3_2_rgb_tw = ED_PSY_Blitz_3_2_rgb_tw,
 
-	ED_PSY_Aura_0_rgb = ED_PSY_Aura_0_rgb,
-	ED_PSY_Aura_1_rgb = ED_PSY_Aura_1_rgb,
-	ED_PSY_Aura_2_rgb = ED_PSY_Aura_2_rgb,
-	ED_PSY_Aura_3_rgb = ED_PSY_Aura_3_rgb,
+	ED_PSY_Aura_0_rgb_tw = ED_PSY_Aura_0_rgb_tw,
+	ED_PSY_Aura_1_rgb_tw = ED_PSY_Aura_1_rgb_tw,
+	ED_PSY_Aura_2_rgb_tw = ED_PSY_Aura_2_rgb_tw,
+	ED_PSY_Aura_3_rgb_tw = ED_PSY_Aura_3_rgb_tw,
 
-	ED_PSY_Ability_0_rgb = ED_PSY_Ability_0_rgb,
-	ED_PSY_Ability_1_rgb = ED_PSY_Ability_1_rgb,
-	ED_PSY_Ability_1_1_rgb = ED_PSY_Ability_1_1_rgb,
-	ED_PSY_Ability_1_2_rgb = ED_PSY_Ability_1_2_rgb,
-	ED_PSY_Ability_1_3_rgb = ED_PSY_Ability_1_3_rgb,
-	ED_PSY_Ability_2_rgb = ED_PSY_Ability_2_rgb,
-	ED_PSY_Ability_2_1_rgb = ED_PSY_Ability_2_1_rgb,
-	ED_PSY_Ability_2_2_rgb = ED_PSY_Ability_2_2_rgb,
-	ED_PSY_Ability_2_3_rgb = ED_PSY_Ability_2_3_rgb,
-	ED_PSY_Ability_2_4_rgb = ED_PSY_Ability_2_4_rgb,
-	ED_PSY_Ability_3_rgb = ED_PSY_Ability_3_rgb,
-	ED_PSY_Ability_3_1_rgb = ED_PSY_Ability_3_1_rgb,
-	ED_PSY_Ability_3_2_rgb = ED_PSY_Ability_3_2_rgb,
-	ED_PSY_Ability_3_3_rgb = ED_PSY_Ability_3_3_rgb,
-	ED_PSY_Ability_3_4_rgb = ED_PSY_Ability_3_4_rgb,
-	ED_PSY_Ability_3_5_rgb = ED_PSY_Ability_3_5_rgb,
+	ED_PSY_Ability_0_rgb_tw = ED_PSY_Ability_0_rgb_tw,
+	ED_PSY_Ability_1_rgb_tw = ED_PSY_Ability_1_rgb_tw,
+	ED_PSY_Ability_1_1_rgb_tw = ED_PSY_Ability_1_1_rgb_tw,
+	ED_PSY_Ability_1_2_rgb_tw = ED_PSY_Ability_1_2_rgb_tw,
+	ED_PSY_Ability_1_3_rgb_tw = ED_PSY_Ability_1_3_rgb_tw,
+	ED_PSY_Ability_2_rgb_tw = ED_PSY_Ability_2_rgb_tw,
+	ED_PSY_Ability_2_1_rgb_tw = ED_PSY_Ability_2_1_rgb_tw,
+	ED_PSY_Ability_2_2_rgb_tw = ED_PSY_Ability_2_2_rgb_tw,
+	ED_PSY_Ability_2_3_rgb_tw = ED_PSY_Ability_2_3_rgb_tw,
+	ED_PSY_Ability_2_4_rgb_tw = ED_PSY_Ability_2_4_rgb_tw,
+	ED_PSY_Ability_3_rgb_tw = ED_PSY_Ability_3_rgb_tw,
+	ED_PSY_Ability_3_1_rgb_tw = ED_PSY_Ability_3_1_rgb_tw,
+	ED_PSY_Ability_3_2_rgb_tw = ED_PSY_Ability_3_2_rgb_tw,
+	ED_PSY_Ability_3_3_rgb_tw = ED_PSY_Ability_3_3_rgb_tw,
+	ED_PSY_Ability_3_4_rgb_tw = ED_PSY_Ability_3_4_rgb_tw,
+	ED_PSY_Ability_3_5_rgb_tw = ED_PSY_Ability_3_5_rgb_tw,
 
-	ED_PSY_Keystone_1_rgb = ED_PSY_Keystone_1_rgb,
-	ED_PSY_Keystone_1_1_rgb = ED_PSY_Keystone_1_1_rgb,
-	ED_PSY_Keystone_1_2_rgb = ED_PSY_Keystone_1_2_rgb,
-	ED_PSY_Keystone_1_3_rgb = ED_PSY_Keystone_1_3_rgb,
-	ED_PSY_Keystone_1_4_rgb = ED_PSY_Keystone_1_4_rgb,
-	ED_PSY_Keystone_1_5_rgb = ED_PSY_Keystone_1_5_rgb,
-	ED_PSY_Keystone_1_6_rgb = ED_PSY_Keystone_1_6_rgb,
-	ED_PSY_Keystone_2_rgb = ED_PSY_Keystone_2_rgb,
-	ED_PSY_Keystone_2_0_1_rgb = ED_PSY_Keystone_2_0_1_rgb,
-	ED_PSY_Keystone_2_0_2_rgb = ED_PSY_Keystone_2_0_2_rgb,
-	ED_PSY_Keystone_2_0_3_rgb = ED_PSY_Keystone_2_0_3_rgb,
-	ED_PSY_Keystone_2_1_rgb = ED_PSY_Keystone_2_1_rgb,
-	ED_PSY_Keystone_2_2_rgb = ED_PSY_Keystone_2_2_rgb,
-	ED_PSY_Keystone_2_3_rgb = ED_PSY_Keystone_2_3_rgb,
-	ED_PSY_Keystone_2_4_rgb = ED_PSY_Keystone_2_4_rgb,
-	ED_PSY_Keystone_3_rgb = ED_PSY_Keystone_3_rgb,
-	ED_PSY_Keystone_3_1_rgb = ED_PSY_Keystone_3_1_rgb,
-	ED_PSY_Keystone_3_2_rgb = ED_PSY_Keystone_3_2_rgb,
-	ED_PSY_Keystone_3_3_rgb = ED_PSY_Keystone_3_3_rgb,
-	ED_PSY_Keystone_3_4_rgb = ED_PSY_Keystone_3_4_rgb,
+	ED_PSY_Keystone_1_rgb_tw = ED_PSY_Keystone_1_rgb_tw,
+	ED_PSY_Keystone_1_1_rgb_tw = ED_PSY_Keystone_1_1_rgb_tw,
+	ED_PSY_Keystone_1_2_rgb_tw = ED_PSY_Keystone_1_2_rgb_tw,
+	ED_PSY_Keystone_1_3_rgb_tw = ED_PSY_Keystone_1_3_rgb_tw,
+	ED_PSY_Keystone_1_4_rgb_tw = ED_PSY_Keystone_1_4_rgb_tw,
+	ED_PSY_Keystone_1_5_rgb_tw = ED_PSY_Keystone_1_5_rgb_tw,
+	ED_PSY_Keystone_1_6_rgb_tw = ED_PSY_Keystone_1_6_rgb_tw,
+	ED_PSY_Keystone_2_rgb_tw = ED_PSY_Keystone_2_rgb_tw,
+	ED_PSY_Keystone_2_0_1_rgb_tw = ED_PSY_Keystone_2_0_1_rgb_tw,
+	ED_PSY_Keystone_2_0_2_rgb_tw = ED_PSY_Keystone_2_0_2_rgb_tw,
+	ED_PSY_Keystone_2_0_3_rgb_tw = ED_PSY_Keystone_2_0_3_rgb_tw,
+	ED_PSY_Keystone_2_1_rgb_tw = ED_PSY_Keystone_2_1_rgb_tw,
+	ED_PSY_Keystone_2_2_rgb_tw = ED_PSY_Keystone_2_2_rgb_tw,
+	ED_PSY_Keystone_2_3_rgb_tw = ED_PSY_Keystone_2_3_rgb_tw,
+	ED_PSY_Keystone_2_4_rgb_tw = ED_PSY_Keystone_2_4_rgb_tw,
+	ED_PSY_Keystone_3_rgb_tw = ED_PSY_Keystone_3_rgb_tw,
+	ED_PSY_Keystone_3_1_rgb_tw = ED_PSY_Keystone_3_1_rgb_tw,
+	ED_PSY_Keystone_3_2_rgb_tw = ED_PSY_Keystone_3_2_rgb_tw,
+	ED_PSY_Keystone_3_3_rgb_tw = ED_PSY_Keystone_3_3_rgb_tw,
+	ED_PSY_Keystone_3_4_rgb_tw = ED_PSY_Keystone_3_4_rgb_tw,
 
-	ED_PSY_Passive_1_rgb = ED_PSY_Passive_1_rgb,
-	ED_PSY_Passive_2_rgb = ED_PSY_Passive_2_rgb,
-	ED_PSY_Passive_3_rgb = ED_PSY_Passive_3_rgb,
-	ED_PSY_Passive_4_rgb = ED_PSY_Passive_4_rgb,
-	ED_PSY_Passive_5_rgb = ED_PSY_Passive_5_rgb,
-	ED_PSY_Passive_6_rgb = ED_PSY_Passive_6_rgb,
-	ED_PSY_Passive_7_rgb = ED_PSY_Passive_7_rgb,
-	ED_PSY_Passive_8_rgb = ED_PSY_Passive_8_rgb,
-	ED_PSY_Passive_9_rgb = ED_PSY_Passive_9_rgb,
-	ED_PSY_Passive_10_rgb = ED_PSY_Passive_10_rgb,
-	ED_PSY_Passive_11_rgb = ED_PSY_Passive_11_rgb,
-	ED_PSY_Passive_12_rgb = ED_PSY_Passive_12_rgb,
-	ED_PSY_Passive_13_rgb = ED_PSY_Passive_13_rgb,
-	ED_PSY_Passive_14_rgb = ED_PSY_Passive_14_rgb,
-	ED_PSY_Passive_15_rgb = ED_PSY_Passive_15_rgb,
-	ED_PSY_Passive_16_rgb = ED_PSY_Passive_16_rgb,
-	ED_PSY_Passive_17_rgb = ED_PSY_Passive_17_rgb,
-	ED_PSY_Passive_18_rgb = ED_PSY_Passive_18_rgb,
-	ED_PSY_Passive_19_rgb = ED_PSY_Passive_19_rgb,
-	ED_PSY_Passive_20_rgb = ED_PSY_Passive_20_rgb,
-	ED_PSY_Passive_21_rgb = ED_PSY_Passive_21_rgb,
-	ED_PSY_Passive_22_rgb = ED_PSY_Passive_22_rgb,
-	ED_PSY_Passive_23_rgb = ED_PSY_Passive_23_rgb,
-	ED_PSY_Passive_24_rgb = ED_PSY_Passive_24_rgb,
-	ED_PSY_Passive_25_rgb = ED_PSY_Passive_25_rgb,
-	ED_PSY_Passive_26_rgb = ED_PSY_Passive_26_rgb,
-	ED_PSY_Passive_27_rgb = ED_PSY_Passive_27_rgb,
-	ED_PSY_Passive_28_rgb = ED_PSY_Passive_28_rgb,
-	ED_PSY_Passive_29_rgb = ED_PSY_Passive_29_rgb,
-	ED_PSY_Passive_30_rgb = ED_PSY_Passive_30_rgb,
-	ED_PSY_Passive_31_rgb = ED_PSY_Passive_31_rgb,
-	ED_PSY_Passive_32_rgb = ED_PSY_Passive_32_rgb,
+	ED_PSY_Passive_1_rgb_tw = ED_PSY_Passive_1_rgb_tw,
+	ED_PSY_Passive_2_rgb_tw = ED_PSY_Passive_2_rgb_tw,
+	ED_PSY_Passive_3_rgb_tw = ED_PSY_Passive_3_rgb_tw,
+	ED_PSY_Passive_4_rgb_tw = ED_PSY_Passive_4_rgb_tw,
+	ED_PSY_Passive_5_rgb_tw = ED_PSY_Passive_5_rgb_tw,
+	ED_PSY_Passive_6_rgb_tw = ED_PSY_Passive_6_rgb_tw,
+	ED_PSY_Passive_7_rgb_tw = ED_PSY_Passive_7_rgb_tw,
+	ED_PSY_Passive_8_rgb_tw = ED_PSY_Passive_8_rgb_tw,
+	ED_PSY_Passive_9_rgb_tw = ED_PSY_Passive_9_rgb_tw,
+	ED_PSY_Passive_10_rgb_tw = ED_PSY_Passive_10_rgb_tw,
+	ED_PSY_Passive_11_rgb_tw = ED_PSY_Passive_11_rgb_tw,
+	ED_PSY_Passive_12_rgb_tw = ED_PSY_Passive_12_rgb_tw,
+	ED_PSY_Passive_13_rgb_tw = ED_PSY_Passive_13_rgb_tw,
+	ED_PSY_Passive_14_rgb_tw = ED_PSY_Passive_14_rgb_tw,
+	ED_PSY_Passive_15_rgb_tw = ED_PSY_Passive_15_rgb_tw,
+	ED_PSY_Passive_16_rgb_tw = ED_PSY_Passive_16_rgb_tw,
+	ED_PSY_Passive_17_rgb_tw = ED_PSY_Passive_17_rgb_tw,
+	ED_PSY_Passive_18_rgb_tw = ED_PSY_Passive_18_rgb_tw,
+	ED_PSY_Passive_19_rgb_tw = ED_PSY_Passive_19_rgb_tw,
+	ED_PSY_Passive_20_rgb_tw = ED_PSY_Passive_20_rgb_tw,
+	ED_PSY_Passive_21_rgb_tw = ED_PSY_Passive_21_rgb_tw,
+	ED_PSY_Passive_22_rgb_tw = ED_PSY_Passive_22_rgb_tw,
+	ED_PSY_Passive_23_rgb_tw = ED_PSY_Passive_23_rgb_tw,
+	ED_PSY_Passive_24_rgb_tw = ED_PSY_Passive_24_rgb_tw,
+	ED_PSY_Passive_25_rgb_tw = ED_PSY_Passive_25_rgb_tw,
+	ED_PSY_Passive_26_rgb_tw = ED_PSY_Passive_26_rgb_tw,
+	ED_PSY_Passive_27_rgb_tw = ED_PSY_Passive_27_rgb_tw,
+	ED_PSY_Passive_28_rgb_tw = ED_PSY_Passive_28_rgb_tw,
+	ED_PSY_Passive_29_rgb_tw = ED_PSY_Passive_29_rgb_tw,
+	ED_PSY_Passive_30_rgb_tw = ED_PSY_Passive_30_rgb_tw,
+	ED_PSY_Passive_31_rgb_tw = ED_PSY_Passive_31_rgb_tw,
+	ED_PSY_Passive_32_rgb_tw = ED_PSY_Passive_32_rgb_tw,
 
-	ED_ZEA_Blitz_0_rgb = ED_ZEA_Blitz_0_rgb,
-	ED_ZEA_Blitz_1_rgb = ED_ZEA_Blitz_1_rgb,
-	ED_ZEA_Blitz_1_1_rgb = ED_ZEA_Blitz_1_1_rgb,
-	ED_ZEA_Blitz_1_2_rgb = ED_ZEA_Blitz_1_2_rgb,
-	ED_ZEA_Blitz_2_rgb = ED_ZEA_Blitz_2_rgb,
-	ED_ZEA_Blitz_2_1_rgb = ED_ZEA_Blitz_2_1_rgb,
-	ED_ZEA_Blitz_2_2_rgb = ED_ZEA_Blitz_2_2_rgb,
-	ED_ZEA_Blitz_2_3_rgb = ED_ZEA_Blitz_2_3_rgb,
-	ED_ZEA_Blitz_3_rgb = ED_ZEA_Blitz_3_rgb,
-	ED_ZEA_Blitz_3_1_rgb = ED_ZEA_Blitz_3_1_rgb,
-	ED_ZEA_Blitz_3_2_rgb = ED_ZEA_Blitz_3_2_rgb,
-	ED_ZEA_Aura_0_n_1_rgb = ED_ZEA_Aura_0_n_1_rgb,
-	ED_ZEA_Aura_2_rgb = ED_ZEA_Aura_2_rgb,
-	ED_ZEA_Aura_3_rgb = ED_ZEA_Aura_3_rgb,
+	ED_ZEA_Blitz_0_rgb_tw = ED_ZEA_Blitz_0_rgb_tw,
+	ED_ZEA_Blitz_1_rgb_tw = ED_ZEA_Blitz_1_rgb_tw,
+	ED_ZEA_Blitz_1_1_rgb_tw = ED_ZEA_Blitz_1_1_rgb_tw,
+	ED_ZEA_Blitz_1_2_rgb_tw = ED_ZEA_Blitz_1_2_rgb_tw,
+	ED_ZEA_Blitz_2_rgb_tw = ED_ZEA_Blitz_2_rgb_tw,
+	ED_ZEA_Blitz_2_1_rgb_tw = ED_ZEA_Blitz_2_1_rgb_tw,
+	ED_ZEA_Blitz_2_2_rgb_tw = ED_ZEA_Blitz_2_2_rgb_tw,
+	ED_ZEA_Blitz_2_3_rgb_tw = ED_ZEA_Blitz_2_3_rgb_tw,
+	ED_ZEA_Blitz_3_rgb_tw = ED_ZEA_Blitz_3_rgb_tw,
+	ED_ZEA_Blitz_3_1_rgb_tw = ED_ZEA_Blitz_3_1_rgb_tw,
+	ED_ZEA_Blitz_3_2_rgb_tw = ED_ZEA_Blitz_3_2_rgb_tw,
+	ED_ZEA_Aura_0_n_1_rgb_tw = ED_ZEA_Aura_0_n_1_rgb_tw,
+	ED_ZEA_Aura_2_rgb_tw = ED_ZEA_Aura_2_rgb_tw,
+	ED_ZEA_Aura_3_rgb_tw = ED_ZEA_Aura_3_rgb_tw,
 
-	ED_ZEA_Ability_0_rgb = ED_ZEA_Ability_0_rgb,
-	ED_ZEA_Ability_1_rgb = ED_ZEA_Ability_1_rgb,
-	ED_ZEA_Ability_1_1_rgb = ED_ZEA_Ability_1_1_rgb,
-	ED_ZEA_Ability_1_2_rgb = ED_ZEA_Ability_1_2_rgb,
-	ED_ZEA_Ability_2_rgb = ED_ZEA_Ability_2_rgb,
-	ED_ZEA_Ability_2_1_rgb = ED_ZEA_Ability_2_1_rgb,
-	ED_ZEA_Ability_2_2_rgb = ED_ZEA_Ability_2_2_rgb,
-	ED_ZEA_Ability_2_3_rgb = ED_ZEA_Ability_2_3_rgb,
-	ED_ZEA_Ability_2_4_rgb = ED_ZEA_Ability_2_4_rgb,
-	ED_ZEA_Ability_3_rgb = ED_ZEA_Ability_3_rgb,
-	ED_ZEA_Ability_3_2_rgb = ED_ZEA_Ability_3_2_rgb,
-	ED_ZEA_Ability_3_3_rgb = ED_ZEA_Ability_3_3_rgb,
-	ED_ZEA_Ability_3_4_rgb = ED_ZEA_Ability_3_4_rgb,
+	ED_ZEA_Ability_0_rgb_tw = ED_ZEA_Ability_0_rgb_tw,
+	ED_ZEA_Ability_1_rgb_tw = ED_ZEA_Ability_1_rgb_tw,
+	ED_ZEA_Ability_1_1_rgb_tw = ED_ZEA_Ability_1_1_rgb_tw,
+	ED_ZEA_Ability_1_2_rgb_tw = ED_ZEA_Ability_1_2_rgb_tw,
+	ED_ZEA_Ability_2_rgb_tw = ED_ZEA_Ability_2_rgb_tw,
+	ED_ZEA_Ability_2_1_rgb_tw = ED_ZEA_Ability_2_1_rgb_tw,
+	ED_ZEA_Ability_2_2_rgb_tw = ED_ZEA_Ability_2_2_rgb_tw,
+	ED_ZEA_Ability_2_3_rgb_tw = ED_ZEA_Ability_2_3_rgb_tw,
+	ED_ZEA_Ability_2_4_rgb_tw = ED_ZEA_Ability_2_4_rgb_tw,
+	ED_ZEA_Ability_3_rgb_tw = ED_ZEA_Ability_3_rgb_tw,
+	ED_ZEA_Ability_3_2_rgb_tw = ED_ZEA_Ability_3_2_rgb_tw,
+	ED_ZEA_Ability_3_3_rgb_tw = ED_ZEA_Ability_3_3_rgb_tw,
+	ED_ZEA_Ability_3_4_rgb_tw = ED_ZEA_Ability_3_4_rgb_tw,
 
-	ED_ZEA_Keystone_1_rgb = ED_ZEA_Keystone_1_rgb,
-	ED_ZEA_Keystone_1_1_rgb = ED_ZEA_Keystone_1_1_rgb,
-	ED_ZEA_Keystone_1_2_rgb = ED_ZEA_Keystone_1_2_rgb,
-	ED_ZEA_Keystone_1_3_rgb = ED_ZEA_Keystone_1_3_rgb,
-	ED_ZEA_Keystone_1_4_rgb = ED_ZEA_Keystone_1_4_rgb,
-	ED_ZEA_Keystone_2_rgb = ED_ZEA_Keystone_2_rgb,
-	ED_ZEA_Keystone_2_1_rgb = ED_ZEA_Keystone_2_1_rgb,
-	ED_ZEA_Keystone_2_2_rgb = ED_ZEA_Keystone_2_2_rgb,
-	ED_ZEA_Keystone_3_rgb = ED_ZEA_Keystone_3_rgb,
-	ED_ZEA_Keystone_3_1_rgb = ED_ZEA_Keystone_3_1_rgb,
-	ED_ZEA_Keystone_3_2_rgb = ED_ZEA_Keystone_3_2_rgb,
+	ED_ZEA_Keystone_1_rgb_tw = ED_ZEA_Keystone_1_rgb_tw,
+	ED_ZEA_Keystone_1_1_rgb_tw = ED_ZEA_Keystone_1_1_rgb_tw,
+	ED_ZEA_Keystone_1_2_rgb_tw = ED_ZEA_Keystone_1_2_rgb_tw,
+	ED_ZEA_Keystone_1_3_rgb_tw = ED_ZEA_Keystone_1_3_rgb_tw,
+	ED_ZEA_Keystone_1_4_rgb_tw = ED_ZEA_Keystone_1_4_rgb_tw,
+	ED_ZEA_Keystone_2_rgb_tw = ED_ZEA_Keystone_2_rgb_tw,
+	ED_ZEA_Keystone_2_1_rgb_tw = ED_ZEA_Keystone_2_1_rgb_tw,
+	ED_ZEA_Keystone_2_2_rgb_tw = ED_ZEA_Keystone_2_2_rgb_tw,
+	ED_ZEA_Keystone_3_rgb_tw = ED_ZEA_Keystone_3_rgb_tw,
+	ED_ZEA_Keystone_3_1_rgb_tw = ED_ZEA_Keystone_3_1_rgb_tw,
+	ED_ZEA_Keystone_3_2_rgb_tw = ED_ZEA_Keystone_3_2_rgb_tw,
 
-	ED_ZEA_Passive_1_rgb = ED_ZEA_Passive_1_rgb,
-	ED_ZEA_Passive_2_rgb = ED_ZEA_Passive_2_rgb,
-	ED_ZEA_Passive_3_rgb = ED_ZEA_Passive_3_rgb,
-	ED_ZEA_Passive_4_rgb = ED_ZEA_Passive_4_rgb,
-	ED_ZEA_Passive_5_rgb = ED_ZEA_Passive_5_rgb,
-	ED_ZEA_Passive_6_rgb = ED_ZEA_Passive_6_rgb,
-	ED_ZEA_Passive_7_rgb = ED_ZEA_Passive_7_rgb,
-	ED_ZEA_Passive_8_rgb = ED_ZEA_Passive_8_rgb,
-	ED_ZEA_Passive_9_rgb = ED_ZEA_Passive_9_rgb,
-	ED_ZEA_Passive_10_rgb = ED_ZEA_Passive_10_rgb,
-	ED_ZEA_Passive_11_rgb = ED_ZEA_Passive_11_rgb,
-	ED_ZEA_Passive_12_rgb = ED_ZEA_Passive_12_rgb,
-	ED_ZEA_Passive_13_rgb = ED_ZEA_Passive_13_rgb,
-	ED_ZEA_Passive_14_rgb = ED_ZEA_Passive_14_rgb,
-	ED_ZEA_Passive_15_rgb = ED_ZEA_Passive_15_rgb,
-	ED_ZEA_Passive_16_rgb = ED_ZEA_Passive_16_rgb,
-	ED_ZEA_Passive_17_rgb = ED_ZEA_Passive_17_rgb,
-	ED_ZEA_Passive_18_rgb = ED_ZEA_Passive_18_rgb,
-	ED_ZEA_Passive_19_rgb = ED_ZEA_Passive_19_rgb,
-	ED_ZEA_Passive_20_rgb = ED_ZEA_Passive_20_rgb,
-	ED_ZEA_Passive_21_rgb = ED_ZEA_Passive_21_rgb,
-	ED_ZEA_Passive_22_rgb = ED_ZEA_Passive_22_rgb,
-	ED_ZEA_Passive_23_rgb = ED_ZEA_Passive_23_rgb,
-	ED_ZEA_Passive_24_rgb = ED_ZEA_Passive_24_rgb,
-	ED_ZEA_Passive_25_rgb = ED_ZEA_Passive_25_rgb,
-	ED_ZEA_Passive_26_rgb = ED_ZEA_Passive_26_rgb,
-	ED_ZEA_Passive_27_rgb = ED_ZEA_Passive_27_rgb,
-	ED_ZEA_Passive_28_rgb = ED_ZEA_Passive_28_rgb,
-	ED_ZEA_Passive_29_rgb = ED_ZEA_Passive_29_rgb,
-	ED_ZEA_Passive_30_rgb = ED_ZEA_Passive_30_rgb,
-	ED_ZEA_Passive_31_rgb = ED_ZEA_Passive_31_rgb,
-	ED_ZEA_Passive_32_rgb = ED_ZEA_Passive_32_rgb,
-	ED_ZEA_Passive_33_rgb = ED_ZEA_Passive_33_rgb,
-	ED_ZEA_Passive_34_rgb = ED_ZEA_Passive_34_rgb,
+	ED_ZEA_Passive_1_rgb_tw = ED_ZEA_Passive_1_rgb_tw,
+	ED_ZEA_Passive_2_rgb_tw = ED_ZEA_Passive_2_rgb_tw,
+	ED_ZEA_Passive_3_rgb_tw = ED_ZEA_Passive_3_rgb_tw,
+	ED_ZEA_Passive_4_rgb_tw = ED_ZEA_Passive_4_rgb_tw,
+	ED_ZEA_Passive_5_rgb_tw = ED_ZEA_Passive_5_rgb_tw,
+	ED_ZEA_Passive_6_rgb_tw = ED_ZEA_Passive_6_rgb_tw,
+	ED_ZEA_Passive_7_rgb_tw = ED_ZEA_Passive_7_rgb_tw,
+	ED_ZEA_Passive_8_rgb_tw = ED_ZEA_Passive_8_rgb_tw,
+	ED_ZEA_Passive_9_rgb_tw = ED_ZEA_Passive_9_rgb_tw,
+	ED_ZEA_Passive_10_rgb_tw = ED_ZEA_Passive_10_rgb_tw,
+	ED_ZEA_Passive_11_rgb_tw = ED_ZEA_Passive_11_rgb_tw,
+	ED_ZEA_Passive_12_rgb_tw = ED_ZEA_Passive_12_rgb_tw,
+	ED_ZEA_Passive_13_rgb_tw = ED_ZEA_Passive_13_rgb_tw,
+	ED_ZEA_Passive_14_rgb_tw = ED_ZEA_Passive_14_rgb_tw,
+	ED_ZEA_Passive_15_rgb_tw = ED_ZEA_Passive_15_rgb_tw,
+	ED_ZEA_Passive_16_rgb_tw = ED_ZEA_Passive_16_rgb_tw,
+	ED_ZEA_Passive_17_rgb_tw = ED_ZEA_Passive_17_rgb_tw,
+	ED_ZEA_Passive_18_rgb_tw = ED_ZEA_Passive_18_rgb_tw,
+	ED_ZEA_Passive_19_rgb_tw = ED_ZEA_Passive_19_rgb_tw,
+	ED_ZEA_Passive_20_rgb_tw = ED_ZEA_Passive_20_rgb_tw,
+	ED_ZEA_Passive_21_rgb_tw = ED_ZEA_Passive_21_rgb_tw,
+	ED_ZEA_Passive_22_rgb_tw = ED_ZEA_Passive_22_rgb_tw,
+	ED_ZEA_Passive_23_rgb_tw = ED_ZEA_Passive_23_rgb_tw,
+	ED_ZEA_Passive_24_rgb_tw = ED_ZEA_Passive_24_rgb_tw,
+	ED_ZEA_Passive_25_rgb_tw = ED_ZEA_Passive_25_rgb_tw,
+	ED_ZEA_Passive_26_rgb_tw = ED_ZEA_Passive_26_rgb_tw,
+	ED_ZEA_Passive_27_rgb_tw = ED_ZEA_Passive_27_rgb_tw,
+	ED_ZEA_Passive_28_rgb_tw = ED_ZEA_Passive_28_rgb_tw,
+	ED_ZEA_Passive_29_rgb_tw = ED_ZEA_Passive_29_rgb_tw,
+	ED_ZEA_Passive_30_rgb_tw = ED_ZEA_Passive_30_rgb_tw,
+	ED_ZEA_Passive_31_rgb_tw = ED_ZEA_Passive_31_rgb_tw,
+	ED_ZEA_Passive_32_rgb_tw = ED_ZEA_Passive_32_rgb_tw,
+	ED_ZEA_Passive_33_rgb_tw = ED_ZEA_Passive_33_rgb_tw,
+	ED_ZEA_Passive_34_rgb_tw = ED_ZEA_Passive_34_rgb_tw,
 }
