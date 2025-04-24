@@ -1011,7 +1011,6 @@ local localization_templates = {
 		{"loc_talent_psyker_throwing_knives_pierce_description"}, {"zh-tw"},
 			loc_text("{talent_name:%s} 的穿透數量從 "..COLORS_Numbers.n_2_rgb.." 提升至 "..COLORS_Numbers.n_3_rgb.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_1_rgb_tw)),
 
-
 	--[+ Blitz 3-2 - Quick Shards +]--
 	create_template("talent_tree_psy_blitz3_002_desc_en",
 		{"loc_talent_psyker_throwing_knives_cast_speed_description"}, {"en"},
@@ -1024,6 +1023,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz3_002_desc_ru",
 		{"loc_talent_psyker_throwing_knives_cast_speed_description"}, {"ru"},
 			loc_text("На {recharge:%s} повышается скорость восстановления снарядов таланта {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_3_2_rgb_ru)),
+		--[+ Traditional Chinese - 迅捷碎片 +]--
+		--{talent_name:%s}充能速度加快{recharge%s}。
+	create_template("talent_tree_psy_blitz3_002_desc_tw",
+		{"loc_talent_psyker_throwing_knives_cast_speed_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 的恢復速度提高 {recharge:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Blitz_3_2_rgb_tw)),
 
 --[+ +AURA - АУРЫ+ +]--
 	--[+ Aura 0 - The Quickening +]--

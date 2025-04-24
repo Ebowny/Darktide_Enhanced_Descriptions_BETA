@@ -18,7 +18,6 @@ local iu_actit = InputUtils.apply_color_to_input_text
 COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") -- Traditional Chinese
 
-local "\n" = "\n+++-------------------------------------------------+++"
 local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除所有敵人的仇恨：若可能，近戰敵人會立即將仇恨轉移至其他目標；正在射擊的遠程敵人則會停止射擊，隨後若可能會重新鎖定目標。"
 local can_be_refr_dur_active_dur = "- 可在效果持續期間內重新觸發。"
 local doesnt_stack_aura_psy = "- 不會與另一位靈能者的相同光環效果疊加。"
@@ -181,15 +180,15 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Blitz 3-1 - Ethereal Shards +]--
 	local ED_PSY_Blitz_3_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- [靈能強化]時，可穿透數量提升最多"..COLORS_Numbers.n_6_rgb.."個。",
+		"- [靈能強化]可提升穿透至最多"..COLORS_Numbers.n_6_rgb.."名敵人。",
 		"- 甲殼裝甲預設無法被穿透。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3-2 - Quick Shards +]--
 	local ED_PSY_Blitz_3_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 將投射物的回充時間由 3 秒縮短為 2.1 秒。",
-		"- 不會與[閃擊強化]事件（mutator）產生互動。",
+		"- 投擲物的恢復時間由 3 秒縮至 2.1 秒。",
+		"- 不會與[閃擊強化]產生效果。",
 	}, "\n"), enhdesc_col)
 
 --[+ +AURA+ +]--
