@@ -1,10 +1,4 @@
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
-
-- **Special Thanks To:**
-  - _[deluxghost](https://github.com/deluxghost) for making this mod possible._
-  - _[Ebo](https://github.com/Ebowny) for **French** localization._
-  - _[SyuanTsai](https://github.com/SyuanTsai) for **Traditional Chinese** localization._
-  - _[Rin Anarchy](https://github.com/RinAnarchy) for **Simplified Chinese** localization._
 ***
 
 # ENHANCED DESCRIPTIONS
@@ -17,14 +11,9 @@
 
 __*Let us know if you spot any issues!*__
 ***
-- **TODO:**
-	- [x] Add Traditional Chinese localization.
-	- [x] Add Simplified Chinese localization.
-	- [ ] Merge parts of extended descriptions into the main Blessings descriptions.
-		- [ ] Proofread Blessings text.
-	- [ ] Merge parts of extended descriptions into the main Talent descriptions.
-		- [ ] Proofread Talents text.
 
+> [!WARNING]
+> ![Warning!](https://i.ibb.co/mCNBLzKv/BREAK-THIS-MOD.jpg)
 ***
 
 ## Manual Installation:
@@ -34,8 +23,21 @@ __*Let us know if you spot any issues!*__
 3. Launch the game and enjoy!
 ***
 
-> [!WARNING]
-> ![Warning!](https://i.ibb.co/mCNBLzKv/BREAK-THIS-MOD.jpg)
+##TODO
+	- [x] Add Traditional Chinese localization.
+	- [x] Add Simplified Chinese localization.
+	- [ ] Merge parts of extended descriptions into the main Blessings descriptions.
+		- [ ] Proofread Blessings text.
+	- [ ] Merge parts of extended descriptions into the main Talent descriptions.
+		- [ ] Proofread Talents text.
+
+***
+
+## Special Thanks
+  - _[deluxghost](https://github.com/deluxghost) - For making this mod possible._
+  - _[Ebo](https://github.com/Ebowny) - **French** localization._
+  - _[SyuanTsai](https://github.com/SyuanTsai) - **Traditional Chinese** localization._
+  - _[Rin Anarchy](https://github.com/RinAnarchy) - **Simplified Chinese** localization._
 ***
 
 ### VERSIONS
