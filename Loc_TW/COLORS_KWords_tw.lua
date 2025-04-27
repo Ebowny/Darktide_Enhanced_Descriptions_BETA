@@ -95,6 +95,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local dmg_col = Color[mod:get("damage_text_colour")](255, true)
 	local Dmg_rgb_tw = iu_actit("傷害", dmg_col)
 	local Dmg_a_rgb_tw = iu_actit("傷害", dmg_col)
+	local Dmg_b_rgb_tw = iu_actit("基礎傷害", dmg_col)
 	local Dmg_h_rgb_tw = iu_actit("較高傷害", dmg_col) -- high
 	local Dmg_c_rgb_tw = iu_actit("持續傷害(Dot)", dmg_col) -- Continuous Damage
 	local Dmg_d_rgb_tw = iu_actit("Dot傷害", dmg_col) -- Dot
@@ -129,6 +130,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	--[++靈魂之火(Soulblaze)++]--
 	local slblz_col = Color[mod:get("soulblaze_text_colour")](255, true)
 	local Soulblaze_rgb_tw = iu_actit("靈火", slblz_col)
+	local Soulblaze_k_rgb_tw = iu_actit("靈火擊殺", slblz_col) --Kill
 	--[++流血(Bleed)++]--
 	local bld_col = Color[mod:get("bleed_text_colour")](255, true)
 	local Bleed_rgb_tw = iu_actit("流血", bld_col)
@@ -304,6 +306,7 @@ return {
 	Crit_hit_udom_rgb_tw = Crit_hit_udom_rgb_tw,
 	Dmg_rgb_tw = Dmg_rgb_tw,
 	Dmg_a_rgb_tw = Dmg_a_rgb_tw,
+	Dmg_b_rgb_tw = Dmg_b_rgb_tw,
 	Dmg_h_rgb_tw = Dmg_h_rgb_tw,
 	Dmg_c_rgb_tw = Dmg_c_rgb_tw,
 	Dmg_d_rgb_tw = Dmg_d_rgb_tw,
@@ -347,6 +350,7 @@ return {
 	Rangedspec_rgb_tw = Rangedspec_rgb_tw,
 	Rending_rgb_tw = Rending_rgb_tw,
 	Soulblaze_rgb_tw = Soulblaze_rgb_tw,
+	Soulblaze_k_rgb_tw = Soulblaze_k_rgb_tw,
 	Stagger_rgb_tw = Stagger_rgb_tw,
 	Stagger_s_rgb_tw = Stagger_s_rgb_tw,
 	Stagger2_rgb_tw = Stagger2_rgb_tw,

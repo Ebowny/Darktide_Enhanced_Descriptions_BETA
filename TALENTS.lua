@@ -1506,6 +1506,18 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_000_desc_ru",
 		{"loc_talent_psyker_souls_desc"}, {"ru"},
 			loc_text("Убийство элитного врага или специалиста даёт вам варп-заряд на {duration:%s} секунд, суммируется {stack:%s} раза. Следующая применённая "..COLORS_KWords_ru.Combat_abil_rgb_ru.." потратит все доступные варп-заряды и уменьшит своё время "..COLORS_KWords_ru.Cd_rgb_ru.." на {cooldown_reduction:%s} за каждый варп-заряд."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_rgb_ru)),
+	--[+ Traditional Chinese - 亞空間虹吸 +]--
+	-- 擊殺一名精英或專家敵人時，可獲得一層亞空間充能，持續{duration:%s}秒，最多可疊加{stack:%s}次。你的下一次戰鬥技能將消耗所有可用的亞空間充能，每層可降低{cooldown_reduction:%s}戰鬥技能冷卻時間。
+	create_template("talent_tree_psy_keys1_000_desc_zh-tw",
+		{"loc_talent_psyker_souls_desc"}, {"zh-tw"},
+			-- loc_text("，並使其"..COLORS_KWords_ru.Cd_rgb_ru.."時間每層縮短 {cooldown_reduction:%s}。"..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_rgb_tw)),
+			loc_text("擊殺精英或專家可獲得一層亞空間充能。\n"
+			.."\n"
+			.."- 持續 {duration:%s} 秒，\n"
+			.."- 最高可疊加 {stack:%s} 層。\n"
+			.."- 使用戰鬥技能將消耗所有亞空間充能，\n"
+			.."- 每層可降低 {cooldown_reduction:%s} "..COLORS_KWords_tw.Cd_rgb_tw.."時間。"
+			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_rgb_tw)),
 
 	--[+ Keystone 1-1 - Inner Tranquility +]--
 	create_template("talent_tree_psy_keys1_001_desc_en",
@@ -1519,6 +1531,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_001_desc_ru",
 		{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"ru"},
 			loc_text("{warp_charge_amount:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru.." за каждый варп-заряд."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_1_rgb_ru)),
+	--[+ Traditional Chinese - 平心靜氣 +]--
+	-- 每層亞空間充能減少反噬生成{warp_charge_amount:%s}。
+	create_template("talent_tree_psy_keys1_001_desc_tw",
+			{"loc_talent_psyker_reduced_warp_charge_cost_venting_speed_desc"}, {"zh-tw"},
+				loc_text("每層亞空間充能會 {warp_charge_amount:%s} "..COLORS_KWords_tw.Peril_rgb_tw.." 生成。" ..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_1_rgb_tw)),
 
 	--[+ Keystone 1-2 - Essence Harvest +]--
 	create_template("talent_tree_psy_keys1_002_desc_en",
@@ -1532,6 +1549,16 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_002_desc_ru",
 		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." в секунду восстанавливается в течение {time:%s} секунд после получения варп-заряда, вплоть до максимальных {toughness:%s}. Получение нового варп-заряда обновляет таймер."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_2_rgb_ru)),
+	--[+ Traditional Chinese - 吸精奪萃 +]--
+	--獲得亞空間充能後，在{time:%s}秒內恢復{toughness:%s}韌性。在效果持續期間獲得新的亞空間充能會刷新此效果。
+	create_template("talent_tree_psy_keys1_002_desc_tw",
+		{"loc_talent_psyker_toughness_regen_on_soul_desc"}, {"zh-tw"},
+			loc_text("獲得亞空間充能時恢復 "..COLORS_KWords_tw.Toughness_rgb_tw.." 。\n"
+			.."\n"
+			.."- 每秒恢復 "..COLORS_Numbers.pc_6_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.."，持續 {time:%s} 秒。\n"
+			.."- 最多可恢復 {toughness:%s}。\n"
+			.."- 獲得新的亞空間充能會刷新此效果。"	
+			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_2_rgb_tw)),
 
 	--[+ Keystone 1-3 - Empyrean Empowerment +]--
 	create_template("talent_tree_psy_keys1_003_desc_en",
@@ -1545,6 +1572,14 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_003_desc_ru",
 		{"loc_talent_psyker_souls_increase_damage_desc"}, {"ru"},
 			loc_text("{damage:%s} ко всему базовому "..COLORS_KWords_ru.Damage_rgb_ru.." за каждый варп-заряд."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_3_rgb_ru)),
+	--[+ Traditional Chinese - 至天高之力 +]--
+	--每一層亞空間充能使所有基礎傷害提高{damage:%s}。
+	create_template("talent_tree_psy_keys1_003_desc_tw",
+		{"loc_talent_psyker_souls_increase_damage_desc"}, {"zh-tw"},
+			loc_text("亞空間充能可使 "..COLORS_KWords_tw.Dmg_b_rgb_tw.." 提高。\n"
+			.."\n"
+			.."- 每層亞空間充能 {damage:%s} "..COLORS_KWords_tw.Dmg_b_rgb_tw.."。"
+			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_3_rgb_tw)),
 
 	--[+ Keystone 1-4 - In Fire Reborn +]--
 	create_template("talent_tree_psy_keys1_004_desc_en",
@@ -1558,6 +1593,15 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_004_desc_ru",
 		{"loc_talent_psyker_warpfire_generates_souls_desc"}, {"ru"},
 			loc_text("{chance:%s} шанс получить варп-заряд, когда вы или ваш союзник убиваете врага, на которого в данный момент действует эффект "..COLORS_KWords_ru.Soulblaze_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_4_rgb_ru)),
+	--[+ Traditional Chinese - 涅槃 +]--
+	-- 使用靈魂之火擊殺敵人可帶來{chance:%s}幾率為你疊加一層亞空間充能。
+	create_template("talent_tree_psy_keys1_004_desc_tw",
+			{"loc_talent_psyker_warpfire_generates_souls_desc"}, {"zh-tw"},
+				loc_text(COLORS_KWords_tw.Soulblaze_k_rgb_tw.." 有機增加亞空間充能。\n"
+				.."\n"
+				.."- "..COLORS_KWords_tw.Soulblaze_k_rgb_tw.."時，有 {chance:%s} 機率獲得充能。\n"
+				.."- 你與隊友的"..COLORS_KWords_tw.Soulblaze_k_rgb_tw.."都有機率觸發。"
+				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_4_rgb_tw)),
 
 	--[+ Keystone 1-5 - Psychic Vampire +]--
 	create_template("talent_tree_psy_keys1_006_desc_en",
@@ -1571,6 +1615,14 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_006_desc_ru",
 		{"loc_talent_psyker_souls_on_kill_coop_desc"}, {"ru"},
 			loc_text("{soul_chance:%s} шанс получить варп-заряд, когда вы или ваш союзник в "..COLORS_KWords_ru.Coherency_rgb_ru.." убиваете врага."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_5_rgb_ru)),
+	--[+ Traditional Chinese - 靈能吸血鬼 +]--
+	-- 每當你或協同中的盟友擊殺敵人，你有{soul_chance:%d}的機率獲得一層亞空間充能。
+	create_template("talent_tree_psy_keys1_006_desc_tw",
+			{"loc_talent_psyker_souls_on_kill_coop_desc"}, {"zh-tw"},
+				loc_text("擊殺敵人時有 {soul_chance:%s} 機率獲得亞空間充能。\n"
+				.."\n" 
+				.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友擊殺也有相同機率。"
+				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_5_rgb_tw)),
 
 	--[+ Keystone 1-6 - Warp Battery +]--
 	create_template("talent_tree_psy_keys1_005_desc_en",
@@ -1584,6 +1636,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys1_005_desc_ru",
 		{"loc_talent_psyker_increased_souls_desc"}, {"ru"},
 			loc_text("Вы можете хранить до {soul_amount:%s} варп-зарядов."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_1_6_rgb_ru)),
+	--[+ Traditional Chinese - 亞空間電池 +]--
+	-- 能掌握的亞空間充能的最高層數提高至{soul_amount:%s}。
+	create_template("talent_tree_psy_keys1_005_desc_tw",
+		{"loc_talent_psyker_increased_souls_desc"}, {"zh-tw"},
+			loc_text("最多可以儲存 {soul_amount:%s} 個亞空間充能。" .. TALENTS_Enh_desc_tw.ED_PSY_Keystone_1_6_rgb_tw)),
 
 	--[+ Keystone 2 - Empowered Psionics +]--
 	create_template("talent_tree_psy_keys2_000_desc_en",
@@ -1597,6 +1654,33 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_000_desc_ru",
 		{"loc_talent_psyker_empowered_ability_description"}, {"ru"},
 			loc_text("Убийства имеют {chance:%s} шанс усилить ваш следующий блиц.\nУсиленный {blitz_one:%s}:\n{smite_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"..COLORS_Numbers.n_minus_rgb.."{smite_cost:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru.." и\nна {smite_attack_speed:%s} сокращается время заряжания."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_2_0_1_rgb_ru.."\nУсиленное {blitz_two:%s}:\n{chain_lightning_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..",\n"..COLORS_Numbers.n_plus_rgb.."{chain_lightning_jump_time_multiplier:%s} к скорости распространения между врагами."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_2_0_2_rgb_ru.."\nУсиленное {blitz_three:%s}:\nНе тратит снаряды.\n"..COLORS_Numbers.n_minus_rgb.."{throwing_knives_cost:%s} генерации "..COLORS_KWords_ru.Peril_rgb_ru..",\nСо {throwing_knives_old_damage:%s} до {throwing_knives_new_damage:%s} повышается базовый "..COLORS_KWords_ru.Dmg_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_2_0_3_rgb_ru)),
+	--[+ Traditional Chinese - 靈能強化 +]--
+	--擊殺敵人有{chance:%s}幾率強化你的下一個閃擊技能。\n\n強化版{blitz_one:%s}：\n{smite_cost:%s}反噬值消耗減少\n{smite_attack_speed:%s}施放時間減少\n{smite_damage:%s}傷害\n\n強化版{blitz_two:%s}：\n{chain_lightning_damage:%s}傷害{chain_lightning_jump_time_multiplier:%s}在敵人間的傳導速度加快\n\n強化版{blitz_three:%s}：\n{throwing_knives_cost:%s}反噬值消耗降低\n基礎傷害從{throwing_knives_old_damage:%s}增至{throwing_knives_new_damage:%s}\n不再消耗充能層數。
+	create_template("talent_tree_psy_keys2_000_desc_zh_tw",
+		{"loc_talent_psyker_empowered_ability_description"}, {"zh-tw"},
+		loc_text("擊殺敵人有機率強化下一個閃擊技能。\n"
+				.."\n"
+				.."- 強化機率 {chance:%s} 。\n"
+				.."\n"
+				.."{blitz_one:%s} 的強化效果：\n"
+				.."_______________________________\n"
+				.."- "..COLORS_KWords_tw.Damage_rgb_tw.." {smite_damage:%s}。\n"
+				.."- 產生的 "..COLORS_KWords_tw.Peril_rgb_tw.." "..COLORS_Numbers.n_minus_rgb.."{smite_cost:%s} 。\n"
+				.."- 縮短 {smite_attack_speed:%s} 充能時間。"
+ 				.. TALENTS_Enh_desc_tw.ED_PSY_Keystone_2_0_1_rgb_tw.."\n" 
+				.."\n"
+				.. "{blitz_two:%s} 的強化效果：\n"
+				.."_______________________________\n"
+				.."- "..COLORS_KWords_tw.Damage_rgb_tw.." {chain_lightning_damage:%s}。\n"
+				.."- 傳導速度加快 {chain_lightning_jump_time_multiplier:%s}。"
+				.. TALENTS_Enh_desc_tw.ED_PSY_Keystone_2_0_2_rgb_tw.."\n" 
+				.."\n"
+				.."{blitz_three:%s} 的強化效果：\n"
+				.."_______________________________\n"
+				.."- 不消耗彈藥。\n"
+				.."- 產生的 "..COLORS_KWords_tw.Peril_rgb_tw.." "..COLORS_Numbers.n_minus_rgb.."{throwing_knives_cost:%s} 。\n"
+				.."- 基礎"..COLORS_KWords_tw.Dmg_rgb_tw.."從 {throwing_knives_old_damage:%s} 提升至 {throwing_knives_new_damage:%s}。"
+		   		.. TALENTS_Enh_desc_tw.ED_PSY_Keystone_2_0_3_rgb_tw )),
 
 	--[+ Keystone 2-1 - Bio-Lodestone +]--
 	create_template("talent_tree_psy_keys2_001_desc_en",
@@ -1610,6 +1694,12 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_001_desc_ru",
 		{"loc_talent_psyker_increase_empower_chain_lighting_chance_description"}, {"ru"},
 			loc_text("С {proc_chance_before:%s} до {proc_chance_after:%s} возрастает шанс получить заряд таланта {talent_name:%s} при убийстве.")),
+	--[+ Traditional Chinese - 生物磁石 +]--
+	-- 擊殺後獲得{talent_name:%s}的幾率從{proc_chance_before:%s}提高至{proc_chance_after:%s}。
+	create_template("talent_tree_psy_keys2_001_desc_tw",
+			{"loc_talent_psyker_increase_empower_chain_lighting_chance_description"}, {"zh-tw"},
+				loc_text("擊殺獲得 {talent_name:%s} 的機率提升。\n"
+				.."- 機率由 {proc_chance_before:%s} 提升至 {proc_chance_after:%s}。")),
 
 	--[+ Keystone 2-2 - Psychic Leeching +]--
 	create_template("talent_tree_psy_keys2_002_desc_en",
@@ -1623,6 +1713,14 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_002_desc_ru",
 		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восполняется для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." при использовании вашего блица, пока активна {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_2_2_rgb_ru)),
+	--[+ Traditional Chinese - 吸血閃電 +]--
+	create_template("talent_tree_psy_keys2_002_desc_tw",
+		{"loc_talent_psyker_empowered_chain_lightnings_replenish_toughness_to_allies_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 啟動時，使用主動技能獲得：\n"
+			.."\n"
+			.."- "..COLORS_KWords_tw.Toughness_rgb_tw.." 恢復 {toughness:%s}。\n"
+			.."- "..COLORS_KWords_tw.Coherencing_rgb_tw.." 的隊友也會獲得相同效果。"
+			..TALENTS_Enh_desc_tw.ED_PSY_Keystone_2_2_rgb_tw)),
 
 	--[+ Keystone 2-3 - Overpowering Souls +]--
 	create_template("talent_tree_psy_keys2_003_desc_en",
@@ -1636,6 +1734,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_003_desc_ru",
 		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"ru"},
 			loc_text("Гарантированный шанс получить заряд таланта {talent_name:%s} при убийстве элитного врага.")),
+	--[+ Traditional Chinese - 吞靈強擊 +]--
+	-- 擊殺精英敵人必定獲得{talent_name:%s}。
+	create_template("talent_tree_psy_keys2_003_desc_tw",
+		{"loc_talent_psyker_empowered_ability_on_elite_kills_description"}, {"zh-tw"},
+			loc_text("擊殺精英敵人時，獲得 {talent_name:%s} 。")),
 
 	--[+ Keystone 2-4 - Charged Up +]--
 	create_template("talent_tree_psy_keys2_004_desc_en",
@@ -1649,6 +1752,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys2_004_desc_ru",
 		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"ru"},
 			loc_text("Вы теперь можете держать до {max_stacks:%s} зарядов таланта {talent_name:%s}.")),
+	--[+ Traditional Chinese - 充能完畢 +]--
+	-- 你現在可以疊加{max_stacks:%s}\n層{talent_name:%s}。
+	create_template("talent_tree_psy_keys2_004_desc_tw",
+		{"loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"}, {"zh-tw"},
+			loc_text("最多可以持有 {max_stacks:%s} 層 {talent_name:%s}。")),
 
 	--[+ Keystone 3 - Disrupt Destiny +]--
 	create_template("talent_tree_psy_keys3_000_desc_en",
@@ -1662,7 +1770,30 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_000_desc_ru",
 		{"loc_talent_psyker_marked_enemies_passive_new_desc"}, {"ru"},
 			loc_text("Каждую секунду враги в радиусе "..COLORS_Numbers.n_40_rgb.." метров могут быть отмечены. Убийство отмеченного врага восстанавливает {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", даёт {move_speed:%s} к скорости передвижения на {move_speed_duration:%s} секунды, а также добавляет заряд "..COLORS_KWords_ru.Precision_rgb_ru.." на {bonus_duration} секунды.\nКаждый заряд "..COLORS_KWords_ru.Precision_rgb_ru.." даёт: {base_damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru..", {crit_damage:%s} к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." и {weakspot_damage:%s} к "..COLORS_KWords_ru.Weakspot_dmg_rgb_ru..".\nЗаряды "..COLORS_KWords_ru.Precision_rgb_ru.." накапливаются до {bonus_stacks:%s} раз и, когда срок действия заканчивается, снимается "..COLORS_Numbers.n_1_rgb.." заряд, а длительность оставшихся зарядов обновляется."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_rgb_ru)),
-
+	--[+ Traditional Chinese - 擾動命運 +]--
+	--每秒有機率標記{radius:%s}公尺內的敵人。擊殺被標記的敵人會在{move_speed_duration:%s}秒內恢復{toughness:%s}韌性，並獲得持續{move_speed_duration:%s}秒的{move_speed:%s}移動速度加成，以及持續{bonus_duration}秒的精準加成。\n\n每層精準加成會賦予{base_damage:%s}傷害、{crit_damage:%s}暴擊傷害和{weakspot_damage:%s}弱點傷害。精準加成可疊加{bonus_stacks:%s}層，且會在持續時間結束後降低一層並重新計算持續時間。
+	-- Not working in zh-tw
+	create_template("talent_tree_psy_keys3_000_desc_tw",
+			{"loc_talent_psyker_marked_enemies_passive_new_desc"}, {"zh-tw"},
+			loc_text("自動標記範圍內的敵人。\n"
+					.."\n"
+				.."- 標記間隔 1s。\n"
+				.."- 標記範圍 "..COLORS_Numbers.n_40_rgb.."m。\n"
+				.."- 擊殺被標記的敵人有以下效果"
+				.."--在{move_speed_duration:%s}秒內 {toughness:%s} "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
+				.."--獲得 {move_speed:%s} 的移動速度加成，持續 {move_speed_duration:%s} 秒。\n"
+				.."--獲得 "..COLORS_KWords_tw.Precision_rgb_tw.."加成，持續 {bonus_duration} 秒。\n"
+				.."\n"
+				.."- "..COLORS_KWords_tw.Precision_rgb_tw.." 提供以下效果：\n"
+				.."--"..COLORS_KWords_tw.Damage_rgb_tw.." {base_damage:%s} 。\n"
+				.."--"..COLORS_KWords_tw.Crit_dmg_u_rgb_tw.." {crit_damage:%s} 。\n"
+				.."--"..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." {weakspot_damage:%s} 。\n"
+				.."--上限 {bonus_stacks:%s} 層。\n"
+				.."--持續時間結束時：\n"
+				.."--移除"..COLORS_Numbers.n_1_rgb.."層會在\n"
+				.."--並刷新其餘層數的持續時間。\n"
+				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_rgb_tw)),
+				
 	--[+ Keystone 3-1 - Perfectionism +]--
 	create_template("talent_tree_psy_keys3_001_desc_en",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"en"},
@@ -1675,6 +1806,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_001_desc_ru",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"ru"},
 			loc_text("Максимальное количество зарядов "..COLORS_KWords_ru.Precision_rgb_ru.." увеличено с {stacks_previous:%s} до {stacks_after:%s}.")),
+	--[+ Traditional Chinese - 完美主義 +]--
+	-- 精準加成可疊加層數從{stacks_previous:%s}增至{stacks_after:%s}。
+	create_template("talent_tree_psy_keys3_001_desc_tw",
+		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"zh-tw"},
+			loc_text(""..COLORS_KWords_tw.Precision_rgb_tw.."的上限層數由 {stacks_previous:%s} 提升至 {stacks_after:%s}。")),
 
 	--[+ Keystone 3-2 - Purloin Providence +]--
 	create_template("talent_tree_psy_keys3_002_desc_en",
@@ -1688,6 +1824,15 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_002_desc_ru",
 		{"loc_talent_psyker_mark_kills_can_vent_description"}, {"ru"},
 			loc_text("{chance:%s} шанс, что вы моментально подавите {warp_charge_percentage:%s} вашей "..COLORS_KWords_ru.Peril_rgb_ru.." при убийстве врага, отмеченного талантом {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_2_rgb_ru)),
+	--[+ Traditional Chinese - 盜竊天命 +]--
+	--擊殺被{talent_name:%s}標記的敵人有{chance:%s}幾率立刻平息反噬{warp_charge_percentage:%s}。
+	create_template("talent_tree_psy_keys3_002_desc_tw",
+			{"loc_talent_psyker_mark_kills_can_vent_description"}, {"zh-tw"},
+				loc_text("擊殺 {talent_name:%s} 標記的敵人減少 "..COLORS_KWords_tw.Peril_rgb_tw.." 。\n"
+				.."\n"
+				.."- {chance:%s} 機率必定觸發。\n"
+				.."- 觸發時平息 {warp_charge_percentage:%s} 的 "..COLORS_KWords_tw.Peril_rgb_tw.."。"
+				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_2_rgb_tw)),
 
 	--[+ Keystone 3-3 - Lingering Influence +]--
 	create_template("talent_tree_psy_keys3_003_desc_en",
@@ -1701,7 +1846,12 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_003_desc_ru",
 		{"loc_talent_psyker_mark_increased_duration_description"}, {"ru"},
 			loc_text("С {duration_previous:%s} до {duration_after:%s} секунд увеличено действие таланта {talent_name:%s}.")),
-
+	--[+ Traditional Chinese - 持久影響 +]--
+	-- {talent_name:%s}的持續時間從{duration_previous:%s}增加至{duration_after:%s}。
+	create_template("talent_tree_psy_keys3_003_desc_tw",
+			{"loc_talent_psyker_mark_increased_duration_description"}, {"zh-tw"},
+				loc_text("{talent_name:%s} 持續時間從 {duration_previous:%s} 秒增加至 {duration_after:%s} 秒。")),
+				
 	--[+ Keystone 3-4 - Cruel Fortune +]--
 	create_template("talent_tree_psy_keys3_004_desc_en",
 		{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"en"},
@@ -1714,6 +1864,11 @@ local localization_templates = {
 	create_template("talent_tree_psy_keys3_004_desc_ru",
 		{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"ru"},
 			loc_text("Убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дают {stacks:%s} дополнительных заряда таланта {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_PSY_Keystone_3_4_rgb_ru)),
+	--[+ Traditional Chinese - 殘忍命運 +]--
+	--弱點擊殺額外積累{stacks:%s}層{talent_name:%s}。
+	create_template("talent_tree_psy_keys3_004_desc_tw",
+			{"loc_talent_psyker_mark_weakspot_stacks_description"}, {"zh-tw"},
+				loc_text(""..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人時，\n額外獲得 {stacks:%s} 層 {talent_name:%s}。" ..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_4_rgb_tw)),
 
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Soulstealer +]--

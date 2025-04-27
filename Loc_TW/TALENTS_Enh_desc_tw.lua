@@ -428,17 +428,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Warp Siphon +]--
 	local ED_PSY_Keystone_1_rgb_tw = iu_actit(table.concat({
-		"\n",
+		"",
 		can_be_refr_dur_active_dur,
-		"- 與珍品提供的戰鬥技能冷卻，以及可使技能冷卻縮短20%的任務事件(mutators)相加疊加。",
-		"- 例如，當靈能者擁有[先知之眼]光環(-0.1)、4個亞空間充能和12%珍品提供的戰鬥技能冷卻(-0.12)時使用[念力護盾]，其最大冷卻時間由珍品屬性和光環首先減少至40+40x(-0.1-0.12)=31.2秒。此最大冷卻時間再由亞空間虹吸進一步減少至31.2-31.2x(0.075x4)=21.84 秒(HUD 四捨五入：22 秒)。",
+		-- "- 與珍品提供的戰鬥技能冷卻，以及可使技能冷卻縮短20%的任務事件(mutators)相加疊加。",
+		-- "- 例如，當靈能者擁有[先知之眼]光環(-0.1)、4個亞空間充能和12%珍品提供的戰鬥技能冷卻(-0.12)時使用[念力護盾]，其最大冷卻時間由珍品屬性和光環首先減少至40+40x(-0.1-0.12)=31.2秒。此最大冷卻時間再由亞空間虹吸進一步減少至31.2-31.2x(0.075x4)=21.84 秒(HUD 四捨五入：22 秒)。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-1 - Inner Tranquility +]--
 	local ED_PSY_Keystone_1_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 與自身線性疊加(1 個亞空間充能=6% 反噬消耗減少，2 個 = 12%，3 個 = 18%，等等)，並與[骨折後遺症]、[亞空間意志]、[動能共鳴]、小型反噬抗性節點和戰鬥興奮劑的反噬消耗減少效果做乘法疊加。",
-		"- 因為使用戰鬥技能時所有亞空間充能都會消失，此天賦無法立即與[平心靜氣]和[現實錨點]疊加(除非靈能者在其持續期間內重新獲得亞空間充能)。",
+		-- "- 與自身線性疊加(1 個亞空間充能=6% 反噬消耗減少，2 個 = 12%，3 個 = 18%，等等)，並與[骨折後遺症]、[亞空間意志]、[動能共鳴]、小型反噬抗性節點和戰鬥興奮劑的反噬消耗減少效果做乘法疊加。",
+		-- "- 因為使用戰鬥技能時所有亞空間充能都會消失，此天賦無法立即與[平心靜氣]和[現實錨點]疊加(除非靈能者在其持續期間內重新獲得亞空間充能)。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Essence Harvest +]--
@@ -457,20 +457,20 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Keystone 1-4 - In Fire Reborn +]--
 	local ED_PSY_Keystone_1_4_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當一個被靈魂之火影響的敵人被靈魂之火、靈能者或盟友擊殺時，你會獲得一個亞空間充能。",
-		"- 此效果無距離限制，並且所有裝備此天賦的靈能者都能受益。",
+		"- 此效果無距離限制。",
 	}, "\n"), enhdesc_col)
 	
 	--[+ Keystone 1-5 - Psychic Vampire +]--
 	local ED_PSY_Keystone_1_5_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 如果多個靈能者在彼此的協同範圍內，當其中一個觸發天賦時，所有靈能者都會獲得一個亞空間充能。",
+		"- 如果多位靈能者在同一協同範圍內，",
+		"--其中一人觸發，所有靈能者皆可獲得。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-6 - Warp Battery +]--
 	local ED_PSY_Keystone_1_6_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 將靈能者可持有的亞空間充能最大數量從4增加到6。",
+		"- 亞空間充能最大數量從4增至6。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Brain Rupture +]--
@@ -478,8 +478,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		-- "- Consumes Stacks when attack connects with an enemy.",
 		"- 與其他適用的傷害增益做加法疊加。",
-		"- 與[動能共鳴]做加法疊加，並與敏捷興奮劑的兩個充能時間減少效果做乘法/加法疊加。",
-		"_______________________________",
+		"- 與[動能共鳴]做加法疊加",
+		"- 與敏捷興奮劑",
+		"--充能時間減少效果做乘法/加法疊加。",
 	}, "\n"), enhdesc_col)
 	
 
@@ -489,7 +490,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		-- "- Consumes Stacks when releasing.",
 		"- 與其他適用的傷害增益做加法疊加。",
 		"- 與敏捷興奮劑的相關增益做乘法疊加。",
-		"_______________________________",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Empowered Psionics - Empowered Assail +]--
@@ -506,7 +506,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Keystone 2-2 - Psychic Leeching +]--
 	local ED_PSY_Keystone_2_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當[顱腦崩裂]命中、當[懲戒]開始施放或充能後，以及當[靈能攻擊]生成投射物時觸發。",
+		"- 判定方式",
+		"--[顱腦崩裂]命中",
+		"--[懲戒]開始施放或充能後",
+		"--[靈能攻擊]生成投擲物時觸發。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -532,7 +535,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Keystone 3-2 - Purloin Providence +]--
 	local ED_PSY_Keystone_3_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 有2%的機率在同一次擊殺中觸發[戰鬥冥想]，總共移除 25% 的反噬。",
+		"- 有2%的機率在一次擊殺中觸發[戰鬥冥想]，總共移除 25% 的反噬。",
 	}, "\n"), enhdesc_col)
 	
 
@@ -542,7 +545,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Keystone 3-4 - Cruel Fortune +]--
 	local ED_PSY_Keystone_3_4_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 觸發於近戰、遠程、[顱腦崩裂]或[靈能攻擊]攻擊。",
+		"- 可藉由以下攻擊觸發：",
+		"--近戰、遠程、[顱腦崩裂]或[靈能攻擊]。",
 	}, "\n"), enhdesc_col)
 	
 
