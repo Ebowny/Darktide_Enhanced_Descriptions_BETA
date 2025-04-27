@@ -1,7 +1,5 @@
-[![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
-***
-
 # ENHANCED DESCRIPTIONS
+[![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 
 *This mod aims to improve visibility and clarity by enhancing Numbers, Keywords, and Descriptions across Talents, Blessings, Perks, Penances, Curios, and some Menu texts.*
 
@@ -23,24 +21,24 @@ __*Let us know if you spot any issues!*__
 3. Launch the game and enjoy!
 ***
 
-##TODO
-	- [x] Add Traditional Chinese localization.
-	- [x] Add Simplified Chinese localization.
-	- [ ] Merge parts of extended descriptions into the main Blessings descriptions.
-		- [ ] Proofread Blessings text.
-	- [ ] Merge parts of extended descriptions into the main Talent descriptions.
-		- [ ] Proofread Talents text.
+## TODO:
+- [x] Add Traditional Chinese localization.
+- [x] Add Simplified Chinese localization.
+- [ ] Merge parts of extended descriptions into the main Blessings descriptions.
+	- [ ] Proofread Blessings text.
+- [ ] Merge parts of extended descriptions into the main Talent descriptions.
+	- [ ] Proofread Talents text.
 
 ***
 
-## Special Thanks
+## Special Thanks to:
   - _[deluxghost](https://github.com/deluxghost) - For making this mod possible._
   - _[Ebo](https://github.com/Ebowny) - **French** localization._
   - _[SyuanTsai](https://github.com/SyuanTsai) - **Traditional Chinese** localization._
   - _[Rin Anarchy](https://github.com/RinAnarchy) - **Simplified Chinese** localization._
 ***
 
-### VERSIONS
+## Versions:
 - *Version: __3.5b__*
 	- *Added Traditional Chinese localization.*
 	- *Added Simplified Chinese localization.*
@@ -65,12 +63,3 @@ __*Let us know if you spot any issues!*__
 ***
 
 Download from: [Nexus](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
-***
-
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378286-1772147929.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378278-971187626.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378291-1161133628.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378293-1914590128.png)
-
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730414930-966796210.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730414930-1866498807.png)
