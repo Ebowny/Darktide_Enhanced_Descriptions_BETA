@@ -1778,9 +1778,9 @@ local localization_templates = {
 					.."\n"
 				.."- 標記間隔 1s。\n"
 				.."- 標記範圍 "..COLORS_Numbers.n_40_rgb.."m。\n"
-				.."- 擊殺被標記的敵人有以下效果"
+				.."- 擊殺被標記的敵人有以下效果\n"
 				.."--在{move_speed_duration:%s}秒內 {toughness:%s} "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
-				.."--獲得 {move_speed:%s} 的移動速度加成，持續 {move_speed_duration:%s} 秒。\n"
+				.."-- {move_speed:%s} 的移動速度加成，持續 {move_speed_duration:%s} 秒。\n"
 				.."--獲得 "..COLORS_KWords_tw.Precision_rgb_tw.."加成，持續 {bonus_duration} 秒。\n"
 				.."\n"
 				.."- "..COLORS_KWords_tw.Precision_rgb_tw.." 提供以下效果：\n"
@@ -1788,9 +1788,9 @@ local localization_templates = {
 				.."--"..COLORS_KWords_tw.Crit_dmg_u_rgb_tw.." {crit_damage:%s} 。\n"
 				.."--"..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." {weakspot_damage:%s} 。\n"
 				.."--上限 {bonus_stacks:%s} 層。\n"
-				.."--持續時間結束時：\n"
-				.."--移除"..COLORS_Numbers.n_1_rgb.."層會在\n"
-				.."--並刷新其餘層數的持續時間。\n"
+				.."---持續時間結束時：\n"
+				.."--移除"..COLORS_Numbers.n_1_rgb.."層\n"
+				.."--同時刷新其餘層數的持續時間。\n"
 				..TALENTS_Enh_desc_tw.ED_PSY_Keystone_3_rgb_tw)),
 				
 	--[+ Keystone 3-1 - Perfectionism +]--
@@ -2300,6 +2300,14 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz0_000_desc_ru",
 		{"loc_ability_shock_grenade_description"}, {"ru"},
 			loc_text("Вы бросаете "..COLORS_KWords_ru.Stun_gren_rgb_ru..", которая поражает "..COLORS_KWords_ru.Electrocuted_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов в радиусе поражения."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_0_rgb_ru)),
+	--[+ Traditional Chinese - 眩暈手雷 +]--
+	-- 投擲一枚眩暈手雷，電擊爆炸範圍內敵人並致眩。
+	create_template("talent_tree_zea_blitz0_000_desc_tw",
+			{"loc_ability_shock_grenade_description"}, {"zh-tw"},
+				-- loc_text("你投擲一顆"..COLORS_KWords_tw.Stun_gren_rgb_tw.."，使範圍內的所有敵人陷入"..COLORS_KWords_tw.Electrocuted_rgb_tw.."狀態並"..COLORS_KWords_tw.Staggers_e_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw)),
+				loc_text("投擲一顆 "..COLORS_KWords_tw.Stun_gren_rgb_tw.. "，\n"
+				.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
+				 ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw)),
 
 	--[+ Blitz 1 - Stunstorm Grenade +]--
 	create_template("talent_tree_zea_blitz1_000_desc_en",
@@ -2313,6 +2321,15 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz1_000_desc_ru",
 		{"loc_zealot_improved_stun_grenade_desc"}, {"ru"},
 			loc_text("Вы бросаете "..COLORS_KWords_ru.Stun_gren_rgb_ru..", которая взрывается и применяет эффект оглушающего "..COLORS_KWords_ru.Electrocution_rgb_ru.." на всех врагов в радиусе взрыва.\n\nЭто улучшенная версия таланта {talent_name:%s} с увеличенным на {radius:%s} радиусом взрыва."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_1_rgb_ru)),
+	--[+ Traditional Chinese - 眩暈風暴手雷 +]--
+	-- 投擲一枚手雷，使爆炸範圍內的所有敵人眩暈。\n\n該天賦是{talent_name:%s}的增強版，擁有{radius:%s}爆炸範圍。
+	create_template("talent_tree_zea_blitz1_000_desc_tw",
+			{"loc_zealot_improved_stun_grenade_desc"}, {"zh-tw"},
+				loc_text("投擲一顆 "..COLORS_KWords_tw.Stun_gren_rgb_tw.." ，\n"
+				.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
+				.."。\n\n這是 {talent_name:%s} 天賦的強化版本，\n"
+				.."爆炸半徑增加 {radius:%s}。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_1_rgb_tw)),
 
 	--[+ Blitz 2 - Immolation Grenade +]--
 	create_template("talent_tree_zea_blitz2_000_desc_en",
@@ -2326,6 +2343,17 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz2_000_desc_ru",
 		{"loc_talent_ability_fire_grenade_desc"}, {"ru"},
 			loc_text("Вы бросаете гранату, которая оставляет слой горящей жидкости, "..COLORS_KWords_ru.Burnd_rgb_ru.." и "..COLORS_KWords_ru.Staggers_e_rgb_ru.." врагов, преграждая им путь. Наиболее эффективно против небронированных врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_2_rgb_ru)),
+	--[+ Traditional Chinese - 獻祭手雷 +]--
+	-- 投擲一枚手雷，在爆炸處形成一層燃燒的液體，燃燒並使敵人暈眩, 同時阻擋他們的道路。針對無護甲敵人最為有效。
+	create_template("talent_tree_zea_blitz2_000_desc_tw",
+			{"loc_talent_ability_fire_grenade_desc"}, {"zh-tw"},
+				loc_text("投擲一顆 {talent_name:%s}，\n"
+				.."爆炸後產生火焰地面，\n"
+				.."該火焰可 "..COLORS_KWords_tw.Burnd_rgb_tw.." 並 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 敵人，\n"
+				.."\n"
+				.."- 火焰會迫使敵人改變路線。\n"
+				.."- 對無裝甲敵人最為有效。" 
+				..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_2_rgb_tw)),
 
 	--[+ Blitz 3 - Blades of Faith +]--
 	create_template("talent_tree_zea_blitz3_000_desc_en",
@@ -2339,6 +2367,19 @@ local localization_templates = {
 	create_template("talent_tree_zea_blitz3_000_desc_ru",
 		{"loc_ability_zealot_throwing_knifes_desc"}, {"ru"},
 			loc_text("Вы бросаете освящённый нож, нанося высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу. Они очень эффективны против большинства врагов, кроме врагов в панцирной броне.\n- Быстрый бросок.\n- "..COLORS_Numbers.n_1_rgb.." нож восполняется за убийство в ближнем бою элитного врага или специалиста, "..COLORS_Numbers.n_2_rgb.." ножа из маленькой сумки с боеприпасами, "..COLORS_Numbers.n_6_rgb.." ножей из большой сумки с боеприпасами, все ножи из ящика с боеприпасами."..TALENTS_Enh_desc_ru.ED_ZEA_Blitz_3_rgb_ru)),
+	--[+ Traditional Chinese - 信仰之刃 +]--
+	--擲出一把聖化小刀，可對單體敵人造成高額傷害。這把小刀對大多數敵人效果拔群，但對護甲堅固的敵人威力較弱。\n\n-快速投擲\n-近戰擊殺精英和專家敵人可補充一把小刀\n-使用彈藥箱可補充小刀
+	create_template("talent_tree_zea_blitz3_000_desc_tw",
+			{"loc_ability_zealot_throwing_knifes_desc"}, {"zh-tw"},
+				loc_text("投擲 {talent_name:%s}，對單一敵人 "..COLORS_KWords_tw.Dmg_h2_rgb_tw.." 。\n"
+				.."\n"
+				.."- 快速投擲。\n"
+				.."- 大多敵人"..COLORS_KWords_tw.Dmg_h2_rgb_tw.."，對重甲傷害極低。\n"
+				.."\n"
+				.."- 擊殺菁英或專家可回復"..COLORS_Numbers.n_1_rgb.."把匕首，\n"
+				.."- 小型彈藥包回復"..COLORS_Numbers.n_2_rgb.."把。\n"
+				.."- 大型彈藥包回復"..COLORS_Numbers.n_6_rgb.."把。\n"
+				.."- 彈藥箱回復全部匕首。" ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_3_rgb_tw)),
 
 --[+ +AURA - АУРА+ +]--
 	--[+ Aura 0 - The Emperors's Will +]--

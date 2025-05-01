@@ -97,6 +97,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local Dmg_a_rgb_tw = iu_actit("傷害", dmg_col)
 	local Dmg_b_rgb_tw = iu_actit("基礎傷害", dmg_col)
 	local Dmg_h_rgb_tw = iu_actit("較高傷害", dmg_col) -- high
+	local Dmg_h2_rgb_tw = iu_actit("高額傷害", dmg_col) -- high
 	local Dmg_c_rgb_tw = iu_actit("持續傷害(Dot)", dmg_col) -- Continuous Damage
 	local Dmg_d_rgb_tw = iu_actit("Dot傷害", dmg_col) -- Dot
 	local Dmg_v_rgb_tw = iu_actit("易傷", dmg_col) -- Vulnerable
@@ -308,6 +309,7 @@ return {
 	Dmg_a_rgb_tw = Dmg_a_rgb_tw,
 	Dmg_b_rgb_tw = Dmg_b_rgb_tw,
 	Dmg_h_rgb_tw = Dmg_h_rgb_tw,
+	Dmg_h2_rgb_tw = Dmg_h2_rgb_tw,
 	Dmg_c_rgb_tw = Dmg_c_rgb_tw,
 	Dmg_d_rgb_tw = Dmg_d_rgb_tw,
 	Dmg_v_rgb_tw = Dmg_v_rgb_tw,
