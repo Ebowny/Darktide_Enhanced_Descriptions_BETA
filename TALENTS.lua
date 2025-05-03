@@ -2767,6 +2767,13 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_abil3_004_desc_ru",
 		{"loc_talent_zealot_backstab_kills_restore_cd_description"}, {"ru"},
 			loc_text(COLORS_Numbers.n_minus_rgb.."{ability_cooldown:%s} от времени "..COLORS_KWords_ru.Ability_cd_rgb_ru.." при убийстве врага в спину."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_4_rgb_ru)),
+	--[+ Traditional Chinese - 虔誠刺客 +]--
+	-- 背刺擊殺恢復{ability_cooldown:%s}技能冷卻。
+	create_template("talent_tree_zea_abil3_004_desc_tw",
+		{"loc_talent_zealot_backstab_kills_restore_cd_description"}, {"zh-tw"},
+			loc_text(COLORS_KWords_tw.Dmg_bs_K_rgb_tw.." 可減少 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 冷卻。\n"
+			.."- 恢復最大冷卻時間 {ability_cooldown:%s} 。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_4_rgb_tw)),
 
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ Keystone 1 - Blazing Piety +]--
@@ -2781,6 +2788,17 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys1_000_desc_ru",
 		{"loc_talent_zealot_fanatic_rage_desc"}, {"ru"},
 			loc_text("Когда {max_stacks:%s} врагов погибает в радиусе {radius:%s} метров от вас, вы входите в режим "..COLORS_KWords_ru.Fury_i_rgb_ru.." и получаете {crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на {duration:%s} секунд. Длительность действия "..COLORS_KWords_ru.Fury_i_rgb_ru.." можно обновить, убивая врагов."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_rgb_ru)),
+	--[+ Traditional Chinese - 熾熱虔誠 +]--
+	--狂怒時獲得{crit_chance:%s}暴擊幾率，持續{duration:%s}秒。{radius:%s}公尺範圍內有{max_stacks:%s}個敵人死亡時觸發狂怒。
+
+	create_template("talent_tree_zea_keys1_000_desc_tw",
+			{"loc_talent_zealot_fanatic_rage_desc"}, {"zh-tw"},
+				loc_text("{radius:%s} "..COLORS_Numbers.n_meter_rgb.." 內擊殺 {max_stacks:%s} 名敵人，\n"
+				.."獲得以下效果：\n"
+				.."- 進入"..COLORS_KWords2_tw.Fury_i_rgb_tw.."狀態。\n"
+				.."- {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，持續 {duration:%s} 秒。\n"
+				.."- 擊殺敵人可延長 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 的持續時間。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_rgb_tw)),
 
 	--[+ Keystone 1-1 - Stalwart +]--
 	create_template("talent_tree_zea_keys1_001_desc_en",
@@ -2794,6 +2812,15 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys1_001_desc_ru",
 		{"loc_talent_zealot_fanatic_rage_toughness_reduction_desc"}, {"ru"},
 			loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается при входе в "..COLORS_KWords_ru.Fury_rgb_ru.." и пока она активна, вы получаете {toughness_damage_reduction:%s} к "..COLORS_KWords_ru.Toughness_dmg_red_u_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_1_rgb_ru)),
+	--[+ Traditional Chinese - 死忠 +]--
+	--觸發狂怒技能恢復{toughness:%s}韌性。狂怒技能啟動狀態下，每一個死亡的敵人會為你回復{toughness_small:%s}韌性。
+	create_template("talent_tree_zea_keys1_001_desc_tw",
+		{"loc_talent_zealot_fanatic_rage_toughness_reduction_desc"}, {"zh-tw"},
+			loc_text("進入 "..COLORS_KWords2_tw.Fury_rgb_tw.." 時獲得以下效果：\n"
+			.."- 立即恢復 {toughness:%s} "..COLORS_KWords_tw.Toughness_rgb_tw.." 。\n"	
+			.."- 持續時間內 {toughness_damage_reduction:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.." 。\n" 
+			.."- 擊殺敵人額外恢復 "..COLORS_KWords_tw.Toughness_rgb_tw.." "..COLORS_Numbers.pc_2_rgb.." 。"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_1_rgb_tw)),
 
 	--[+ Keystone 1-2 - Fury Rising +]--
 	create_template("talent_tree_zea_keys1_002_desc_en",
@@ -2807,6 +2834,11 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys1_002_desc_ru",
 		{"loc_talent_zealot_fanatic_rage_crits_desc"}, {"ru"},
 			loc_text("Вы получаете один заряд "..COLORS_KWords_ru.Fury_i_rgb_ru.." за каждый "..COLORS_KWords_ru.Crit_hit_chance_rgb_ru.." ближнего или дальнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_2_rgb_ru)),
+	--[+ Traditional Chinese - 怒火升騰 +]--
+	--積累暴擊次數也可觸發狂怒。
+	create_template("talent_tree_zea_keys1_002_desc_tw",
+		{"loc_talent_zealot_fanatic_rage_crits_desc"}, {"zh-tw"},
+			loc_text("造成 "..COLORS_KWords_tw.Crit_hit_chance_rgb_tw.." 時，獲得一層 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_2_rgb_tw)),
 
 	--[+ Keystone 1-3 - Infectious Zeal +]--
 	create_template("talent_tree_zea_keys1_003_desc_en",
@@ -2820,6 +2852,13 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys1_003_desc_ru",
 		{"loc_talent_zealot_shared_fanatic_rage_desc"}, {"ru"},
 			loc_text(COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." получают союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." в момент получения вами "..COLORS_Numbers.n_25_rgb.." зарядов "..COLORS_KWords_ru.Fury_i_rgb_ru..". "..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_3_rgb_ru)),
+	--[+ Traditional Chinese - 迅疾狂熱 +]--
+	-- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
+	create_template("talent_tree_zea_keys1_003_desc_tw",
+			{"loc_talent_zealot_shared_fanatic_rage_desc"}, {"zh-tw"},
+				loc_text(""..COLORS_Numbers.n_25_rgb.." 層 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 時， "..COLORS_KWords_tw.Coherencing_rgb_tw.." 隊友獲得：\n"
+				.."- "..COLORS_KWords_tw.Crit_chance_rgb_tw.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." 。"
+				..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_3_rgb_tw)),
 
 	--[+ Keystone 1-4 - Righteous Warrior +]--
 	create_template("talent_tree_zea_keys1_004_desc_en",
@@ -2833,6 +2872,11 @@ create_template("talent_tree_zea_abil3_001_desc_tw",
 	create_template("talent_tree_zea_keys1_004_desc_ru",
 		{"loc_talent_zealot_fanatic_rage_improved_desc"}, {"ru"},
 			loc_text("{crit_chance:%s} к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." дополнительно от таланта {talent_name:%s}."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_4_rgb_ru)),
+	--[+ Traditional Chinese - 正義勇士 +]--
+	-- {talent_name:%s}賦予協同中的盟友{crit_chance:%s}暴擊幾率。
+	create_template("talent_tree_zea_keys1_004_desc_tw",
+			{"loc_talent_zealot_fanatic_rage_improved_desc"}, {"zh-tw"},
+				loc_text("{talent_name:%s} 額外賦予 {crit_chance:%s} "..COLORS_KWords_tw.Crit_chance_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Keystone_1_4_rgb_tw)),
 
 	--[+ Keystone 2 - Martyrdom +]--
 	create_template("talent_tree_zea_keys2_000_desc_en",

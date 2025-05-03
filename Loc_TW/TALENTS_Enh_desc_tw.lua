@@ -21,7 +21,10 @@ COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_t
 
 local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除仇恨：\n-- 近戰敵人將仇恨轉移至隊友。\n-- 遠程敵人會停火並換目標。"
 local can_be_refr_dur_active_dur = "- 可在效果持續期間內重新觸發。"
-local doesnt_stack_aura_psy = "- 相同光環效果不會疊加。"
+local doesnt_stack_aura = "- 相同光環效果不會疊加。"
+local doesnt_stack_talents = "- 相同天賦效果不會疊加。"
+local doesnt_stack_ability = "- 相同戰鬥技能效果不會疊加。"
+local doesnt_stack_keyStone = "- 相同鑰石效果不會疊加。"
 local doesnt_interact_w_c_a_r_from_curio = "- 不與珍品 "..COLORS_KWords_tw.Combat_ability_cd_rgb_tw.." 疊加，\n-- 該效果只縮短戰鬥技能最大冷卻時間。"
 local dmg_is_incr_by = "- 傷害會受到撕裂、脆弱、[碎顱者]祝福(針對被踉蹌的敵人)以及[靈能強化]、[至天高之力]、[亞空間震波]、[擾動命運]、[惡意攻勢]、[完美時機]、[占卜者的注視](含[預知未來])、[亞空間騎士]、光環[動能釋放](對精英單位)和小型遠程傷害節點的增益所提升。"
 local procs_on_succss_dodging = "- 在成功閃避敵方近戰或遠程攻擊(不含砲手、收割者、狙擊手)，以及壓制型攻擊(瘟疫獵犬跳撲、陷阱兵網子、變種人擄抓)時觸發。"
@@ -173,14 +176,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- [靈能學者之怒]減少至 27.75 秒",
 		"- [占卜者的注視]減少至 23.125 秒",
 		"- [念力護盾]減少至 37 秒。",
-		doesnt_stack_aura_psy,
+		doesnt_stack_aura,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 1 - Kinetic Presence +]--
 	local ED_PSY_Aura_1_rgb_tw = iu_actit(table.concat({
 		"\n",
 		stacks_add_w_oth_dmg,
-		doesnt_stack_aura_psy,
+		doesnt_stack_aura,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Seer's Presence +]--
@@ -193,7 +196,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- [靈能學者之怒]減少至 27 秒",
 		"- [占卜者的注視]減少至 22.5 秒",
 		"- [念力護盾]減少至 36 秒。",
-		doesnt_stack_aura_psy,
+		doesnt_stack_aura,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 3 - Prescience +]--
@@ -201,7 +204,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		"- 適用於所有能夠爆擊的攻擊。",
 		"- 與其他爆擊機率來源相加疊加。",
-		doesnt_stack_aura_psy,
+		doesnt_stack_aura,
 	}, "\n"), enhdesc_col)
 
 --[+ +ABILITIES+ +]--
@@ -948,7 +951,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Aura_0_n_1_rgb_tw = iu_actit(table.concat({
 		"\n",
 		stacks_mult_w_other_dmg_red_buffs,
-		"- 同一光環效果不會重複生效。",
+		doesnt_stack_aura,
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Beacon of Purity(純潔信標) +]--
@@ -1024,7 +1027,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		"- 範圍：10米。",
 		"- 持續期間內可刷新對免疫、無敵效果。",
-		"- 同一天賦效果不會重複生效。",
+		doesnt_stack_talents,
 		"- 與老兵[責任與榮耀]加法疊加。",
 		"",
 		"- [無敵]",
@@ -1038,7 +1041,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		"- 只要處於協同範圍，就會獲得此Buff。",
 		stacks_mult_w_other_dmg_red_buffs,
-		"- 同一天賦效果不會重複生效。",
+		doesnt_stack_talents,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-2 - Banishing Light(放逐之光) +]--
@@ -1065,7 +1068,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		"- 只要處於協同範圍，就會獲得此Buff。",
 		stacks_add_w_oth_dmg,
-		"- 同一天賦效果不會重複生效。",
+		doesnt_stack_ability,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2-4 - Martyr's Purpose(殉道者之願) +]--
@@ -1078,7 +1081,6 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"- 技能最大冷卻：60 秒。",
 		"- 當前剩餘冷卻：55 秒。",
 		"- 受到生命傷害：80 點。",
-		"- 當前剩餘冷卻：55 秒。",
 		"- 冷卻減少：60 × (80 × 0.01) = 48 秒。",
 		"- 最終剩餘冷卻：55 - 48 = 7 秒。",
 		"",
@@ -1114,10 +1116,17 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Ability 3-2 - Perfectionist(完美主義者) +]--
 	local ED_ZEA_Ability_3_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 提升的技巧傷害與其他相關Buff採加法疊加。",
-		"- 背刺傷害與[背刺者]、[隱秘領域]的加成採加法疊加，計算時再與其他傷害或武器威力加成採乘法疊加。",
-		"- 同時將[隱秘領域]的最大冷卻由30秒增加至37.5秒。",
-		"- 此額外冷卻可被以下效果部分抵銷：靈能者光環[先知之眼]、珍品的戰鬥技能冷卻、以及任務關卡冷卻減少20%的增益等。",
+		"- "..COLORS_KWords_tw.Cd_rgb_m_tw.." 由 "..COLORS_Numbers.n_30_rgb..COLORS_Numbers.n_second_rgb.." 提升至 "..COLORS_Numbers.n_37_5_rgb..COLORS_Numbers.n_second_rgb.."。",
+		"- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." 與其他增益做加法疊加。",
+		"",
+		"- 與[背刺者]、[隱秘領域]加法疊加，",
+		"-- 計算時再與其他傷害或威力乘法疊加",
+		"",
+		-- "- 背刺傷害與[背刺者]、[隱秘領域]的加成採加法疊加，計算時再與其他傷害或武器威力加成採乘法疊加。",
+		"- 可被以下增益抵銷：",
+		"-- [先知之眼(靈能)]、閃擊強化(任務)、",
+		"-- 珍品的戰鬥技能冷卻。"
+		-- "- 此額外冷卻可被以下效果部分抵銷：靈能者光環[先知之眼]、珍品的戰鬥技能冷卻、以及任務關卡冷卻減少20%的增益等。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 3-3 - Invigorating Revelation(振奮啟示) +]--
@@ -1133,51 +1142,63 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Ability_3_4_rgb_tw = iu_actit(table.concat({
 		"\n",
 		"- 有0.2秒的內部冷卻時間。",
-		"- [有信者之怒]與[隱秘領域]的冷卻因此被縮短至6秒([完美主義者]下則為7.5秒)，而[不屈靈魂合唱]則縮短至12秒。",
-		"- [背刺]是從敵人背後特定角度進行的近戰攻擊。",
-		"- 與[專注興奮劑]的3秒/秒冷卻縮短效果同時生效。",
+		"- 鏈鋸系列需要第一下就擊殺目標。",
+		"- [背刺]：背後特定角度的近戰攻擊。",
+		"- [有信者之怒]與[隱秘領域]可縮減6秒。",
+		"- [不屈靈魂合唱]可縮減12秒。",
+		"",
+		"- 以狂信徒[不屈靈魂合唱]為例：",
+		"- 技能最大冷卻：60 秒。",
+		"- 當前剩餘冷卻：50 秒。",
+		"- 冷卻減少：60 × 0.2 = 12 秒。",
+		"- 最終剩餘冷卻：50 - 12 = 38 秒。",
+		"",
+		-- "- [有信者之怒]與[隱秘領域]的冷卻因此被縮短至6秒([完美主義者]下則為7.5秒)，而[不屈靈魂合唱]則縮短至12秒。",
+		"- [專注興奮劑]冷卻縮短效果同時生效。",
 		doesnt_interact_w_c_a_r_from_curio,
-		"- 連枷類(Chain Weapon)武器若要觸發此天賦，必須在背刺第一下就立即擊殺目標。",
 	}, "\n"), enhdesc_col)
 
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Blazing Piety(熾熱虔誠) +]--
 	local ED_ZEA_Keystone_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當狂信徒在8秒內未擊殺任何敵人時，系統會視其為脫離戰鬥狀態；脫離戰鬥後，狂怒疊加會隨時間逐漸下降，以愈來愈慢的速度一個一個消耗。",
-		"- 狂怒的持續時間可透過擊殺敵人來刷新。",
+		-- "- 狂怒的持續時間可透過擊殺敵人來刷新。",
 		"- 與其他來源的爆擊機率採加法疊加。",
+		"",
+		"- "..COLORS_Numbers.n_8_rgb..COLORS_Numbers.n_second_rgb.." 秒內未擊殺任何敵人時，",
+		"-- 視為脫離戰鬥狀態。",
+		"-- 脫離戰鬥時會逐層減少狂怒狀態。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-1 - Stalwart(死忠) +]--
 	local ED_ZEA_Keystone_1_1_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 當狂怒疊加達到25層時，會有兩個效果：",
-		"-- 1. 立即回復50%最大韌性。同時，只要維持25層狂怒，每擊殺1名敵人就額外回復2%最大韌性。",
-		"--- 與狂信徒原本近戰擊殺可回復5%韌性的效果採加法疊加。",
-		"--"..z_eff_of_this_tougn_rep,
-		"-- 2. 只要維持25層狂怒，便可獲得25%的韌性減傷。",
-		"--"..stacks_mult_w_other_dmg_red_buffs,
+		-- "- 當狂怒疊加達到25層時，會有兩個效果：",
+		-- "-- 1. 立即回復50%最大韌性。同時，只要維持25層狂怒，每擊殺1名敵人就額外回復2%最大韌性。",
+		"- 與近戰擊殺回復5%韌性採加法疊加。",
+		z_eff_of_this_tougn_rep,
+		-- "-- 2. 只要維持25層狂怒，便可獲得25%的韌性減傷。",
+		stacks_mult_w_other_dmg_red_buffs,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Fury Rising(怒火升騰) +]--
 	local ED_ZEA_Keystone_1_2_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 順劈攻擊時，若觸發暴擊，可能一次生成多層狂怒。",
-		"- 攻擊護盾若發生暴擊，也能觸發此效果。",
+		"- "..COLORS_KWords_tw.Cleave_rgb_tw.." 且 "..COLORS_KWords_tw.Crit_rgb_tw.." 可生成多層 "..COLORS_KWords2_tw.Fury_i_rgb_tw.." 。",
+		"- 攻擊護盾發生 "..COLORS_KWords_tw.Crit_rgb_tw.." ，也能觸發效果。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-3 - Infectious Zeal(迅疾狂熱) +]--
 	local ED_ZEA_Keystone_1_3_rgb_tw = iu_actit(table.concat({
 		"\n",
 		can_be_refr_dur_active_dur,
-		"- 不會與另一位狂信徒使用相同天賦重複疊加。",
+		doesnt_stack_keyStone,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-4 - Righteous Warrior(正義勇士) +]--
 	local ED_ZEA_Keystone_1_4_rgb_tw = iu_actit(table.concat({
 		"\n",
-		"- 進一步提升所有可暴擊攻擊的爆擊機率，在[熾熱虔誠]原本的15%爆擊率基礎上再增幅(最終可達+25%)。",
+		"- 原本 "..COLORS_Numbers.pc_15_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.." 提升至 "..COLORS_Numbers.pc_25_rgb.." 。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2 - Martyrdom(殉道) +]--
