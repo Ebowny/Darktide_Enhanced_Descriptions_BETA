@@ -98,7 +98,8 @@ COLORS_KWords_fr = mod:io_dofile("Enhanced_descriptions/Loc_FR/COLORS_KWords_fr"
 	--[+ Russian +]--
 COLORS_KWords_ru = mod:io_dofile("Enhanced_descriptions/Loc_RU/COLORS_KWords_ru")
 	--[+ Traditional Chinese +]--
--- COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
 	--[+ Simplified Chinese +]--
 COLORS_KWords_zh_cn = mod:io_dofile("Enhanced_descriptions/Loc_ZH_CN/COLORS_KWords_zh_cn")
 
@@ -1403,7 +1404,7 @@ local localization_templates = {
 	--{talent_name:%s}啟動期間獲得{tdr:%s}韌性減傷。
 	create_template("talent_tree_psy_abil3_001_desc_tw",
 		{"loc_ability_psyker_overcharge_reduced_toughness_damage_taken_description"}, {"zh-tw"},
-			loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，\n獲得 {tdr:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_1_rgb_tw)),
+			loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，\n獲得 {tdr:%s} "..COLORS_KWords_tw.Toughness_dmg_red_u_rgb_tw.."。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_1_rgb_tw)),
 
 	--[+ Ability 3-2 - Precognition +]--
 	create_template("talent_tree_psy_abil3_002_desc_en",
@@ -1422,7 +1423,7 @@ local localization_templates = {
 	--每次弱點擊殺視作在{talent_name:%s}狀態下{second:%s}秒持續時間。\n\n持續{talent_name:%s}狀態每一秒賦予{finesse_damage_per_stack:%s}靈巧傷害（最多{max_finesse_damage%s}），脫離{talent_name:%s}狀態後效果延續{duration:%s}秒。
 	create_template("talent_tree_psy_abil3_002_desc_tw",
 		{"loc_ability_psyker_overcharge_weakspot_description"}, {"zh-tw"},
-			loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，\n"
+			loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，\n"
 			.."\n"
 			.."- "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人會延長技能 {second:%s} 秒。\n"
 			.."- 每秒 {finesse_damage_per_stack:%s} "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.."，最高 {max_finesse_damage:%s}，\n"
@@ -1445,7 +1446,7 @@ local localization_templates = {
 	--{talent_name:%s}啟動期間獲得{movement_speed:%s}移動速度。
 	create_template("talent_tree_psy_abil3_003_desc_tw",
 		{"loc_ability_psyker_overcharge_movement_speed_description"}, {"zh-tw"},
-		loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，移動速度提高 {movement_speed:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_3_rgb_tw)),
+		loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，移動速度提高 {movement_speed:%s}。" .. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_3_rgb_tw)),
 
 	--[+ Ability 3-4 - Reality Anchor +]--
 	create_template("talent_tree_psy_abil3_004_desc_en",
@@ -1463,7 +1464,7 @@ local localization_templates = {
 	--{talent_name:%s}啟動期間還會降低{warp_charge:%s}已生成的反噬。
 	create_template("talent_tree_psy_abil3_004_desc_tw",
 		{"loc_ability_psyker_overcharge_reduced_warp_charge_description"}, {"zh-tw"},
-			loc_text("當"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."啟動時，\n"
+			loc_text("當"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."啟動時，\n"
 			.."立即降低 {warp_charge:%s}"..COLORS_KWords_tw.Peril_rgb_tw.."。\n"
 			.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_4_rgb_tw)),
 
@@ -1483,11 +1484,9 @@ local localization_templates = {
 	-- {talent_name:%s}的效果持續時間內也能避免亞空間反噬所造成的超載效果。
 	create_template("talent_tree_psy_abil3_005_desc_tw",
 		{"loc_talent_psyker_overcharge_infinite_casting_desc"}, {"zh-tw"},
-		-- loc_text("在"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."結束後的"..COLORS_Numbers.n_10_rgb.."秒內，你可以無限制使用所有會產生"..COLORS_KWords_tw.Peril_rgb_tw.."的技能
-		--，且不會爆炸，即使達到"..COLORS_Numbers.pc_100_rgb.."的"..COLORS_KWords_tw.Peril_rgb_tw.."。" )),
 		loc_text("{talent_name:%s} 期間，免疫反噬超載效果。\n"
 		.."\n"
-		.."- 在"..COLORS_KWords_tw.Scriers_gaze_rgb_tw.."結束後的"..COLORS_Numbers.n_10_rgb.."秒內，\n"
+		.."- 在"..COLORS_KWords2_tw.Scriers_gaze_rgb_tw.."結束後的"..COLORS_Numbers.n_10_rgb.."秒內，\n"
 		.."--可以無限制使用所有會產生"..COLORS_KWords_tw.Peril_rgb_tw.."的技能，\n"
 		.."--即使達到"..COLORS_Numbers.pc_100_rgb.."的"..COLORS_KWords_tw.Peril_rgb_tw.."，也不會爆炸。\n"
 		.. TALENTS_Enh_desc_tw.ED_PSY_Ability_3_5_rgb_tw
@@ -1781,9 +1780,9 @@ local localization_templates = {
 				.."- 擊殺被標記的敵人有以下效果\n"
 				.."--在{move_speed_duration:%s}秒內 {toughness:%s} "..COLORS_KWords_tw.Toughness_rgb_tw.."。\n"
 				.."-- {move_speed:%s} 的移動速度加成，持續 {move_speed_duration:%s} 秒。\n"
-				.."--獲得 "..COLORS_KWords_tw.Precision_rgb_tw.."加成，持續 {bonus_duration} 秒。\n"
+				.."--獲得 "..COLORS_KWords2_tw.Precision_rgb_tw.."加成，持續 {bonus_duration} 秒。\n"
 				.."\n"
-				.."- "..COLORS_KWords_tw.Precision_rgb_tw.." 提供以下效果：\n"
+				.."- "..COLORS_KWords2_tw.Precision_rgb_tw.." 提供以下效果：\n"
 				.."--"..COLORS_KWords_tw.Damage_rgb_tw.." {base_damage:%s} 。\n"
 				.."--"..COLORS_KWords_tw.Crit_dmg_u_rgb_tw.." {crit_damage:%s} 。\n"
 				.."--"..COLORS_KWords_tw.Weakspot_dmg_rgb_tw.." {weakspot_damage:%s} 。\n"
@@ -1809,7 +1808,7 @@ local localization_templates = {
 	-- 精準加成可疊加層數從{stacks_previous:%s}增至{stacks_after:%s}。
 	create_template("talent_tree_psy_keys3_001_desc_tw",
 		{"loc_talent_psyker_mark_increased_max_stacks_description"}, {"zh-tw"},
-			loc_text(""..COLORS_KWords_tw.Precision_rgb_tw.."的上限層數由 {stacks_previous:%s} 提升至 {stacks_after:%s}。")),
+			loc_text(""..COLORS_KWords2_tw.Precision_rgb_tw.."的上限層數由 {stacks_previous:%s} 提升至 {stacks_after:%s}。")),
 
 	--[+ Keystone 3-2 - Purloin Providence +]--
 	create_template("talent_tree_psy_keys3_002_desc_en",
@@ -2304,8 +2303,7 @@ local localization_templates = {
 	-- 投擲一枚眩暈手雷，電擊爆炸範圍內敵人並致眩。
 	create_template("talent_tree_zea_blitz0_000_desc_tw",
 			{"loc_ability_shock_grenade_description"}, {"zh-tw"},
-				-- loc_text("你投擲一顆"..COLORS_KWords_tw.Stun_gren_rgb_tw.."，使範圍內的所有敵人陷入"..COLORS_KWords_tw.Electrocuted_rgb_tw.."狀態並"..COLORS_KWords_tw.Staggers_e_rgb_tw.."。" ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw)),
-				loc_text("投擲一顆 "..COLORS_KWords_tw.Stun_gren_rgb_tw.. "，\n"
+				loc_text("投擲一顆 "..COLORS_KWords2_tw.Stun_gren_rgb_tw.. "，\n"
 				.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
 				 ..TALENTS_Enh_desc_tw.ED_ZEA_Blitz_0_rgb_tw)),
 
@@ -2325,7 +2323,7 @@ local localization_templates = {
 	-- 投擲一枚手雷，使爆炸範圍內的所有敵人眩暈。\n\n該天賦是{talent_name:%s}的增強版，擁有{radius:%s}爆炸範圍。
 	create_template("talent_tree_zea_blitz1_000_desc_tw",
 			{"loc_zealot_improved_stun_grenade_desc"}, {"zh-tw"},
-				loc_text("投擲一顆 "..COLORS_KWords_tw.Stun_gren_rgb_tw.." ，\n"
+				loc_text("投擲一顆 "..COLORS_KWords2_tw.Stun_gren_rgb_tw.." ，\n"
 				.."範圍內的敵人陷入 "..COLORS_KWords_tw.Electrocuted_rgb_tw.." 與 "..COLORS_KWords_tw.Staggers_e_rgb_tw.." 。"
 				.."。\n\n這是 {talent_name:%s} 天賦的強化版本，\n"
 				.."爆炸半徑增加 {radius:%s}。"
@@ -2685,7 +2683,7 @@ create_template("talent_tree_zea_abil2_004_desc_tw",
 	create_template("talent_tree_zea_abil3_000_desc_tw",
 		{"loc_ability_zealot_stealth_description"}, {"zh-tw"},
 			loc_text(
-				"進入"..COLORS_KWords_tw.Stealth_rgb_tw.."狀態，獲得以下增益：\n"
+				"進入"..COLORS_KWords2_tw.Stealth_rgb_tw.."狀態，獲得以下增益：\n"
 				.."- {movement_speed:%s} 的移動速度加成。\n"
 				.."- 背刺"..COLORS_KWords_tw.Dmg_rgb_tw.." {backstab_damage:%s} 。\n"
 				.."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {finesse_damage:%s} 。\n"
@@ -2707,6 +2705,11 @@ create_template("talent_tree_zea_abil2_004_desc_tw",
 	create_template("talent_tree_zea_abil3_001_desc_ru",
 		{"loc_talent_zealot_increased_stealth_duration_description"}, {"ru"},
 			loc_text("Длительность действия "..COLORS_KWords_ru.Stealth_rgb_ru.." увеличивается с "..COLORS_Numbers.n_3_rgb.." до {duration_2:%s} секунд.")),
+	--[+ Ability 3-1 - Master-Crafted Shroudfield +]--
+	-- 潛行持續時間增至{duration_2:%s}秒。
+create_template("talent_tree_zea_abil3_001_desc_tw",
+		{"loc_talent_zealot_increased_stealth_duration_description"}, {"zh-tw"},
+			loc_text(""..COLORS_KWords2_tw.Stealth_rgb_tw.."的持續時間從 "..COLORS_Numbers.n_3_rgb.." 秒延長至 {duration_2:%s} 秒。")),
 
 	--[+ Ability 3-2 - Perfectionist +]--
 	create_template("talent_tree_zea_abil3_002_desc_en",
@@ -2720,6 +2723,16 @@ create_template("talent_tree_zea_abil2_004_desc_tw",
 	create_template("talent_tree_zea_abil3_002_desc_ru",
 		{"loc_talent_zealot_stealth_increased_damage_description"}, {"ru"},
 			loc_text("{talent_name:%s} даёт дополнительно:\n{damage_2:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." при ударе в спину и\n{damage:%s} к "..COLORS_KWords_ru.Finesse_dmg_rgb_ru..", но\nна {cooldown:%s} увеличивается время "..COLORS_KWords_ru.Ability_cd_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_2_rgb_ru)),
+	--[+ Traditional Chinese - 完美主義者 +]--
+	-- {talent_name:%s}賦予額外{damage:%s}靈巧傷害和{damage_2:%s}背刺傷害，但技能冷卻時間增加{cooldown:%s}。
+	create_template("talent_tree_zea_abil3_002_desc_tw",
+		{"loc_talent_zealot_stealth_increased_damage_description"}, {"zh-tw"},
+			loc_text("{talent_name:%s} 額外提供：\n"
+			.."\n"
+			.."- 背刺"..COLORS_KWords_tw.Dmg_rgb_tw.." {damage_2:%s}。\n"
+			.."- "..COLORS_KWords_tw.Finesse_dmg_rgb_tw.." {damage:%s} 。\n"
+			.."- 技能冷卻時間增加 {cooldown:%s}。\n"
+			..TALENTS_Enh_desc_tw.ED_ZEA_Ability_3_2_rgb_tw)),
 
 	--[+ Ability 3-3 - Invigorating Revelation +]--
 	create_template("talent_tree_zea_abil3_003_desc_en",

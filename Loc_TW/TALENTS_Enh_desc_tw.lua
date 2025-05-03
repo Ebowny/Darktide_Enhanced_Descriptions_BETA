@@ -16,7 +16,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 -- If you add a new entry (ex. MyEntry_rgb), just duplicate it in the list below (MyEntry_rgb = MyEntry_rgb,).
 
 COLORS_Numbers = mod:io_dofile("Enhanced_descriptions/COLORS_Numbers")
-COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") -- Traditional Chinese
+COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw")
+COLORS_KWords2_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords2_tw")
 
 local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除仇恨：\n-- 近戰敵人將仇恨轉移至隊友。\n-- 遠程敵人會停火並換目標。"
 local can_be_refr_dur_active_dur = "- 可在效果持續期間內重新觸發。"
@@ -524,7 +525,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		"\n",
 		"- 攻擊標記敵人造會刷新持續時間。",
 		"--靈火、燃燒和流血的Dot傷害也會刷新",
-		"- "..COLORS_KWords_tw.Precision_rgb_tw.."與其他增益做加法疊加。",
+		"- "..COLORS_KWords2_tw.Precision_rgb_tw.."與其他增益做加法疊加。",
 		-- "- 有效目標包括：渣滓/血痂暴徒、渣滓/血痂潛行者、渣滓射手、狂怒者、砲手、霰彈槍手和重錘兵。",
 		"",
 		"-與以下天賦、祝福相加疊加：",
