@@ -15,6 +15,10 @@ local iu_actit = InputUtils.apply_color_to_input_text
 -- For example, you change "ED_VET_Blitz_0_rgb" to "ED_VET_Blitz_0_rgb_urlang", then at the bottom you need to find (CTRL+F) the "ED_VET_Blitz_0_rgb" entries and also rename them from "ED_VET_Blitz_0_rgb_tw = ED_VET_Blitz_0_rgb_tw," to "ED_VET_Blitz_0_rgb_urlang = ED_VET_Blitz_0_rgb_urlang,".
 -- If you add a new entry (ex. MyEntry_rgb), just duplicate it in the list below (MyEntry_rgb_tw = MyEntry_rgb_tw,).
 
+local Arrow_down_red = "{#color(255, 35, 5)}{#reset()}"
+local Arrow_up_green = "{#color(35, 255, 5)}{#reset()}"
+local Arrow_right_ = ""
+
 local ppp___ppp = "\n+++-------------------------------------------------+++"
 COLORS_KWords_tw = mod:io_dofile("Enhanced_descriptions/Loc_TW/COLORS_KWords_tw") -- Traditional Chinese
 local become_invis_drop_all_enemy_aggro = "- 進入隱形狀態並解除仇恨：\n-- 近戰敵人將仇恨轉移至隊友。\n-- 遠程敵人會停火並換目標。"
@@ -26,11 +30,12 @@ local doesnt_stack_w_z_same_talents = "- 無法與其他相同天賦疊加。"
 local stacks_additively_w_z_same_talents = "- 與其他相同天賦採加法疊加。"
 local procs_add_conc_stim_rem_cd_red = "- 此觸發效果會額外疊加在專注興奮劑的每秒縮短3秒冷卻時間效果之上。"
 local stacks_add_w_oth_dmg = "- 與其他傷害增益以加法疊加。\n- 與武器祝福威力乘法疊加。"
-local stacks_add_w_oth_rend_brit = "- 與其他撕裂增益，以及敵人身上的脆弱減益以加法疊加。"
+local stacks_add_w_oth_rend_brit = Arrow_right_.." 與其他撕裂、脆弱採加法疊加。"
 local stacks_mult_w_other_dmg_red_buffs = "- 與其他傷害減免增益以乘法疊加。"
 local this_also_incr_speed_load_com_shotg = "- 此效果同時提升戰鬥霰彈槍的特殊裝填動作速度。"
 local this_also_buffs_melee_sp_act_guns = "- 此效果也會增益「全自動霰彈槍」、「擲彈兵臂鎧」（近戰部分）、「震盪槍」、「雙鏈重型機槍 」及「反衝者」的近戰特殊動作。"
-local z_eff_of_this_tougn_rep = "- 這項韌性回復的效果會受到玩家身上某些減益（例如毒氣）的影響。"
+local z_eff_of_this_tougn_rep = Arrow_right_.." 韌性恢復效果受到減益影響(如毒氣)。"
+
 
 --[+ ++ENHANCED DESCRIPTIONS++ +]--
 local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
@@ -117,14 +122,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_VET_Aura_0_rgb_tw = iu_actit(table.concat({
 		"\n",
 		doesnt_stack_w_z_same_aura_vet,
-		"- 有多名老兵則分別回復各自的彈藥量。",
+		"- 有多名老兵則分別恢復各自的彈藥量。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 1 - Survivalist(生存專家) +]--
 	local ED_VET_Aura_1_rgb_tw = iu_actit(table.concat({
 		"\n",
 		doesnt_stack_w_z_same_aura_vet,
-		"- 有多名老兵則分別回復各自的彈藥量。",
+		"- 有多名老兵則分別恢復各自的彈藥量。",
 		"",
 		"- 回彈公式：",
 		"-- 備彈量 × 1% = 回彈量（包含小數）。",
@@ -135,13 +140,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"-- 180 × 0.01 = 1.8 發，",
 		"",
 		"-- 回彈流程",
-		"- 第1次回復 0 + 1.8 發（留 0.8 發）。",
-		"- 第2次回復 0.8 + 1.8 發（留 0.6 發）。",
-		"- 第3次回復 0.6 + 1.8 發（留 0.4 發）。",
-		"- 第4次回復 0.4 + 1.8 發（留 0.2 發）。",
-		"- 第5次回復 0.2 + 1.8 發（留 0.0 發）。",
+		"- 第1次恢復 0 + 1.8 發（留 0.8 發）。",
+		"- 第2次恢復 0.8 + 1.8 發（留 0.6 發）。",
+		"- 第3次恢復 0.6 + 1.8 發（留 0.4 發）。",
+		"- 第4次恢復 0.4 + 1.8 發（留 0.2 發）。",
+		"- 第5次恢復 0.2 + 1.8 發（留 0.0 發）。",
 		"-- 然後重新進入循環。"
-		-- "- 例如，若武器備彈量為180發：首次觸發時回復180x0.01=1.8發，向下取整為1發；留下0.8發至下次觸發。第二次觸發時回復(180x0.01)+0.8=2.6發，向下取整為2發；再留0.6發到下次觸發，如此循環。也就是第一次觸發回復1發，接下來四次觸發各回復2發，第五次後又回復1發，如此往復。",
+		-- "- 例如，若武器備彈量為180發：首次觸發時恢復180x0.01=1.8發，向下取整為1發；留下0.8發至下次觸發。第二次觸發時恢復(180x0.01)+0.8=2.6發，向下取整為2發；再留0.6發到下次觸發，如此循環。也就是第一次觸發恢復1發，接下來四次觸發各恢復2發，第五次後又恢復1發，如此往復。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Fire Team(火力小分隊) +]--
@@ -234,7 +239,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		"- 老兵自身的額外韌性持續15秒。",
 		"",
 		"- 賦予隊友效果：",
-		"-- 韌性低於100%，回復50點韌性。",
+		"-- 韌性低於100%，恢復50點韌性。",
 		"-- 韌性達100%，額外提供50點黃韌性。",
 		"",
 		"-「超凡魅力」可增加範圍。",
@@ -346,34 +351,52 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 --[+ +KEYSTONES+ +]--
 	--[+ Keystone 1 - Marksman's Focus(狙擊專注) +]--
 	local ED_VET_Keystone_1_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 疊加(Stacks)會因移動方式而流失：",
-		"-- 走路(Walking)每秒移除1層疊加。",
-		"-- 衝刺(Sprinting)每0.5秒移除1層疊加。",
-		"-- 滑行(Sliding)時，也會依移動速度相應流失。",
-		"- 提供的「技巧(Finesse)」加成與其他弱點(Weakspot)與技巧傷害Buff採加法疊加，與武器祝福提供的威力(Power-level)增益則乘法計算。",
-		"- 換彈速度(Reload-Speed)加成與「集火」、「戰術裝填」、「齊射能手」、小型換彈速度天賦、武器專長、武器祝福、以及敏捷興奮劑等以加法疊加。",
-		"- 此換彈速度同樣提升戰鬥霰彈槍特殊裝填動作速度。",
+		"",
+		"會因以下移動方式消耗"..COLORS_KWords2_tw.Focus_rgb_tw.."：",
+		Arrow_down_red.." 行走每秒移除1層。",
+		Arrow_down_red.." 衝刺每0.5秒移除1層。",
+		Arrow_down_red.." 滑鏟時會依移動速度消耗。",
+		"",
+		COLORS_KWords2_tw.Focus_rgb_tw.." 提供 "..COLORS_KWords_tw.Finesse_rgb_tw.." 計算方式另行處理。",
+		Arrow_right_.." "..COLORS_KWords_tw.Weakspot_rgb_tw.." 、 "..COLORS_KWords_tw.Finesse_rgb_tw.."加法疊加。",
+		Arrow_right_.." 與武器祝福提供 "..COLORS_KWords_tw.Power_rgb_tw.." 乘法疊加。",
+		"",
+		Arrow_right_.." 換彈速度與其他Buff採加法疊加。",
+		-- "- 換彈速度(Reload-Speed)加成與「集火」、「戰術裝填」、「齊射能手」、小型換彈速度天賦、武器專長、武器祝福、以及敏捷興奮劑等以加法疊加。",
+		Arrow_right_.." 換彈速度同樣提升特殊裝填速度。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-1 - Chink in their Armour(滲透盔甲) +]--
 	local ED_VET_Keystone_1_1_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 當「專注」疊加達到10層或以上時，提供10%撕裂(Rending)效果，提升對甲殼、防彈、狂熱者、不屈敵等護甲類型的傷害(包含爆炸與持續傷害DoTs)。",
-		"- 僅影響老兵自身的傷害。",
+		"\n",
+		COLORS_KWords_tw.Rending_rgb_tw.." 提升以下傷害：",
+		Arrow_up_green.." 對甲殼、防彈、狂熱、不屈的傷害。",
+		Arrow_up_green.." 爆炸與持續傷害。",
+		"",
+		Arrow_right_.." 僅影響自身的傷害。",
 		stacks_add_w_oth_rend_brit,
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-2 - Tunnel Vision(視野狹窄) +]--
 	local ED_VET_Keystone_1_2_rgb_tw = iu_actit(table.concat({
-		ppp___ppp,
-		"- 此天賦有兩個效果：",
-		"-- 1. 每層「專注」疊加，皆可提升近戰擊殺與天賦所回復的韌性量5%(最高可+50%，若搭配「遠程刺客」則可+75%)。",
-		"--- 不會影響協同韌性再生。",
-		"--- 舉例：若達10層疊加，老兵最大韌性為152，近戰擊殺時可回復152x(0.05+0.05x0.5)=11.4韌性(介面通常四捨五入)。",
-		"--"..z_eff_of_this_tougn_rep,
-		"-- 2. 遠程弱點擊殺會回復10%最大耐力。",
-		"--- 當順劈(Cleave)時同樣可多次觸發。",
+		"\n",
+		-- "-- 1. 每層「專注」疊加，皆可提升近戰擊殺與天賦所回復的韌性量5%(最高可+50%，若搭配「遠程刺客」則可+75%)。",
+		Arrow_right_.." "..COLORS_KWords2_tw.Focus_rgb_tw.." 最高可提升：",
+		Arrow_up_green.." 近戰擊殺與天賦所恢復的韌性量5%。",
+		Arrow_up_green.." 最高 +50% 搭配「遠程刺客」+75%。",
+		"",
+		Arrow_right_.." 不會影響協同韌性再生。",
+		Arrow_right_.." 順劈時可多次觸發。",
+		z_eff_of_this_tougn_rep,
+		"",
+		-- "--- 舉例：若達10層疊加，老兵最大韌性為152，近戰擊殺時可回復152x(0.05+0.05x0.5)=11.4韌性(介面通常四捨五入)。",
+		"舉例：",
+		"- 老兵最大韌性為152。",
+		"- 基礎恢復量 5 點。",
+		"- 當前層數10層。",
+		"- 近戰擊殺恢復公式如下",
+		"- 韌性x(基回+基回x層數) = 最終恢復",
+		Arrow_up_green.." 152x(0.05+0.05x0.5) = 11.4韌性",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 1-3 - Long Range Assassin +]--
@@ -396,7 +419,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 2-1 - Target Down!(目標擊倒!) +]--
 	local ED_VET_Keystone_2_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 在8層疊加時，可達到最高40%最大韌性/耐力回復。",
+		"- 在8層疊加時，可達到最高40%最大韌性/耐力恢復。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 2-2 - Redirect Fire!(轉移火力!) +]--
@@ -425,13 +448,13 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 3-2 - Invigorated(活力煥發) +]--
 	local ED_VET_Keystone_3_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 與「靈活應對」、「重投戰鬥!」、「目標擊倒!」的耐力回復可分開各自觸發。",
+		"- 與「靈活應對」、「重投戰鬥!」、「目標擊倒!」的耐力恢復可分開各自觸發。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3-3 - On Your Toes(時刻警覺) +]--
 	local ED_VET_Keystone_3_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 每次回復都具有3秒的內部冷卻，且各自獨立計算。",
+		"- 每次恢復都具有3秒的內部冷卻，且各自獨立計算。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -486,7 +509,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_VET_Passive_4_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 以遠程弱點擊殺敵人時會觸發兩個效果：",
-		"-- 1. 回復15%最大韌性。",
+		"-- 1. 恢復15%最大韌性。",
 		"--- 當順劈(Cleave)時，每次擊殺都會觸發，可多次生效。",
 		"--"..z_eff_of_this_tougn_rep,
 		"-- 2. 獲得最多3層疊加。",
@@ -513,10 +536,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_VET_Passive_7_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 當擊殺菁英或專家敵人時，觸發兩項效果：",
-		"-- 1. 立即回復10%最大韌性。",
+		"-- 1. 立即恢復10%最大韌性。",
 		"--- 若同一擊殺動作順劈多個菁英、專家敵人，會多次觸發。",
-		"-- 2. 每次擊殺，於10秒內每秒回復2%最大韌性。",
-		"--- 此持續回復同樣可在一次擊殺中多次觸發(若順劈)，且可無上限疊加(介面圖示可能無法完全顯示)。",
+		"-- 2. 每次擊殺，於10秒內每秒恢復2%最大韌性。",
+		"--- 此持續恢復同樣可在一次擊殺中多次觸發(若順劈)，且可無上限疊加(介面圖示可能無法完全顯示)。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -533,8 +556,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		ppp___ppp,
 		"- 可透過近戰、遠程擊殺以及爆炸擊殺觸發。",
 		"- 與「激勵彈幕」、「慰藉精準」、「榮耀獵手」等武器祝福同時生效。",
-		"- 當以近戰擊殺觸發此天賦時，可額外回復5%最大韌性，並與老兵原本的近戰擊殺回復5%效果累加，共計10%。",
-		"- 舉例：同一次近戰攻擊擊殺3個敵人，若老兵最大韌性為184，則回復184 x (0.15 + 0.15) = 55.2韌性(介面顯示約56)。",
+		"- 當以近戰擊殺觸發此天賦時，可額外恢復5%最大韌性，並與老兵原本的近戰擊殺恢復5%效果累加，共計10%。",
+		"- 舉例：同一次近戰攻擊擊殺3個敵人，若老兵最大韌性為184，則恢復184 x (0.15 + 0.15) = 55.2韌性(介面顯示約56)。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 10 - Get Back in the Fight!(重投戰鬥!) +]--
@@ -609,7 +632,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 		ppp___ppp,
 		"- 只要老兵存活，任何玩家所放置的彈藥箱或醫療包都會被升級。",
 		"- 請注意，治療效果會不斷嘗試抑制魔法書造成的40基礎腐蝕傷害，但此40點無法消除，可能會使醫療包的500基礎血量快速消耗。",
-		"- 若玩家在3米範圍內倒地，雖然對倒地玩家的治療消耗量減少70%，回復量也減少90%，但醫療包的血量依然可能流失很快。",
+		"- 若玩家在3米範圍內倒地，雖然對倒地玩家的治療消耗量減少70%，恢復量也減少90%，但醫療包的血量依然可能流失很快。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 19 - Twinned Blast +]--
@@ -665,7 +688,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 26 - Born Leader(天生領袖) +]--
 	local ED_VET_Passive_26_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 此效果無時限，即便老兵韌性為100%也會計算，並針對所有天賦、武器祝福與協同韌性再生的回復。",
+		"- 此效果無時限，即便老兵韌性為100%也會計算，並針對所有天賦、武器祝福與協同韌性再生的恢復。",
 		"- 不會與另一位老兵的同名天賦重複疊加，各自獨立計算。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
@@ -870,14 +893,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Aura 2 - Stay Close! +]--
 	local ED_OGR_Aura_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 提高歐格林在協同狀態下的基礎韌性回復量：",
+		"- 提高歐格林在協同狀態下的基礎韌性恢復量：",
 		"_______________________________",
 		"友軍: | CTR:             |  5秒後數值:",
 		"      1 |  3.75 -> 4.69   | 23.44 (HUD約24)",
 		"      2 |  5.63 -> 7.03   | 35.16 (HUD約36)",
 		"      3 |  7.50 -> 9.38   | 46.88 (HUD約47)",
 		"_______________________________",
-		"- 與「關鍵人物」、鑰石「麻木」（含「最堅韌!」）、珍品提供的韌性回復速度以及老兵的小天賦「鼓舞人心」皆為加算疊加。",
+		"- 與「關鍵人物」、鑰石「麻木」（含「最堅韌!」）、珍品提供的韌性恢復速度以及老兵的小天賦「鼓舞人心」皆為加算疊加。",
 		doesnt_stack_w_z_same_aura_ogr,
 	}, "\n"), enhdesc_col)
 
@@ -996,8 +1019,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Ability 3-1 - Bullet Bravado +]--
 	local ED_OGR_Ability_3_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 若一次射擊動作包含多發子彈（例如使用擲彈兵臂鎧點射），則此段射擊中的每一發子彈都會觸發回復。",
-		"- 使用「貼身火力」時強制裝填也會觸發此回復。",
+		"- 若一次射擊動作包含多發子彈（例如使用擲彈兵臂鎧點射），則此段射擊中的每一發子彈都會觸發恢復。",
+		"- 使用「貼身火力」時強制裝填也會觸發此恢復。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -1042,7 +1065,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 1-2 - Unstoppable +]--
 	local ED_OGR_Keystone_1_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 例如，當歐格林最大韌性為160且同時裝備「碾碎它們!」時，殺死一個敵人可回復160×(0.1+0.2)=48點韌性。",
+		"- 例如，當歐格林最大韌性為160且同時裝備「碾碎它們!」時，殺死一個敵人可恢復160×(0.1+0.2)=48點韌性。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -1055,15 +1078,15 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 2 - Feel No Pain +]--
 	local ED_OGR_Keystone_2_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 當歐格林處於被撲倒或被捕獲等狀態時無法回復疊層。",
-		"- 在協同狀態下，可使歐格林的韌性回復量提升最多25%：",
+		"- 當歐格林處於被撲倒或被捕獲等狀態時無法恢復疊層。",
+		"- 在協同狀態下，可使歐格林的韌性恢復量提升最多25%：",
 		"_______________________________",
 		"友軍: | CTR:             | 5秒後數值:",
 		"       1 | 3.75 -> 4.69  | 23.44 (HUD約24)",
 		"       2 | 5.63 -> 7.03  | 35.16 (HUD約36)",
 		"       3 | 7.50 -> 9.38  | 46.88 (HUD約47)",
 		"_______________________________",
-		"- 與歐格林的光環「跟緊我!」、「關鍵人物」、鑰石「最堅韌!」、珍品提供的韌性回復，以及老兵的小天賦「鼓舞人心」皆為加算疊加。",
+		"- 與歐格林的光環「跟緊我!」、「關鍵人物」、鑰石「最堅韌!」、珍品提供的韌性恢復，以及老兵的小天賦「鼓舞人心」皆為加算疊加。",
 		"- 同時也能減少韌性所受的傷害。",
 		"- 此減傷可疊層並彼此乘算，最高可達~22.4%（1-0.975¹⁰=0.2236），也能與其他減傷效果乘算疊加。",
 	}, "\n"), enhdesc_col)
@@ -1071,9 +1094,9 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 2-1 - Pained Outburst +]--
 	local ED_OGR_Keystone_2_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 若歐格林被捕獲或撲倒（如瘟疫獵犬或陷阱兵等），當「麻木」的最後一層疊層耗盡時，就會觸發擊退爆炸(含小範圍)與韌性回復。",
+		"- 若歐格林被捕獲或撲倒（如瘟疫獵犬或陷阱兵等），當「麻木」的最後一層疊層耗盡時，就會觸發擊退爆炸(含小範圍)與韌性恢復。",
 		"- 這也使歐格林能自我擺脫瘟疫獵犬。",
-		"- 當歐格林倒地時，現有疊層將歸零，會觸發擊退爆炸但不會觸發韌性回復。",
+		"- 當歐格林倒地時，現有疊層將歸零，會觸發擊退爆炸但不會觸發韌性恢復。",
 		"- 此爆炸半徑為2.5公尺，並對除變種人、巨獸、血痂隊長、雙子以外的敵人施加踉蹌。",
 	}, "\n"), enhdesc_col)
 
@@ -1086,8 +1109,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 2-3 - Toughest! +]--
 	local ED_OGR_Keystone_2_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 使「麻木」在協同狀態下的韌性回復量加倍，從每層2.5%提升至5%。",
-		"- 與歐格林的光環「跟緊我!」、「關鍵人物」、珍品提供的韌性回復，以及老兵小天賦「鼓舞人心」皆為加算疊加。",
+		"- 使「麻木」在協同狀態下的韌性恢復量加倍，從每層2.5%提升至5%。",
+		"- 與歐格林的光環「跟緊我!」、「關鍵人物」、珍品提供的韌性恢復，以及老兵小天賦「鼓舞人心」皆為加算疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Keystone 3 - Burst Limiter Override +]--
@@ -1100,7 +1123,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Keystone 3-1 - Maximum Firepower +]--
 	local ED_OGR_Keystone_3_1_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 在歐格林基礎的每秒1秒冷卻回復速度之外，當「爆限超載」觸發時，於2秒內再額外每秒減少2秒冷卻，總計每次觸發可縮短6秒冷卻（2秒內共4秒，再加上基礎2秒）。",
+		"- 在歐格林基礎的每秒1秒冷卻恢復速度之外，當「爆限超載」觸發時，於2秒內再額外每秒減少2秒冷卻，總計每次觸發可縮短6秒冷卻（2秒內共4秒，再加上基礎2秒）。",
 		"-"..can_be_refr_dur_active_dur,
 		"- 與專注興奮劑提供的每秒3秒冷卻減少效果同時存在。",
 		doesnt_interact_w_c_a_r_from_curio,
@@ -1137,8 +1160,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_OGR_Passive_3_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 		"- 同樣適用於擲彈兵臂鎧、全自動霰彈槍 (近戰部分)、震盪槍、重型機槍與反衝者的近戰特殊攻擊。",
-		"- 若本次攻擊擊殺其中任意敵人，從此天賦獲得的韌性回復量會額外疊加到歐格林原本的「近戰擊殺回復5%最大韌性」機制中。",
-		"- 例如，當歐格林的最大韌性為 140，且其中兩名敵人死亡時，歐格林能回復 140×(0.2+0.05+0.05)=42 點韌性。",
+		"- 若本次攻擊擊殺其中任意敵人，從此天賦獲得的韌性恢復量會額外疊加到歐格林原本的「近戰擊殺恢復5%最大韌性」機制中。",
+		"- 例如，當歐格林的最大韌性為 140，且其中兩名敵人死亡時，歐格林能恢復 140×(0.2+0.05+0.05)=42 點韌性。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -1154,7 +1177,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 5 - Steady Grip +]--
 	local ED_OGR_Passive_5_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 不會影響協同狀態下的韌性回復。",
+		"- 不會影響協同狀態下的韌性恢復。",
 		z_eff_of_this_tougn_rep,
 		"- 「Braced」(架設) 指的是遠程武器設定檔中一個動作關鍵詞。",
 		"- 使用武器的副開火模式（如瞄準或在瞄準時射擊）時會觸發此增益效果。",
@@ -1163,10 +1186,10 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 6 - Smash 'Em! +]--
 	local ED_OGR_Passive_6_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 當你以「重攻擊」並且只命中一個敵人時，可回復韌性。",
+		"- 當你以「重攻擊」並且只命中一個敵人時，可恢復韌性。",
 		"- 同樣適用於擲彈兵臂鎧、全自動霰彈槍(近戰部分)、震盪槍、重型機槍與反衝者的近戰特殊攻擊。",
-		"- 若擊中的那名敵人死亡，則本天賦回復的韌性會與「近戰擊殺回復5% 最大韌性」疊加。",
-		"- 舉例來說，若歐格林的最大韌性為90、且攻擊讓目標死亡，將回復90×(0.2+0.05)=22.5點韌性。",
+		"- 若擊中的那名敵人死亡，則本天賦恢復的韌性會與「近戰擊殺恢復5% 最大韌性」疊加。",
+		"- 舉例來說，若歐格林的最大韌性為90、且攻擊讓目標死亡，將恢復90×(0.2+0.05)=22.5點韌性。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 
@@ -1174,14 +1197,14 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	local ED_OGR_Passive_7_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
 
-		"- 在協同狀態下，可使歐格林的韌性回復量基礎值額外提高50%：",
+		"- 在協同狀態下，可使歐格林的韌性恢復量基礎值額外提高50%：",
 		"_______________________________",
-		"友軍: | CTR:               | 5秒後回復:",
+		"友軍: | CTR:               | 5秒後恢復:",
 		"       1 |  3.75 -> 5.63   | 28.13 (HUD約29)",
 		"       2 |  5.63 -> 8.44   | 42.19 (HUD約43)",
 		"       3 |  7.50 -> 11.25  | 56.25 (HUD約57)",
 		"_______________________________",
-		"- 與歐格林的光環「跟緊我!」、鑰石「麻木」（含「最堅韌!」）、珍品帶來的韌性回復速度、以及老兵的小天賦「鼓舞人心」皆為加算疊加。",
+		"- 與歐格林的光環「跟緊我!」、鑰石「麻木」（含「最堅韌!」）、珍品帶來的韌性恢復速度、以及老兵的小天賦「鼓舞人心」皆為加算疊加。",
 	}, "\n"), enhdesc_col)
 
 	--[+ Passive 8 - Slam +]--
@@ -1261,8 +1284,8 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true)
 	--[+ Passive 15 - Too Stubborn to Die +]--
 	local ED_OGR_Passive_15_rgb_tw = iu_actit(table.concat({
 		ppp___ppp,
-		"- 當歐格林的生命值低於最大生命的 33% 時，透過近戰擊殺、天賦和特定武器祝福（僅限「Momentum」）獲得的韌性回復量會加倍。",
-		"- 不適用於協同狀態下的韌性回復。",
+		"- 當歐格林的生命值低於最大生命的 33% 時，透過近戰擊殺、天賦和特定武器祝福（僅限「Momentum」）獲得的韌性恢復量會加倍。",
+		"- 不適用於協同狀態下的韌性恢復。",
 		z_eff_of_this_tougn_rep,
 	}, "\n"), enhdesc_col)
 

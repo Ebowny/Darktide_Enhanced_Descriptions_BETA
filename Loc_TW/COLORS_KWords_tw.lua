@@ -92,6 +92,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local fns_col = Color[mod:get("finesse_text_colour")](255, true)
 	local Finesse_rgb_tw = iu_actit("靈巧", fns_col)
 	local Finesse_dmg_rgb_tw = iu_actit("靈巧傷害", fns_col)
+	local Finesse_dmg_r_rgb_tw = iu_actit("遠程靈巧傷害", fns_col) -- ranged
 	--[++順劈目標(Hit Mass)++]--
 	local htms_col = Color[mod:get("hit_mass_text_colour")](255, true)
 	local Hit_mass_rgb_tw = iu_actit("順劈目標", htms_col)
@@ -338,6 +339,7 @@ return {
 	-- Feel_no_pain_rgb_tw = Feel_no_pain_rgb_tw,
 	Finesse_rgb_tw = Finesse_rgb_tw,
 	Finesse_dmg_rgb_tw = Finesse_dmg_rgb_tw,
+	Finesse_dmg_r_rgb_tw = Finesse_dmg_r_rgb_tw,
 	-- Focus_rgb_tw = Focus_rgb_tw,
 	-- Focus_Target_rgb_tw = Focus_Target_rgb_tw,
 	-- Fury_rgb_tw = Fury_rgb_tw,

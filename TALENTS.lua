@@ -4224,7 +4224,23 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_000_desc_ru",
 		{"loc_talent_veteran_snipers_focus_alt_description"}, {"ru"},
 			loc_text("Убийства выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дают {stacks:%s} заряда "..COLORS_KWords_ru.Focus_rgb_ru..". До максимума в {max_stacks} зарядов. Бег, подкаты и ходьба снимают заряды.\nКаждый заряд "..COLORS_KWords_ru.Focus_rgb_ru.." даёт:\n{reload_speed:%s} к скорости перезарядки и\n{power:%s} к усилению "..COLORS_KWords_ru.Finesse_rgb_ru.." для дальнобойных атак.\nУбийства выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." позволят вам передвигаться без потери зарядов в течение {grace_time:%s} секунд. Попадания выстрелами в "..COLORS_KWords_ru.Weakspot_rgb_ru.." позволят вам передвигаться без потери зарядов в течение {grace_time_hit:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_rgb_ru)),
-
+	--[+ Traditional Chinese - 狙擊專注 +]--
+	-- 遠程弱點擊殺後獲得{stacks:%s}層專注，最多疊加{max_stacks}層。衝刺、滑鏟或行走會消耗已疊加層數。\n\n每層專注可使你獲得{power:%s}遠程靈巧強度和{reload_speed:%s}換彈速度。\n\n遠程弱點擊殺後的{grace_time:%s}秒內，移動時不會消耗專注層數。遠程弱點命中後的{grace_time_hit:%s}秒內，移動時不會消耗專注層數。
+	create_template("talent_tree_vet_keys1_000_desc_tw",
+	{"loc_talent_veteran_snipers_focus_alt_description"}, {"zh-tw"},
+	loc_text(COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 敵人後可獲得 {stacks:%s} 層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 。\n\n"
+	.."每層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 可提供：\n"
+	..Arrow_up_green.." {power:%s}  "..COLORS_KWords_tw.Finesse_dmg_r_rgb_tw.." 。\n"
+	..Arrow_up_green.." {reload_speed:%s} 裝填速度。\n"
+	.."\n"
+	..Arrow_right_.." 最多 {max_stacks} 層。\n"
+	..Arrow_right_.." 衝刺、滑鏟或行走會消耗 "..COLORS_KWords2_tw.Focus_rgb_tw.." 。\n"
+	.."\n"
+	.."以下情況移動不會消耗 "..COLORS_KWords2_tw.Focus_rgb_tw.." 層數：\n"
+	..Arrow_right_.." "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." {grace_time:%s} 秒內可自由移動。\n"
+	..Arrow_right_.." "..COLORS_KWords_tw.Weakspothits_rgb_tw.." {grace_time_hit:%s} 秒內可自由移動。\n"
+	.. TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_rgb_tw)),
+	
 	--[+ KEYSTONE 1-1 - Chink in their Armour +]--
 	create_template("talent_tree_vet_keys1_001_desc_en",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"en"},
@@ -4237,6 +4253,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_001_desc_ru",
 		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"ru"},
 			loc_text("{rending:%s} к "..COLORS_KWords_ru.Rending_rgb_ru..", когда у вас {stacks:%s} или более зарядов "..COLORS_KWords_ru.Focus_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_1_rgb_ru)),
+	--[+ Translations Chinese - 滲透盔甲 +]--
+	-- {stacks:%s}層及以上專注時附加{rending:%s}撕裂效果。
+	create_template("talent_tree_vet_keys1_001_desc_tw",
+		{"loc_talent_veteran_snipers_focus_rending_bonus_description"}, {"zh-tw"},
+		loc_text(
+			"當 "..COLORS_KWords2_tw.Focus_rgb_tw.." 達到 {stacks:%s} 層以上時：\n"
+			..Arrow_up_green.. " {rending:%s} "..COLORS_KWords_tw.Rending_rgb_tw.."。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_1_rgb_tw)),
 
 	--[+ KEYSTONE 1-2 - Tunnel Vision +]--
 	create_template("talent_tree_vet_keys1_002_desc_en",
@@ -4250,6 +4274,14 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_002_desc_ru",
 		{"loc_talent_veteran_snipers_focus_stamina_bonus_desc"}, {"ru"},
 			loc_text("{toughness_replenish_multiplier:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждый заряд "..COLORS_KWords_ru.Focus_rgb_ru..". Убийства в "..COLORS_KWords_ru.Weakspot_rgb_ru.." дополнительно восстанавливают {stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.."."..TALENTS_Enh_desc2_ru.ED_VET_Keystone_1_2_rgb_ru)),
+	--[+ Translations Chinese - 視野狹窄 +]--
+	-- 每層專注恢復{toughness_replenish_multiplier:%s}韌性。此外，弱點擊殺也會使你恢復{stamina:%s}耐力。
+	create_template("talent_tree_vet_keys1_002_desc_tw",
+	{"loc_talent_veteran_snipers_focus_stamina_bonus_desc"}, {"zh-tw"},
+	loc_text(
+			Arrow_up_green.." 每層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 可恢復 {toughness_replenish_multiplier:%s} 的 "..COLORS_KWords_tw.Toughness_rgb_tw.." 。\n"
+			..Arrow_up_green.." "..COLORS_KWords_tw.Weakspot_k_dmg_rgb_tw.." 時額外恢復 {stamina:%s} "..COLORS_KWords_tw.Stamina_rgb_tw.."。"
+			..TALENTS_Enh_desc2_tw.ED_VET_Keystone_1_2_rgb_tw)),
 
 	--[+ KEYSTONE 1-3 - Long Range Assassin +]--
 	create_template("talent_tree_vet_keys1_003_desc_en",
@@ -4263,6 +4295,12 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_003_desc_ru",
 		{"loc_talent_veteran_snipers_focus_increased_stacks_description"}, {"ru"},
 			loc_text("С {stacks:%s} до {new_stacks:%s} увеличивается максимальное количество зарядов "..COLORS_KWords_ru.Focus_rgb_ru..".")),
+	--[+ Translations Chinese - 遠程刺客 +]--
+	--專注最大疊加層數從{stacks:%s}增加至{new_stacks:%s}。
+	create_template("talent_tree_vet_keys1_003_desc_tw",
+		{"loc_talent_veteran_snipers_focus_increased_stacks_description"}, {"zh-tw"},
+		loc_text(
+			Arrow_up_green.." 將 "..COLORS_KWords2_tw.Focus_rgb_tw.." 上限從 {stacks:%s} 提高至 {new_stacks:%s}。")),
 
 	--[+ KEYSTONE 1-4 - Camouflage +]--
 	create_template("talent_tree_vet_keys1_004_desc_en",
@@ -4276,6 +4314,13 @@ local localization_templates = {
 	create_template("talent_tree_vet_keys1_004_desc_ru",
 		{"loc_talent_veteran_snipers_focus_stacks_on_still_description"}, {"ru"},
 			loc_text("Вы получаете {stack:%s} заряд "..COLORS_KWords_ru.Focus_rgb_ru.." каждые {time:%s} секунды, если стоите на месте или передвигаетесь присев.")),
+	--[+ Translations Chinese - 偽裝 +]--
+	-- 站立不動或蹲下行走時，每{time:%s}秒獲得{stack:%s}層專注。
+	create_template("talent_tree_vet_keys1_004_desc_tw",
+		{"loc_talent_veteran_snipers_focus_stacks_on_still_description"}, {"zh-tw"},
+		loc_text(
+			"當靜止不動或蹲走時：\n"
+			..Arrow_up_green.." 每 {time:%s} 秒獲得 {stack:%s} 層 "..COLORS_KWords2_tw.Focus_rgb_tw.." 。")),
 
 	--[+ KEYSTONE 2 - Focus Target! +]--
 	create_template("talent_tree_vet_keys2_000_desc_en",
