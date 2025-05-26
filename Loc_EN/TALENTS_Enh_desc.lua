@@ -755,7 +755,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 		Arrow_right_.." For example, when reloading 34 rounds of a clip that has a size of 59 rounds, Psyker would generate 14.4% true peril; 0.25x(34/59)=0.144.",
 		-- Arrow_right_.." Reloading an empty clip generates the Max amount of 25% Peril. ",
 		Arrow_right_.." Peril cost reduction buffs reduce the efficiency of this Reloaded-ammo-to-Peril conversion. For example, reloading the same amount of ammo in a clip of the same size, but with three Peril Resistance nodes (i.e. a warp_charge_amount of 0.95³), Psyker would only generate 12.3% true peril; 0.25x(34/59)x0.95³=0.123.",
-		"Note that the Talent always generates Peril on Reload regardless of current Peril amount but only grants the increased Reload speed when below or at 75% true Peril.",
+		Arrow_right_.." Note that the Talent always generates Peril on Reload regardless of current Peril amount but only grants the increased Reload speed when below or at 75% true Peril.",
 	}, "\n"), enhdesc_col)
 
 --[+ ++ZEALOT++ +]--
@@ -763,60 +763,68 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	--[+ Blitz 0 - Stun Grenade +]--
 	local ED_ZEA_Blitz_0_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Fuse time: 1.5 seconds.",
-		Arrow_right_.." Explosion radius: 8 meters.",
+		-- Arrow_right_.." Fuse time: 1.5 seconds.",
+		-- Arrow_right_.." Explosion radius: 8 meters.",
 		Arrow_right_.." Electrocution:",
-		Arrow_right_.."- Lasts 8 seconds.",
-		Arrow_right_.."- Stacks once.",
-		Arrow_right_.."- Deals low Damage across the board.",
-		Arrow_right_.."- Deals Damage and Stagger every 0.55 seconds.",
+		Arrow_right_..Arrow_right_.." Lasts 8 seconds.",
+		Arrow_right_..Arrow_right_.." Stacks once.",
+		Arrow_right_..Arrow_right_.." Deals low Damage across the board.",
+		Arrow_right_..Arrow_right_.." Deals Damage and Stagger every 0.55 seconds.",
 		-- Arrow_right_.."- Staggers all enemies in range except Mutants, monstrosities and Captains/Twins.",
-		Arrow_right_.."- Ignores Bulwark shields.",
-		Arrow_right_.."- Can be refreshed during active duration.",
+		-- Arrow_right_.." Ignores Bulwark shields.",
+		-- Arrow_right_.." Can be refreshed during active duration.",
 	}, "\n"), enhdesc_col)
 	
 	--[+ Blitz 1 - Stunstorm Grenade +]--
-	local ED_ZEA_Blitz_1_rgb = iu_actit(table.concat({
+	-- local ED_ZEA_Blitz_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.."- Explosion radius is increased to 12 meters.",
-		Arrow_right_.." Fuse time: 1.5 seconds.",
-		Arrow_right_.." Electrocution:",
-		Arrow_right_.."- Lasts 8 seconds.",
-		Arrow_right_.."- Stacks once.",
-		Arrow_right_.."- Deals low Damage across the board.",
-		Arrow_right_.."- Deals Damage and Stagger every 0.55 seconds.",
-		Arrow_right_.."- Staggers all enemies in range except Mutants, Scab Captain/Twins and Monstrosities.",
-		Arrow_right_.."- Ignores Bulwark shields.",
-		Arrow_right_.."- Can be refreshed during active duration.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.."- Explosion radius is increased to 12 meters.",
+		-- Arrow_right_.." Fuse time: 1.5 seconds.",
+		-- Arrow_right_.." Electrocution:",
+		-- Arrow_right_..Arrow_right_.." Lasts 8 seconds.",
+		-- Arrow_right_..Arrow_right_.." Stacks once.",
+		-- Arrow_right_..Arrow_right_.." Deals low Damage across the board.",
+		-- Arrow_right_..Arrow_right_.." Deals Damage and Stagger every 0.55 seconds.",
+		-- Arrow_right_.." Staggers all enemies in range except Mutants, Scab Captain/Twins and Monstrosities.",
+		-- Arrow_right_.."- Ignores Bulwark shields.",
+		-- Arrow_right_.."- Can be refreshed during active duration.",
+	-- }, "\n"), enhdesc_col)
 	
 	--[+ Blitz 2 - Immolation Grenade +]--
 	local ED_ZEA_Blitz_2_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Fuse time: 1.7 seconds.",
-		Arrow_right_.." Fire patch: Lasts 15 seconds. Radius 5 meters. Enemies avoid it.",
+		-- Arrow_right_.." Fuse time: 1.7 seconds.",
+		Arrow_right_.." Fire patch:",
+		Arrow_right_..Arrow_right_.." Lasts 15 seconds.",
+		Arrow_right_..Arrow_right_.." Radius 5 meters.",
+		Arrow_right_..Arrow_right_.." Enemies avoid it.",
 		Arrow_right_.." Burn (inside fire patch): Stacks once. Ticks every 0.875 seconds. Ignores Bulwark and Void shields.",
-		Arrow_right_.."- Deals varying Damage per tick per armor type (Very high Damage against Unyielding; High Damage against Unarmoured, Infested, Maniac; Very low Damage against Carapace).",
+		Arrow_right_..Arrow_right_.." Deals varying Damage per tick per armor type (Very high Damage against Unyielding; High Damage against Unarmoured, Infested, Maniac; Very low Damage against Carapace).",
 		-- Arrow_right_.." Burn (leaving Fire patch): Lasts 1 second. Ticks every 1 second. Short burn effect with slightly less Damage.",
-		Arrow_right_.." Burn damage is increased by: Rending/Brittleness, Perks of currently equipped Weapons, and the following buffs from:\n-- Talents: \"Anoint in Blood\", \"Purge the Unclean\", \"Ecclesiarch's Call\", and \"Inexorable Judgement\".\n-- Blessings:\n--- Melee: \"Executor\", \"High Voltage\", \"Skullcrusher\", and \"Slaughterer\".\n--- Ranged: \"Blaze Away\", \"Dumdum\", \"Deathspitter\", \"Execution\", \"Fire Frenzy\", \"Full Bore\", \"No Respite\", \"Pinning Fire\", and \"Run 'n' Gun\" (while sprinting).",
+		Arrow_right_.." Burn damage is increased by: Rending/Brittleness, Perks of currently equipped Weapons, and the following buffs from:",
+		Arrow_right_..Arrow_right_.." Talents: \"Anoint in Blood\", \"Purge the Unclean\", \"Ecclesiarch's Call\", and \"Inexorable Judgement\".",
+		Arrow_right_..Arrow_right_.." Blessings:",
+		Arrow_right_..Arrow_right_..Arrow_right_.." Melee: \"Executor\", \"High Voltage\", \"Skullcrusher\", and \"Slaughterer\".",
+		Arrow_right_..Arrow_right_..Arrow_right_.." Ranged: \"Blaze Away\", \"Dumdum\", \"Deathspitter\", \"Execution\", \"Fire Frenzy\", \"Full Bore\", \"No Respite\", \"Pinning Fire\", and \"Run 'n' Gun\" (while sprinting).",
 	}, "\n"), enhdesc_col)
 
 	--[+ Blitz 3 - Blades of Faith +]--
 	local ED_ZEA_Blitz_3_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Quick Throw.",
-		Arrow_right_.." Ammo: Replenishes 1 knife per melee Elite or Special kill. 2 knives per small ammo pickup. 6 knives per big ammo pickup. All knives per ammo crate.",
-		Arrow_right_.." The knife flies along a curving trajectory.",
+		-- Arrow_right_.." Quick Throw.",
+		-- Arrow_right_.." Ammo: Replenishes 1 knife per melee Elite or Special kill. 2 knives per small ammo pickup. 6 knives per big ammo pickup. All knives per ammo crate.",
+		-- Arrow_right_.." The knife flies along a curving trajectory.",
 		Arrow_right_.." Damage: 585 base Damage.",
-		Arrow_right_.."- High armor Damage modifiers against Maniac and Infested.",
-		Arrow_right_.."- Extra Finesse boosts against Unarmoured and Flak.",
-		Arrow_right_.."- Deals no Damage against Carapace unless weakspot like Mauler head.",
-		Arrow_right_.."- Low Crit Chance - 5%.",
-		Arrow_right_.."- No Damage falloff.",
-		Arrow_right_.." Can Cleave 1 Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.",
-		Arrow_right_.." Headshot kills all enemies except Ogryns, Ragers, Maulers and Monstrosities.\n- Knives are affected by Perks of currently equipped Weapons and by the following buffs from:",
-		Arrow_right_.."- Talents: \"Anoint in Blood\", \"Purge the Unclean\", \"Ecclesiarch's Call\", and \"Inexorable Judgement\" (damage).",
-		Arrow_right_.."- A lot of Melee and Ranged Blessings.",
+		-- Arrow_right_..Arrow_right_.." High armor Damage modifiers against Maniac and Infested.",
+		-- Arrow_right_..Arrow_right_.." Extra Finesse boosts against Unarmoured and Flak.",
+		-- Arrow_right_..Arrow_right_.." Deals no Damage against Carapace unless weakspot like Mauler head.",
+		Arrow_right_..Arrow_right_.." Low Crit Chance - 5%.",
+		-- Arrow_right_..Arrow_right_.." No Damage falloff.",
+		-- Arrow_right_.." Can Cleave 1 Groaner, Poxwalker, Scab/Dreg Stalker or Scab Shooter.",
+		-- Arrow_right_.." Headshot kills all enemies except Ogryns, Ragers, Maulers and Monstrosities.",
+		Arrow_right_.." Knives are affected by Perks of currently equipped Weapons and by the following buffs from:",
+		Arrow_right_..Arrow_right_.." Talents: \"Anoint in Blood\", \"Purge the Unclean\", \"Ecclesiarch's Call\", and \"Inexorable Judgement\" (damage).",
+		Arrow_right_..Arrow_right_.." A lot of Melee and Ranged Blessings.",
 	}, "\n"), enhdesc_col)
 
 --[+ +AURA+ +]--
@@ -825,7 +833,7 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	local ED_ZEA_Aura_0_n_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		stacks_mult_w_other_dmg_red_buffs,
-		Arrow_right_.." Does not Stack with the same Aura from another Zealot.",
+		-- Arrow_right_.." Does not Stack with the same Aura from another Zealot.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Aura 2 - Beacon of Purity +]--
@@ -842,54 +850,54 @@ local enhdesc_col = Color[mod:get("enhdesc_text_colour")](255, true) -- Do not t
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 0 - Chastise the Wicked +]--
-	local ED_ZEA_Ability_0_rgb = iu_actit(table.concat({
+	-- local ED_ZEA_Ability_0_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Dash Range:",
-		Arrow_right_.."- Base: 7 meters.",
-		Arrow_right_.."- Aimed: up to 21 meters.",
-		Arrow_right_.." Grants immunity to Toughness Damage and you Dodge all attacks while dashing.",
-		Arrow_right_.." Applies a light Stagger on impact in a 3 meters radius.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." Dash Range:",
+		-- Arrow_right_.."- Base: 7 meters.",
+		-- Arrow_right_.."- Aimed: up to 21 meters.",
+		-- Arrow_right_.." Grants immunity to Toughness Damage and you Dodge all attacks while dashing.",
+		-- Arrow_right_.." Applies a light Stagger on impact in a 3 meters radius.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Ability 1 - Fury of the Faithful +]--
 	local ED_ZEA_Ability_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Dash:",
-		Arrow_right_.."- Range: Base: 7 meters. Aimed(hold button): up to 21 meters.",
-		Arrow_right_.."- Cannot be activated while jumping or falling.",
-		Arrow_right_.."- You can't change direction, but you can Cancel the dash with Block or Back buttons.",
-		Arrow_right_.."- You Dodge all Attacks and grants Immunity to Toughness Damage.",
-		Arrow_right_.."- You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.",
-		Arrow_right_.." Melee armor penetration buff:",
-		Arrow_right_.."- Adds a 100% Rending against Carapace, Flak, Maniac, Unyielding armor types to the next Melee Attack within 3 seconds after activation.",
-		Arrow_right_.."- The first Melee Attack within the duration consumes this buff.",
-		Arrow_right_.."- Ranged attacks do NOT benefit from this buff.",
-		Arrow_right_.."- Stacks additively with other Attack Speed buffs from Talents and Celerity Stimm.",
+		-- Arrow_right_.." Dash:",
+		-- Arrow_right_.."- Range: Base: 7 meters. Aimed(hold button): up to 21 meters.",
+		-- Arrow_right_..Arrow_right_.." Cannot be activated while jumping or falling.",
+		-- Arrow_right_..Arrow_right_.." You can't change direction, but you can Cancel the dash with Block or Back buttons.",
+		-- Arrow_right_..Arrow_right_.." You Dodge all Attacks and grants Immunity to Toughness Damage.",
+		-- Arrow_right_..Arrow_right_.." You can be stopped by Unyielding, Carapace, Monstrosities, as well as the Void shields.",
+		-- Arrow_right_.." Melee armor penetration buff:",
+		-- Arrow_right_..Arrow_right_.." Adds a 100% Rending against Carapace, Flak, Maniac, Unyielding armor types to the next Melee Attack within 3 seconds after activation.",
+		-- Arrow_right_..Arrow_right_.." The first Melee Attack within the duration consumes this buff.",
+		-- Arrow_right_..Arrow_right_.." Ranged attacks do NOT benefit from this buff.",
+		Arrow_right_..Arrow_right_.." Stacks additively with other Attack Speed buffs from Talents and Celerity Stimm.",
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 1-1 - Redoubled Zeal +]--
-	local ED_ZEA_Ability_1_1_rgb = iu_actit(table.concat({
+	-- local ED_ZEA_Ability_1_1_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." The Cooldown of the Second charge only starts after the First charge finished its Cooldown.",
-	}, "\n"), enhdesc_col)
+		-- Arrow_right_.." The Cooldown of the Second charge only starts after the First charge finished its Cooldown.",
+	-- }, "\n"), enhdesc_col)
 
 	--[+ Ability 1-2 - Invocation of Death +]--
 	local ED_ZEA_Ability_1_2_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
 		Arrow_right_.." This results in a total Cooldown Reduction of 12 seconds per proc (4 seconds from Base rate + 4x2 seconds from Talent)",
-		can_be_refr_dur_active_dur,
+		-- can_be_refr_dur_active_dur,
 		Arrow_right_.." Procs additionally to Concentration Stimm's remaining Cooldown Reduction effect of 3 seconds per second.",
-		doesnt_interact_w_c_a_r_from_curio,
+		-- doesnt_interact_w_c_a_r_from_curio,
 	}, "\n"), enhdesc_col)
 
 	--[+ Ability 2 - Chorus of Spiritual Fortitude +]--
 	local ED_ZEA_Ability_2_rgb = iu_actit(table.concat({
 		-- ppp___ppp,
-		Arrow_right_.." Radius: 10 meters.",
-		Arrow_right_.." Immunity to Stuns and Invulnerability can be refreshed during active duration.",
-		Arrow_right_.." \"Invulnerability\" means that player Health can't fall below 1. Players can still lose any Health above 1.",
-		Arrow_right_.." Yellow Toughness bonus lasts 10 seconds and does not Stack with bonus Toughness from the same Talent of another Zealot. But does Stack additively with Veteran's bonus Toughness from \"Duty and Honour\".",
-		Arrow_right_.." Bonus Toughness acts as a 'second' Toughness bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings",
+		-- Arrow_right_.." Radius: 10 meters.",
+		-- Arrow_right_.." Immunity to Stuns and Invulnerability can be refreshed during active duration.",
+		-- Arrow_right_.." \"Invulnerability\" means that player Health can't fall below 1. Players can still lose any Health above 1.",
+		-- Arrow_right_.." Yellow Toughness bonus lasts 10 seconds and does not Stack with bonus Toughness from the same Talent of another Zealot. But does Stack additively with Veteran's bonus Toughness from \"Duty and Honour\".",
+		-- Arrow_right_.." Bonus Toughness acts as a 'second' Toughness bar and can be replenished by Melee kills, respective Talents, and Weapon Blessings.",
 		-- Arrow_right_.." Pulses deal no Damage and do not Stagger.",
 		-- Arrow_right_.." Channeling can be canceled by Blocking, Sprinting, or pressing the Ability button again.",
 		-- Arrow_right_.." While channeling, cooldown is paused. However, its cooldown can still be reduced by using a Concentration Stimm before activation or by benefitting from Psyker's talent Psykinetic's Aura while channeling; its maximum cooldown can be reduced by Combat Ability Regeneration from curios, by Psyker's aura Seer's Presence, and by the mission mutators that reduce ability cooldowns by 20%.",
