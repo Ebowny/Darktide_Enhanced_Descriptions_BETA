@@ -26,7 +26,10 @@ local localization_templates = {
 
 --[+ ++WEAPON BLESSINGS++ +]--
 	--[+ Melee +]--
-	--[+ Opportunist  +]--
+	--[+ Opportunist +]--
+	-- create_template("trait_bespoke_000_ext_en",
+		-- {"loc_trait_bespoke_armor_penetration_against_staggered"}, {"en"},
+			-- loc_text( "Opportunist")),
 	--[+ Russian- Оппортунист - руоф Приспособленец +]--
 	create_template("trait_bespoke_000_ext_ru",
 		{"loc_trait_bespoke_armor_penetration_against_staggered"}, {"ru"},
@@ -36,8 +39,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_armor_penetration_against_staggered"}, {"zh-tw"},
 			loc_text("機會主義者")),
 
-	--[+ Bloodletter - Кровопускатель +]-- -- руоф Кровопускание
-	--[+ Russian +]--
+	--[+ Bloodletter +]--
+	-- create_template("trait_bespoke_001_ext_en",
+		-- {"loc_trait_bespoke_bleed_on_activated_hit"}, {"en"},
+				-- loc_text("Bloodletter")),
+	--[+ Russian - Кровопускатель +]-- руоф Кровопускание
 	create_template("trait_bespoke_001_ext_ru",
 		{"loc_trait_bespoke_bleed_on_activated_hit"}, {"ru"},
 				loc_text("Кровопускатель")),
@@ -46,8 +52,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_bleed_on_activated_hit"}, {"zh-tw"},
 				loc_text("放血者")),
 
-	--[+ Bloodthirsty - Кровожадный +]-- -- руоф Жажда крови
-	--[+ Russian +]--
+	--[+ Bloodthirsty +]--
+	-- create_template("trait_bespoke_002_ext_en",
+		-- {"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill"}, {"en"},
+			-- loc_text("Bloodthirsty")),
+	--[+ Russian - Кровожадный +]-- руоф Жажда крови
 	create_template("trait_bespoke_002_ext_ru",
 		{"loc_trait_bespoke_guaranteed_melee_crit_on_activated_kill"}, {"ru"},
 			loc_text("Кровожадный")),
@@ -1858,10 +1867,10 @@ local localization_templates = {
 			loc_text("懲戒")),
 
 	--[+ Blitz 2-1 - Lightning Storm +]--
-	--[+ Russian +]-- Гроза
-	-- create_template("talent_tree_psy_blitz2_001_en",
-		-- {"loc_talent_psyker_increased_chain_lightning_size"}, {"ru"},
-			-- loc_text("Гроза")),
+	--[+ Russian - Молниевый шторм +]-- руоф Гроза
+	create_template("talent_tree_psy_blitz2_001_en",
+		{"loc_talent_psyker_increased_chain_lightning_size"}, {"ru"},
+			loc_text("Молниевый шторм")),
 	--[+ Traditional Chinese - 閃電風暴 +]--
 	create_template("talent_tree_psy_blitz2_001_tw",
 		{"loc_talent_psyker_increased_chain_lightning_size"}, {"zh-tw"},
