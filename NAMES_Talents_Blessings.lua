@@ -436,7 +436,7 @@ local localization_templates = {
 			-- loc_text("Отражатель")),
 	--[+ Traditional Chinese - 偏轉 +]--
 	create_template("trait_bespoke_040_ext_tw",
-		{"loc_trait_bespoke_can_block_ranged_desc"}, {"zh-tw"},
+		{"loc_trait_bespoke_can_block_ranged"}, {"zh-tw"},
 			loc_text("偏轉")),
 
 	--[+ Exorcist - Экзорцист +]--
