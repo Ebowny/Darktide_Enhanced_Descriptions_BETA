@@ -6,7 +6,6 @@
 local mod = get_mod("Enhanced_descriptions")
 local WTL = get_mod("WhatTheLocalization")
 
-
 --[+ Elements offset +]--
 	--[+ Buttons offset +]--
 		--[+ Equip button in the inventory +]--
@@ -71,7 +70,6 @@ local NAMES_Talents_Blessings_File = mod:get("enable_names_tal_bless_file") and 
 mod.localization_templates = {
 	--[+ Add templates loaded from the files... +]--
 	custom_unpack(MENUS_File, CURIOS_File, TALENTS_File, WEAPONS_File, PENANCES_File, NAMES_File, NAMES_Talents_Blessings_File),
-	-- custom_unpack(MENUS_File, CURIOS_File, TALENTS_File, WEAPONS_File, NAMES_File, NAMES_Talents_Blessings_File),
 
 -- FOR TESTS ONLY!!!
 -- create_template("weap_testum00", {"loc_trait_bespoke_block_has_chance_to_stun_with_cd_desc"}, {"en"}, function(locale, value) return string.gsub(value, "{", "(") end),
