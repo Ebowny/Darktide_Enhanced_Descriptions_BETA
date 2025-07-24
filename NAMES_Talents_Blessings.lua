@@ -647,7 +647,7 @@ local localization_templates = {
 			-- loc_text("Истязание")),
 	--[+ Traditional Chinese - 凌遲 +]--
 	create_template("trait_bespoke_060_ext_tw",
-		{"loc_trait_bespoke_increase_power_on_weapon_special_hit_desc"}, {"zh-tw"},
+		{"loc_trait_bespoke_increase_power_on_weapon_special_hit"}, {"zh-tw"},
 			loc_text("凌遲")),
 
 	--[+ Slow and Steady - Медленно, но верно +]-- -- руоф Медленный и упорный
