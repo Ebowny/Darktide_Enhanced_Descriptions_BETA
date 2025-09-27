@@ -61,6 +61,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Crit_strike_rgb = iu_actit("Critical Strike", crt_col)
 			local Crit_strike_dmg_rgb = iu_actit("Critical Strike Damage", crt_col)
 			local Crit_hit_color_rgb = iu_actit("Critical Hit Damage", crt_col)
+			local Crit_Attk_color_rgb = iu_actit("Critical Attack", crt_col)
 	--[++Damage++]--
 		local dmg_col = Color[mod:get("damage_text_colour")](255, true) -- Don't translate this!
 			local Damage_rgb = iu_actit("Damage", dmg_col)
@@ -196,6 +197,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Brain_burst_rgb = iu_actit("Brain Burst", tal_col)
 			local Brain_rupture_rgb = iu_actit("Brain Rupture", tal_col)
 			local BreakZLine_rgb = iu_actit("Break the Line", tal_col)
+			local Enfeeble_rgb = iu_actit("Enfeeble", tal_col)
 			local Frag_gren_rgb = iu_actit("Frag Grenade", tal_col)
 			local Fragmentation_gren_rgb = iu_actit("Fragmentation Grenade", tal_col)
 			local Scriers_gaze_rgb = iu_actit("Scrier's Gaze", tal_col)
@@ -291,6 +293,7 @@ return {
 	Crit_strike_rgb = Crit_strike_rgb,
 	Crit_strike_dmg_rgb = Crit_strike_dmg_rgb,
 	Crit_hit_color_rgb = Crit_hit_color_rgb,
+	Crit_Attk_color_rgb = Crit_Attk_color_rgb,
 	Damage_rgb = Damage_rgb,
 	Damagewrp_rgb = Damagewrp_rgb,
 	Electrocute_rgb = Electrocute_rgb,
@@ -298,6 +301,7 @@ return {
 	Electrocuted_rgb = Electrocuted_rgb,
 	Electrocutes_rgb = Electrocutes_rgb,
 	Electrcuting_rgb = Electrcuting_rgb,
+	Enfeeble_rgb = Enfeeble_rgb,
 	Feel_no_pain_rgb = Feel_no_pain_rgb,
 	Finesse_rgb = Finesse_rgb,
 	Finesse_dmg_rgb = Finesse_dmg_rgb,
