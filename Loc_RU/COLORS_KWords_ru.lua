@@ -218,6 +218,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Frag_gren_rgb_ru = iu_actit("Фраг-гранату", tal_col)
 			local Fragmentation_gren_rgb_ru = iu_actit("Осколочная граната", tal_col)
 			local Electro_mine_rgb_ru = iu_actit("Вольтаическую шоковую мину", tal_col)
+			local Enfeeble_rgb_ru = iu_actit("Ослабление", tal_col)
 			local BreakZLined_rgb_ru = iu_actit("Прорыв вражеского строя", tal_col)
 			local BreakZLine_rgb_ru = iu_actit("Прорыва вражеского строя", tal_col)
 
@@ -267,6 +268,7 @@ return {
 	BreakZLine_rgb_ru = BreakZLine_rgb_ru,
 	BreakZLined_rgb_ru = BreakZLined_rgb_ru,
 	Electro_mine_rgb_ru = Electro_mine_rgb_ru,
+	Enfeeble_rgb_ru = Enfeeble_rgb_ru,
 	Forceful_rgb_ru = Forceful_rgb_ru,
 	Frag_gren_rgb_ru = Frag_gren_rgb_ru,
 	Fragmentation_gren_rgb_ru = Fragmentation_gren_rgb_ru,

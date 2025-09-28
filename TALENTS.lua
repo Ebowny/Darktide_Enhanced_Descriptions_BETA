@@ -772,7 +772,7 @@ local localization_templates = {
 				..Dot_red.." Cannot "..COLORS_KWords.Crit0_rgb..".\n"
 				.."\n"
 				..Dot_red.." {#color(255, 35, 5)}You will explode!{#reset()}\n"
-				.."  Don't use if "..COLORS_KWords.Peril_rgb.." level is "..COLORS_Numbers.pc_97_rgb.." or above!")),
+				.."Don't use if "..COLORS_KWords.Peril_rgb.." level is "..COLORS_Numbers.pc_97_rgb.." or above!")),
 			-- &->and, colors
 	--[+ French +]-- Explosion cérébrale
 	create_template("talent_tree_psy_blitz0_000_desc_fr",
@@ -782,13 +782,14 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz0_000_desc_ru",
 		{"loc_ability_psyker_smite_description_new"}, {"ru"},
 			loc_text("Зарядите психическую мощь и высвободите её, чтобы нанести высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\n"
-				..Dot_green.." Эффективно против противоосколочной и панцирной брони.\n"
-				..Dot_green.." Высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." маньякам и несгибаемым.\n"
+				.."\n"
+				..Dot_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
+				..Dot_green.." Высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." по маньякам и несгибаемым врагам.\n"
 				..Dot_green.." Всегда бьёт в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".\n"
 				..Dot_red.." Не наносит "..COLORS_KWords_ru.Crit0_rgb_ru..".\n"
 				.."\n"
 				..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться!{#reset()}\n"
-				.."  Не используйте если уровень "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше!")),
+				.."Не используйте если уровень "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше!")),
 	--[+ Traditional Chinese 顱腦爆裂 +]--
 	-- 積蓄你的靈能力量，釋放後對單個敵人造成巨大傷害。對防彈護甲和甲殼護甲敵人造成的效果減弱。
 	create_template("talent_tree_psy_blitz0_000_desc_tw",
@@ -819,18 +820,22 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz1_000_desc_fr",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"fr"},
 			loc_text("Chargez votre pouvoir Psychique et relachez-le pour infliger d'immense "..COLORS_KWords_fr.Damage_rgb_fr.." à un ennemi unique. Efficace contre les ennemies en armure Légère et Carapace. Dégâts plus élevés contre les Maniaques et les Implacables.\n\nCeci est une version améliorée d'{talent_old:%s} infligeant {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_1_rgb_fr)),
-	--[+ Russian - Разрыв мозга +]--
+	--[+ Russian - Разрыв мозга +]--	27.09.2025
 	create_template("talent_tree_psy_blitz1_000_desc_ru",
 		{"loc_talent_psyker_brain_burst_improved_description"}, {"ru"},
 			loc_text("Зарядите свою психическую мощь и высвободите её, чтобы нанести огромный "..COLORS_KWords_ru.Dmg_rgb_ru.." одному врагу.\n"
 				..Dot_green.." Это улучшенная версия таланта {talent_old:%s}, наносящая {damage:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru..".\n"
+				.."\n"
 				..Dot_green.." Эффективно против врагов в противоосколочной и панцирной броне.\n"
-				..Dot_green.." Высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." против маньяков и несгибаемых.\n"
+				..Dot_green.." Высокий "..COLORS_KWords_ru.Dmg_rgb_ru.." по маньякам и несгибаемым врагам.\n"
 				..Dot_green.." Всегда бьёт в "..COLORS_KWords_ru.Weakspothit_rgb_ru..".\n"
-				-- ..Dot_green.." Основная атака применяет к выбранному врагу лёгкий эффект "..COLORS_KWords_ru.Staggering_rgb_ru.." на уровне заряда "..COLORS_Numbers.pc_50_rgb..". Не "..COLORS_KWords_ru.Staggers_e_rgb_ru..": гренадёров, cкабов-разрубателей, мутантов, огринов, чумных взрывников, берсерков, скабов-штурмовиков или монстров.\n"
-				..Dot_green.." При атаке "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов, кроме мутантов, монстров и врагов с активным пустотным щитом.\n"
+				..Dot_green.." На уровне заряда "..COLORS_Numbers.pc_50_rgb.." основная атака слегка "..COLORS_KWords_ru.Staggers_e_rgb_ru.." цель.\n"
+				..Dot_red.." Не "..COLORS_KWords_ru.Staggers_e_rgb_ru..": мутантов, огринов, монстров и врагов с активным пустотным щитом.\n"
+				..Dot_green.." При полном заряде "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов, кроме мутантов, монстров и врагов с активным пустотным щитом.\n"
 				..Dot_red.." Не наносит "..COLORS_KWords_ru.Crit0_rgb_ru..".\n"
-				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_rgb_ru)),
+				.."\n"
+				..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться!{#reset()}\n"
+				.."Не используйте если уровень "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше!")),
 	--[+ Traditional Chinese 顱腦崩裂 +]--
 	-- 積蓄靈能力量，釋放時可對單個敵人造成巨大傷害。對防彈護甲和甲殼護甲敵人效果減弱。\n\n該天賦是可造成{damage:%s}傷害的{talent_old:%s}的加強版。
 	create_template("talent_tree_psy_blitz1_000_desc_tw",
@@ -857,12 +862,14 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz1_001_desc_fr",
 		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"fr"},
 			loc_text("Lorsque vous utilisez votre "..COLORS_KWords_fr.Combat_ability_rgb_fr..", {talent_name:%s} charge {smite_attack_speed:%s} plus rapidement et génère {warp_charge_cost:%s} de "..COLORS_KWords_fr.Peril_rgb_fr.." en moins, pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_1_1_rgb_fr)),
-	--[+ Russian - Кинетический резонанс +]--
+	--[+ Russian - Кинетический резонанс +]--	27.09.2025
 	create_template("talent_tree_psy_blitz1_001_desc_ru",
 		{"loc_talent_psyker_ability_increase_brain_burst_speed_desc"}, {"ru"},
-			loc_text("{smite_attack_speed:%s} к ускорению заряжания вашего блица {talent_name:%s} после использования вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru..", также генерируется на {warp_charge_cost:%s} меньше "..COLORS_KWords_ru.Peril_rgb_ru.." в течение {duration:%s} секунд.\n"
-				..Dot_green.." Сокращает время зарядки способности {talent_name:%s} как для основных, так и для дополнительных атак.\n"
-				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_1_rgb_ru)),
+			loc_text("При использовании вашей "..COLORS_KWords_ru.Combat_ability_rgb_ru.." усиливается ваш {talent_name:%s} на {duration:%s} секунд:\n"
+				..Dot_green.." {smite_attack_speed:%s} к скорости заряжания,\n"
+				..Dot_green.." "..COLORS_Numbers.n_minus_rgb.."{warp_charge_cost:%s} к набору "..COLORS_KWords_ru.Peril_rgb_ru..".\n"
+				.."\n"
+				..Dot_nc.." Влияет как на основную, так и на дополнительную атаку.")),
 	--[+ Traditional Chinese - 動能共鳴+]--
 	-- 使用戰鬥技能會加快{talent_name:%s}充能{smite_attack_speed:%s}且降低反噬生成{warp_charge_cost:%s}，持續{duration:%s}秒。
 	create_template("talent_tree_psy_blitz1_001_desc_tw",
@@ -880,18 +887,20 @@ local localization_templates = {
 				..Dot_nc.." Cooldown {time:%s} seconds.\n"
 				.."\n"
 				..Dot_red.." {#color(255, 35, 5)}BUG{#reset()}\n"
-				.."If "..COLORS_KWords.Peril_rgb.." level is above "..COLORS_Numbers.pc_97_rgb..", {talent_name:%s} enters its "..COLORS_Numbers.n_15_rgb.."-second "..COLORS_KWords.Cd_rgb.." but fails to deal any "..COLORS_KWords.Damage_rgb..".")),
+				.."If "..COLORS_KWords.Peril_rgb.." level is above "..COLORS_Numbers.pc_97_rgb..", {talent_name:%s} enters its "..COLORS_Numbers.n_15_rgb.."-second cooldown but fails to deal any "..COLORS_KWords.Damage_rgb..".")),
 			-- smite_chance: 10%, talent_name: Brain Rupture, time: 15, s->seconds, colors, rewrite
 	--[+ French +]--
 	create_template("talent_tree_psy_blitz1_002_desc_fr",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"fr"},
 			loc_text("Tant que vous êtes en dessous de "..COLORS_Numbers.pc_97_rgb.." de "..COLORS_KWords_fr.Peril_rgb_fr..", Toute les attaques contre les spéciaux, les élites et les Monstruosités ont {smite_chance:%s} de chance d'appliquer {talent_name:%s} à la cible en cas de coup réussi. {time:%s} secondes de temps de recharge."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_1_2_rgb_fr)),
-	--[+ Russian - Кинетический живодёр +]-- руоф Кинетический истребитель
+	--[+ Russian - Кинетический живодёр +]-- руоф Кинетический истребитель	27.09.2025
 	create_template("talent_tree_psy_blitz1_002_desc_ru",
 		{"loc_talent_psyker_smite_on_hit_special_elite_desc"}, {"ru"},
-			loc_text("Пока ваш уровень "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_97_rgb..", все атаки против специалистов, элитных врагов и монстров имеют {smite_chance:%s} шанс вызвать {talent_name:%s}, нанеся "..COLORS_KWords_ru.Dmg_rgb_ru.." по ним.\n"
-					..Dot_nc.." Восстанавливается {time:%s} секунд.\n"
-					..TALENTS_Enh_desc_ru.ED_PSY_Blitz_1_2_rgb_ru)),
+			loc_text("При атаке специалистов, элитных врагов или монстров, есть {smite_chance:%s} шанс на срабатывание блица {talent_name:%s}.\n"
+				..Dot_nc.." Восстановление {time:%s} секунд.\n"
+				.."\n"
+				..Dot_red.." {#color(255, 35, 5)}СЛОМАНО{#reset()}\n"
+				.."Если при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." "..COLORS_Numbers.pc_97_rgb.." или выше, {talent_name:%s} сработает, то начнётся "..COLORS_Numbers.n_15_rgb.."-секундное восстановление, но "..COLORS_KWords_ru.Dmg_rgb_ru.." не будет нанесён.")),
 	--[+ Traditional Chinese - 動能釋放 +]--
 	-- 對專家、精英與巨獸進行攻擊時，所有攻擊都有{smite_chance:%s}機率使目標{talent_name:%s}。反噬處於危險線以上時無法觸發，此外，觸發後有{time:%s}秒冷卻時間。
 	create_template("talent_tree_psy_blitz1_002_desc_tw",
@@ -918,13 +927,21 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz2_000_desc_fr",
 		{"loc_ability_psyker_chain_lightning_description"}, {"fr"},
 			loc_text("Déchaînez un torrent de bio-foudre qui se propage lentement entre les ennemis, infligeant de faible "..COLORS_KWords_fr.Damage_rgb_fr.." et "..COLORS_KWords_fr.Electrcuting_rgb_fr.."  sur la durée avec un fort "..COLORS_KWords_fr.Stagger_rgb_fr..".\nL'attaque chargée secondaire inflige plus de "..COLORS_KWords_fr.Damage_rgb_fr.." et le taux de dispersion.\nNe peut pas étourdir les Monstruosités et les ennemis avec bouclier de vide actif. Pénétration d'armure moyenne pour toutes les armures, Pénétration d'armure faible contre les carapaces."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_2_rgb_fr)),
-	--[+ Russian - Сокрушение +]--
+	--[+ Russian - Сокрушение +]--	27.09.2025
 	create_template("talent_tree_psy_blitz2_000_desc_ru",
 		{"loc_ability_psyker_chain_lightning_description"}, {"ru"},
-			loc_text("Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Electrocuted_rgb_ru.." с течением времени и очень высокое "..COLORS_KWords_ru.Stagger_rgb_ru..".\nВторичная заряженная атака наносит больше "..COLORS_KWords_ru.Dmg_a_rgb_ru.." при высвобождении, а также быстрее распространяется.\n"
-				..Dot_nc.." Средний "..COLORS_KWords_ru.Dmg_rgb_ru.." по всем видам брони, низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.\n"
-				..Dot_red.." Не может "..COLORS_KWords_ru.Staggernt_rgb_ru.." монстров и врагов с активным пустотным щитом.\n"
-				..TALENTS_Enh_desc_ru.ED_PSY_Blitz_2_rgb_ru)),
+			loc_text("Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." "..COLORS_KWords_ru.Electrocuted_rgb_ru.." с течением времени и высокое "..COLORS_KWords_ru.Stagger_rgb_ru..".\n"
+				.."Вторичная заряженная атака наносит повышенный "..COLORS_KWords_ru.Dmg_rgb_ru.." при высвобождении, а также быстрее распространяется.\n"
+				.."\n"
+				..Dot_nc.." Дальность: "..COLORS_Numbers.n_16_rgb.." метров.\n"
+				..Dot_nc.." Бьёт только в зону туловища.\n"
+				..Dot_nc.." При "..COLORS_Numbers.pc_100_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru.." запускается автоматический сброс ~"..COLORS_Numbers.pc_8_5_rgb.." "..COLORS_KWords_ru.Peril_rgb_ru..". Если отпустить атаку при уровне "..COLORS_KWords_ru.Peril_rgb_ru.." ниже "..COLORS_Numbers.pc_100_rgb..", врагов отбросит назад.\n"
+				..Dot_red.." Не наносит "..COLORS_KWords_ru.Crit0_rgb_ru..".\n"
+				..Dot_red.." Наносит средний "..COLORS_KWords_ru.Dmg_rgb_ru.." броне.\n"
+				..Dot_red.." Наносит низкий "..COLORS_KWords_ru.Dmg_rgb_ru.." панцирной броне.\n"
+				..Dot_red.." Не "..COLORS_KWords_ru.Staggers_e_rgb_ru.." монстров и врагов с активным пустотным щитом.\n"
+				.."\n"
+				..Dot_red.." {#color(255, 35, 5)}Вы можете взорваться{#reset()} если поднимите уровень "..COLORS_KWords_ru.Peril_rgb_ru.." до "..COLORS_Numbers.pc_100_rgb.." с помощью вторичной атаки и одновременно нажмёте основную атаку.")),
 	--[+ Traditional Chinese - 懲戒 +]--
 	-- 釋放一道生物閃電。這是一種快速定向攻擊，可在造成傷害時鎖定並擊暈敵人。技能效果可擴散到附近的敵人，充能增加擴散速度和傷害。
 	create_template("talent_tree_psy_blitz2_000_desc_tw",
@@ -950,10 +967,16 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz2_001_desc_fr",
 		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"fr"},
 			loc_text("Vos attaques puissantes de mélées "..COLORS_KWords_fr.Electrocutes_rgb_fr.." les ennemis, ce qui leur inflige des "..COLORS_KWords_fr.Damage_rgb_fr.."\nJusqu'a "..COLORS_Numbers.n_64_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." par instance lors d'un coup chargé au maximum.\nLa fenêtre de "..COLORS_KWords_fr.Damage_rgb_fr.." dure jusqu'a "..COLORS_Numbers.n_2_rgb.." secondes. Le malus "..COLORS_KWords_fr.Electrocutes_rgb_fr.." dure jusqu'a "..COLORS_Numbers.n_2_rgb.." secondes après la dernière instance de "..COLORS_KWords_fr.Damage_rgb_fr.."."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_2_3_rgb_fr)),
-	--[+ Russian +]-- Заряженный удар!!!
+	--[+ Russian +]-- Заряженный удар	27.09.2025
 	create_template("talent_tree_psy_blitz2_001_desc_ru",
 		{"loc_talent_psyker_chain_lightning_damage_heavy_attacks_desc"}, {"ru"},
-			loc_text("Ваши тяжёлые атаки ближнего боя накладывают на врагов эффект "..COLORS_KWords_ru.Electrocution_rgb_ru..", наносящий им "..COLORS_KWords_ru.Dmg_rgb_ru..".\nДо "..COLORS_Numbers.n_64_rgb.." единиц базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." за срабатывание при максимальном уровне заряда.\nОкно "..COLORS_KWords_ru.Dmg_a_rgb_ru.." длится "..COLORS_Numbers.n_2_rgb.." секунды. Эффект "..COLORS_KWords_ru.Electrocution_rgb_ru.." длится "..COLORS_Numbers.n_2_rgb.." секунды после последнего нанесения "..COLORS_KWords_ru.Dmg_a_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_2_3_rgb_ru)),
+			loc_text("Ваши тяжёлые атаки ближнего боя накладывают на врагов эффект "..COLORS_KWords_ru.Electrocution_rgb_ru..", наносящий им "..COLORS_KWords_ru.Dmg_rgb_ru..".\n"
+				.."\n"
+				..Dot_nc.." Наносит до "..COLORS_Numbers.n_64_rgb.." единиц базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." за срабатывание при максимальном уровне заряда.\n"
+				..Dot_nc.." Окно "..COLORS_KWords_ru.Dmg_a_rgb_ru.." длится "..COLORS_Numbers.n_2_rgb.." секунды.\n"
+				..Dot_nc.." Эффект "..COLORS_KWords_ru.Electrocution_rgb_ru.." длится "..COLORS_Numbers.n_2_rgb.." секунды после последнего нанесения "..COLORS_KWords_ru.Dmg_a_rgb_ru..".\n"
+				.."\n"
+				..Dot_green.." При выбранном модификаторе "..COLORS_KWords_ru.Enfeeble_rgb_ru..", эффект "..COLORS_KWords_ru.Electrocution_rgb_ru.." наносит "..COLORS_KWords_ru.Dmg_rgb_ru.." вдвое дольше и достигает максимального заряда быстрее.")),
 	--[+ Traditional Chinese - 蓄力打擊 +]--
 	-- 你的近戰重擊會電擊敵人，並對其造成傷害。
 	create_template("talent_tree_psy_blitz2_001_desc_tw",
@@ -977,10 +1000,17 @@ local localization_templates = {
 	create_template("talent_tree_psy_blitz2_002_desc_fr",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"fr"},
 			loc_text("Les ennemis qui sont "..COLORS_KWords_fr.Electrocuted_rgb_fr.." subissent {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." supplémentaires de toutes les sources.\nLe malus est appliqué tant que les ennemis subissent {talent_name:%s}.\nNe se cumul pas avec le même malus d'un autre Psyker."..TALENTS_Enh_desc_fr.ED_PSY_Blitz_2_2_rgb_fr)),
-	--[+ Russian - Ослабление +]--
+	--[+ Russian - Ослабление +]--	27.09.2025
 	create_template("talent_tree_psy_blitz2_002_desc_ru",
 		{"loc_talent_psyker_chain_lightning_improved_target_buff_alt_description"}, {"ru"},
-			loc_text("{damage:%s} базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." из всех источников получают враги, на которых действует эффект "..COLORS_KWords_ru.Electrocution_rgb_ru.." от вашего таланта {talent_name:%s}.\nОслабление применяется до тех пор, пока враг находится под действием способности {talent_name:%s}.\nНе суммируется с таким же ослаблением, наложенным другим псайкером."..TALENTS_Enh_desc_ru.ED_PSY_Blitz_2_2_rgb_ru)),
+			loc_text(Dot_green.." {damage:%s} к "..COLORS_KWords_ru.Damage_rgb_ru.." из любого источника врагам, находящимся под действием "..COLORS_KWords_ru.Electrocution_rgb_ru.." от вашего блица {talent_name:%s}.\n"
+				.."\n"
+				..Dot_nc.." The debuff is applied as long as {talent_name:%s} is active on the target.\n"
+				..Dot_red.." This effect does not stack with the same debuff from another Psyker."
+
+
+
+				..Dot_red.." {damage:%s} базового "..COLORS_KWords_ru.Dmg_a_rgb_ru.." из всех источников получают враги, на которых действует эффект "..COLORS_KWords_ru.Electrocution_rgb_ru.." от вашего таланта {talent_name:%s}.\nОслабление применяется до тех пор, пока враг находится под действием способности {talent_name:%s}.\nНе суммируется с таким же ослаблением, наложенным другим псайкером.")),
 	--[+ Traditional Chinese - 衰弱詛咒 +]--
 	-- 遭受你電擊的敵人受到所有來源的基礎傷害增加{damage:%s}。
 	create_template("talent_tree_psy_blitz2_002_desc_tw",
