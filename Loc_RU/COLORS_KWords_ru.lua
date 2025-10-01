@@ -4,6 +4,10 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
+local Dot_red = "{#color(255, 35, 5)}•{#reset()}"
+local Dot_nc = "•"
+local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
+
 --[+++ОСНОВНОЕ+++]--
 	--[++Восстановление способности++]--
 		local cmbtab_col = Color[mod:get("combat_ability_text_colour")](255, true)
@@ -25,6 +29,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Peril_rgb_ru = iu_actit("опасности", prl_col)
 			local Perils_rgb_ru = iu_actit("опасностей", prl_col)
 			local Perl_rgb_ru = iu_actit("опасность", prl_col)
+			local Perl0_rgb_ru = iu_actit("Опасность", prl_col)
 	--[++Ошеломление++]--
 		local stam_col = Color[mod:get("stamina_text_colour")](255, true)
 			local Stamina_rgb_ru = iu_actit("выносливости", stam_col)
@@ -61,22 +66,27 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Crit_hit_udom_rgb_ru = iu_actit("критическим ударом", crt_col)
 	--[++Пробивание++]--
 		local rend_col = Color[mod:get("rending_text_colour")](255, true)
-			local Rending_rgb_ru = iu_actit("пробиванию брони", rend_col)
+			local Rndg_rgb_ru = iu_actit("Пробивание", rend_col)
+			local Rending_rgb_ru = iu_actit("пробиванию", rend_col)
 	--[++Равновесие++]--
 		local imp_col = Color[mod:get("impact_text_colour")](255, true)
 			Impact_rgb_ru = iu_actit("выведению из равновесия", imp_col) -- Силе Удара?
 	--[++Рассечение++]--
 		local clv_col = Color[mod:get("cleave_text_colour")](255, true)
-			local Cleave_rgb_ru = iu_actit("рассечению врагов", clv_col)
-			local Cleaving_rgb_ru = iu_actit("рассечение врагов", clv_col)
-			local Cleaving_r_rgb_ru = iu_actit("пробивание врагов", clv_col)
-			local Cleaving_u_rgb_ru = iu_actit("пробиванию врагов", clv_col)
+			local Cleave_rgb_ru = iu_actit("рассечению", clv_col)
+			local Cleaving_rgb_ru = iu_actit("рассечение", clv_col)
+			local Cleavat_rgb_ru = iu_actit("рассекать", clv_col)
+			local Cleaving_r_rgb_ru = iu_actit("прострел", clv_col)
+			local Cleaving_u_rgb_ru = iu_actit("прострелу", clv_col)
+			local Cleaving_et_rgb_ru = iu_actit("простреливает", clv_col)
 	--[++Сила++]--
 		local pwr_col = Color[mod:get("power_text_colour")](255, true)
+			local Pwr_rgb_ru = iu_actit("Сила", pwr_col)
 			local Power_rgb_ru = iu_actit("сила", pwr_col)
 			local Strength_rgb_ru = iu_actit("силе", pwr_col)
 	--[++Точность++]--
 		local fns_col = Color[mod:get("finesse_text_colour")](255, true)
+			local Fnss_rgb_ru = iu_actit("Ловкость", fns_col)
 			local Finesse_rgb_ru = iu_actit("ловкости", fns_col)
 			local Finesse_dmg_rgb_ru = iu_actit("урону от ловкости", fns_col)
 	--[++Ударная масса++]--
@@ -96,7 +106,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Weakspothit_rgb_ru = iu_actit("уязвимое место", wksp_col)
 			local Weakspothits_rgb_ru = iu_actit("уязвимые места", wksp_col)
 			local Weakspot_dmg_rgb_ru = iu_actit("урону по уязвимым местам", wksp_col)
-			local Weakspotv_dmg_rgb_ru = iu_actit("урон в уязвимые места", wksp_col)
+			local Weakspotv_dmg_rgb_ru = iu_actit("урон по уязвимым местам", wksp_col)
 --[+++ДЕБАФФЫ+++]--
 	--[++Горение++]--
 		local brn_col = Color[mod:get("burn_text_colour")](255, true)
@@ -121,14 +131,15 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Staggering_rgb_ru = iu_actit("ошеломления", stgr_col)
 			local Staggern_rgb_ru = iu_actit("ошеломляя", stgr_col)
 			local Staggernt_rgb_ru = iu_actit("ошеломить", stgr_col)
-			local Staggerr_rgb_ru = iu_actit("Ошеломление", stgr_col)
 			local Staggers_rgb_ru = iu_actit("ошеломляют", stgr_col)
+			local Staggerstsa_rgb_ru = iu_actit("ошеломляются", stgr_col)
 			local Staggers_e_rgb_ru = iu_actit("ошеломляет", stgr_col)
 			local Stun_rgb_ru = iu_actit("ошеломлённого", stgr_col)
 			local Stunned_rgb_ru = iu_actit("ошеломлена", stgr_col)
 			local Stuns_rgb_ru = iu_actit("ошеломлённым", stgr_col)
 			local Stunss_rgb_ru = iu_actit("Ошеломляющие", stgr_col)
 			local Stunssx_rgb_ru = iu_actit("Ошеломлённые", stgr_col)
+			local Staggerr_rgb_ru = iu_actit("Ошеломление", stgr_col)
 	--[++Порча++]--
 		local crpt_col = Color[mod:get("corruption_text_colour")](255, true)
 			local Corruption_rgb_ru = iu_actit("порче", crpt_col)
@@ -144,7 +155,8 @@ local iu_actit = InputUtils.apply_color_to_input_text
 			local Electrcuting_rgb_ru = iu_actit("Electrocuting", electr_col)
 	--[++Хрупкость++]--
 		local brtl_col = Color[mod:get("brittleness_text_colour")](255, true)
-			local Brittleness_rgb_ru = iu_actit("хрупкости брони", brtl_col)
+			local Brttlns_rgb_ru = iu_actit("Хрупкость", brtl_col)
+			local Brittleness_rgb_ru = iu_actit("хрупкости", brtl_col)
 
 --[+++ПСАЙКЕР+++]--
 	--[++Точность++]--
@@ -202,14 +214,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 
 --[+++РАЗНОЕ+++]--
 	--[++Примечания++]--
-		local note_col = Color[mod:get("note_text_colour")](255, true)
-			local Fns_note_rgb_ru = iu_actit(" Ловкость повышает критический урон и урон по уязвимым местам.", note_col)
-			local Pwr_note_rgb_ru = iu_actit(" Сила повышает урон, ошеломление и рассечение врагов.", note_col)
-			local Rend_note_rgb_ru = iu_actit(" Пробивание брони повышает ваш урон.", note_col)
-			local Brtl_note_rgb_ru = iu_actit(" Хрупкость брони понижает защиту брони врага.", note_col)
-			local Hit_Mass_note_rgb_ru = iu_actit(" Игнорирование ударной массы позволяет пробивать больше врагов.", note_col)
-			local Trauma_note_rgb_ru = iu_actit("", note_col)
-			local Fire_n_trap_note_rgb_ru = iu_actit("", note_col)
+		-- local note_col = Color[mod:get("note_text_colour")](255, true)
 	--[+ Talents - Таланты+]--
 		local tal_col = Color[mod:get("talents_text_colour")](255, true)
 			local Arbites_gren_rgb_ru = iu_actit("Гранату арбитрес", tal_col)
@@ -277,6 +282,7 @@ return {
 
 	Bleed_rgb_ru = Bleed_rgb_ru,
 	Bleeding_rgb_ru = Bleeding_rgb_ru,
+	Brttlns_rgb_ru = Brttlns_rgb_ru,
 	Brittleness_rgb_ru = Brittleness_rgb_ru,
 	Burn_rgb_ru = Burn_rgb_ru,
 	Burning_rgb_ru = Burning_rgb_ru,
@@ -293,9 +299,11 @@ return {
 	Corruption_a_rgb_ru = Corruption_a_rgb_ru,
 	Corruptdmg_rgb_ru = Corruptdmg_rgb_ru,
 	Cleave_rgb_ru = Cleave_rgb_ru,
+	Cleavat_rgb_ru = Cleavat_rgb_ru,
 	Cleaving_rgb_ru = Cleaving_rgb_ru,
 	Cleaving_r_rgb_ru = Cleaving_r_rgb_ru,
 	Cleaving_u_rgb_ru = Cleaving_u_rgb_ru,
+	Cleaving_et_rgb_ru = Cleaving_et_rgb_ru,
 	Crt_chance_rgb_ru = Crt_chance_rgb_ru,
 	Crt_u_chance_rgb_ru = Crt_u_chance_rgb_ru,
 	Crit_chance_rgb_ru = Crit_chance_rgb_ru,
@@ -324,6 +332,7 @@ return {
 	Electrocutes_rgb_ru = Electrocutes_rgb_ru,
 	Electrcuting_rgb_ru = Electrcuting_rgb_ru,
 	Feel_no_pain_rgb_ru = Feel_no_pain_rgb_ru,
+	Fnss_rgb_ru = Fnss_rgb_ru,
 	Finesse_rgb_ru = Finesse_rgb_ru,
 	Finesse_dmg_rgb_ru = Finesse_dmg_rgb_ru,
 	Focus_rgb_ru = Focus_rgb_ru,
@@ -345,12 +354,15 @@ return {
 	Rangedjust_rgb_ru = Rangedjust_rgb_ru,
 	Meleespec_rgb_ru = Meleespec_rgb_ru,
 	Momentum_rgb_ru = Momentum_rgb_ru,
+	Perl0_rgb_ru = Perl0_rgb_ru,
 	Perl_rgb_ru = Perl_rgb_ru,
 	Peril_rgb_ru = Peril_rgb_ru,
 	Perils_rgb_ru = Perils_rgb_ru,
+	Pwr_rgb_ru = Pwr_rgb_ru,
 	Power_rgb_ru = Power_rgb_ru,
 	Precision_rgb_ru = Precision_rgb_ru,
 	Rangedspec_rgb_ru = Rangedspec_rgb_ru,
+	Rndg_rgb_ru = Rndg_rgb_ru,
 	Rending_rgb_ru = Rending_rgb_ru,
 	Soulblaze_rgb_ru = Soulblaze_rgb_ru,
 	Stagger_rgb_ru = Stagger_rgb_ru,
@@ -359,6 +371,7 @@ return {
 	Stagger_i_rgb_ru = Stagger_i_rgb_ru,
 	Staggers_rgb_ru = Staggers_rgb_ru,
 	Staggers_e_rgb_ru = Staggers_e_rgb_ru,
+	Staggerstsa_rgb_ru = Staggerstsa_rgb_ru,
 	Stun_rgb_ru = Stun_rgb_ru,
 	Stuns_rgb_ru = Stuns_rgb_ru,
 	Stunss_rgb_ru = Stunss_rgb_ru,
@@ -384,14 +397,6 @@ return {
 	Weakspothits_rgb_ru = Weakspothits_rgb_ru,
 	Weakspot_dmg_rgb_ru = Weakspot_dmg_rgb_ru,
 	Weakspotv_dmg_rgb_ru = Weakspotv_dmg_rgb_ru,
-
-	Trauma_note_rgb_ru = Trauma_note_rgb_ru,
-	Fns_note_rgb_ru = Fns_note_rgb_ru,
-	Pwr_note_rgb_ru = Pwr_note_rgb_ru,
-	Rend_note_rgb_ru = Rend_note_rgb_ru,
-	Brtl_note_rgb_ru = Brtl_note_rgb_ru,
-	Hit_Mass_note_rgb_ru = Hit_Mass_note_rgb_ru,
-	Fire_n_trap_note_rgb_ru = Fire_n_trap_note_rgb_ru,
 
 	sedition_rgb_ru = sedition_rgb_ru,
 	uprising_rgb_ru = uprising_rgb_ru,

@@ -390,7 +390,7 @@ local localization_templates = {
 		{"loc_main_menu_warband_count", "loc_social_menu_roster_view_display_name"}, {"zh-tw"},
 			loc_text("突擊小隊")),
 
-	--[+ Soical's Menu +]--
+	--[+ Social Menu +]--
 
 	--[+ Previous Tasks +]--
 	--[+ Russian - Предыдущие задания +]--

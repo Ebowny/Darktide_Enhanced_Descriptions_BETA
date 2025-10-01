@@ -4,6 +4,10 @@ local mod = get_mod("Enhanced_descriptions")
 local InputUtils = require("scripts/managers/input/input_utils")
 local iu_actit = InputUtils.apply_color_to_input_text
 
+local Dot_red = "{#color(255, 35, 5)}•{#reset()}"
+local Dot_nc = "•"
+local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
+
 
 
 			-- ============ DO NOT DO ANYTHING ABOVE! ============ --
@@ -183,13 +187,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 
 --[+++MISC+++]--
 	--[++Note++]--
-		local note_col = Color[mod:get("note_text_colour")](255, true) -- Don't translate this!
-			local Fns_note_rgb = iu_actit(" Finesse increases Weakspot and Critical Damage.", note_col)
-			local Pwr_note_rgb = iu_actit(" Strength increases Damage, Stagger and Cleave.", note_col)
-			local Rend_note_rgb = iu_actit(" Rending increases your Damage.", note_col)
-			local Brtl_note_rgb = iu_actit(" Brittleness reduces the enemy's Armor.", note_col)
-			local Trauma_note_rgb = iu_actit("", note_col)
-			local Fire_n_trap_note_rgb = iu_actit("", note_col)
+		-- local note_col = Color[mod:get("note_text_colour")](255, true) -- Don't translate this!
 	--[+ Talents +]--
 		local tal_col = Color[mod:get("talents_text_colour")](255, true) -- Don't translate this!
 			local Arbites_gren_rgb = iu_actit("Arbites Grenade", tal_col)
@@ -347,13 +345,6 @@ return {
 	Weakspothit_rgb = Weakspothit_rgb,
 	Weakspothits_rgb = Weakspothits_rgb,
 	Weakspot_dmg_rgb = Weakspot_dmg_rgb,
-
-	Brtl_note_rgb = Brtl_note_rgb,
-	Fire_n_trap_note_rgb = Fire_n_trap_note_rgb,
-	Fns_note_rgb = Fns_note_rgb,
-	Pwr_note_rgb = Pwr_note_rgb,
-	Rend_note_rgb = Rend_note_rgb,
-	Trauma_note_rgb = Trauma_note_rgb,
 
 	sedition_rgb = sedition_rgb,
 	uprising_rgb = uprising_rgb,

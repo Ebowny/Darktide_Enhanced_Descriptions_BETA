@@ -25,8 +25,9 @@ local WTL = get_mod("WhatTheLocalization")
 		mod:hook_safe(CLASS.InventoryWeaponsView, "on_enter", function (self)
 			self._widgets_by_name.equip_button.offset = {-622,20,0} end)
 		--[+ Discard items button in the inventory +]--
-		mod:hook_safe(CLASS.DiscardItemsView, "on_enter", function (self)
-			self._widgets_by_name.discard_button.offset = {-622,20,0} end)
+		-- mod:hook_safe(CLASS.DiscardItemsView, "on_enter", function (self)
+			-- self._widgets_by_name.discard_button.offset = {-622,20,0} end)
+
 		-- mod:hook_safe(CLASS.BaseView, "on_enter", function (self)
 		-- 	self._widgets_by_name.discard_button.offset = {-622,20,0} end)
 		--[+ Buy button in the Melk menu +]--

@@ -123,6 +123,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local n_025_rgb = iu_actit("0.25", var_col)
 	local n_03_rgb = iu_actit("0.3", var_col)
 	local n_033_rgb = iu_actit("0.33", var_col)
+	local n_05_rgb = iu_actit("0.5", var_col)
 	local n_055_rgb = iu_actit("0.55", var_col)
 	local n_0875_rgb = iu_actit("0.55", var_col)
 	local n_075_rgb = iu_actit("0.75", var_col)
@@ -175,6 +176,7 @@ local iu_actit = InputUtils.apply_color_to_input_text
 	local pc_2_rgb = iu_actit("2%", var_col)
 	local pc_2_5_rgb = iu_actit("2.5%", var_col)
 	local pc_1_rgb = iu_actit("1%", var_col)
+	local pc_3_rgb = iu_actit("3%", var_col)
 	local pc_4_rgb = iu_actit("4%", var_col)
 	local pc_5_rgb = iu_actit("5%", var_col)
 	local pc_6_rgb = iu_actit("6%", var_col)
@@ -307,6 +309,7 @@ return {
 	n_025_rgb = n_025_rgb,
 	n_03_rgb = n_03_rgb,
 	n_033_rgb = n_033_rgb,
+	n_05_rgb = n_05_rgb,
 	n_055_rgb = n_055_rgb,
 	n_0875_rgb = n_0875_rgb,
 	n_075_rgb = n_075_rgb,
@@ -356,6 +359,7 @@ return {
 
 	pc_rgb = pc_rgb,
 	pc_1_rgb = pc_1_rgb,
+	pc_3_rgb = pc_3_rgb,
 	pc_2_rgb = pc_2_rgb,
 	pc_2_5_rgb = pc_2_5_rgb,
 	pc_4_rgb = pc_4_rgb,
