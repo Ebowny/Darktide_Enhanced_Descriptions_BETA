@@ -530,6 +530,9 @@ local localization_templates = {
 			loc_text("勢頭")),
 
 	--[+ Shock & Awe / Shock and Awe - Шок и трепет +]--
+	create_template("weap_wbm059_ext_en",
+		{"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"en"},
+			loc_text("Shock and Awe")), -- &->and
 	--[+ Russian +]--
 	-- create_template("trait_bespoke_74_ext_ru",
 		-- {"loc_trait_bespoke_hit_mass_consumption_reduction_on_kill"}, {"ru"},
@@ -732,6 +735,9 @@ local localization_templates = {
 			loc_text("達姆彈")),
 
 	--[+ Hit & Run /  Hit and Run - Бей и беги +]--
+	create_template("weap_wbr002_ext_en",
+		{"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"en"},
+			loc_text("Hit and Run")), -- &->and
 	-- create_template("trait_bespoke_067_ext_ru",
 		-- {"loc_trait_bespoke_count_as_dodge_vs_ranged_on_close_kill"}, {"ru"},
 			-- loc_text("Бей и беги")),

@@ -91,6 +91,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 		local wksp_col = Color[mod:get("weakspot_text_colour")](255, true) -- Don't translate this!
 			local Weak_spot_rgb = iu_actit("Weak Spot", wksp_col)
 			local Weakspot_rgb = iu_actit("Weakspot", wksp_col)
+			local Weakspots_rgb = iu_actit("Weakspots", wksp_col)
 			local Weakspothit_rgb = iu_actit("Weakspot Hit", wksp_col)
 			local Weakspothits_rgb = iu_actit("Weakspot Hits", wksp_col)
 			local Weakspot_dmg_rgb = iu_actit("Weakspot Damage", wksp_col)
@@ -341,6 +342,7 @@ return {
 	TDR_rgb = TDR_rgb,
 	Trample_rgb = Trample_rgb,
 	Weakspot_rgb = Weakspot_rgb,
+	Weakspots_rgb = Weakspots_rgb,
 	Weak_spot_rgb = Weak_spot_rgb,
 	Weakspothit_rgb = Weakspothit_rgb,
 	Weakspothits_rgb = Weakspothits_rgb,
