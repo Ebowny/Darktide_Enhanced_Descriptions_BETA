@@ -389,11 +389,11 @@ local localization_templates = {
 		{"loc_trait_bespoke_staggered_targets_receive_increased_stagger_debuff"}, {"zh-tw"},
 			loc_text("雷霆打擊")),
 
-	--[+ Chained Deathblow - Цепочка смертельных ударов +]--
+	--[+ Chained Deathblow - Карающая серия +]-- руоф Цепочка смертельных ударов
 	--[+ Russian +]--
-	-- create_template("trait_bespoke_036_ext_ru",
-		-- {"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill"}, {"ru"},
-			-- loc_text("Цепочка смертельных ударов")),
+	create_template("trait_bespoke_036_ext_ru",
+		{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill"}, {"ru"},
+			loc_text("Карающая серия")),
 	--[+ Traditional Chinese - 致命連擊 +]--
 	create_template("trait_bespoke_036_ext_tw",
 		{"loc_trait_bespoke_increased_crit_chance_on_weakspot_kill"}, {"zh-tw"},
@@ -420,10 +420,10 @@ local localization_templates = {
 			loc_text("完美一擊")),
 
 	--[+ Bladed Momentum +]--
-	--[+ Russian - Импульс лезвия - руоф Моментум лезвия +]--
+	--[+ Russian - Инерция клинка +]-- руоф Моментум лезвия
 	create_template("trait_bespoke_039_ext_ru",
 		{"loc_trait_bespoke_stacking_rending_on_cleave"}, {"ru"},
-			loc_text("Импульс лезвия")),
+			loc_text("Инерция клинка")),
 	--[+ Traditional Chinese - 利刃攻勢 +]--
 	create_template("trait_bespoke_039_ext_tw",
 		{"loc_trait_bespoke_stacking_rending_on_cleave"}, {"zh-tw"},

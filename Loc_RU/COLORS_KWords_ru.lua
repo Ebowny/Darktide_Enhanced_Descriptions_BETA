@@ -15,13 +15,13 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Cd_rgb_ru = iu_actit("восстановления", cmbtab_col)
 			local Combat_abil_rgb_ru = iu_actit("боевая способность", cmbtab_col)
 			local Combat_ability_rgb_ru = iu_actit("боевой способности", cmbtab_col)
-			local Combat_ability_cd_rgb_ru = iu_actit("восстановления боевой способности", cmbtab_col)
+			-- local Combat_ability_cd_rgb_ru = iu_actit("восстановления боевой способности", cmbtab_col)
 	--[++Здоровье++]--
 		local hlth_col = Color[mod:get("health_text_colour")](255, true)
 			local Health_rgb_ru = iu_actit("здоровью", hlth_col)
 			local Healthx_rgb_ru = iu_actit("здоровьем", hlth_col)
 			local Wound_rgb_ru = iu_actit("здоровья", hlth_col)
-			local Wounds_rgb_ru = iu_actit("ране", hlth_col)
+			-- local Wounds_rgb_ru = iu_actit("ране", hlth_col)
 			local Wound_u_rgb_ru = iu_actit("рану", hlth_col)
 			local Wound_y_rgb_ru = iu_actit("раны", hlth_col)
 	--[++Опасность++]--
@@ -33,7 +33,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 	--[++Ошеломление++]--
 		local stam_col = Color[mod:get("stamina_text_colour")](255, true)
 			local Stamina_rgb_ru = iu_actit("выносливости", stam_col)
-			local Stamina_c_r_rgb_ru = iu_actit("выносливость", stam_col)
+			-- local Stamina_c_r_rgb_ru = iu_actit("выносливость", stam_col)
 	--[++Стойкость++]--
 		local tghn_col = Color[mod:get("toughness_text_colour")](255, true)
 			local Toughness_rgb_ru = iu_actit("стойкости", tghn_col)
@@ -51,12 +51,13 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Crt_u_chance_rgb_ru = iu_actit("шансу критического выстрела", crt_col)
 			local Crit_chance_rgb_ru = iu_actit("шансу критического удара", crt_col)
 			local Crit_hit_rgb_ru = iu_actit("критическом ударе", crt_col)
-			local Crit_hit_chance_rgb_ru = iu_actit("критический удар", crt_col)
+			-- local Crit_hit_chance_rgb_ru = iu_actit("критический удар", crt_col)
 			local Crit_hits_rgb_ru = iu_actit("критическими ударами", crt_col)
-			local Crit_hit_e_rgb_ru = iu_actit("критическом ударе", crt_col)
+			-- local Crit_hit_e_rgb_ru = iu_actit("критическом ударе", crt_col)
 			local Crit_rgb_ru = iu_actit("критическому", crt_col)
-			local Crit_ih_rgb_ru = iu_actit("критических", crt_col)
+			-- local Crit_ih_rgb_ru = iu_actit("критических", crt_col)
 			local Crit0_rgb_ru = iu_actit("критические удары", crt_col)
+			local CritH_rgb_ru = iu_actit("Критические удары", crt_col)
 			local Crit_dmg_r_rgb_ru = iu_actit("критический урон", crt_col)
 			local Crit_dmg_u_rgb_ru = iu_actit("критическому урону", crt_col)
 			local Crit_chance_r_rgb_ru = iu_actit("критическом выстреле", crt_col)
@@ -76,6 +77,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Cleave_rgb_ru = iu_actit("рассечению", clv_col)
 			local Cleaving_rgb_ru = iu_actit("рассечение", clv_col)
 			local Cleavat_rgb_ru = iu_actit("рассекать", clv_col)
+			local Cleavaet_rgb_ru = iu_actit("рассекается", clv_col)
 			local Cleaving_r_rgb_ru = iu_actit("прострел", clv_col)
 			local Cleaving_u_rgb_ru = iu_actit("прострелу", clv_col)
 			local Cleaving_et_rgb_ru = iu_actit("простреливает", clv_col)
@@ -104,7 +106,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 		local wksp_col = Color[mod:get("weakspot_text_colour")](255, true)
 			local Weakspot_rgb_ru = iu_actit("уязвимые места", wksp_col)
 			local Weakspothit_rgb_ru = iu_actit("уязвимое место", wksp_col)
-			local Weakspothits_rgb_ru = iu_actit("уязвимые места", wksp_col)
+			-- local Weakspothits_rgb_ru = iu_actit("уязвимые места", wksp_col)
 			local Weakspot_dmg_rgb_ru = iu_actit("урону по уязвимым местам", wksp_col)
 			local Weakspotv_dmg_rgb_ru = iu_actit("урон по уязвимым местам", wksp_col)
 --[+++ДЕБАФФЫ+++]--
@@ -134,6 +136,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Staggers_rgb_ru = iu_actit("ошеломляют", stgr_col)
 			local Staggerstsa_rgb_ru = iu_actit("ошеломляются", stgr_col)
 			local Staggers_e_rgb_ru = iu_actit("ошеломляет", stgr_col)
+			local Staggers_esia_rgb_ru = iu_actit("ошеломляется", stgr_col)
 			local Stun_rgb_ru = iu_actit("ошеломлённого", stgr_col)
 			local Stunned_rgb_ru = iu_actit("ошеломлена", stgr_col)
 			local Stuns_rgb_ru = iu_actit("ошеломлённым", stgr_col)
@@ -151,8 +154,8 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local Electrocute_rgb_ru = iu_actit("электрошок", electr_col)
 			local Electrocution_rgb_ru = iu_actit("электрошока", electr_col)
 			local Electrocuted_rgb_ru = iu_actit("электрошоком", electr_col)
-			local Electrocutes_rgb_ru = iu_actit("Electrocutes", electr_col)
-			local Electrcuting_rgb_ru = iu_actit("Electrocuting", electr_col)
+			-- local Electrocutes_rgb_ru = iu_actit("Electrocutes", electr_col)
+			-- local Electrcuting_rgb_ru = iu_actit("Electrocuting", electr_col)
 	--[++Хрупкость++]--
 		local brtl_col = Color[mod:get("brittleness_text_colour")](255, true)
 			local Brttlns_rgb_ru = iu_actit("Хрупкость", brtl_col)
@@ -245,7 +248,7 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 			local damnation_rgb_ru = iu_actit("Проклятие", dam_col)
 	--[+ AURIC - ЗОЛОТО +]--
 		local auric_col = Color[mod:get("auric_text_colour")](255, true) -- Do not translate this line!
-			local auric_rgb = iu_actit("Auric", auric_col)
+			local auric_rgb = iu_actit("Золото", auric_col)
 
 --[+ ++VETERAN - ВЕТЕРАН++ +]--
 		local cls_vet_col = Color[mod:get("class_veteran_text_colour")](255, true)
@@ -300,6 +303,7 @@ return {
 	Corruptdmg_rgb_ru = Corruptdmg_rgb_ru,
 	Cleave_rgb_ru = Cleave_rgb_ru,
 	Cleavat_rgb_ru = Cleavat_rgb_ru,
+	Cleavaet_rgb_ru = Cleavaet_rgb_ru,
 	Cleaving_rgb_ru = Cleaving_rgb_ru,
 	Cleaving_r_rgb_ru = Cleaving_r_rgb_ru,
 	Cleaving_u_rgb_ru = Cleaving_u_rgb_ru,
@@ -314,6 +318,7 @@ return {
 	Crit_rgb_ru = Crit_rgb_ru,
 	Crit_ih_rgb_ru = Crit_ih_rgb_ru,
 	Crit0_rgb_ru = Crit0_rgb_ru,
+	CritH_rgb_ru = CritH_rgb_ru,
 	Crit_dmg_r_rgb_ru = Crit_dmg_r_rgb_ru,
 	Crit_dmg_u_rgb_ru = Crit_dmg_u_rgb_ru,
 	Crit_chance_r_rgb_ru = Crit_chance_r_rgb_ru,
@@ -371,6 +376,7 @@ return {
 	Stagger_i_rgb_ru = Stagger_i_rgb_ru,
 	Staggers_rgb_ru = Staggers_rgb_ru,
 	Staggers_e_rgb_ru = Staggers_e_rgb_ru,
+	Staggers_esia_rgb_ru = Staggers_esia_rgb_ru,
 	Staggerstsa_rgb_ru = Staggerstsa_rgb_ru,
 	Stun_rgb_ru = Stun_rgb_ru,
 	Stuns_rgb_ru = Stuns_rgb_ru,

@@ -2180,7 +2180,7 @@ local localization_templates = {
 	--[+ Russian +]-- Ретивость +]--
 	-- create_template("talent_tree_psy_pas_002_desc_ru",
 		-- {"loc_talent_psyker_crits_regen_toughness_speed_description"}, {"ru"},
-			-- loc_text("При "..COLORS_KWords_ru.Crit_hit_e_rgb_ru.." вы восстанавливаете {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", а также получаете {movement_speed:%s} к скорости передвижения на {seconds:%s} секунды. Суммируется до {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_2_rgb_ru)),
+			-- loc_text("При "..COLORS_KWords_ru.Crit_hit_rgb_ru.." вы восстанавливаете {toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru..", а также получаете {movement_speed:%s} к скорости передвижения на {seconds:%s} секунды. Суммируется до {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_2_rgb_ru)),
 
 	--[+ Passive 3 - Quietude +]--	27.09.2025
 	create_template("talent_tree_psy_pas_003_desc_en",
@@ -2262,7 +2262,7 @@ local localization_templates = {
 	--[+ Russian +]-- Идеальный момент -- руоф Безупречное чувство времени
 	-- create_template("talent_tree_psy_pas_007_desc_ru",
 		-- {"loc_talent_psyker_damage_on_crit_stacking_desc"}, {"ru"},
-			-- loc_text("{damage:%s} к "..COLORS_KWords_ru.Damagewrp_rgb_ru.." на {duration:%s} секунд при "..COLORS_KWords_ru.Crit_hit_e_rgb_ru..". Суммируется {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_6_rgb_ru)),
+			-- loc_text("{damage:%s} к "..COLORS_KWords_ru.Damagewrp_rgb_ru.." на {duration:%s} секунд при "..COLORS_KWords_ru.Crit_hit_rgb_ru..". Суммируется {stacks:%s} раз."..TALENTS_Enh_desc_ru.ED_PSY_Passive_6_rgb_ru)),
 
 	--[+ Passive 8 - Channeled Force +]--	27.09.2025
 	create_template("talent_tree_psy_pas_008_desc_en",
@@ -3056,7 +3056,7 @@ local localization_templates = {
 	--[+ Russian +]-- Призыв смерти
 	-- create_template("talent_tree_zea_abil1_002_desc_ru",
 		-- {"loc_talent_maniac_cooldown_on_melee_crits_buff_desc"}, {"ru"},
-			-- loc_text("{cooldown_regen:%s} к скорости "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {duration:%s} секунды при "..COLORS_KWords_ru.Crit_hit_e_rgb_ru.." ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_2_rgb_ru)),
+			-- loc_text("{cooldown_regen:%s} к скорости "..COLORS_KWords_ru.Ability_cd_rgb_ru.." на {duration:%s} секунды при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." ближнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_1_2_rgb_ru)),
 	--[+ Traditional Chinese - 死亡禱文 +]--
 	--近戰暴擊可提升{cooldown_regen:%s}技能冷卻時間恢復，持續{duration:%s}秒。
 	-- create_template("talent_tree_zea_abil1_002_desc_tw",
@@ -3191,7 +3191,7 @@ local localization_templates = {
 	--[+ Russian +]-- Предназначение мученика -- руоф Цель мученика
 	-- create_template("talent_tree_zea_abil2_004_desc_ru",
 		-- {"loc_talent_zealot_damage_taken_restores_cd_description"}, {"ru"},
-			-- loc_text("Каждый полученный {cooldown_restore:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru.." сокращает время "..COLORS_KWords_ru.Combat_ability_cd_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_4_rgb_ru)),
+			-- loc_text("Каждый полученный {cooldown_restore:%s} "..COLORS_KWords_ru.Dmg_a_rgb_ru.." "..COLORS_KWords_ru.Health_rgb_ru.." сокращает время "..COLORS_KWords_ru.Cd_rgb_ru..COLORS_KWords_ru.Combat_ability_rgb_ru.."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_2_4_rgb_ru)),
 	--[+ Traditional Chinese - 殉道者之願 +]--
 	--受到的{cooldown_restore:%s}傷害轉化為技能冷卻縮減。
 	-- create_template("talent_tree_zea_abil2_004_desc_tw",
@@ -3393,7 +3393,7 @@ local localization_templates = {
 	--[+ Russian +]-- Возрастание ярости -- руоф Подъем ярости
 	-- create_template("talent_tree_zea_keys1_002_desc_ru",
 		-- {"loc_talent_zealot_fanatic_rage_crits_desc"}, {"ru"},
-			-- loc_text("Вы получаете один заряд "..COLORS_KWords_ru.Fury_i_rgb_ru.." за каждый "..COLORS_KWords_ru.Crit_hit_chance_rgb_ru.." ближнего или дальнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_2_rgb_ru)),
+			-- loc_text("Вы получаете один заряд "..COLORS_KWords_ru.Fury_i_rgb_ru.." при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." ближнего или дальнего боя."..TALENTS_Enh_desc_ru.ED_ZEA_Keystone_1_2_rgb_ru)),
 	--[+ Traditional Chinese - 怒火升騰 +]--
 	--積累暴擊次數也可觸發狂怒。
 	-- create_template("talent_tree_zea_keys1_002_desc_tw",
@@ -5627,7 +5627,7 @@ local localization_templates = {
 	--[+ Russian +]-- Использование слабостей 
 	-- create_template("talent_tree_vet_pas_037_desc_ru",
 		-- {"loc_talent_veteran_crits_rend_description"}, {"ru"},
-			-- loc_text("{rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." накладывается на цель при "..COLORS_KWords_ru.Crit_hit_e_rgb_ru.." в ближнем бою. Суммируется {max_stacks:%s} раза и длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_37_rgb_ru)),
+			-- loc_text("{rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." накладывается на цель при "..COLORS_KWords_ru.Crit_hit_rgb_ru.." в ближнем бою. Суммируется {max_stacks:%s} раза и длится {duration:%s} секунд."..TALENTS_Enh_desc2_ru.ED_VET_Passive_37_rgb_ru)),
 
 	--[+ Passive 38 - Onslaught +]--
 	-- create_template("talent_tree_vet_pas_038_desc_en",
@@ -6547,7 +6547,7 @@ local localization_templates = {
 	--[+ Russian +]-- Качок
 	-- create_template("talent_tree_ogr_pas_010_desc_ru",
 		-- {"loc_talent_ogryn_damage_reduction_on_high_stamina_desc"}, {"ru"},
-			-- loc_text("{damage_taken:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." пока ваша "..COLORS_KWords_ru.Stamina_c_r_rgb_ru.." выше {stamina:%s}.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_10_rgb_ru
+			-- loc_text("{damage_taken:%s} к сопротивлению "..COLORS_KWords_ru.Damage_rgb_ru.." "..COLORS_KWords_ru.Toughness_rgb_ru.." и "..COLORS_KWords_ru.Health_rgb_ru.." пока ваш уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." выше {stamina:%s}.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_10_rgb_ru
 
 	--[+ Passive 11 - Focused Fighter +]--
 	-- create_template("talent_tree_ogr_pas_011_desc_en",
@@ -6647,7 +6647,7 @@ local localization_templates = {
 	--[+ Russian +]-- Сокрушение -- руоф Хлопок
 	-- create_template("talent_tree_ogr_pas_017_desc_ru",
 		-- {"loc_talent_ogryn_melee_stagger_new_desc"}, {"ru"},
-			-- loc_text("{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов от атак ближнего боя.\n{stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восполняется, после "..COLORS_KWords_ru.Staggering_rgb_ru.." врага атакой ближнего боя. Восстановление {cooldown:%s} секунда.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_17_rgb_ru
+			-- loc_text("{stagger:%s} к "..COLORS_KWords_ru.Impact_rgb_ru.." врагов от атак ближнего боя.\n{stamina:%s} "..COLORS_KWords_ru.Stamina_rgb_ru.." восполняется при "..COLORS_KWords_ru.Stagger_i_rgb_ru.." врага атакой ближнего боя. Восстановление {cooldown:%s} секунда.")), -- ..TALENTS_Enh_desc2_ru.ED_OGR_Passive_17_rgb_ru
 
 	--[+ Passive 18 - Ammo Stash +]--
 	-- create_template("talent_tree_ogr_pas_018_desc_en",
@@ -7951,7 +7951,7 @@ local localization_templates = {
 	--[+ Russian - Ошеломление +]-- руоф Сотрясение
 	create_template("talent_tree_arb_pas_015_desc_ru",
 		{"loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"}, {"ru"},
-			loc_text("Попадания в "..COLORS_KWords_ru.Weakspothits_rgb_ru.." в ближнем бою "..COLORS_KWords_ru.Staggers_rgb_ru.." врагов на {duration:%s} секунды.")),
+			loc_text("Попадания в "..COLORS_KWords_ru.Weakspot_rgb_ru.." в ближнем бою "..COLORS_KWords_ru.Staggers_rgb_ru.." врагов на {duration:%s} секунды.")),
 
 	--[+ Passive 16 - Canine Morale +]--
 	create_template("talent_tree_arb_pas_016_desc_en",
