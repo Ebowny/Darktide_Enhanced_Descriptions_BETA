@@ -2250,14 +2250,13 @@ local localization_templates = {
 		-- {"loc_talent_psyker_toughness_on_melee_description"}, {"ru"},
 			-- loc_text("{toughness:%s} "..COLORS_KWords_ru.Toughness_rgb_ru.." восстанавливается за каждые {warp_charge:%s} "..COLORS_KWords_ru.Peril_rgb_ru..", набранных вами."..TALENTS_Enh_desc_ru.ED_PSY_Passive_4_rgb_ru)),
 
-	--[+ Passive 5 - Perilous Combustion +]--	27.09.2025
+	--[+ Passive 5 - Perilous Combustion +]--	30.10.2025
 	create_template("talent_tree_psy_pas_005_desc_en",
 		{"loc_talent_psyker_elite_and_special_kills_add_warpfire_desc"}, {"en"},
 			loc_text("Killing an Elite or a Speacialist applies {stacks:%s} Stacks of "..COLORS_KWords.Soulblaze_rgb.." to all enemies within a "..COLORS_Numbers.n_4_rgb.."-meter radius.\n"
 				.."\n"
-				..Dot_red.." This effect does not trigger if the kill is dealt by damage-over-time effects like "..COLORS_KWords.Soulblaze_rgb..", "..COLORS_KWords.Burn_rgb..", or "..COLORS_KWords.Bleed_rgb..".\n"
-				.."\n"
-				..Dot_red.." {#color(255, 35, 5)}Soulblaze stacks can be applied to Daemonhosts!{#reset()}")),
+				..Dot_green.." Does proc on Elites or Specials killed by Psyker's "..COLORS_KWords.Soulblaze_rgb.." damage ticks as well as by "..COLORS_KWords.Burn_rgb.." or "..COLORS_KWords.Bleed_rgb.." ticks.\n"
+				..PHRS.Refr_dur_stappl)),
 			-- stacks: 3, stack(s)->Stacks , colors
 	--[+ French +]--
 	-- create_template("talent_tree_psy_pas_005_desc_fr",
