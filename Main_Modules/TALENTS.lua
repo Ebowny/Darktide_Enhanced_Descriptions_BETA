@@ -35,33 +35,33 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 
 --[+ +FREQUENTLY REPEATED PHRASES+ +]--
 local PHRS = {
-	Doesnt_Stack_Psy_Aura = ""..Dot_red.." This effect does not Stack with the same Aura from another "..COLORS_KWords.cls_psy_rgb..".",
-	Doesnt_Stack_Psy_eff = ""..Dot_red.." This effect does not Stack with the same debuff from another "..COLORS_KWords.cls_psy_rgb..".",
 	Can_appl_thr_shlds = ""..Dot_green.." Can be applied through shields.",
 	Can_be_refr = ""..Dot_green.." Can be refreshed during active duration. ",
 	-- Can_be_refr_drop_1 = ""..Dot_green.." Stacks can be refreshed during active duration, and are dropped one by one.",
 	Can_proc_mult = ""..Dot_green.." Can proc multiple times per swing when "..COLORS_KWords.Cleaving_rgb..".\n",
+	-- Gen_mult_stacks_n_refr = ""..Dot_green.." Can generate multiple Stacks per swing and refresh during active duration. ",
+	Refr_dur_stappl = ""..Dot_green.." Refreshes duration on Stack application. ",
+	Doesnt_Stack_Psy_Aura = ""..Dot_red.." This effect does not Stack with the same Aura from another "..COLORS_KWords.cls_psy_rgb..".",
+	Doesnt_Stack_Psy_eff = ""..Dot_red.." This effect does not Stack with the same debuff from another "..COLORS_KWords.cls_psy_rgb..".",
 	Cant_appl_thr_shlds = ""..Dot_red.." Can't apply through shields.",
 	Cant_Crit = ""..Dot_red.." Cannot "..COLORS_KWords.Crit_rgb..".\n",
 	Carap_cant_cleave = ""..Dot_red.." Carapace armor cannot be "..COLORS_KWords.Cleaved_rgb.." by default.",
 	Dont_intw_coher_toughn = ""..Dot_red.." Does not interact with "..COLORS_KWords.Coherency_rgb.." "..COLORS_KWords.Toughness_rgb..".",
-	-- Gen_mult_stacks_n_refr = ""..Dot_green.." Can generate multiple Stacks per swing and refresh during active duration. ",
-	Refr_dur_stappl = ""..Dot_green.." Refreshes duration on Stack application. ",
 
 --[+ +Russian - ЧАСТО ПОВТОРЯЕМЫЕ ФРАЗЫ+ +]--
-	Doesnt_Stack_Psy_Aura_ru = ""..Dot_red.." Не суммируется с эффектом такой же ауры другого "..COLORS_KWords_ru.cls_psya_rgb_ru..".",
-	Doesnt_Stack_Psy_eff_ru = ""..Dot_red.." Не суммируется с таким же ослаблением от другого псайкера.",
 	Can_appl_thr_shlds_ru = ""..Dot_green.." Накладывается через щиты.",
 	Can_be_refr_ru = ""..Dot_green.." Обновляется во время действия. ",
 	-- Can_be_refr_drop_1_ru = ""..Dot_green.." Заряды обновляются во время действия и сбрасываются по одному. ",
 	Can_proc_mult_ru = ""..Dot_green.." Может срабатывать несколько раз за удар при "..COLORS_KWords_ru.Cleavi_rgb_ru.." нескольких врагов.\n",
+	-- Gen_mult_stacks_n_refr_ru = ""..Dot_green.." Может дать несколько зарядов за удар и обновиться во время действия. ",
+	Refr_dur_stappl_ru = ""..Dot_green.." Длительность обновляется при наложении заряда. ",
+	Doesnt_Stack_Psy_Aura_ru = ""..Dot_red.." Не суммируется с эффектом такой же ауры другого "..COLORS_KWords_ru.cls_psya_rgb_ru..".",
+	Doesnt_Stack_Psy_eff_ru = ""..Dot_red.." Не суммируется с таким же ослаблением от другого псайкера.",
 	Cant_appl_thr_shlds_ru = ""..Dot_red.." Не накладывается через щиты.",
 	Cant_Crit_ru = ""..Dot_red.." Не наносит "..COLORS_KWords_ru.Crit0_rgb_ru..".\n",
 	Carap_cant_clv_ru = ""..Dot_red.." Панцирная броня не "..COLORS_KWords_ru.Cleavaetsa_rgb_ru..".",
 	Carap_cant_cleave_ru = ""..Dot_red.." Панцирная броня не "..COLORS_KWords_ru.Cleaving_etsa_rgb_ru..".",
 	Dont_intw_coher_toughn_ru = ""..Dot_red.." Не влияет на "..COLORS_KWords_ru.Tghnss_rgb_ru.." от "..COLORS_KWords_ru.Coherency_rgb_ru..".",
-	-- Gen_mult_stacks_n_refr_ru = ""..Dot_green.." Может дать несколько зарядов за удар и обновиться во время действия. ",
-	Refr_dur_stappl_ru = ""..Dot_green.." Длительность обновляется при наложении заряда. ",
 }
 
 --[+ +NOTES+ +]--

@@ -3099,13 +3099,18 @@ local talent_localizations = {
 			-- ["pt-br"] = "",
 			-- es = "",
 		},
-
-		-- [""] = { 
-			-- en = ,
-			-- ru = ,
-			-- fr = ,
-			-- ["zh-tw"] = ,
-			-- ["zh-cn"] = ,
+		--[+ SHATTERING IMPACT +]--
+		-- Brittleness Stacks (per tier)
+		-- Boltgun, Grenadier Gauntlet, Plasma Gun, Rumbler -- 1 | 2 | 3| 4
+		["loc_trait_bespoke_armor_rend_on_projectile_hit_desc"] = { -- stacks: 4, rending: 2.5%, time: 5, max_stacks: 16, s->seconds, +colors
+			en = "Target receives "..COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." on direct projectile hit. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Max "..COLORS_Numbers.maxstks_var_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..". "
+				..PHRS.Can_be_refr, --  ..NTS.Brtl_note_rgb
+			ru = "Цель получает "..COLORS_Numbers.stacks_var_rgb.." заряда по "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони при прямом попадании. Длится "..COLORS_Numbers.time_var_rgb.." секунд. До "..COLORS_Numbers.maxstks_var_rgb.." зарядов, вплоть до "..COLORS_Numbers.pc_40_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru..".\n"
+				..PHRS.Can_be_refr_ru, -- Сокрушающий удар -- руоф Рассеивающий импульс -- ..NTS.Brtl_note_rgb_ru
+			-- fr = "La cible reçoit "..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Brittleness_rgb_fr.." si elle est touchée directement par un projectile. Dure "..COLORS_Numbers.time_var_rgb.." secondes."..COLORS_Numbers.maxstks_var_rgb.." cumuls maximum, Jusqu'à "..COLORS_Numbers.pc_40_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr,
+			-- ["zh-tw"] = "命中目標時，使其獲得 "..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，上限 "..COLORS_Numbers.maxstks_var_rgb.." 層，最高至 "..COLORS_Numbers.pc_40_rgb.."。" .. COLORS_KWords_tw.Brtl_note_rgb_tw, -- 破碎衝擊
+				-- 矛頭爆矢槍, 擲彈兵臂鎧, 電漿槍, 震盪槍 -- 1 | 2 | 3| 4
+			-- ["zh-cn"] = "命中时，对目标施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.rending_var_rgb.." \n"..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn, -- 破碎冲击
 			-- de = "",
 			-- it = "",
 			-- ja = "",
@@ -3113,8 +3118,616 @@ local talent_localizations = {
 			-- pl = "",
 			-- ["pt-br"] = "",
 			-- es = "",
-		-- },
-
+		},
+		--[+ EVERLASTING FLAME +]--
+		-- Ammo Transferred (per tier)
+		-- Flamer -- 2 | 3 | 4 | 5
+		["loc_trait_bespoke_ammo_spent_from_reserve_on_crit_desc"] = { -- +colors
+			en = COLORS_KWords.Crit_hits_rgb.." spend Ammo from your Reserve instead of you current fuel tank.",
+			ru = COLORS_KWords_ru.CritH_rgb_ru.." тратят топливо из вашего резерва вместо текущего топливного бака.", -- Неугасимое пламя -- руоф Бесконечное пламя
+			-- fr = "Les "..COLORS_KWords_fr.Crit_hits_rgb_fr.." dépensent des munitions de votre réserve à la place de votre réservoir de carburant actuel.",
+			-- ["zh-tw"] = COLORS_KWords_tw.Crit0_rgb_tw.." 消耗備彈，而非彈夾中的彈藥。", -- 永燃烈焰
+				-- 淨化噴火器 -- 2 | 3 | 4 | 5
+			-- ["zh-cn"] = COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时，从弹药储备填装数枚弹药。", -- 永恒之火
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ QUICKFLAME +]--
+		-- Reload Speed (per tier)
+		-- Flamer -- 24% | 28% | 32% | 36%
+		["loc_trait_bespoke_faster_reload_on_empty_clip_desc"] = { -- reload_speed: +36%, +colors
+			en = COLORS_Numbers.reload_var_rgb.." Reload Speed if empty.",
+			ru = COLORS_Numbers.reload_var_rgb.." к скорости перезарядки, если бак пуст.", -- Скорое пламя -- руоф Воспламенение
+			-- fr = COLORS_Numbers.reload_var_rgb.." de vitesse de rechargement si vide.",
+			-- ["zh-tw"] = "當彈夾為空時 "..COLORS_Numbers.reload_var_rgb.." 換彈速度。", -- 迅捷火焰
+				-- 淨化噴火器 -- 24% | 28% | 32% | 36%
+			-- ["zh-cn"] = "弹匣空时 "..COLORS_Numbers.reload_var_rgb.." 装弹速度。", -- 快速烈焰
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ FAN THE FLAMES +]--
+		-- Stagger Reduction Modifier and Ranged Stagger Strength (per tier)
+		-- Flamer -- 40% and 30% | 50% and 35% | 60% and 40% | 70% and 45%
+		["loc_trait_bespoke_ignore_stagger_reduction_with_primary_on_burning_desc"] = { -- stagger_reduction: 60%, impact_modifier: +45%, +colors
+			en = "Primary Attack ignores "..COLORS_Numbers.stgrrdct_var_rgb.." "..COLORS_KWords.Stagger_rgb.." Resistance on "..COLORS_KWords.Burning_rgb.." Enemies, as well as dealing "..COLORS_Numbers.impmod_var_rgb.." "..COLORS_KWords.Impact_rgb..".",
+			ru = "Основная атака получает:\n"
+				..COLORS_Numbers.impmod_var_rgb.." к "..COLORS_KWords_ru.Impact_rgb_ru.." и\n"
+				..COLORS_Numbers.stgrrdct_var_rgb.." к игнорированию сопротивления "..COLORS_KWords_ru.Stagger2_rgb_ru.." для "..COLORS_KWords_ru.Burning_rgb_ru.." врагов.", -- Разжечь пламя -- руоф Раздувая пламя
+			-- fr = "Votre attaque principale ignore "..COLORS_Numbers.stgrrdct_var_rgb.." de le résistance "..COLORS_KWords_fr.Stagger_rgb_fr.." des ennemis qui "..COLORS_KWords_fr.Burning_rgb_fr..", et inflige "..COLORS_Numbers.impmod_var_rgb.." d'"..COLORS_KWords_fr.Impact_rgb_fr..".",
+			-- ["zh-tw"] = "對 "..COLORS_KWords_tw.Burning_rgb_tw.." 敵人使用主攻擊時，\n無視 "..COLORS_Numbers.stgrrdct_var_rgb.." "..COLORS_KWords_tw.Stagger2_rgb_tw.." 並 "..COLORS_Numbers.impmod_var_rgb.." "..COLORS_KWords_tw.Impact_rgb_tw.."。", -- 煽風點火
+				-- 淨化噴火器 -- 40% and 30% | 50% and 35% | 60% and 40% | 70% and 45%
+			-- ["zh-cn"] = "主要攻击无视"..COLORS_KWords_zh_cn.Burning_rgb_zh_cn.."敌人 "..COLORS_Numbers.stgrrdct_var_rgb.." "..COLORS_KWords_zh_cn.Stagger2_rgb_zh_cn.."抗性，同时 "..COLORS_Numbers.impmod_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."。", -- 火上浇油
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ OVERPRESSURE +]--
+		-- Power per stack (per tier)
+		-- Flamer -- 2% | 3% | 4% | 5% (up to +25%)
+		["loc_trait_bespoke_power_scales_with_clip_percentage_desc"] = { -- power_level: +5%, stacks: 5, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb..", scaling with remaining Ammunition. Stacks "..COLORS_Numbers.stacks_var_rgb.." times.\n"
+				..Dot_nc.." Holds all current Stacks until reload.\n"
+				..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." в зависимости от количества оставшихся боеприпасов. Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз. "
+				..Dot_nc.." Заряды сохраняются до перезарядки. "..NTS.Pwr_note_rgb_ru, -- Избыточное давление
+			-- fr = "Jusqu'à "..COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr..", en fonction des munitions restantes. Se cumules "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "依照剩餘彈藥量 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 超壓
+				-- 淨化噴火器 -- 2% | 3% | 4% | 5% (up to +25%)
+			-- ["zh-cn"] = "随弹匣剩余弹药叠加层数，\n每消耗弹匣容量 "..COLORS_Numbers.pc_20_rgb.." 的弹药\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 超压
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ HOT-SHOT +]--
+		-- Enemy Hit Mass Reduction (per tier)
+		-- Helbore Lasguns -- 20% | 30% | 40% | 50%
+		["loc_trait_bespoke_cleave_on_weakspot_hits_desc"] = { -- hit_mass_reduction: +50%, +colors
+			en = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.hit_mass_red_var_rgb.." "..COLORS_KWords.Cleave_rgb.." to "..COLORS_KWords.Weakspothits_rgb..".",
+			ru = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.hit_mass_red_var_rgb.." к "..COLORS_KWords_ru.Cleaving_u_rgb_ru.." выстрелам в "..COLORS_KWords_ru.Weakspot_rgb_ru..".", -- Прожигающий выстрел -- руоф В точку
+			-- fr = "Les "..COLORS_KWords_fr.Weakspothits_rgb_fr.." gagnent "..COLORS_Numbers.hit_mass_red_var_rgb.." de "..COLORS_KWords_fr.Cleave_rgb_fr..".",
+			-- ["zh-tw"] = COLORS_KWords_tw.Weakspothits_rgb_tw.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.hit_mass_red_var_rgb.." "..COLORS_KWords_tw.Cleave_rgb_tw.."。", -- 激射
+				-- 冥潮雷射槍 -- 80% | 70% | 60% | 50%
+			-- ["zh-cn"] = COLORS_KWords_zh_cn.Weakspothits_rgb_zh_cn.."使目标"..COLORS_KWords_zh_cn.Hit_masss_rgb_zh_cn.."降至 "..COLORS_Numbers.hit_mass_red_var_rgb.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn, -- 炙热射击
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ WEIGHT OF FIRE +]--
+		-- Charge Time Reduction per stack (per tier)
+		-- Helbore Lasguns -- 6% | 8% | 10% | 12% (up to 60%)
+		["loc_trait_bespoke_faster_charge_on_chained_attacks_desc"] = { -- charge_time: -12%, stacks: 5, +colors
+			en = COLORS_Numbers.chrgtime_var_rgb.." Charge Time per Stack. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Stacks on consecutive Aimed Charged Attacks. "
+				..Dot_nc.." Stacks expire after "..COLORS_Numbers.n_04_rgb.." seconds or upon leaving Alt Fire mode.",
+			ru = COLORS_Numbers.chrgtime_var_rgb.." от времени заряжания выстрела за заряд. Максимум "..COLORS_Numbers.stacks_var_rgb.." зарядов при серии заряженных прицельных выстрелов.\n"
+				..Dot_nc.." Заряды сгорают через "..COLORS_Numbers.n_04_rgb.." секунды или при выходе из прицеливания.", -- Мощь огня -- руоф Плотность огня
+			-- fr = "Enchaîner les attaques chargées réduit leurs temps de chargement de "..COLORS_Numbers.chrgtime_var_rgb.." par cumule. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.",
+			-- ["zh-tw"] = "連續射擊會使後續射擊充能時間 "..COLORS_Numbers.chrgtime_var_rgb.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。", -- 猛攻
+				-- 冥潮雷射槍 -- 6% | 8% | 10% | 12% (up to 60%)
+			-- ["zh-cn"] = "连续进行充能攻击时 \n"..COLORS_Numbers.chrgtime_var_rgb.." 蓄力时间。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。", -- 猛攻
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ ARMOURBANE +]--
+		-- Brittleness Stacks (per tier)
+		-- Helbore Lasguns -- 2 to 6 | 4 to 8 | 6 to 10 | 8 to 12
+		["loc_trait_bespoke_rend_armor_on_charged_shots_desc"] = { -- min_stack_count: 8, max_stack_count: 12, +colors
+			en = "Adds "..COLORS_Numbers.min_stk_cnt_var_rgb.."-"..COLORS_Numbers.max_stk_cnt_var_rgb.." Stacks of "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords.Brittleness_rgb.." to hit enemies, based on charge level.\n"
+				..Dot_nc.." Max "..COLORS_Numbers.n_16_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..". "
+				..PHRS.Can_be_refr..Dot_green.." Can apply Stacks through shields.",
+			ru = "Добавляет врагу "..COLORS_Numbers.min_stk_cnt_var_rgb.."-"..COLORS_Numbers.max_stk_cnt_var_rgb.." зарядов по "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони при попадании, в зависимости от времени заряжания выстрела. До "..COLORS_Numbers.pc_40_rgb..". "
+				..NTS.Brtl_note_rgb_ru, -- Бронебой
+			-- fr = "Inflige de "..COLORS_Numbers.min_stk_cnt_var_rgb.." à "..COLORS_Numbers.max_stk_cnt_var_rgb.." cumuls de "..COLORS_Numbers.pc_2_5_rgb.." de "..COLORS_KWords_fr.Brittleness_rgb_fr.." aux ennemis touchés, en fonction du niveau de charge."..COLORS_KWords_fr.Brtl_note_rgb_fr,
+			-- ["zh-tw"] = "依據充能時間，使其獲得 "..COLORS_Numbers.min_stk_cnt_var_rgb.." 至 "..COLORS_Numbers.max_stk_cnt_var_rgb.." 層， "..COLORS_Numbers.pc_2_5_rgb.." 的 "..COLORS_KWords_tw.Brittleness_rgb_tw.."，上限 "..COLORS_Numbers.n_16_rgb.." 層，共 "..COLORS_Numbers.pc_40_rgb.." 。" .. COLORS_KWords_tw.Brtl_note_rgb_tw, -- 護甲之禍
+				-- 冥潮雷射槍 -- 2 to 6 | 4 to 8 | 6 to 10 | 8 to 12
+			-- ["zh-cn"] = "随充能时间提升效果，对目标施加\n"..COLORS_Numbers.min_stk_cnt_var_rgb.." 到 "..COLORS_Numbers.max_stk_cnt_var_rgb.." 层 "..COLORS_Numbers.pc_2_5_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_16_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn, -- 装甲之祸
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ POWER BLAST +]--
+		-- Crit Chance per stack (per tier)
+		-- Plasma Gun -- 2% | 3% | 4% | 5% (up to +25%)
+		["loc_trait_bespoke_increased_crit_chance_bonus_based_on_charge_time_desc"] = { -- crit_chance_min: 5%, crit_chance_max: 25%, +colors
+			en = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmin_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." per "..COLORS_Numbers.pc_20_rgb.." charge level. "..Dot_nc.." Stacks up to "..COLORS_Numbers.n_5_rgb.." times. Maximum of "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." at "..COLORS_Numbers.pc_91p_rgb.." charge level.\n"
+				..Dot_nc.." Max Stacks can only be reached by the Alt fire charging action.",
+			ru = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmin_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." за каждые "..COLORS_Numbers.pc_20_rgb.." перегрева. "
+				..Dot_nc.." Суммируется до "..COLORS_Numbers.n_5_rgb.." раз, вплоть до "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." при уровне перегрева "..COLORS_Numbers.pc_91p_rgb.." или выше.", -- Мощный выстрел -- руоф Мощный взрыв
+			-- fr = "Gagnez entre "..COLORS_Numbers.critchmin_var_rgb.." et "..COLORS_Numbers.critchmax_var_rgb.." de "..COLORS_KWords_fr.Crt_chance_rgb_fr.." en fonction du niveau de charge lorsque vous tirez.",
+			-- ["zh-tw"] = "依據 "..COLORS_KWords_tw.Heat2_rgb_tw.." 等級，\n "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmin_var_rgb.." 到 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmax_var_rgb.." "..COLORS_KWords_tw.Crt_chance_rgb_tw.."。", -- 聚能爆發
+				-- 電漿槍 -- 2% | 3% | 4% | 5% (up to +25%)
+			-- ["zh-cn"] = "随充能程度叠加层数，每充能\n"..COLORS_Numbers.pc_20_rgb.." 叠加 "..COLORS_Numbers.n_1_rgb.." 层，每层 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.critchmin_var_rgb.." "..COLORS_KWords_zh_cn.Crt_chance_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层，最高 "..COLORS_Numbers.critchmax_var_rgb.."。", -- 充能爆破
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ GETS HOT! +]--
+		-- Crit Chance and Ranged Crit Damage per stack (per tier)
+		-- Plasma Gun -- 5.5% and 4% | 7% and 6% | 8.5 and 8% | 10% and 10% (up to +50% and +50%)
+		["loc_trait_bespoke_crit_chance_scaled_on_heat_desc"] = { -- crit_chance: 50%, ranged_crit_damage: 10%, +colors
+			en = COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_hit_chance_rgb.." and\n"
+				..COLORS_Numbers.rangcrtdmg_var_rgb.." "..COLORS_KWords.Crit_dmg_r_rgb.." per Stack.\n"
+				..Dot_nc.." Stacks up to "..COLORS_Numbers.n_5_rgb.." times.",
+			ru = COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru.." и\n"
+				..COLORS_Numbers.rangcrtdmg_var_rgb.." к "..COLORS_KWords_ru.Crit_dmg_u_rgb_ru.." за заряд.\n"
+				..Dot_nc.." Суммируется до "..COLORS_Numbers.n_5_rgb.." раз.", -- Критическая жара! -- руоф Становится жарко!
+			-- fr = "Augmente de "..COLORS_Numbers.crit_var_rgb.." par cumul le "..COLORS_KWords_fr.Crit_hit_chance_rgb_fr.."  proportionnellement à votre niveau de "..COLORS_KWords_fr.Heat_rgb_fr.." actuel. Augmente également les "..COLORS_KWords_fr.Crit_hit_color_rgb_fr.." à distance de "..COLORS_Numbers.rangcrtdmg_var_rgb.." par cumul.",
+			-- ["zh-tw"] = "依據 "..COLORS_KWords_tw.Heat_rgb_tw.." 提升 "..COLORS_KWords_tw.Crt_chance_rgb_tw.."，\n每層 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_hits_rgb_tw.." 跟 "..COLORS_Numbers.rangcrtdmg_var_rgb.." "..COLORS_KWords_tw.Crit_hit_r_color_rgb_tw.."。\n上限 "..COLORS_Numbers.n_5_rgb.." 層，共 "..COLORS_Numbers.pc_50_rgb.." 。", -- 燃起來!
+				-- 電漿槍 -- 5.5% and 4% | 7% and 6% | 8.5 and 8% | 10% and 10% (up to +50% and +50%)
+			-- ["zh-cn"] = "随"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."增长叠加层数，\n每层 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crt_chance_rgb_zh_cn.."，\n同时 "..COLORS_Numbers.rangcrtdmg_var_rgb.." 远程"..COLORS_KWords_zh_cn.Crit_dmg_r_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。", -- 升温！
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ VOLATILE +]--
+		-- Charge Time Reduction per stack (per tier)
+		-- Plasma Gun -- 2.5% | 3% | 3.5% | 4% (up to 20%)
+		["loc_trait_bespoke_lower_overheat_gives_faster_charge_desc"] = { -- charge_speed: +4%, stacks: 5, +colors
+			en = COLORS_Numbers.p_chrgspd_var_rgb.." Charge Speed on low "..COLORS_KWords.Overheat_rgb..". Stacks up to "..COLORS_Numbers.stacks_var_rgb.." times.",
+			ru = COLORS_Numbers.p_chrgspd_var_rgb.." к скорости заряжания выстрела при низком "..COLORS_KWords_ru.Heat2_rgb_ru..". Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз.", -- Испарение
+			-- fr = COLORS_Numbers.p_chrgspd_var_rgb.." de vitesse de charge lorsque votre surcharge est basse. Se cumule jusqu'à "..COLORS_Numbers.stacks_var_rgb.." fois.",
+			-- ["zh-tw"] = "在 "..COLORS_KWords_tw.Heat_rgb_tw.." 較低時，充能速度 "..COLORS_Numbers.p_chrgspd_var_rgb.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。", -- 熱力震盪
+				-- 電漿槍 -- 2.5% | 3% | 3.5% | 4% (up to 20%)
+			-- ["zh-cn"] = "随"..COLORS_KWords_zh_cn.Heat2_rgb_zh_cn.."增长减少层数，\n每层 "..COLORS_Numbers.p_chrgspd_var_rgb.." 充能速度，最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。", -- 易挥发
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ BLAZE AWAY ALT +]--
+		-- Power per stack (per tier)
+		-- Grenadier Gauntlet, Inferno Staff, Plasma Gun -- 5% | 6% | 7% | 8% (up to +40%)
+		-- Kickback, Rumbler -- 6% | 7% | 8% | 9% (up to +45%)
+		["loc_trait_bespoke_power_bonus_on_continuous_fire_alternative_desc"] = { -- power_level: +8%, stacks: 5, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every shot fired during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. "
+				..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждый выстрел, сделанный во время непрерывной стрельбы. Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз. "
+				..NTS.Pwr_note_rgb_ru, -- Стрельба без устали -- руоф Энтузиазм
+			-- fr = COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour chaque tir effectué en tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "持續射擊時，每射出一發 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 連續發射
+				-- 撕裂者自動手槍, 雙鏈重型機槍, 擲彈兵臂鎧, 電漿槍 -- 5% | 6% | 7% | 8% (up to +40%)
+				-- 反衝者, 震盪槍 -- 6% | 7% | 8% | 9% (up to +45%)
+			-- ["zh-cn"] = "连续射击期间，每次射击 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 连续射击
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ RISING HEAT +]--
+		-- Power per stack (per tier)
+		-- Plasma Gun -- 1.5% | 2% | 3% | 4% (up to +20%)
+		["loc_trait_bespoke_power_bonus_scaled_on_heat_desc"] = { -- power_level: +8%, stacks: 5, +colors
+			en = "Up to "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords.Strength_rgb.." scaling with "..COLORS_KWords.Heat_rgb.." Level. "
+				..NTS.Pwr_note_rgb,
+			ru = "До "..COLORS_Numbers.dmg_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." в зависимости от уровня "..COLORS_KWords_ru.Heat_rgb_ru..". "
+				..NTS.Pwr_note_rgb_ru, -- Нарастающий жар  -- руоф Сильная жара
+			-- fr = "Jusqu'à "..COLORS_Numbers.dmg_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." en fonction du niveau de "..COLORS_KWords_fr.Heat_rgb_fr.."."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "依據 "..COLORS_KWords_tw.Heat_rgb_tw.." 等級，最多 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 升溫
+				-- 電漿槍 -- 1.5% | 2% | 3% | 4% (up to +20%)
+			-- ["zh-cn"] = "随"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."增长提升效果\n，最高 "..COLORS_Numbers.dmg_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 急剧升温
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ OPTIMISED COOLING +]--
+		-- Overheat Cost Reduction per stack (per tier)
+		-- Plasma Gun -- 4% | 6% | 8% | 10% (up to ~41%)
+		["loc_trait_bespoke_reduced_heat_on_continuous_desc"] = { -- +colors
+			en = COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Heat_rgb.." generation per Stack for consecutive shots or charged shots.\n"
+				..Dot_nc.." Stacks up to "..COLORS_Numbers.stacks_var_rgb.." times for a ~"..COLORS_Numbers.pc_41_rgb.." total reduction. "..Dot_red.." Description for T4!\n"
+				..Dot_nc.." T1: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_4_rgb.." | T2: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_6_rgb.." | T3: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_8_rgb..".",
+			ru = COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb.." к набору "..COLORS_KWords_ru.Heat_rgb_ru.." за заряд для серии выстрелов или для заряженных выстрелов. "..Dot_nc.." До "..COLORS_Numbers.stacks_var_rgb.." зарядов, вплоть до ~"..COLORS_Numbers.pc_41_rgb.." снижения "..COLORS_KWords_ru.Heat_rgb_ru..". "..Dot_red.." Описание 4 уровня! "..Dot_nc.." У1: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_4_rgb.." | У2: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_6_rgb.." | У3: "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_8_rgb..".", -- Оптимизированное охлаждение
+			-- fr = "Vitesse de chargement augmentée inversement proportionnelle au niveau de "..COLORS_KWords_fr.Heat_rgb_fr..".",
+			-- ["zh-tw"] = "連續精準射擊時，\n降低 "..COLORS_KWords_tw.Heat_rgb_tw.." 提升速度。上限 "..COLORS_Numbers.n_5_rgb.." 層。", -- 優化冷卻
+				-- 電漿槍 -- 4% | 6% | 8% | 10% (up to ~41%)
+			-- ["zh-cn"] = "连续射击期间，每次射击减少"..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."积累。最多叠加 "..COLORS_Numbers.n_5_rgb.." 层。", -- 优化冷却
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ FOCUSED COOLING +]--
+		-- Overheat Cost Reduction (per tier)
+		-- Plasma Gun -- 30% | 40% | 50% | 60%
+		["loc_trait_bespoke_reduced_overheat_on_crits_desc"] = { -- +colors
+			en = COLORS_Numbers.n_minus_rgb..COLORS_Numbers.heat_pc_var_rgb.." "..COLORS_KWords.Heat_rgb.." generation on "..COLORS_KWords.Crit_hit_rgb..".",
+			ru = COLORS_Numbers.n_minus_rgb..COLORS_Numbers.heat_pc_var_rgb.." "..COLORS_KWords_ru.Heat_rgb_ru.." вырабатывается при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru..".", -- Сфокусированное охлаждение -- руоф Сосредоточенное охлаждение
+			-- fr = COLORS_Numbers.heat_pc_var_rgb.." de génération de "..COLORS_KWords_fr.Heat_rgb_fr.." lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..".",
+			-- ["zh-tw"] = COLORS_KWords_tw.Crit_rgb_tw.." 時，產生的 "..COLORS_KWords_tw.Heat_rgb_tw.." 僅 "..COLORS_Numbers.heat_pc_var_rgb.."。", -- 專注冷卻
+				-- 電漿槍 -- 30% | 40% | 50% | 60%
+			-- ["zh-cn"] = COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时，减少 "..COLORS_Numbers.heat_pc_var_rgb.." "..COLORS_KWords_zh_cn.Heat_rgb_zh_cn.."积累。", -- 专注冷却
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ GAUNTLET MOMENTUM +]--
+		-- Melee Power per stack (per tier)
+		-- Grenadier Gauntlet -- 5% | 5% | 5% | 5% (up to +50%) (bugged)
+		["loc_trait_bespoke_power_bonus_on_chained_melee_desc"] = { -- power: 5%, stacks: 10, time: 1.5, +colors
+			en = COLORS_Numbers.pwr_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." per Stack. Stacks on chained Melee hits, up to "..COLORS_Numbers.stacks_var_rgb.." times. Each Stack lasts "..COLORS_Numbers.time_var_rgb.." seconds. "
+				..NTS.Pwr_note_rgb.."\n"
+				..Dot_red.." {#color(255, 35, 5)}BUG:{#reset()} "..COLORS_Numbers.pc_5_rgb.." all tiers.",
+			ru = COLORS_Numbers.pwr_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." в ближнем бою. До "..COLORS_Numbers.stacks_var_rgb.." зарядов при сериях ударов, длятся "..COLORS_Numbers.time_var_rgb.." секунды каждый. "
+				..NTS.Pwr_note_rgb_ru.."\n"
+				..Dot_red.." {#color(255, 35, 5)}СЛОМАНО:{#reset()} "..COLORS_Numbers.pc_5_rgb.." все уровни.", -- Инерция перчатки -- руоф Перчатка моментума
+			-- fr = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_1_rgb.." cumul de "..COLORS_Numbers.pwr_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée, est ajouté pour chaque attaque de mélée avec le Gantelet. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Les cumuls dure "..COLORS_Numbers.time_var_rgb.." secondes. {#color(255, 35, 5)}(bug:5% tout les niveaux de la bénédiction){#reset()}"..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "連續近戰攻擊時， "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.n_1_rgb.." 層 "..COLORS_KWords_tw.Strength_m_rgb_tw.." 。\n每層 "..COLORS_Numbers.pwr_var_rgb.." 的 "..COLORS_KWords_tw.Strength_m_rgb_tw.." ，上限 "..COLORS_Numbers.stacks_var_rgb.." 層，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。\n{#color(255, 35, 5)}（已知問題：所有等級皆為 5%）{#reset()}" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 交叉動量
+				-- 擲彈兵臂鎧 -- 5% | 5% | 5% | 5% (up to +50%) (bugged)
+			-- ["zh-cn"] = "臂铠近战攻击命中敌人时\n"..COLORS_Numbers.pwr_var_rgb.." 臂铠近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。{#color(255, 35, 5)}\n（BUG：无论祝福级别如何，\n数值始终为 +5% 强度。）{#reset()}"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 挑战势头
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ PULVERISE +]--
+		-- Crit Chance (per tier)
+		-- Grenadier Gauntlet -- 10% | 15% | 20% | 25%
+		["loc_trait_bespoke_crit_chance_on_melee_kill_desc"] = { -- crit_chance: +25%, time: 3, +colors
+			en = COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Melee Kill.",
+			ru = COLORS_Numbers.crit_var_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунды при убийстве в ближнем бою.", -- Измельчение -- руоф Пульверизация
+			fr = COLORS_Numbers.crit_var_rgb.." de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant "..COLORS_Numbers.time_var_rgb.." secondes lors d'un élimination en mélée.",
+			["zh-tw"] = "近戰擊殺時 "..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_tw.Crit_chance_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒。", -- 粉碎
+				-- 擲彈兵臂鎧 -- 10% | 15% | 20% | 25%
+			["zh-cn"] = "臂铠近战攻击击杀敌人时\n"..COLORS_Numbers.crit_var_rgb.." "..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。", -- 粉碎
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ DISRUPTIVE +]--
+		-- Melee Power (per tier)
+		-- Grenadier Gauntlet -- 15% | 20% | 25% | 30%
+		["loc_trait_bespoke_melee_power_bonus_after_explosion_desc"] = { -- power_level: 30%, time: 3.5, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds after hitting at least "..COLORS_Numbers.n_3_rgb.." enemies with a Secondary Attack. "
+				..PHRS.Can_be_refr..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." в ближнем бою на "..COLORS_Numbers.time_var_rgb.." секунды после попадания по "..COLORS_Numbers.n_3_rgb.." и более врагам тяжёлой атакой. "
+				..PHRS.Can_be_refr_ru..NTS.Pwr_note_rgb_ru, -- Разрывной эффект
+			-- fr = "Toucher au moins "..COLORS_Numbers.n_3_rgb.." ennemies avec votre attaque secondaire vous octroie "..COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour vos attaque de mélée pendant "..COLORS_Numbers.time_var_rgb.." secondes."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "當次要攻擊命中至少 "..COLORS_Numbers.n_3_rgb.." 名敵人時，\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_m_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 顛覆性力量
+				-- 擲彈兵臂鎧 -- 15% | 20% | 25% | 30%
+			-- ["zh-cn"] = "次要攻击命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时，\n"..COLORS_Numbers.pwrlvl_var_rgb.." 近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续"..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 破坏者
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ EXPLOSIVE OFFENSIVE +]--
+		-- Power (per tier)
+		-- Grenadier Gauntlet -- 6% | 9% | 12% | 15%
+		["loc_trait_bespoke_power_bonus_after_weapon_special_multiple_desc"] = { -- power_level: 15%, time: 5, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds after hitting multiple enemies with your Weapon Special explosion. "
+				..PHRS.Can_be_refr..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." на "..COLORS_Numbers.time_var_rgb.." секунд после попадания взрывом специальной атаки по нескольким врагам. "
+				..PHRS.Can_be_refr_ru..NTS.Pwr_note_rgb_ru, -- Взрывное наступление
+			-- fr = COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." bonus pendant "..COLORS_Numbers.time_var_rgb.." secondes après avoir touché plusieurs ennemies avec l'explosion spéciale de votre arme."..NTS.Pwr_note_rgb,
+			-- ["zh-tw"] = "特殊攻擊的爆炸命中多名敵人時，\n "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 爆炸使我強大
+				-- 擲彈兵臂鎧 -- 6% | 9% | 12% | 15%
+			-- ["zh-cn"] = "特殊攻击爆炸命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时，\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。持续"..COLORS_Numbers.time_var_rgb.."秒。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 爆炸攻势
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ PINPOINTING TARGET +]--
+		-- Power per stack (per tier)
+		-- Grenadier Gauntlet, Shotpistol and Shield -- 5% | 6% | 7% | 8% (up to +40%)
+		["loc_trait_bespoke_power_bonus_based_on_charge_time_ranged_desc"] = { -- power_level: +8%, time: 0.4, stacks: 5, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." every "..COLORS_Numbers.time_var_rgb.." seconds while aiming. Stacks "..COLORS_Numbers.stacks_var_rgb.." times. Removes all Stacks on shot, on push, or when leaving alt fire mode. "
+				..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." каждые "..COLORS_Numbers.time_var_rgb.." секунды пока вы целитесь. Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз. Все заряды сбрасываются при выстреле, толкании или выходе из режима прицеливания.", -- Определение цели
+			-- fr = COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." toutes les "..COLORS_Numbers.time_var_rgb.." secondes pendant la visée. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois. Tous les cumuls sont déchargés lorsque vous tirez."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "持續瞄準時，\n每 "..COLORS_Numbers.time_var_rgb.." 秒 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。射擊後會重置所有層數。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 精確定位
+				-- 擲彈兵臂鎧 -- 5% | 6% | 7% | 8% (up to +40%)
+			-- ["zh-cn"] = "瞄准期间，每 "..COLORS_Numbers.time_var_rgb.." 秒 "..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层，射击后清空所有层数。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 精确定位
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ CHARMED RELOAD +]--
+		-- Bullets Transferred (per tier)
+		-- Twin-Linked Stubbers -- 2 | 3 | 4 | 5
+		["loc_trait_bespoke_ammo_refill_from_reserve_on_crit_desc"] = { -- bullet_amount: +5, +colors
+			en = COLORS_Numbers.blltam_var_rgb.." bullets loaded from Reserve on "..COLORS_KWords.Crit_hit_rgb..". "
+				..Dot_nc.." Procs once per "..COLORS_KWords.Crit_rgb..". The shot does not need to hit an enemy.",
+			ru = COLORS_Numbers.blltam_var_rgb.." патронов заряжается из резерва при "..COLORS_KWords_ru.Crit_chance_r_rgb_ru..". "
+				..Dot_nc.." Срабатывает раз за "..COLORS_KWords_ru.Crit_chance_l_rgb_ru..". Выстрелу не обязательно попадать во врага.", -- Зачарованная перезарядка
+			-- fr = COLORS_Numbers.n_plus_rgb..COLORS_Numbers.blltam_var_rgb.." Munitions chargées depuis la réserve lors d'un "..COLORS_KWords_fr.Crit_hit_rgb_fr..".",
+			-- ["zh-tw"] = COLORS_KWords_tw.Crit_hit_rgb_tw.." ，從備彈中補充 "..COLORS_Numbers.blltam_var_rgb.." 發子彈。", -- 魔力彈藥
+				-- 雙鏈重型機槍 -- 2 | 3 | 4 | 5
+			-- ["zh-cn"] = COLORS_KWords_zh_cn.Crit_hit_rgb_zh_cn.."时，从弹药储备填装 "..COLORS_Numbers.blltam_var_rgb.." 枚弹药。", -- 魅惑重装
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ OVERWHELMING FIRE +]--
+		-- Ranged Power per stack (per tier)
+		-- Heavy Stubbers, Twin-Linked Stubbers -- 7% | 8% | 9% | 10% (up to +50%)
+		["loc_trait_bespoke_power_bonus_on_chained_hits_on_single_target_desc"] = { -- power: +10%, hit: 4, time: 2, stacks: 5, s->seconds, +colors
+			en = COLORS_Numbers.pwr_var_rgb.." "..COLORS_KWords.Strength_rgb.." for every "..COLORS_Numbers.hit_var_rgb.." Single Target Hits. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Stacks "..COLORS_Numbers.stacks_var_rgb.." times.\n"
+				..PHRS.Can_be_refr..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwr_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." за каждое "..COLORS_Numbers.hit_var_rgb.." попадание по одному врагу. Длится "..COLORS_Numbers.time_var_rgb.." секунды. Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз. "
+				..PHRS.Can_be_refr_ru..NTS.Pwr_note_rgb_ru, -- Подавляющий огонь -- руоф Огонь на поражение
+			-- fr = COLORS_Numbers.pwr_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." pour toutes les "..COLORS_Numbers.hit_var_rgb.." attaques sur une cible unique. Dure "..COLORS_Numbers.time_var_rgb.." secondes и se cumule "..COLORS_Numbers.stacks_var_rgb.." fois."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "每命中同一目標 "..COLORS_Numbers.hit_var_rgb.." 次 "..COLORS_Numbers.pwr_var_rgb.." "..COLORS_KWords_tw.Strength_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 壓倒性火力
+				-- 雙鏈重型機槍 -- 7% | 8% | 9% | 10% (up to +50%)
+			-- ["zh-cn"] = "每命中同一敌人 "..COLORS_Numbers.hit_var_rgb.." 次 "..COLORS_Numbers.pwr_var_rgb.." "..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，\n持续 "..COLORS_Numbers.time_var_rgb.." 秒。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 狂猛火力
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ CAN OPENER +]--
+		-- Brittleness Stacks (per tier)
+		-- Ripper Guns -- 10 | 12 | 14 | 16
+		["loc_trait_bespoke_armor_rending_bayonette_desc"] = { -- rending: 2.5%, stacks: 16, time: 5, max_stacks: 16, s->seconds, +colors
+			en = COLORS_Numbers.stacks_var_rgb.." Stacks of "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords.Brittleness_rgb.." is applied to the enemy on weapon Special Hit. Lasts "..COLORS_Numbers.time_var_rgb.." seconds. Max "..COLORS_Numbers.maxstks_var_rgb.." Stacks, up to "..COLORS_Numbers.pc_40_rgb..".\n"
+				..NTS.Brtl_note_rgb,
+			ru = COLORS_Numbers.stacks_var_rgb.." зарядов по "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони применяется к врагу при ударе специальной атакой. Длится "..COLORS_Numbers.time_var_rgb.." секунд. До "..COLORS_Numbers.pc_40_rgb.." при "..COLORS_Numbers.maxstks_var_rgb.." зарядах. "
+				..NTS.Brtl_note_rgb_ru, -- Открывашка
+			-- fr = "Toucher un ennemi avec l'attaque spéciale lui octroie"..COLORS_Numbers.stacks_var_rgb.." cumuls de "..COLORS_Numbers.rending_var_rgb.." de "..COLORS_KWords_fr.Brittleness_rgb_fr..". Dure "..COLORS_Numbers.time_var_rgb.." secondes. Pour un maximum de "..COLORS_Numbers.maxstks_var_rgb.." cumuls, Pour un total de "..COLORS_Numbers.pc_40_rgb.."."..COLORS_KWords_fr.Brtl_note_rgb_fr,
+			-- ["zh-tw"] = "特殊攻擊命中敵人時，\n使其獲得 "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.stacks_var_rgb.." 層 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_tw.Brittleness_rgb_tw.."，\n持續 "..COLORS_Numbers.time_var_rgb.." 秒， "..COLORS_Numbers.maxstks_var_rgb.." 層時為 "..COLORS_Numbers.pc_40_rgb.." 。" .. COLORS_KWords_tw.Brtl_note_rgb_tw, -- 開罐器
+				-- 撕裂槍 -- 10 | 12 | 14 | 16
+			-- ["zh-cn"] = "特殊攻击命中时，对目标施加 "..COLORS_Numbers.stacks_var_rgb.." 层 "..COLORS_Numbers.rending_var_rgb.." "..COLORS_KWords_zh_cn.Brittleness_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。\n最多叠加 "..COLORS_Numbers.maxstks_var_rgb.." 层，最高 "..COLORS_Numbers.pc_40_rgb.."。"..COLORS_KWords_zh_cn.Brtl_note_rgb_zh_cn, -- 开罐器
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ BORN IN BLOOD +]--
+		-- Max Toughness Percentage (per tier)
+		-- Exterminator Shotguns, Ripper Guns -- 4.5% | 5% | 5.5% | 6%
+		["loc_trait_bespoke_toughness_on_close_range_kills_desc"] = { -- toughness: +6%, +colors
+			en = COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords.Toughness_rgb.." on killing enemies within "..COLORS_Numbers.n_12_5_rgb.." meters. "
+				..Dot_green.." Can proc multiple times per shot.",
+			ru = COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." при убийстве на расстоянии до "..COLORS_Numbers.n_12_5_rgb.." метров. "
+				..Dot_green.." Может срабатывать несколько раз за выстрел.", -- Рождённый в крови -- руоф Рожденный в крови
+			-- fr = COLORS_Numbers.tghns_var_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr.." lors d'une élimination à moins de "..COLORS_Numbers.n_12_5_rgb.." mètres.",
+			-- ["zh-tw"] = COLORS_Numbers.n_12_5_rgb.." 公尺內擊殺敵人 "..COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.."。", -- 浴血而生
+				-- 撕裂槍 -- 4.5% | 5% | 5.5% | 6%
+			-- ["zh-cn"] = "击杀 "..COLORS_Numbers.n_12_5_rgb.." 米内的敌人时，"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.." "..COLORS_Numbers.tghns_var_rgb.."。", -- 浴血而生
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ PIERCE +]--
+		-- Melee Stagger Strength (per tier)
+		-- Kickback, Rumbler -- 10% | 15% | 20% | 25%
+		["loc_trait_bespoke_pass_trough_armor_on_weapon_special_and_stagger_desc"] = { -- stagger: +25%, +colors
+			en = "Special Attacks gain "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords.Stagger_rgb.." and ignore "..COLORS_KWords.Hit_mass_rgb.." Bonus from Armour.\n"
+				..Dot_green.." Carapace armor can be "..COLORS_KWords.Cleaved_rgb..".",
+			ru = "Специальные атаки дают "..COLORS_Numbers.stgr_var_rgb.." к "..COLORS_KWords_ru.Stagger2_rgb_ru.." и игнорируют усиления "..COLORS_KWords_ru.Hit_masss_rgb_ru.." врага от брони.\n"
+				..Dot_green.." Панцирная броня "..COLORS_KWords_ru.Cleaving_etsa_rgb_ru..".", -- Пробивание -- руоф Прокол
+			-- fr = "L'attaque spéciale gagne "..COLORS_Numbers.stgr_var_rgb.." de "..COLORS_KWords_fr.Stagger_rgb_fr.." и ignore le "..COLORS_KWords_fr.Hit_mass_rgb_fr.." de l'armure.",
+			-- ["zh-tw"] = "武器特殊攻擊可無視敵方護甲 "..COLORS_KWords_tw.Hit_mass_rgb_tw.."，\n並附加 "..COLORS_Numbers.stgr_var_rgb.." 的 "..COLORS_KWords_tw.Stagger2_rgb_tw.." 。", -- 穿透
+				-- 反衝者, 震盪槍 -- 10% | 15% | 20% | 25%
+			-- ["zh-cn"] = "特殊攻击 "..COLORS_Numbers.stgr_var_rgb.." "..COLORS_KWords_zh_cn.Impact_rgb_zh_cn.."，\n同时无视装甲赋予的"..COLORS_KWords_zh_cn.Hit_mass_rgb_zh_cn.."。"..COLORS_KWords_zh_cn.Hit_Mass_note_rgb_zh_cn, -- 穿透
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ PUNISHING FIRE +]--
+		-- Ranged Power (per tier)
+		-- Kickback -- 6% | 9% | 12% | 15%
+		["loc_trait_bespoke_shot_power_bonus_after_weapon_special_cleave_desc"] = { -- power_level: +15%, time: 3, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords.Strength_rgb.." on your Ranged attack for "..COLORS_Numbers.time_var_rgb.." seconds after "..COLORS_KWords.Cleaving_rgb.." through several enemies with your weapon's Special attack. "
+				..PHRS.Can_be_refr,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." для ваших дальнобойных атак на "..COLORS_Numbers.time_var_rgb.." секунды после того как специальная атака вашего оружия пробивает несколько врагов.\n"
+				..PHRS.Can_be_refr_ru, -- Карательный обстрел
+			-- fr = COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." sur vos attaques à distance pendant "..COLORS_Numbers.time_var_rgb.." secondes после avoir "..COLORS_KWords_fr.Cleaving_rgb_fr.." plusieurs ennemies avec l'attaque spéciale de votre arme."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "特殊攻擊貫穿(順劈)多名敵人\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_r_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 懲罰射擊
+				-- 反衝者 -- 6% | 9% | 12% | 15%
+			-- ["zh-cn"] = "特殊攻击命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时\n"..COLORS_Numbers.pwrlvl_var_rgb.." 远程"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 惩罚之火
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ INSPIRING BARRAGE ALT +]--
+		-- Max Toughness Percentage per stack (per tier)
+		-- Kickback -- 1% | 2% | 3% | 4% (up to 20%)
+		["loc_trait_bespoke_toughness_on_continuous_fire_alternative_desc"] = { -- toughness: +4%, ammo: 10%, stacks: 5, +colors
+			en = COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords.Toughness_rgb.." for every shot fired during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times.",
+			ru = COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." за каждый выстрел, сделанный во время непрерывной стрельбы. Суммируется "..COLORS_Numbers.stacks_var_rgb.." раз.", -- Вдохновляющий обстрел -- руоф Вдохновляющий натиск
+			-- fr = COLORS_Numbers.tghns_var_rgb.." de "..COLORS_KWords_fr.Toughness_rgb_fr.." pour chaque tir lors d'un tir continu. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.",
+			-- ["zh-tw"] = "持續射擊時，每射一發恢復 "..COLORS_Numbers.tghns_var_rgb.." "..COLORS_KWords_tw.Toughness_rgb_tw.."，\n上限 "..COLORS_Numbers.stacks_var_rgb.." 層。", -- 激勵彈幕
+				-- 反衝者 -- 1% | 2% | 3% | 4% (up to 20%)
+			-- ["zh-cn"] = "连续射击期间，每次射击回复"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn..",\n每叠加 "..COLORS_Numbers.n_1_rgb.." 层，"..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."回复效果 "..COLORS_Numbers.tghns_var_rgb.."。\n最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。", -- 鼓舞弹幕
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ EXPANSIVE +]--
+		-- Melee Power (per tier)
+		-- Kickback -- 30% | 34% | 38% | 42%
+		["loc_trait_bespoke_weapon_special_power_bonus_after_one_shots_desc"] = { -- power_level: +42%, time: 3.5, s->seconds, +colors
+			en = COLORS_Numbers.pwrlvl_var_rgb.." Melee "..COLORS_KWords.Strength_rgb.." for "..COLORS_Numbers.time_var_rgb.." seconds on Hitting "..COLORS_Numbers.n_3_rgb..COLORS_Numbers.n_plus_rgb.." Enemies with a Ranged Attack.\n"
+				..PHRS.Can_be_refr..NTS.Pwr_note_rgb,
+			ru = COLORS_Numbers.pwrlvl_var_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." ближнего боя на "..COLORS_Numbers.time_var_rgb.." секунды при попадании по "..COLORS_Numbers.n_3_rgb.." и более врагам атакой дальнего боя.\n"
+				..PHRS.Can_be_refr_ru, -- Экспансивный -- руоф Расширение
+			-- fr = COLORS_Numbers.pwrlvl_var_rgb.." de "..COLORS_KWords_fr.Strength_rgb_fr.." de mélée pendant "..COLORS_Numbers.time_var_rgb.." secondes en touchant au moins "..COLORS_Numbers.n_3_rgb.." ennemies avec une attaque à distance."..COLORS_KWords_fr.NTS.Pwr_note_rgb_fr,
+			-- ["zh-tw"] = "遠程攻擊同時命中 "..COLORS_Numbers.n_3_rgb.." 名以上敵人\n"..COLORS_Numbers.pwrlvl_var_rgb.." "..COLORS_KWords_tw.Strength_m_rgb_tw.."，持續 "..COLORS_Numbers.time_var_rgb.." 秒。" .. COLORS_KWords_tw.NTS.Pwr_note_rgb_tw, -- 擴展性
+				-- 反衝者 -- 30% | 34% | 38% | 42%
+			-- ["zh-cn"] = "命中至少 "..COLORS_Numbers.n_3_rgb.." 名敌人时\n"..COLORS_Numbers.pwrlvl_var_rgb.." 近战"..COLORS_KWords_zh_cn.Strength_rgb_zh_cn.."，持续 "..COLORS_Numbers.time_var_rgb.." 秒。"..COLORS_KWords_zh_cn.NTS.Pwr_note_rgb_zh_cn, -- 扩展
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ SHRAPNEL +]--
+		-- Bleed Stacks (per tier)
+		-- Rumbler -- 1 | 2 | 3 | 4
+		["loc_trait_bespoke_close_explosion_applies_bleed_desc"] = { -- stacks: 4, +colors
+			en = COLORS_Numbers.stacks_var_rgb.." "..COLORS_KWords.Bleed_rgb.." Stacks applied to enemies from close range explosions. "
+				..Dot_nc.." Up to "..COLORS_Numbers.n_16_rgb.." Stacks.\n"..Dot_green.." Can apply through shields. "..PHRS.Refr_dur_stappl,
+			ru = COLORS_Numbers.stacks_var_rgb.." заряда "..COLORS_KWords_ru.Bleed_rgb_ru.." получают враги от взрывов на близком расстоянии. "
+				..Dot_nc.." До "..COLORS_Numbers.n_16_rgb.." зарядов. "..Dot_green.." Накладывается через щиты. "..PHRS.Refr_dur_stappl_ru, -- Шрапнель
+			-- fr = COLORS_Numbers.p_stacks_var_rgb.." cumuls de "..COLORS_KWords_fr.Bleed_rgb_fr.." avec les explosions rapprochées.",
+			-- ["zh-tw"] = COLORS_Numbers.n_12_5_rgb.." 公尺內的爆炸會施加 "..COLORS_Numbers.p_stacks_var_rgb.." 層 "..COLORS_KWords_tw.Bleed_rgb_tw.."。", -- 破片四射
+				-- 震盪槍 -- 1 | 2 | 3 | 4
+			-- ["zh-cn"] = "低吼者的榴弹爆炸中心范围 "..COLORS_Numbers.p_stacks_var_rgb.." 层 "..COLORS_KWords_zh_cn.Bleed_rgb_zh_cn.."。", -- 弹片
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ BLAST ZONE +]--
+		-- Explosion Radius Increase per stack (per tier)
+		-- Rumbler -- 3% | 4% | 5% | 6% (up to +30%)
+		["loc_trait_bespoke_explosion_radius_bonus_on_continuous_fire_desc"] = { -- radius: +6%, stacks: 5, +colors
+			en = COLORS_Numbers.radius_var_rgb.." Explosion Radius for every shot fired during continuous fire. Stacks "..COLORS_Numbers.stacks_var_rgb.." times.",
+			ru = COLORS_Numbers.radius_var_rgb.." к радиусу взрыва за каждый выстрел, сделанный во время непрерывной стрельбы. Суммируется до "..COLORS_Numbers.stacks_var_rgb.." раз.", -- Зона взрыва
+			-- fr = COLORS_Numbers.radius_var_rgb.." de rayon d'explosion pour chaque tir d'un tir continue. Se cumule "..COLORS_Numbers.stacks_var_rgb.." fois.",
+			-- ["zh-tw"] = "持續射擊時，\n每發可使爆炸半徑 "..COLORS_Numbers.radius_var_rgb.."，上限 "..COLORS_Numbers.stacks_var_rgb.." 層。", -- 狂轟猛炸
+				-- 震盪槍 -- 3% | 4% | 5% | 6% (up to +30%)
+			-- ["zh-cn"] = "连续射击期间，每次射击"..COLORS_Numbers.radius_var_rgb.."爆炸范围。最多叠加 "..COLORS_Numbers.stacks_var_rgb.." 层。", -- 爆炸区域
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ ADHESIVE CHARGE +]--
+		-- Damage vs Ogryns and Monstrosities (per tier)
+		-- Rumbler -- 6% | 9% | 12% | 15%
+		["loc_trait_bespoke_grenades_stick_to_monsters_and_damage_desc"] = { -- dmg_vs_ogryn_monster: +15%, +colors
+			en = COLORS_Numbers.dmgvogrmon_var_rgb.." "..COLORS_KWords.Damage_rgb.." vs Ogryns and Monstrosities. Your Grenades Stick to Ogryns and Monstrosities.",
+			ru = COLORS_Numbers.dmgvogrmon_var_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." огринам и монстрам. Ваши гранаты прилипают к ним.", -- Липкий заряд -- руоф Цепной заряд
+			-- fr = COLORS_Numbers.dmgvogrmon_var_rgb.." de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les Ogryns et les Monstruosités. Vos grenades s'accrochent aux Ogryns и Monstrosities.",
+			-- ["zh-tw"] = "對歐格林與巨獸的 "..COLORS_KWords_tw.Damage_rgb_tw.." "..COLORS_Numbers.dmgvogrmon_var_rgb.."，\n且你的手榴彈會黏附在歐格林與怪物身上。", -- 黏著炸藥
+				-- 震盪槍 -- 6% | 9% | 12% | 15%
+			-- ["zh-cn"] = COLORS_Numbers.dmgvogrmon_var_rgb.." 对欧格林和怪物"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。\n低吼者的榴弹会粘在欧格林和怪物身上。", -- 粘性炸药
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
+		--[+ MARKSMAN'S REFLEX +]--
+		-- Reload Speed (per tier)
+		-- Rumbler -- 15% | 20% | 25% | 30%
+		["loc_trait_bespoke_weakspot_projectile_hit_increases_reload_speed_desc"] = { -- reload_speed: +30%, duration: 3, +colors
+			en = COLORS_Numbers.reload_var_rgb.." Reload Speed for "..COLORS_Numbers.dur_var_rgb.." seconds on Projectile "..COLORS_KWords.Weakspothit_rgb..". "
+				..Dot_red.." Cannot be refreshed during active duration.",
+			ru = COLORS_Numbers.reload_var_rgb.." к скорости перезарядки на "..COLORS_Numbers.dur_var_rgb.." секунды при попадании снаряда в "..COLORS_KWords_ru.Weakspot_rgb_ru..". "
+				..Dot_red.." Не обновляется во время действия.", -- Рефлекс стрелка
+			-- fr = COLORS_Numbers.reload_var_rgb.." de vitesse de rechargement pendant "..COLORS_Numbers.dur_var_rgb.." secondes lors d'un "..COLORS_KWords_fr.Weakspothit_rgb_fr..".",
+			-- ["zh-tw"] = "當子彈命中 "..COLORS_KWords_tw.Weakspot_rgb_tw.." 時 "..COLORS_Numbers.reload_var_rgb.." 換彈速度，\n持續 "..COLORS_Numbers.dur_var_rgb.." 秒。", -- 迅雷反射
+				-- 震盪槍 -- 15% | 20% | 25% | 30%
+			-- ["zh-cn"] = COLORS_KWords_zh_cn.Weakspothit_rgb_zh_cn.."时 "..COLORS_Numbers.reload_var_rgb.." 装弹速度，持续"..COLORS_Numbers.dur_var_rgb.."秒。", -- 神射手的反射
+			-- de = "",
+			-- it = "",
+			-- ja = "",
+			-- ko = "",
+			-- pl = "",
+			-- ["pt-br"] = "",
+			-- es = "",
+		},
 }
 
 
@@ -3130,6 +3743,6 @@ for loc_key, locales in pairs(talent_localizations) do
 	end
 end
 
-mod:info("WEAPONS_Blessings_Perks.lua loaded successfully")
+-- mod:info("WEAPONS_Blessings_Perks.lua loaded successfully")
 
 return localization_templates
