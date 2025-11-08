@@ -3,6 +3,26 @@
 # ENHANCED DESCRIPTIONS
 [![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 
+###Mod parts readiness:
+🟢 - ready,
+🟡 - partially ready,
+🔴 - not ready.
+﻿
+##All localizations:
+🟢 Curios Blessings and Perks.
+🟢 Weapon Blessings and Perks.
+🟢 Psyker Talent descriptions.
+🟡 Arbites Talent descriptions.
+🔴 Veteran Talent descriptions.
+🔴 Zealot Talent descriptions.
+🔴 Ogryn Talent descriptions.
+🔴Penance descriptions.
+
+##Non-English localizations only:
+🟡 Various Menu texts.
+🟡 Names of Enemies and Weapons.
+🟡 Names of Blessings and Talents.
+
 *This mod aims to improve visibility and clarity by enhancing Numbers, Keywords, and Descriptions across Talents, Blessings, Perks, Penances, Curios, and some Menu texts.*
 
 *We’ve also fixed localization issues to provide a smoother experience for players in our languages.*
