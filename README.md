@@ -14,13 +14,13 @@
 - 🟢 Weapon Blessings and Perks.
 - 🟢 Psyker Talent descriptions.
 - 🟡 Arbites Talent descriptions.
+- 🟡 Various Menu texts. 
 - 🔴 Veteran Talent descriptions.
 - 🔴 Zealot Talent descriptions.
 - 🔴 Ogryn Talent descriptions.
 - 🔴 Penance descriptions.
 
 ## Non-English localizations only:
-- 🟡 Various Menu texts.
 - 🟡 Names of Enemies and Weapons.
 - 🟡 Names of Blessings and Talents.
 
