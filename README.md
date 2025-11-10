@@ -5,8 +5,8 @@
 ***
 
 ### Mod parts readiness:
-- 🟢 - ready,
-- 🟡 - partially ready,
+- 🟢 - ready.
+- 🟡 - partially ready.
 - 🔴 - not ready.
 ﻿
 ## All localizations:
@@ -43,15 +43,17 @@
 __*Let us know if you spot any issues!*__
 ***
 
-> [!WARNING]
-> ![Warning!](https://i.ibb.co/mCNBLzKv/BREAK-THIS-MOD.jpg)
+> [!TIP]
+> ![Donation_Alerts](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985089-1092127534.png)
+> ![Boosty](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-2070927141.png)
+> ![Discord](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-993073092.png)
 ***
 
 ## Manual Installation:
-### ﻿ ﻿1. Extract the mod into your **Mods** folder.
-   *For example: `..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\`*
-### ﻿ ﻿2. Add **Enhanced_descriptions** to **mod_load_order.txt** manually or with my [Mod Load Order File Maker](https://www.nexusmods.com/warhammer40kdarktide/mods/139).
-### ﻿ ﻿3. Launch the game and enjoy!
+#### ﻿ ﻿1. Extract the mod into your **Mods** folder.
+      *For example: `..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\`*
+#### ﻿ ﻿2. Add **Enhanced_descriptions** to **mod_load_order.txt** manually or with my [Mod Load Order File Maker](https://www.nexusmods.com/warhammer40kdarktide/mods/139).
+#### ﻿ ﻿3. Launch the game and enjoy!
 ***
 
 ## Special Thanks to:
@@ -88,12 +90,11 @@ __*Let us know if you spot any issues!*__
 Download from: [Nexus](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 ***
 
-![Картинка 1](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378286-1772147929.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378278-971187626.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378291-1161133628.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730378293-1914590128.png)
-
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730414930-966796210.png)
-![Example](https://staticdelivery.nexusmods.com/mods/4943/images/thumbnails/210/210-1730414930-1866498807.png)
+![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191260-940401537.png)
+![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191259-128111157.png)
+![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-2127869553.png)
+![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191284-2123215510.png)
+![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-272179268.png)
+![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-325096076.png)
 
 
