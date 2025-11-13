@@ -100,13 +100,14 @@ local veteran_talent_localizations = {
 			..Dot_nc.." Max explosion radius: "..COLORS_Numbers.n_10_rgb.." meters.\n"
 			..Dot_nc.." Average armor "..COLORS_KWords.Damage_rgb.." modifiers across the board.\n"
 			..Dot_red.." Very low armor "..COLORS_KWords.Damage_rgb.." modifier against Carapace.",
+		--[+ БЛИЦ 0 - Фраг-граната +]--
 		ru = "Вы бросаете "..COLORS_KWords_ru.Fragmu_grenu_rgb_ru..", которая взрывается через "..COLORS_Numbers.n_1_7_rgb.." секунд.\n"
 			.."\n"
 			..Dot_green.." Базовый "..COLORS_KWords_ru.Dmg_rgb_ru.." в эпицентре: "..COLORS_Numbers.n_500_rgb..".\n"
 			..Dot_green.." Сильно "..COLORS_KWords_ru.Staggers_e_rgb_ru.." всех врагов, включая монстров.\n"
 			..Dot_nc.." Максимальный радиус взрыва: "..COLORS_Numbers.n_10_rgb.." метров.\n"
 			..Dot_nc.." Средний "..COLORS_KWords_ru.Dmg_rgb_ru.." по противоосколочной броне.\n"
-			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.", -- Фраг-граната
+			..Dot_red.." Слабый "..COLORS_KWords_ru.Dmg_rgb_ru.." по панцирной броне.",
 		-- fr = "Lancez une "..COLORS_KWords_fr.Fragm_gren_rgb_fr.." qui explose après "..COLORS_Numbers.n_1_7_rgb.." secondes."..TALENTS_Enh_desc2_fr.ED_VET_Blitz_0_rgb_fr,
 		-- ["zh-tw"] = "投擲一顆 "..COLORS_KWords_tw.Fragm_gren_rgb_tw.." ，在 "..COLORS_Numbers.n_1_7_rgb..COLORS_Numbers.n_second_rgb.." 後爆炸。\n" ..TALENTS_Enh_desc2_tw.ED_VET_Blitz_0_rgb_tw, -- 破片手雷 --破片手雷，在引信短暫燃燒後爆炸。
 		-- ["zh-cn"] = "",
