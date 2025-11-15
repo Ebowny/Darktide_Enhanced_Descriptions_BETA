@@ -1,11 +1,61 @@
-[![Darktide](https://global-uploads.webflow.com/6346a2e14dce674426be40ac/637f9b5a8de2a3c4122f0291_6346ea11b9acfa58c8f5a014_Darktide_Logo_2022-2.png)](https://www.playdarktide.com)
+|[<code>[ 📋 Versions      ]</code>](#-versions)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
+|---------------------------------|---------------------------------|
+# 📚 ENHANCED DESCRIPTIONS
+<div align="left">
+	<table>
+		<tr>
+			<td valign="middle" align="center">
+				<p>This mod enhances visibility and clarity by improving Numbers, Keywords, and Descriptions for Talents, Blessings, Perks, Penances, Curios, and some Menu texts.
+				I've also fixed various localization issues to create a smoother experience.
+				I hope these small but meaningful changes make your game time more enjoyable!</p>
+				<p>Please let me know if you spot any issues.</p>
+			</td>
+			<td width="15%">
+				<a href="https://www.playdarktide.com"><img src="https://cdn2.steamgriddb.com/icon/a933845584061f71dcaf5044998c7980/32/256x256.png"></a>
+			</td>
+		</tr>
+	</table>
+</div>
 
-# ENHANCED DESCRIPTIONS
-[![Enhanced Descriptions](https://staticdelivery.nexusmods.com/mods/4943/images/headers/210_1703189302.jpg)](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
+## 💾 Download
+
+<div align="left">
+	<table valign="middle" align="center">
+		<tr align="center">
+			<td width="300px">
+				<a href="https://www.nexusmods.com/warhammer40kdarktide/mods/210?tab=files">[💾 Download - Release - Nexus]</a>
+			</td>
+			<td width="300px">
+				<a href="https://github.com/xsSplater/Darktide_Enhanced_Descriptions_BETA/archive/refs/heads/xss0.zip">[💾 Download - Beta - GitHub]</a>
+			</td>
+		</tr>
+	</table>
+</div>
+
 ***
 
-[![Превью видео](https://img.youtube.com/vi/EJXcAlEOpeU/0.jpg)](https://www.youtube.com/live/EJXcAlEOpeU)
+## 🛠 Manual Installation:
+<div align="left">
+	<ol>
+		<li> Extract the mod into your <b>mods</b> folder.</li>
+				<i>For example: ..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\</i>
+		<li> Add <b>Enhanced_descriptions<b> to <b>mod_load_order.txt<b> manually or with my <b><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/139?tab=files">[ 🔬 Servo-Modquisitor ]</a></b>.</li>
+		<li>﻿ Launch the game and enjoy!</li>
+	</ol>
+</div>
 
+***
+[![Превью видео](https://img.youtube.com/vi/EJXcAlEOpeU/0.jpg)](https://www.youtube.com/live/EJXcAlEOpeU)
+***
+
+## 🧾TODO:
+- [x] Add Traditional Chinese localization.
+- [x] Add Simplified Chinese localization.
+- [x] Merge parts of extended descriptions into the main Blessings descriptions.
+	- [x] Proofread Blessings text.
+- [ ] Merge parts of extended descriptions into the main Talent descriptions.
+	- [ ] Proofread Talents text.
+*** 
 
 ### Mod parts readiness:
 - 🟢 - ready.
@@ -26,38 +76,14 @@
 ## Non-English localizations only:
 - 🟡 Names of Enemies and Weapons.
 - 🟡 Names of Blessings and Talents.
-
-## TODO:
-- [x] Add Traditional Chinese localization.
-- [x] Add Simplified Chinese localization.
-- [x] Merge parts of extended descriptions into the main Blessings descriptions.
-	- [x] Proofread Blessings text.
-- [ ] Merge parts of extended descriptions into the main Talent descriptions.
-	- [ ] Proofread Talents text.
-
 *** 
 
-*This mod aims to improve visibility and clarity by enhancing Numbers, Keywords, and Descriptions across Talents, Blessings, Perks, Penances, Curios, and some Menu texts.*
-
-*We’ve also fixed localization issues to provide a smoother experience for players in our languages.*
-
-*We hope these small but meaningful changes make your time with the game a little more enjoyable!*
-
-__*Let us know if you spot any issues!*__
-***
 
 > [!TIP]
-> ![Donation_Alerts](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985089-1092127534.png)
-> ![Boosty](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-2070927141.png)
-> ![Discord](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-993073092.png)
+> |![Donation_Alerts](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985089-1092127534.png)|![Boosty](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-2070927141.png)|![Discord](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1735985086-993073092.png)|
+> |---------------------------------|----------------------|------------------------|
 ***
 
-## Manual Installation:
-#### ﻿ ﻿1. Extract the mod into your **Mods** folder.
-      *For example: `..\Steam\steamapps\common\Warhammer 40,000 DARKTIDE\mods\Enhanced_descriptions\`*
-#### ﻿ ﻿2. Add **Enhanced_descriptions** to **mod_load_order.txt** manually or with my [Mod Load Order File Maker](https://www.nexusmods.com/warhammer40kdarktide/mods/139).
-#### ﻿ ﻿3. Launch the game and enjoy!
-***
 
 ## Special Thanks to:
   - _[deluxghost](https://github.com/deluxghost) - For making this mod possible._
@@ -66,7 +92,7 @@ __*Let us know if you spot any issues!*__
   - _[Rin Anarchy](https://github.com/RinAnarchy) - **Simplified Chinese** localization._
 ***
 
-## Versions:
+## 📋 Versions:
 ### ﻿ ﻿*Version: __3.5b__*
 - *Added Traditional Chinese localization.*
 - *Added Simplified Chinese localization.*
@@ -90,9 +116,7 @@ __*Let us know if you spot any issues!*__
    - *Added missing Blessings for Relic Blade.*
 ***
 
-Download from: [Nexus](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
-***
-
+## 🖼 Screenshots
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191260-940401537.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191259-128111157.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-2127869553.png)
@@ -100,4 +124,5 @@ Download from: [Nexus](https://www.nexusmods.com/warhammer40kdarktide/mods/210)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-272179268.png)
 ![Example](https://staticdelivery.nexusmods.com/mods/4943/images/210/210-1762191268-325096076.png)
 
-[Перейти в начало](#enhanced-descriptions)
+|[<code>[ 🎰 Menu          ]</code>](#-enhanced-descriptions)|[<code>[ 🛠 Installation  ]</code>](#-manual-installation)|[<code>[ 📋 Versions      ]</code>](#-versions)|[<code>[ 🖼 Screenshots   ]</code>](#-screenshots)|
+|---------------------------------|---------------------------------|---------------------------------|---------------------------------|
