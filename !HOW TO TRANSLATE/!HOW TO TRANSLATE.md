@@ -127,7 +127,7 @@ In general, you can translate in whatever you like best.
 ### 1. Open a file, for example: TALENTS_Veteran.lua
 ### 2. Find the part you want to translate, for example:
 	--[+ Passive 41 - Onslaught +]--
-	["loc_talent_veteran_continous_hits_apply_rending_description"] = { -- rending_multiplier: 2.5%, duration: 5, max_stacks: 16, +colors
+	["loc_talent_veteran_continous_hits_apply_rending_description"] = {
 		en = "On continuous hits to a Single target:\n"
 			..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords.Brittleness_rgb.." for {duration:%s} seconds.\n"
 			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
