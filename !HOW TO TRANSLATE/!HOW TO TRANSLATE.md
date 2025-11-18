@@ -208,12 +208,20 @@ In general, you can translate in whatever you like best.
 		-- ["pt-br"] = "",
 		-- es = "",
 	},
+#
 You need to add Keywords from your file:
-	
+
 	..Dot_green.." {rending_multiplier:%s} "..COLORS_KWords_ru.Brittleness_rgb_ru.." брони на {duration:%s} секунд.\n"
 - The text has been translated and "**_ru**" has been added to the Keyword "..**COLORS_KWords.Brittleness_rgb**..": *"..**COLORS_KWords_ru.Brittleness_rgb_ru**.."*
- - This means that the "**COLORS_KWords_ru.lua**" file contains the Keyword "**Brittleness**" *(it is always added with **_rgb_your_localization***.
-  - For "**_ru**" it's "**COLORS_KWords_ru.Brittleness_rgb_ru**", for "**_fr**" it's "**COLORS_KWords_fr.Brittleness_rgb_fr**", etc.
+- This means that the "**COLORS_KWords_ru.lua**" file contains the Keyword "**Brittleness**" *(it is always added with **_rgb_your_localization***.
+	- For "**_ru**" it's "**COLORS_KWords_ru.Brittleness_rgb_ru**", for "**_fr**" it's "**COLORS_KWords_fr.Brittleness_rgb_fr**", etc.
+#
+	..PHRS.Can_be_refr_ru.."\n"
+- This value is taken from the beginning of the current file. Look for the list of frequently repeated phrases - "**PHRS**" at the beginning, and then look for the string "**Can_be_refr_ru**" in it. Add strings for your language and then use them.
+#
+	..NTS.Brtl_note_rgb_ru,
+- This value is taken from the beginning of the current file. Look for the notes list - "**NTS**" at the beginning and then look for the string "**Brtl_note_rgb_ru**" in it. Add strings for your language and then use them.
+
 ### 5. Save the file (CTRL+S).
 ### 6. Done. You can test it in-game.
 ***
