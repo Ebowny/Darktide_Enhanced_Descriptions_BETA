@@ -162,9 +162,11 @@ local CONFIG = {
 	},
 	fury_text_colour = {
 		Fury = "Fury",
+		-- Adren = "Adrenaline", -- Scum
 	},
 	momentum_text_colour = {
 		Momentum = "Momentum",
+		-- VultMark = "Vulture’s Mark", -- Scum
 	},
 	stealth_text_colour = {
 		Stealth = "Stealth",
@@ -186,16 +188,24 @@ local CONFIG = {
 	},
 	meleespec_text_colour = {
 		Meleespec = "Melee Specialist",
-		Meleejust = "Melee Justice",
+		Meleejust = "Melee Justice", -- Arbites
 	},
 	rangedspec_text_colour = {
 		Rangedspec = "Ranged Specialist",
-		Rangedjust = "Ranged Justice",
+		Rangedjust = "Ranged Justice", -- Arbites
 	},
 	-- Arbites
 	class_arbites_text_colour = {
 		cls_arb = "Arbitrator",
 		cls_arb2 = "Arbitrator's",
+	},
+	-- Hive Scum
+	class_scum_text_colour = {
+		cls_scm = "Hive Scum",
+		cls_scm2 = "Hive Scum's",
+	},
+	chemtox_text_colour = {
+		Chem_Tox = "Chem Toxin",
 	},
 
 -- TALENTS

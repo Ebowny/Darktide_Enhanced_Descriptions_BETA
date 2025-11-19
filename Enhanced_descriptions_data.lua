@@ -49,7 +49,7 @@ local COLOR_SETTINGS = {
 	{ id = "class_ogryn",			default = "player_slot_3" },
 	{ id = "fnp",					default = "light_coral" },
 	{ id = "luckyb",				default = "orange" },
-	{ id = "trample",				default = "forest_green" },
+	{ id = "trample",				default = "dark_olive_green" },
 	{ id = "class_zealot",			default = "player_slot_2" },
 	{ id = "fury",					default = "hot_pink" },
 	{ id = "momentum",				default = "ui_red_super_light" },
@@ -60,6 +60,8 @@ local COLOR_SETTINGS = {
 	{ id = "meleespec",				default = "ui_hud_red_light" },
 	{ id = "rangedspec",			default = "citadel_the_fang_grey" },
 	{ id = "class_arbites",			default = "plum" },
+	{ id = "class_scum",			default = "citadel_nurgling_green" },
+	{ id = "chemtox",				default = "online_green" },
 
 	-- Misc
 	{ id = "talents",				default = "ui_input_color" },

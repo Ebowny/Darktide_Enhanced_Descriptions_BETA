@@ -58,6 +58,8 @@ local LOCALIZATION_GROUPS = {
 	"meleespec",
 	"rangedspec",
 	"class_arbites",
+	"class_scum",
+	"chemtox",
 
 	-- Misc
 	"talents",
@@ -106,7 +108,7 @@ localizations[type_name .. "_text_colour"] = {
 	ja = "色を選択",
 	ko = "색상 선택",
 	pl = "Wybierz kolor",
-	["pt-BR"] = "Escolher cor",
+	["pt-br"] = "Escolher cor",
 	es = "Elegir color",
 }
 end
@@ -123,7 +125,7 @@ local localizations = {
 		ja = "詳細な説明",
 		ko = "향상된 설명",
 		pl = "Rozszerzone Opisy",
-		["pt-BR"] = "Descrições Aprimoradas",
+		["pt-br"] = "Descrições Aprimoradas",
 		es = "Descripciones Mejoradas",
 	},
 	mod_description = {
@@ -137,7 +139,7 @@ local localizations = {
 		ja = "タレント、祝福、苦行、収集品、その他のメニューテキストの説明内の数値とキーワードを強調表示することで、読みやすさを向上させます。また、ローカライズを修正し、一部の説明に明確さを追加します。",
 		ko = "특성, 축복, 참회, 골동품 및 기타 메뉴 텍스트 설명에서 숫자와 키워드를 강조하여 가독성을 향상시킵니다. 또한 현지화를 수정하고 일부 설명에 명확성을 더합니다.",
 		pl = "Poprawia czytelność poprzez wyróżnianie liczb i słów kluczowych w opisach Talentów, Błogosławieństw, Pokut, Kuriozów i innych tekstach menu. Również poprawia lokalizacje i dodaje przejrzystości do niektórych opisów.",
-		["pt-BR"] = "Melhora a legibilidade destacando números e palavras-chave nas descrições de Talentos, Bênçãos, Penitências, Curiosidades e outros textos de menu. Também corrige localizações e adiciona clareza a algumas descrições.",
+		["pt-br"] = "Melhora a legibilidade destacando números e palavras-chave nas descrições de Talentos, Bênçãos, Penitências, Curiosidades e outros textos de menu. Também corrige localizações e adiciona clareza a algumas descrições.",
 		es = "Mejora la legibilidad resaltando números y palabras clave en descripciones de Talentos, Bendiciones, Penitencias, Curiosidades y otros textos de menú. También corrige localizaciones y añade claridad a algunas descripciones.",
 	},
 
@@ -153,7 +155,7 @@ local localizations = {
 		ja = "「武器」モジュール",
 		ko = "\"무기\" 모듈",
 		pl = "Moduł „Bronie”",
-		["pt-BR"] = "Módulo \"Armas\"",
+		["pt-br"] = "Módulo \"Armas\"",
 		es = "Módulo \"Armas\"",
 	},
 	enable_weapons_file_description = {
@@ -167,7 +169,7 @@ local localizations = {
 		ja = "このモジュールは武器の祝福とパークのキーワードと数値を強調表示します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 무기 축복과 특전의 키워드와 숫자를 강조 표시합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł wyróżnia słowa kluczowe i liczby Błogosławieństw i Atutów broni. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo destaca as palavras-chave e números das Bênçãos e Vantagens de armas. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo destaca as palavras-chave e números das Bênçãos e Vantagens de armas. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo resalta las palabras clave y números de las Bendiciones y Ventajas de armas. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -182,7 +184,7 @@ local localizations = {
 		ja = "「収集品」モジュール",
 		ko = "\"골동품\" 모듈",
 		pl = "Moduł „Kurioza”",
-		["pt-BR"] = "Módulo \"Curiosidades\"",
+		["pt-br"] = "Módulo \"Curiosidades\"",
 		es = "Módulo \"Curiosidades\"",
 	},
 	enable_curious_file_description = {
@@ -196,7 +198,7 @@ local localizations = {
 		ja = "このモジュールは収集品の祝福とパークのキーワードと数値を強調表示します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 골동품의 축복과 특전의 키워드와 숫자를 강조 표시합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł wyróżnia słowa kluczowe i liczby Błogosławieństw i Atutów Kuriozów. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo destaca as palavras-chave e números das Bênçãos e Vantagens das Curiosidades. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo destaca as palavras-chave e números das Bênçãos e Vantagens das Curiosidades. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo resalta las palabras clave y números de las Bendiciones y Ventajas de las Curiosidades. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -211,7 +213,7 @@ local localizations = {
 		ja = "「メニュー」モジュール",
 		ko = "\"메뉴\" 모듈",
 		pl = "Moduł „Menu”",
-		["pt-BR"] = "Módulo \"Menus\"",
+		["pt-br"] = "Módulo \"Menus\"",
 		es = "Módulo \"Menús\"",
 	},
 	enable_menus_file_description = {
@@ -225,7 +227,7 @@ local localizations = {
 		ja = "このモジュールは様々なメニューのラベルを修正し、メルクの契約の数値を強調表示します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 다양한 메뉴의 레이블을 수정하고 멜크의 계약서에서 숫자를 강조 표시합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł poprawia etykiety w różnych menu, a także wyróżnia liczby w Kontraktach Melka. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo corrige rótulos em vários menus e também destaca números nos Contratos do Melk. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo corrige rótulos em vários menus e também destaca números nos Contratos do Melk. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo corrige las etiquetas en varios menús y también resalta los números en los Contratos de Melk. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -240,7 +242,7 @@ local localizations = {
 		ja = "「タレント」モジュール",
 		ko = "\"특성\" 모듈",
 		pl = "Moduł „Talenty”",
-		["pt-BR"] = "Módulo \"Talentos\"",
+		["pt-br"] = "Módulo \"Talentos\"",
 		es = "Módulo \"Talentos\"",
 	},
 	enable_talents_file_description = {
@@ -254,7 +256,7 @@ local localizations = {
 		ja = "このモジュールはタレントのキーワードを強調表示し、一部の説明を少し改善します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 특성 키워드를 강조 표시하고 일부 특성의 설명을 약간 개선합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł wyróżnia słowa kluczowe Talentów i nieco poprawia opisy niektórych z nich. Możesz wyłączyć ten moduł, если nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo destaca as palavras-chave dos Talentos e melhora ligeiramente as descrições de alguns deles. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo destaca as palavras-chave dos Talentos e melhora ligeiramente as descrições de alguns deles. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo resalta las palabras clave de los Talentos y mejora ligeramente las descripciones de algunos de ellos. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -269,7 +271,7 @@ local localizations = {
 		ja = "「苦行」モジュール",
 		ko = "\"참회\" 모듈",
 		pl = "Moduł „Pokuty”",
-		["pt-BR"] = "Módulo \"Penitências\"",
+		["pt-br"] = "Módulo \"Penitências\"",
 		es = "Módulo \"Penitencias\"",
 	},
 	enable_penances_file_description = {
@@ -283,7 +285,7 @@ local localizations = {
 		ja = "このモジュールは苦行のキーワードと数値を強調表示し、一部の説明を少し拡張します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 참회의 키워드와 숫자를 강조 표시하고 일부 참회의 설명을 약간 확장합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł wyróżnia słowa kluczowe i liczby Pokut oraz nieco rozszerza opisy niektórych z nich. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo destaca as palavras-chave e números das Penitências e expande ligeiramente as descrições de algumas delas. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo destaca as palavras-chave e números das Penitências e expande ligeiramente as descrições de algumas delas. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo resalta las palabras clave y números de las Penitencias y amplía ligeramente las descripciones de algunas de ellas. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -298,7 +300,7 @@ local localizations = {
 		ja = "「敵と武器の名前」モジュール",
 		ko = "\"적 및 무기 이름\" 모듈",
 		pl = "Moduł „Nazwy wrogów i broni”",
-		["pt-BR"] = "Módulo \"Nomes de inimigos e armas\"",
+		["pt-br"] = "Módulo \"Nomes de inimigos e armas\"",
 		es = "Módulo \"Nombres de enemigos y armas\"",
 	},
 	enable_names_file_description = {
@@ -313,7 +315,7 @@ local localizations = {
 		ja = "このモジュールは武器と敵の名前を変更します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 무기와 적의 이름을 변경합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł zmienia nazwy broni i wrogów. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo altera os nomes de armas e inimigos. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo altera os nomes de armas e inimigos. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo cambia los nombres de armas y enemigos. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -328,7 +330,7 @@ local localizations = {
 		ja = "「タレントと祝福の名前」モジュール",
 		ko = "\"특성 및 축복 이름\" 모듈",
 		pl = "Moduł „Nazwy talentów i błogosławieństw”",
-		["pt-BR"] = "Módulo \"Nomes de talentos e bênçãos\"",
+		["pt-br"] = "Módulo \"Nomes de talentos e bênçãos\"",
 		es = "Módulo \"Nombres de talentos y bendiciones\"",
 	},
 	enable_names_tal_bless_file_description = {
@@ -343,7 +345,7 @@ local localizations = {
 		ja = "このモジュールはタレントと祝福の名前を変更します。必要ない場合はこのモジュールを無効にできます。",
 		ko = "이 모듈은 특성과 축복의 이름을 변경합니다. 필요하지 않은 경우 이 모듈을 비활성화할 수 있습니다.",
 		pl = "Ten moduł zmienia nazwy Talentów i Błogosławieństw. Możesz wyłączyć ten moduł, jeśli nie jest ci potrzebny.",
-		["pt-BR"] = "Este módulo altera os nomes de Talentos e Bênçãos. Você pode desativar este módulo se não precisar dele.",
+		["pt-br"] = "Este módulo altera os nomes de Talentos e Bênçãos. Você pode desativar este módulo se não precisar dele.",
 		es = "Este módulo cambia los nombres de Talentos y Bendiciones. Puedes desactivar este módulo si no lo necesitas.",
 	},
 
@@ -360,7 +362,7 @@ local localizations = {
 		ja = " 出血",
 		ko = " 출혈",
 		pl = " Krwawienie",
-		["pt-BR"] = " Sangramento",
+		["pt-br"] = " Sangramento",
 		es = " Sangrado",
 	},
 	brittleness_colour = {
@@ -374,7 +376,7 @@ local localizations = {
 		ja = " 脆弱",
 		ko = " 취약",
 		pl = " Kruchość",
-		["pt-BR"] = " Fragilidade",
+		["pt-br"] = " Fragilidade",
 		es = " Fragilidad",
 	},
 	burn_colour = {
@@ -388,7 +390,7 @@ local localizations = {
 		ja = " 燃焼",
 		ko = " 연소",
 		pl = " Płonięcie",
-		["pt-BR"] = " Queimadura",
+		["pt-br"] = " Queimadura",
 		es = " Quemadura",
 	},
 	cleave_colour = {
@@ -402,7 +404,7 @@ local localizations = {
 		ja = " 薙ぎ払い",
 		ko = " cleave",
 		pl = " Rozcinanie",
-		["pt-BR"] = " Fender",
+		["pt-br"] = " Fender",
 		es = " Hendir",
 	},
 	coherency_colour = {
@@ -416,7 +418,7 @@ local localizations = {
 		ja = " 連携",
 		ko = " 일체감",
 		pl = " Spójność",
-		["pt-BR"] = " Coerência",
+		["pt-br"] = " Coerência",
 		es = " Coherencia",
 	},
 	combat_ability_colour = {
@@ -430,7 +432,7 @@ local localizations = {
 		ja = " 戦闘能力",
 		ko = " 전투 능력",
 		pl = " Zdolność bojowa",
-		["pt-BR"] = " Habilidade de Combate",
+		["pt-br"] = " Habilidade de Combate",
 		es = " Habilidad de Combate",
 	},
 	corruption_colour = {
@@ -444,7 +446,7 @@ local localizations = {
 		ja = " 腐敗",
 		ko = " 타락",
 		pl = " Skażenie",
-		["pt-BR"] = " Corrupção",
+		["pt-br"] = " Corrupção",
 		es = " Corrupción",
 	},
 	crit_colour = {
@@ -458,7 +460,7 @@ local localizations = {
 		ja = " クリティカル",
 		ko = " 치명타",
 		pl = " Cios krytyczny",
-		["pt-BR"] = " Crítico",
+		["pt-br"] = " Crítico",
 		es = " Crítico",
 	},
 	damage_colour = {
@@ -472,7 +474,7 @@ local localizations = {
 		ja = " ダメージ",
 		ko = " 피해",
 		pl = " Obrażenia",
-		["pt-BR"] = " Dano",
+		["pt-br"] = " Dano",
 		es = " Daño",
 	},
 	electrocuted_colour = {
@@ -486,7 +488,7 @@ local localizations = {
 		ja = " 感電",
 		ko = " 감전",
 		pl = " Porażenie prądem",
-		["pt-BR"] = " Electrocutado",
+		["pt-br"] = " Electrocutado",
 		es = " Electrocutado",
 	},
 	finesse_colour = {
@@ -500,7 +502,7 @@ local localizations = {
 		ja = " 技巧",
 		ko = " 섬세함",
 		pl = " Finezja",
-		["pt-BR"] = " Fineza",
+		["pt-br"] = " Fineza",
 		es = " Sutileza",
 	},
 	health_colour = {
@@ -514,7 +516,7 @@ local localizations = {
 		ja = " 体力 / 負傷",
 		ko = " 생명력 / 부상",
 		pl = " Zdrowie / Rana",
-		["pt-BR"] = " Vida / Ferimento",
+		["pt-br"] = " Vida / Ferimento",
 		es = " Salud / Herida",
 	},
 	hit_mass_colour = {
@@ -528,7 +530,7 @@ local localizations = {
 		ja = " ヒットマス",
 		ko = " 타격 질량",
 		pl = " Masa uderzenia",
-		["pt-BR"] = " Massa de Acerto",
+		["pt-br"] = " Massa de Acerto",
 		es = " Masa de Impacto",
 	},
 	impact_colour = {
@@ -542,7 +544,7 @@ local localizations = {
 		ja = " 衝撃",
 		ko = " 충격",
 		pl = " Uderzenie",
-		["pt-BR"] = " Impacto",
+		["pt-br"] = " Impacto",
 		es = " Impacto",
 	},
 	peril_colour = {
@@ -556,7 +558,7 @@ local localizations = {
 		ja = " 危険度",
 		ko = " 위험",
 		pl = " Niebezpieczeństwo",
-		["pt-BR"] = " Perigo",
+		["pt-br"] = " Perigo",
 		es = " Peligro",
 	},
 	power_colour = {
@@ -570,7 +572,7 @@ local localizations = {
 		ja = " 威力",
 		ko = " 위력",
 		pl = " Moc",
-		["pt-BR"] = " Poder",
+		["pt-br"] = " Poder",
 		es = " Poder",
 	},
 	rending_colour = {
@@ -584,7 +586,7 @@ local localizations = {
 		ja = " 切断",
 		ko = " 분열",
 		pl = " Rozdzieranie",
-		["pt-BR"] = " Dilaceração",
+		["pt-br"] = " Dilaceração",
 		es = " Desgarro",
 	},
 	soulblaze_colour = {
@@ -598,7 +600,7 @@ local localizations = {
 		ja = " ソウルフレイム",
 		ko = " 영혼 불꽃",
 		pl = " Płomień Duszy",
-		["pt-BR"] = " Chama da Alma",
+		["pt-br"] = " Chama da Alma",
 		es = " Llama de Alma",
 	},
 	stagger_colour = {
@@ -612,7 +614,7 @@ local localizations = {
 		ja = " スタッガー",
 		ko = " 비틀거림",
 		pl = " Oszołomienie",
-		["pt-BR"] = " Cambaleante",
+		["pt-br"] = " Cambaleante",
 		es = " Tambaleo",
 	},
 	stamina_colour = {
@@ -626,7 +628,7 @@ local localizations = {
 		ja = " スタミナ",
 		ko = " 스태미나",
 		pl = " Wytrzymałość",
-		["pt-BR"] = " Vigor",
+		["pt-br"] = " Vigor",
 		es = " Aguante",
 	},
 	toughness_colour = {
@@ -640,7 +642,7 @@ local localizations = {
 		ja = " タフネス",
 		ko = " 탄력성",
 		pl = " Wytrwałość",
-		["pt-BR"] = " Resistência",
+		["pt-br"] = " Resistência",
 		es = " Dureza",
 	},
 	weakspot_colour = {
@@ -654,7 +656,7 @@ local localizations = {
 		ja = " 弱点",
 		ko = " 약점",
 		pl = " Miejsce wrażliwe",
-		["pt-BR"] = " Ponto Fraco",
+		["pt-br"] = " Ponto Fraco",
 		es = " Punto Débil",
 	},
 
@@ -670,7 +672,7 @@ local localizations = {
 		ja = " プサイカー",
 		ko = " 싸이커",
 		pl = " Psyker",
-		["pt-BR"] = " Psíquico",
+		["pt-br"] = " Psíquico",
 		es = " Psíquico",
 	},
 	precision_colour = {
@@ -684,7 +686,7 @@ local localizations = {
 		ja = " 精密",
 		ko = " 정밀도",
 		pl = " Precyzja",
-		["pt-BR"] = " Precisão",
+		["pt-br"] = " Precisão",
 		es = " Precisión",
 	},
 
@@ -700,7 +702,7 @@ local localizations = {
 		ja = " オグリン",
 		ko = " 오그린",
 		pl = " Ogryn",
-		["pt-BR"] = " Ogryn",
+		["pt-br"] = " Ogryn",
 		es = " Ogryn",
 	},
 	fnp_colour = {
@@ -714,7 +716,7 @@ local localizations = {
 		ja = " 痛覚鈍麻",
 		ko = " 고통 무감각",
 		pl = " Nieczułość na Ból",
-		["pt-BR"] = " Insensibilidade à Dor",
+		["pt-br"] = " Insensibilidade à Dor",
 		es = " Insensibilidad al Dolor",
 	},
 	luckyb_colour = {
@@ -728,7 +730,7 @@ local localizations = {
 		ja = " ラッキーバレット",
 		ko = " 행운의 탄환",
 		pl = " Szczęśliwy Pocisk",
-		["pt-BR"] = " Bala Sortuda",
+		["pt-br"] = " Bala Sortuda",
 		es = " Bala Afortunada",
 	},
 	trample_colour = {
@@ -742,7 +744,7 @@ local localizations = {
 		ja = " トランプル",
 		ko = " 짓밟기",
 		pl = " Depczenie",
-		["pt-BR"] = " Atropelar",
+		["pt-br"] = " Atropelar",
 		es = " Arrollar",
 	},
 
@@ -758,7 +760,7 @@ local localizations = {
 		ja = " ジーロット",
 		ko = " 광신자",
 		pl = " Fanatyk",
-		["pt-BR"] = " Fanático",
+		["pt-br"] = " Fanático",
 		es = " Fanático",
 	},
 	fury_colour = {
@@ -772,7 +774,7 @@ local localizations = {
 		ja = " フューリー",
 		ko = " 분노",
 		pl = " Furia",
-		["pt-BR"] = " Fúria",
+		["pt-br"] = " Fúria",
 		es = " Furia",
 	},
 	momentum_colour = {
@@ -786,7 +788,7 @@ local localizations = {
 		ja = " モメンタム",
 		ko = " 모멘텀",
 		pl = " Impet",
-		["pt-BR"] = " Momentum",
+		["pt-br"] = " Momentum",
 		es = " Impulso",
 	},
 	stealth_colour = {
@@ -800,7 +802,7 @@ local localizations = {
 		ja = " ステルス",
 		ko = " 은신",
 		pl = " Skradanie",
-		["pt-BR"] = " Furtividade",
+		["pt-br"] = " Furtividade",
 		es = " Sigilo",
 	},
 
@@ -816,7 +818,7 @@ local localizations = {
 		ja = " ベテラン",
 		ko = " 베테랑",
 		pl = " Weteran",
-		["pt-BR"] = " Veterano",
+		["pt-br"] = " Veterano",
 		es = " Veterano",
 	},
 	focus_colour = {
@@ -830,7 +832,7 @@ local localizations = {
 		ja = " 集中",
 		ko = " 집중",
 		pl = " Skupienie",
-		["pt-BR"] = " Foco",
+		["pt-br"] = " Foco",
 		es = " Concentración",
 	},
 	focust_colour = {
@@ -844,7 +846,7 @@ local localizations = {
 		ja = " フォーカスターゲット",
 		ko = " 집중 대상",
 		pl = " Cel Skupienia",
-		["pt-BR"] = " Alvo Focal",
+		["pt-br"] = " Alvo Focal",
 		es = " Objetivo Prioritario",
 	},
 	meleespec_colour = {
@@ -858,7 +860,7 @@ local localizations = {
 		ja = " 近接専門家",
 		ko = " 근접 전문가",
 		pl = " Specjalista Walki Wręcz",
-		["pt-BR"] = " Especialista Corpo a Corpo",
+		["pt-br"] = " Especialista Corpo a Corpo",
 		es = " Especialista Cuerpo a Cuerpo",
 	},
 	rangedspec_colour = {
@@ -872,7 +874,7 @@ local localizations = {
 		ja = " 遠隔専門家",
 		ko = " 원거리 전문가",
 		pl = " Specjalista Walki Dystansowej",
-		["pt-BR"] = " Especialista à Distância",
+		["pt-br"] = " Especialista à Distância",
 		es = " Especialista a Distancia",
 	},
 
@@ -888,8 +890,38 @@ local localizations = {
 		ja = " アービター",
 		ko = " 중재관",
 		pl = " Arbitrator",
-		["pt-BR"] = " Árbitro",
+		["pt-br"] = " Árbitro",
 		es = " Árbitro",
+	},
+
+--[+HIVE SCUM+]--
+	class_scum_colour = {
+		en = " Hive Scum",
+		-- fr = "",
+		ru = " Отброс Улья",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	},
+	chemtox_colour = {
+		en = " Chem Toxin",
+		-- fr = "",
+		ru = " Хим-токсин",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
 	},
 
 --[+MISC+]--
@@ -904,7 +936,7 @@ local localizations = {
 		ja = " タレント",
 		ko = " 특성",
 		pl = " Talenty",
-		["pt-BR"] = " Talentos",
+		["pt-br"] = " Talentos",
 		es = " Talentos",
 	},
 	talents_penances_colour = {
@@ -918,7 +950,7 @@ local localizations = {
 		ja = " タレント - 苦行",
 		ko = " 특성 - 참회",
 		pl = " Talenty - Pokuty",
-		["pt-BR"] = " Talentos - Penitências",
+		["pt-br"] = " Talentos - Penitências",
 		es = " Talentos - Penitencias",
 	},
 	numbers_colour = {
@@ -932,7 +964,7 @@ local localizations = {
 		ja = " 数字",
 		ko = " 숫자",
 		pl = " Liczby",
-		["pt-BR"] = " Números",
+		["pt-br"] = " Números",
 		es = " Números",
 	},
 	variables_colour = {
@@ -946,7 +978,7 @@ local localizations = {
 		ja = " 変数",
 		ko = " 변수",
 		pl = " Zmienne",
-		["pt-BR"] = " Variáveis",
+		["pt-br"] = " Variáveis",
 		es = " Variables",
 	},
 	note_colour = {
@@ -960,7 +992,7 @@ local localizations = {
 		ja = " 注釈",
 		ko = " 참고",
 		pl = " Uwaga",
-		["pt-BR"] = " Nota",
+		["pt-br"] = " Nota",
 		es = " Nota",
 	},
 	warning_colour = {
@@ -974,7 +1006,7 @@ local localizations = {
 		ja = " 警告",
 		ko = " 경고",
 		pl = " Ostrzeżenie",
-		["pt-BR"] = " Aviso",
+		["pt-br"] = " Aviso",
 		es = " Advertencia",
 	},
 
@@ -990,7 +1022,7 @@ local localizations = {
 		ja = "蜂起",
 		ko = "봉기",
 		pl = "Powstanie",
-		["pt-BR"] = "Revolta",
+		["pt-br"] = "Revolta",
 		es = "Levantamiento",
 	},
 	malice_colour = {
@@ -1004,7 +1036,7 @@ local localizations = {
 		ja = "悪意",
 		ko = "악의",
 		pl = "Złośliwość",
-		["pt-BR"] = "Maldade",
+		["pt-br"] = "Maldade",
 		es = "Maldad",
 	},
 	heresy_colour = {
@@ -1018,7 +1050,7 @@ local localizations = {
 		ja = "異端",
 		ko = "이단",
 		pl = "Herezja",
-		["pt-BR"] = "Heresia",
+		["pt-br"] = "Heresia",
 		es = "Herejía",
 	},
 	damnation_colour = {
@@ -1032,7 +1064,7 @@ local localizations = {
 		ja = "呪い",
 		ko = "저주",
 		pl = "Potępienie",
-		["pt-BR"] = "Danação",
+		["pt-br"] = "Danação",
 		es = "Condenación",
 	},
 	auric_colour = {
@@ -1046,7 +1078,7 @@ local localizations = {
 		ja = "アウリック",
 		ko = "아우릭",
 		pl = "Auryczny",
-		["pt-BR"] = "Áurico",
+		["pt-br"] = "Áurico",
 		es = "Áurico",
 	},
 }
