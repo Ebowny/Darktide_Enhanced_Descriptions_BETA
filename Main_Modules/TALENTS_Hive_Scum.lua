@@ -82,26 +82,6 @@ local NTS = {
 	-- Rend_note_rgb_ru = ""..Dot_green.." "..COLORS_KWords_ru.Rndg_rgb_ru.." брони повышает ваш личный "..COLORS_KWords_ru.Dmg_rgb_ru..".",
 }
 
---[+ Passive  - In Your Face +]--
--- en = Dot_green.." +X% Ranged "..COLORS_KWords.Damage_rgb.." at Close range, which is further increased for a short while after Reloading.",
-
---[+ Passive  - Like the Wind +]--
--- en = Dot_green.." +X% Sprint Dodge Angle.\n"
-			-- ..Dot_green.." You can Sprint Dodge even without "..COLORS_KWords.Stamina_rgb..".",
-
---[+ Passive  - Nimble +]--
--- en = Dot_green.." Dodges move farther and last longer.",
-
---[+ Passive  - Hyper-Violence +]--
--- en = Dot_green.." +X% Melee "..COLORS_KWords.Damage_rgb.." based on amount of overkill "..COLORS_KWords.Damage_rgb..", upon Melee kill.",
-
---[+ Passive  - Blessed Stimms +]--
--- en = Dot_green.." While Stimmed, killing blows clear some "..COLORS_KWords.Corruption_rgb..".",
-
---[+ Passive  - Targeted Toxin +]--
--- en = Dot_green.." -X% "..COLORS_KWords.Damage_rgb.." Dealt by Enemies infected with your Chem Toxin.\n"
-			-- ..Dot_green.." Increased effect on Monsters.",
-
 
 local scum_talent_localizations = {
 -- TEMPLATE
@@ -140,12 +120,29 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ BLITZ 1 - Blinder +]--
-	-- ["loc_talent__improved_description"] = { -- talent_old: , : , &->and, +colors
+	-- ["loc_talent_veteran_grenade_apply_bleed_desc"] = { -- talent_old: , : , &->and, +colors
 		-- en = "An extremely Quick to throw blinding grenade, which "..COLORS_KWords.Staggers_rgb.." enemies.\n"
 			-- .."\n"
 			-- ..Dot_green.." You can recover Blinder grenades by killing enemies.",
-		--[+ БЛИЦ 1 -  +]--
-		-- ru = "",
+		--[+ БЛИЦ 1 - Ослепитель +]--
+		-- ru = "Вы молниеносно бросаете ослепляющую гранату, которая "..COLORS_KWords_ru.Staggers_e_rgb_ru.." врагов.\n"
+			-- .."\n"
+			-- ..Dot_green.." Вы восстанавливаете "..COLORS_KWords_ru.Blind_greny_rgb_ru.." убивая врагов.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_grenade_apply_bleed"] = { -- talent_old: , : , &->and, +colors
+		-- en = "Blinder",
+		--[+ БЛИЦ 1 - Ослепитель +]--
+		-- ru = "Ослепитель",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -174,10 +171,25 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ BLITZ 2 - Boom Bringer +]--
-	-- ["loc___description"] = { -- +colors
-		-- en = "A high powered missile launcher.",
-		--[+ БЛИЦ 2 -  +]--
-		-- ru = "",
+	-- ["loc_talent_ability_krak_grenade_desc"] = { -- +colors
+		-- en = "A high powered missile launcher. What else is there to say? For when you really want something dead!",
+		--[+ БЛИЦ 2 - Бабахер +]--
+		-- ru = "Мощная ракетница. Что ещё тут скажешь, когда очень хочется кого-нибудь умертвить?!",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_ability_krak_grenade"] = { -- +colors
+		-- en = "Boom Bringer",
+		--[+ БЛИЦ 2 - Бабахер +]--
+		-- ru = "Бабахер",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -206,10 +218,25 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ BLITZ 3 - Chem Grenade +]--
-	-- ["loc___description"] = { -- +colors
+	-- ["loc_ability_smoke_grenade_description"] = { -- +colors
 		-- en = "Throw a canister containing "..COLORS_KWords.Chem_Tox_rgb..", which breaks open and spills its contents across an area when it explodes. Any enemy that enters the lingering toxic cloud will be affected with Stacks of "..COLORS_KWords.Chem_Tox_rgb..".",
-		--[+ БЛИЦ 3 -  +]--
-		-- ru = "",
+		--[+ БЛИЦ 3 - Хим-граната +]--
+		-- ru = "Вы бросаете канистру с "..COLORS_KWords_ru.Chem_Toxom_rgb_ru..", которая при взрыве разлетится на куски и разольёт вокруг своё содержимое, распространяя токсичные пары. Любой враг, вошедший в токсичное облако, будет набирать заряды "..COLORS_KWords_ru.Chem_Toxa_rgb_ru..".",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_ability_smoke_grenade"] = { -- +colors
+		-- en = "Chem Grenade",
+		--[+ БЛИЦ 3 - Хим-граната +]--
+		-- ru = "Хим-граната",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -255,10 +282,26 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ AURA 1 - Gunslinger +]--
-	-- ["loc_talent__description"] = { -- : , +colors
+	-- ["loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"] = { -- : , +colors
 		-- en = Dot_green.." When an Ammo pickup is collected by you or your Allies in "..COLORS_KWords.Coherency_rgb..", everyone else in "..COLORS_KWords.Coherency_rgb.." also replenishes a small amount of Ammo.",
-		--[+ АУРА 1 -  +]--
-		-- ru = "",
+		--[+ АУРА 1 - Стрелок +]--
+		-- ru = Dot_green.." Когда вы или ваши союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." подбираете боеприпасы, все остальные союзники в "..COLORS_KWords_ru.Coherency_rgb_ru.." также пополняют небольшое количество боеприпасов.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	--[+ AURA 1 - Gunslinger +]--
+	-- ["loc_talent_veteran_elite_kills_grant_ammo_coop_improved"] = { -- : , +colors
+		-- en = "Gunslinger",
+		--[+ АУРА 1 - Стрелок +]--
+		-- ru =" Стрелок",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -271,10 +314,26 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ AURA 2 - Ruffian +]--
-	-- ["loc_talent__description"] = { -- : +, talent_name: , +colors
-		-- en = Dot_green.." +X% Melee "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".",
-		--[+ АУРА 2 -  +]--
-		-- ru = "",
+	-- ["loc_talent_veteran_damage_coherency_desc"] = { -- : +, talent_name: , +colors
+		-- en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." Melee "..COLORS_KWords.Damage_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".",
+		--[+ АУРА 2 - Хулиган +]--
+		-- ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." в ближнем бою для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	--[+ AURA 2 - Ruffian +]--
+	-- ["loc_talent_veteran_damage_coherency"] = { -- : +, talent_name: , +colors
+		-- en = "Ruffian",
+		--[+ АУРА 2 - Хулиган +]--
+		-- ru = "Хулиган",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -287,10 +346,25 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ AURA 3 - Anarchist +]--
-	-- ["loc___description"] = { -- : , +colors
-		-- en = Dot_green.." +X% "..COLORS_KWords.Crit_chance_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".",
-		--[+ АУРА 3 -  +]--
-		-- ru = "",
+	-- ["loc_talent_veteran_movement_speed_coherency_desc"] = { -- : , +colors
+		-- en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_5_rgb.." "..COLORS_KWords.Crit_chance_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb..".",
+		--[+ АУРА 3 - Анархист +]--
+		-- ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_5_rgb.." к "..COLORS_KWords_ru.Crit_chance_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru..".",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_movement_speed_coherency"] = { -- : , +colors
+		-- en = "Anarchist",
+		--[+ АУРА 3 - Анархист +]--
+		-- ru = "Анархист",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -320,17 +394,39 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ ABILITY 1 - Desperado +]--
-	-- ["loc_talent__description"] = { -- : , : , talent_name: , s->seconds, +colors
-		-- en = "Immediately swap to and reload your Ranged Weapon, entering Desperado for X seconds.\n"
+	-- ["loc_talent_veteran_ranged_stance_toughness_description"] = { -- : , : , talent_name: , s->seconds, +colors
+		-- en = "Immediately swap to and reload your Ranged Weapon, entering "..COLORS_KWords.Desperado_rgb.." for "..COLORS_Numbers.n_5_rgb.." seconds.\n"
 			-- .."\n"
-			-- .."During Desperado, the "..COLORS_KWords.cls_scm_rgb.." gain:\n"
+			-- .."During "..COLORS_KWords.Desperado_rgb..", you gain:\n"
 			-- ..Dot_green.." Immunity to Ranged Attacks,\n"
 			-- ..Dot_green.." Sprinting costs no "..COLORS_KWords.Stamina_rgb..", and\n"
 			-- ..Dot_green.." Reloading does not reduce your Ammo Reserve.\n"
 			-- .."\n"
-			-- ..Dot_green.." Close Ranged Kills extends the duration of Desperado.",
+			-- ..Dot_green.." Close Ranged Kills extends the duration of "..COLORS_KWords.Desperado_rgb..".",
+		--[+ СПОСОБНОСТЬ 1 - Отчаянная атака +]--
+		-- ru = "Вы мгновенно экипируете своё оружие дальнего боя, перезаряжаете его и входите в режим "..COLORS_KWords_ru.Desperadki_rgb_ru.." на "..COLORS_Numbers.n_5_rgb.." секунд.\n"
+			-- .."\n"
+			-- .."Во время режима "..COLORS_KWords_ru.Desperadki_rgb_ru..", вы получаете:\n"
+			-- ..Dot_green.." Иммунитет к атакам дальнего боя,\n"
+			-- ..Dot_green.." На бег не тратится "..COLORS_KWords_ru.Stamin_rgb_ru..", а\n"
+			-- ..Dot_green.." Перезарядка не тратит боеприпасы из резерва.\n"
+			-- .."\n"
+			-- ..Dot_green.." Убийства в ближнем бою продлевают время действия "..COLORS_KWords_ru.Desperadki_rgb_ru..".",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_combat_ability_elite_and_special_outlines"] = { -- : , : , talent_name: , s->seconds, +colors
+		-- en = "Desperado",
 		--[+ СПОСОБНОСТЬ 1 -  +]--
-		-- ru = "",
+		-- ru = "Отчаянная атака",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -391,19 +487,43 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ ABILITY 2 - Rampage! +]--
-	-- ["loc_talent__description"] = { -- : , : , s->seconds
-		-- en = "Enter Rampage! gain for X seconds:\n"
-			-- ..Dot_green.." +X% Melee Attack power,\n"
-			-- ..Dot_green.." +X% Attack Speed,\n"
-			-- ..Dot_green.." -X% "..COLORS_KWords.Damage_rgb.." Taken,\n"
-			-- ..Dot_green.." Immunity to Stuns, and\n"
+	-- ["loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"] = { -- : , : , s->seconds
+		-- en = "Enter "..COLORS_KWords.Rampage_rgb.." gain for "..COLORS_Numbers.n_5_rgb.." seconds:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." Melee Attack "..COLORS_KWords.Power_rgb..",\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." Attack Speed,\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Damage_rgb.." Taken,\n"
+			-- ..Dot_green.." Immunity to "..COLORS_KWords.Stuns_rgb..", and\n"
 			-- ..Dot_green.." Immunity to Suppression.\n"
 			-- .."\n"
-			-- ..Dot_green.." Melee attacks extend the duration of Rampage!, although this effect is diminished after 30 seconds.\n"
+			-- ..Dot_green.." Melee attacks extend the duration of "..COLORS_KWords.Rampage_rgb..", although this effect is diminished after "..COLORS_Numbers.n_30_rgb.." seconds.\n"
 			-- .."\n"
-			-- ..Dot_red.." Exiting Rampage! leaves you exhausted and vulnerable for a X seconds.",
+			-- ..Dot_red.." Exiting "..COLORS_KWords.Rampage_rgb.." leaves you exhausted and vulnerable for a "..COLORS_Numbers.n_10_rgb.." seconds.",
 		--[+ СПОСОБНОСТЬ 2 -  +]--
-		-- ru = "",
+		-- ru = "Вы впадаете в "..COLORS_KWords_ru.Rampage_rgb_ru.." и получаете на "..COLORS_Numbers.n_5_rgb.." секунд:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." к "..COLORS_KWords_ru.Strength_rgb_ru.." атак ближнего боя,\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_25_rgb.." к скорости атаки,\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb.." к получаемому "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+			-- ..Dot_green.." Иммунитет к "..COLORS_KWords_ru.Stagger2_rgb_ru..", и\n"
+			-- ..Dot_green.." Иммунитет к подавлению.\n"
+			-- .."\n"
+			-- ..Dot_green.." Атаки ближнего боя продлевают время действия "..COLORS_KWords_ru.Rampaga_rgb_ru..". Этот эффект ослабевает после "..COLORS_Numbers.n_30_rgb.." секунд.\n"
+			-- .."\n"
+			-- ..Dot_red.." Режим "..COLORS_KWords_ru.Rampaga_rgb_ru.." изматывает вас и, после выхода из него, вы становитесь уязвимым на "..COLORS_Numbers.n_10_rgb.." секунд.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_combat_ability_stagger_nearby_enemies"] = { -- : , : , s->seconds
+		-- en = "Rampage!",
+		--[+ СПОСОБНОСТЬ 2 -  +]--
+		-- ru = "Буйство!",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -480,10 +600,25 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ ABILITY 3 - Stimm Supply +]--
-	-- ["loc_talent__description"] = { -- : , : , s->seconds, +colors
-		-- en = "The "..COLORS_KWords.cls_scm_rgb.." has ‘repurposed’ military gadgets to come up with this customized Medical Crate that can be placed down on the ground. This is a supportive ability that grants nearby Allies the effects of the "..COLORS_KWords.cls_scm2_rgb.." Cartel Special Stimm.",
-		--[+ СПОСОБНОСТЬ 3 -  +]--
-		-- ru = "",
+	-- ["loc_talent_veteran_invisibility_on_combat_ability_damage_desc"] = { -- : , : , s->seconds, +colors
+		-- en = "The "..COLORS_KWords.cls_scm_rgb.." has ‘repurposed’ military gadgets to come up with this customized Medical Crate that can be placed down on the ground. This is a supportive Ability that grants nearby Allies the effects of the "..COLORS_KWords.cls_scm2_rgb.." Cartel Special Stimm.",
+		--[+ СПОСОБНОСТЬ 3 - Поставки стимов +]--
+		-- ru = COLORS_KWords_ru.cls_scm_rgb_ru.." слегка переделал военные гаджеты, создав этот модифицированный медицинский ящик, который можно разместить на земле. Эта поддерживающая способность наделяет ближайших союзников эффектами Особого стимулятора картеля "..COLORS_KWords_ru.cls_scma_rgb_ru..".",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_invisibility_on_combat_ability"] = { -- : , : , s->seconds, +colors
+		-- en = "Stimm Supply",
+		--[+ СПОСОБНОСТЬ 3 - Поставки стимов +]--
+		-- ru = "Поставки стимов",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -561,17 +696,40 @@ local scum_talent_localizations = {
 	-- },
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ KEYSTONE 1 - Vulture’s Mark +]--
-	-- ["loc_talent__desc"] = { -- : , : , : , : , +colors
-		-- en = "Killing Specials or Elites with a Ranged weapon gives you Stacks of Vulture’s Mark.\n"
+	-- ["loc_talent_veteran_snipers_focus_duration_desc"] = { -- : , : , : , : , +colors
+		-- en = "Killing Specials or Elites with a Ranged Weapon gives you Stacks of "..COLORS_KWords.VultsMark_rgb..".\n"
 			-- .." For every Stack you gain:\n"
-			-- ..Dot_green.." +X% Ranged Damage,\n"
-			-- ..Dot_green.." +X% Ranged Critical Strike Chance, and\n"
-			-- ..Dot_green.." +X% Movement Speed.\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_2_rgb.." Ranged "..COLORS_KWords.Damage_rgb..",\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_2_rgb.." Movement Speed, and\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_33_rgb.." Ranged "..COLORS_KWords.Crit_chance_r_rgb..".\n"
 			-- .."\n"
-			-- .." At Max Stacks you also gain:\n"
-			-- ..Dot_green.." X% Toughness for you and Allies in Coherency on Ranged Special and Elite kills.",
-		--[+ КЛЮЧЕВОЙ 1 -  +]--
-		-- ru = "",
+			-- .." At Max Stacks you also replenish:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords.Toughness_rgb.." for you and Allies in "..COLORS_KWords.Coherency_rgb.." on Ranged Special and Elite kills.",
+		--[+ КЛЮЧЕВОЙ 1 - Метка стервятника +]--
+		-- ru = "Убийство элитных врагов или специалистов оружием дальнего боя даёт вам заряды "..COLORS_KWords_ru.VultsiMark_rgb_ru..".\n"
+			-- .."За каждый заряд вы получаете:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_2_rgb.." к дальнобойному "..COLORS_KWords_ru.Damage_rgb_ru..",\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_2_rgb.." к скорости передвижения, и\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_33_rgb.." к "..COLORS_KWords_ru.Crt_u_chance_rgb_ru..".\n"
+			-- .."\n"
+			-- .." При максимуме зарядов вы также восстанавливаете:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.pc_10_rgb.." "..COLORS_KWords_ru.Toughness_rgb_ru.." для вас и союзников в "..COLORS_KWords_ru.Coherency_rgb_ru.." при убийствах элитных врагов или специалистов оружием дальнего боя.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	--[+ KEYSTONE 1 - Vulture’s Mark +]--
+	-- ["loc_talent_veteran_snipers_focus"] = { -- : , : , : , : , +colors
+		-- en = "Vulture’s Mark",
+		--[+ КЛЮЧЕВОЙ 1 - Метка стервятника +]--
+		-- ru = "Метка стервятника",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -664,14 +822,33 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ KEYSTONE 2 - Adrenaline Frenzy +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
+	-- ["loc_talent_veteran_improved_tag_description"] = { -- : , +colors
 		-- en = "Melee hits grant Stacks of "..COLORS_KWords.Adren_rgb..", which are lost over time when not attacking.\n"
 			-- .."\n"
-			-- .." At Max Stacks you lose all Stacks and gain Adrenaline Frenzy for a X seconds which gives you:\n"
-			-- ..Dot_green.." +X% Attack Speed and\n"
-			-- ..Dot_green.." +X% Melee Damage.",
-		--[+ КЛЮЧЕВОЙ 2 -  +]--
-		-- ru = "",
+			-- .." At Max "..COLORS_Numbers.n_20_rgb.." Stacks you lose all Stacks and gain "..COLORS_KWords.AdrenFr_rgb.." for a "..COLORS_Numbers.n_6_rgb.." seconds which gives you per Stack:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_1_rgb.." Attack Speed and\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_1_rgb.." Melee "..COLORS_KWords.Damage_rgb..".",
+		--[+ КЛЮЧЕВОЙ 2 - Адреналиновое безумие +]--
+		-- ru =  "Атаки ближнего боя дают вам заряды "..COLORS_KWords_ru.Adren_rgb_ru..", которые расходуются со временем, если вы не атакуете врага.\n"
+			-- .."\n"
+			-- .."Набрав максимальные "..COLORS_Numbers.n_20_rgb.." зарядов, вы тратите все заряды и получаете "..COLORS_KWords_ru.AdrenFr_rgb_ru.." на "..COLORS_Numbers.n_6_rgb.." секунд, которое даёт вам за заряд:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_1_rgb.." к скорости атаки и\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_1_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." в ближнем бою.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_improved_tag"] = { -- : , +colors
+		-- en = "Adrenaline Frenzy",
+		--[+ КЛЮЧЕВОЙ 2 - Адреналиновое безумие +]--
+		-- ru =  "Адреналиновое безумие",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -748,11 +925,27 @@ local scum_talent_localizations = {
 		-- es = "",
 	-- },
 	--[+ KEYSTONE 3 - Chemical Dependency +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "Using a Stimm grants a Stack of Dependency for X seconds. Each Stack grants:\n"
-			-- ..Dot_green.." -X% Ability Cooldown, up to -XX%.",
-		--[+ КЛЮЧЕВОЙ 3 -  +]--
-		-- ru = "",
+	-- ["loc_talent_veteran_weapon_switch_new_description"] = { -- : , +colors
+		-- en = "Using a Stimm grants a Stack of "..COLORS_KWords.Depend_rgb.." for "..COLORS_Numbers.n_20_rgb.." seconds. Each Stack grants:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_1_rgb.." "..COLORS_KWords.Ability_cd_rgb..", up to "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb..".",
+		--[+ КЛЮЧЕВОЙ 3 - Зависимость от химии - Химическая зависимость +]--
+		-- ru = "Использование стима даёт заряд "..COLORS_KWords_ru.Depend_rgb_ru.." на "..COLORS_Numbers.n_20_rgb.." секунд. Каждый заряд даёт:\n"
+			-- ..Dot_green.." "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_1_rgb.." "..COLORS_KWords_ru.Ability_cd_rgb_ru..", вплоть до "..COLORS_Numbers.n_minus_rgb..COLORS_Numbers.pc_10_rgb..".",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_weapon_switch"] = { -- : , +colors
+		-- en = "Chemical Dependency",
+		--[+ КЛЮЧЕВОЙ 3 - Зависимость от химии - Химическая зависимость +]--
+		-- ru = "Зависимость от химии",
 		-- fr = "",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
@@ -861,6 +1054,175 @@ local scum_talent_localizations = {
 		-- ["pt-br"] = "",
 		-- es = "",
 	-- },
+
+--[+ Passive  - In Your Face +]--
+	-- ["loc_talent_veteran_increased_damage_based_on_range_new_desc"] = { -- : , +colors
+		-- en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." Ranged "..COLORS_KWords.Damage_rgb.." at a distance within "..COLORS_Numbers.n_12_5_rgb.." meters, which is further increased for a short while after Reloading.",
+		--[+ Пассивный 2 - Прямо в харю - Прямо в лицо +]--
+		-- ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_10_rgb.." к "..COLORS_KWords_ru.Damage_rgb_ru.." в дальнем бою на расстоянии до "..COLORS_Numbers.n_12_5_rgb.." метров. Эффект усиливается на некоторое время после перезарядки.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_increased_damage_based_on_range"] = { -- : , +colors
+		-- en = "In Your Face",
+		--[+ Пассивный 2 - Прямо в харю - Прямо в лицо +]--
+		-- ru = "Прямо в харю",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+--[+ Passive  - Like the Wind +]--
+	-- ["loc_talent_veteran_movement_bonus_on_toughness_broken_desc"] = { -- : , +colors
+		-- en = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_33_rgb.." Sprint Dodge Angle.\n"
+			-- ..Dot_green.." You can Sprint Dodge even without "..COLORS_KWords.Stamina_rgb..".",
+		-- [+ Пассивный 2 - Словно ветер +]--
+		-- ru = Dot_green.." "..COLORS_Numbers.n_plus_rgb..COLORS_Numbers.pc_33_rgb.." к углу уклонения.\n"
+			-- ..Dot_green.." Вы можете уклоняться даже если ваш уровень "..COLORS_KWords_ru.Stamina_rgb_ru.." на нуле.",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+	-- ["loc_talent_veteran_movement_bonus_on_toughness_broken"] = { -- : , +colors
+		-- en = "Like the Wind",
+		--[+ Пассивный 2 - Словно ветер +]--
+		-- ru = "Словно ветер",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+--[+ Passive  - Nimble +]--
+	-- ["loc_talent__desc"] = { -- : , +colors
+		-- en = Dot_green.." Dodges move farther and last longer.",
+		--[+ Пассивный 2 -  +]--
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+--[+ Passive  - Hyper-Violence +]--
+	-- ["loc_talent__desc"] = { -- : , +colors
+		-- en = Dot_green.." +X% Melee "..COLORS_KWords.Damage_rgb.." based on amount of overkill "..COLORS_KWords.Damage_rgb..", upon Melee kill.",
+		--[+ Пассивный 2 -  +]--
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+--[+ Passive  - Blessed Stimms +]--
+	-- ["loc_talent__desc"] = { -- : , +colors
+		-- en = Dot_green.." While Stimmed, killing blows clear some "..COLORS_KWords.Corruption_rgb..".",
+		--[+ Пассивный 2 -  +]--
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+--[+ Passive  - Targeted Toxin +]--
+	-- ["loc_talent__desc"] = { -- : , +colors
+		-- en = Dot_green.." -X% "..COLORS_KWords.Damage_rgb.." Dealt by Enemies infected with your Chem Toxin.\n"
+			-- ..Dot_green.." Increased effect on Monsters.",
+		--[+ Пассивный 2 -  +]--
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+	-- ["loc_talent__desc"] = { -- : , +colors
+		-- en = "",
+		--[+ Пассивный 2 -  +]--
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+	-- ["loc_talent__desc"] = { -- : , +colors
+		-- en = "",
+		--[+ Пассивный 2 -  +]--
+		-- ru = "",
+		-- fr = "",
+		-- ["zh-tw"] = "",
+		-- ["zh-cn"] = "",
+		-- de = "",
+		-- it = "",
+		-- ja = "",
+		-- ko = "",
+		-- pl = "",
+		-- ["pt-br"] = "",
+		-- es = "",
+	-- },
+
+
 }
 
 -- mod:notify("TALENTS_Hive_Scum.lua loaded successfully")

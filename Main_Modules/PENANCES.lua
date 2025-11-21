@@ -53,17 +53,17 @@ local Dot_green = "{#color(35, 255, 5)}•{#reset()}"
 --[+ +FREQUENTLY REPEATED PHRASES+ +]--
 local PHRS = {
 	--[+ +Russian - ЧАСТО ПОВТОРЯЕМЫЕ ФРАЗЫ+ +]--
-	cmpl_1_mssn_sedition_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше.",
-	cmpl_1_mssn_uprising_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше.",
-	cmpl_1_mssn_malice_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше.",
-	cmpl_1_mssn_heresy_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше.",
-	cmpl_1_mssn_damnation_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше.",
-	--[+ Traditional Chinese +]--
-	cmpl_1_mssn_sedition_tw = "完成『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
-	cmpl_1_mssn_uprising_tw = "完成『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
-	cmpl_1_mssn_malice_tw = "完成『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
-	cmpl_1_mssn_heresy_tw = "完成『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
-	cmpl_1_mssn_damnation_tw = "完成『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
+	-- cmpl_1_mssn_sedition_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.sedition_rgb_ru.." или выше.",
+	-- cmpl_1_mssn_uprising_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.uprising_rgb_ru.." или выше.",
+	-- cmpl_1_mssn_malice_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.malice_rgb_ru.." или выше.",
+	-- cmpl_1_mssn_heresy_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.heresy_rgb_ru.." или выше.",
+	-- cmpl_1_mssn_damnation_ru = "Завершите "..COLORS_Numbers.target_rgb.." миссию на сложности "..COLORS_KWords_ru.damnation_rgb_ru.." или выше.",
+	-- [+ Traditional Chinese +]--
+	-- cmpl_1_mssn_sedition_tw = "完成『"..COLORS_KWords_tw.sedition_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
+	-- cmpl_1_mssn_uprising_tw = "完成『"..COLORS_KWords_tw.uprising_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
+	-- cmpl_1_mssn_malice_tw = "完成『"..COLORS_KWords_tw.malice_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
+	-- cmpl_1_mssn_heresy_tw = "完成『"..COLORS_KWords_tw.heresy_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
+	-- cmpl_1_mssn_damnation_tw = "完成『"..COLORS_KWords_tw.damnation_rgb_tw.."』或更高難度的任務 "..COLORS_Numbers.target_rgb.." 次。",
 }
 
 

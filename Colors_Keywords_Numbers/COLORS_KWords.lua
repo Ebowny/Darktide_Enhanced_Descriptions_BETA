@@ -147,6 +147,7 @@ local CONFIG = {
 	},
 	fnp_text_colour = {
 		Feel_no_pain = "Feel No Pain",
+		Desperado = "Desperado", -- Scum
 	},
 	luckyb_text_colour = {
 		Lucky_bullet = "Lucky Bullet",
@@ -154,6 +155,7 @@ local CONFIG = {
 	},
 	trample_text_colour = {
 		Trample = "Trample",
+		Depend = "Dependency", -- Scum
 	},
 	-- Zealot
 	class_zealot_text_colour = {
@@ -162,11 +164,12 @@ local CONFIG = {
 	},
 	fury_text_colour = {
 		Fury = "Fury",
-		-- Adren = "Adrenaline", -- Scum
+		Rampage = "Rampage!", -- Scum
 	},
 	momentum_text_colour = {
 		Momentum = "Momentum",
-		-- VultMark = "Vulture’s Mark", -- Scum
+		Adren = "Adrenaline", -- Scum
+		AdrenFr = "Adrenaline Frenzy", -- Scum
 	},
 	stealth_text_colour = {
 		Stealth = "Stealth",
@@ -185,6 +188,7 @@ local CONFIG = {
 	focust_text_colour = {
 		Focus_Target = "Focus Target",
 		Markedenemy = "Marked Enemy",
+		VultsMark = "Vulture’s Mark", -- Scum
 	},
 	meleespec_text_colour = {
 		Meleespec = "Melee Specialist",

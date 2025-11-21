@@ -189,12 +189,14 @@ local CONFIG = {
 	},
 	fnp_text_colour = {
 		Feel_no_pain = "Неболита",
+		Desperadki = "Отчаянной атаки", -- Отброс
 	},
 	luckyb_text_colour = {
 		Lucky_bullet = "Счастливую пулю",
 	},
 	trample_text_colour = {
 		Trample = "Топота",
+		Depend = "Зависимости", -- Отброс
 	},
 	-- Изувер
 	class_zealot_text_colour = {
@@ -203,6 +205,8 @@ local CONFIG = {
 	},
 	momentum_text_colour = {
 		Momentum = "Моментума",
+		Adren = "Адреналина", -- Отброс
+		AdrenFr = "Адреналиновое безумие", -- Отброс
 	},
 	stealth_text_colour = {
 		Stealth = "Скрытности",
@@ -213,6 +217,8 @@ local CONFIG = {
 	fury_text_colour = {
 		Fury = "Ярость",
 		Fury_i = "Ярости",
+		Rampage = "Буйство!", -- Отброс
+		Rampaga = "Буйства!", -- Отброс
 	},
 	-- Ветеран
 	class_veteran_text_colour = {
@@ -229,6 +235,7 @@ local CONFIG = {
 		Focus_Target = "Важной цели",
 		Focus_Targt = "Важная цель",
 		Markedenemy = "Отмеченного врага",
+		VultsiMark = "Метки стервятника", -- Отброс
 	},
 	meleespec_text_colour = {
 		Meleespec = "Специалиста-рукопашника",
@@ -242,6 +249,16 @@ local CONFIG = {
 	class_arbites_text_colour = {
 		cls_arb = "Арбитратор",
 		cls_arb2 = "Арбитратором",
+	},
+	-- Отброс Улья
+	class_scum_text_colour = {
+		cls_scm = "Отброс Улья",
+		cls_scma = "Отброса Улья",
+		cls_scm2 = "Отбросом Улья",
+	},
+	chemtox_text_colour = {
+		Chem_Toxom = "Хим-токсином",
+		Chem_Toxa = "Хим-токсина",
 	},
 
 -- ТАЛАНТЫ
@@ -259,6 +276,7 @@ local CONFIG = {
 		Rangd_stnc = "Стойку дальнего боя",
 		Scriers_gaze = "Взор провидца",
 		Stun_gren = "Оглушающая граната",
+		Blind_greny = "Ослепляющие гранаты",
 
 	-- Искупления
 		Prologue_p = "Пролог",

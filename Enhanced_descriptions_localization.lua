@@ -70,7 +70,7 @@ local LOCALIZATION_GROUPS = {
 	"warning",
 
 	-- Difficulty
-	"sedition",
+	-- "sedition",
 	"uprising",
 	"malice",
 	"heresy",
