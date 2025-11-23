@@ -70,7 +70,7 @@ local LOCALIZATION_GROUPS = {
 	"warning",
 
 	-- Difficulty
-	-- "sedition",
+	"sedition",
 	"uprising",
 	"malice",
 	"heresy",
@@ -1011,6 +1011,20 @@ local localizations = {
 	},
 
 --[+DIFFICULTIES+]--
+	sedition_colour = {
+		en = "Sedition",
+		fr = "Sédition",
+		ru = "Мятеж",
+		["zh-tw"] = "煽動叛亂",
+		["zh-cn"] = "煽动叛乱",
+		de = "Aufruhr",
+		it = "Sedizione",
+		ja = "煽動",
+		ko = "선동",
+		pl = "Bunt",
+		["pt-br"] = "Sedição",
+		es = "Sedición",
+	},
 	uprising_colour = {
 		en = "Uprising",
 		fr = "Soulèvement",

@@ -72,6 +72,7 @@ local COLOR_SETTINGS = {
 	{ id = "warning",				default = "item_rarity_6" },
 
 	-- Difficulty
+	{ id = "sedition",				default = "white" },
 	{ id = "uprising",				default = "ui_difficulty_1" },
 	{ id = "malice",				default = "ui_difficulty_2" },
 	{ id = "heresy",				default = "ui_difficulty_3" },
