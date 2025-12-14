@@ -191,7 +191,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Flak Armoured Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам в противоосколочной броне",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies en armure légère",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 防彈護甲的敵人", -- 防彈護甲的敵人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 防彈護甲的敵人", -- 防彈護甲的敵人
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").."  "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（防弹装甲敌人）", -- 防弹装甲敌人
 		},
 		--[+ +DAMAGE VS MANIACS +]--	08.12.2025
@@ -199,7 +199,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Maniacs",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." маньякам",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Maniaques",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 狂熱者", -- 狂熱者
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 狂熱者", -- 狂熱者
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（狂人）", -- 狂人
 		},
 		--[+ +DAMAGE VS INFESTED +]--	08.12.2025
@@ -207,7 +207,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Infested Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." заражённым врагам",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies infestés",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 被感染的敵人", -- 被感染的敵人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 被感染的敵人", -- 被感染的敵人
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（感染敌人）", -- 感染敌人
 		},
 		--[+ +DAMAGE VS UNYIELDING +]--	08.12.2025
@@ -215,7 +215,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Unyielding Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." несгибаемым врагам",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies implacables",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 不屈的敵人", -- 不屈的敵人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 不屈的敵人", -- 不屈的敵人
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（不屈敌人）", -- 不屈敌人
 		},
 		--[+ +DAMAGE VS CARAPACE +]--	08.12.2025
@@ -223,7 +223,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Carapace Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам в панцирной броне",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies en armure carapace",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 甲殼護甲的敵人", -- 甲殼護甲的敵人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 甲殼護甲的敵人", -- 甲殼護甲的敵人
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（硬壳装甲敌人）", -- 硬壳装甲敌人
 		},
 		--[+ +DAMAGE VS UNARMOURED +]--	08.12.2025
@@ -231,7 +231,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb").." vs Unarmoured Enemies",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." врагам без брони",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Ennemies sans armure",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 無護甲敵人", -- 無護甲敵人
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage", "Damage_rgb_tw").." vs 無護甲敵人", -- 無護甲敵人
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（无甲敌人）", -- 无甲敌人
 		},
 		--[+ +CRIT CHANCE +]--	08.12.2025
@@ -239,7 +239,7 @@ local weapon_localizations = {
 			en = CNumb("{crit_chance:%s}", "crit_var_rgb").." Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb"),
 			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru"),
 			-- fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..COLORS_KWords_fr.Crit_chance_r_rgb_fr.." à Distance",
-			-- ["zh-tw"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Crit_r_chance", "Crit_r_chance_rgb_tw"), -- 暴擊機率
+			["zh-tw"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Crit_r_chance", "Crit_r_chance_rgb_tw"), -- 暴擊機率
 			-- ["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..COLORS_KWords_zh_cn.Crit_chance_rgb_zh_cn, -- 暴击几率
 		},
 		--[+ +CRIT DAMAGE +]--	08.12.2025
@@ -247,7 +247,7 @@ local weapon_localizations = {
 			en = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Ranged "..CKWord("критическому урону", "Crt_hit_col_rgb"),
 			ru = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." к "..CKWord("урону критического выстрела", "krit_vystr_uron_rgb_ru"),
 			-- fr = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..COLORS_KWords_fr.Crit_hit_color_rgb_fr.." de Distance",
-			-- ["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Crit_hit_r_color", "Crit_hit_r_color_rgb_tw"), -- 暴擊傷害
+			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." "..CKWord("Crit_hit_r_color", "Crit_hit_r_color_rgb_tw"), -- 暴擊傷害
 			-- ["zh-cn"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 远程"..COLORS_KWords_zh_cn.Crit_hit_color_rgb_zh_cn, -- 暴击伤害
 		},
 		--[+ +DAMAGE VS ELITES +]--	08.12.2025
@@ -255,7 +255,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." vs Elites",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." элите в дальнем бою",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Élites",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage_ranged", "Damage_ranged_rgb_tw").." vs 精英", -- 精英
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage_ranged", "Damage_ranged_rgb_tw").." vs 精英", -- 精英
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（精英）", -- 精英
 		},
 		--[+ +DAMAGE VS GROANERS AND POXWALKERS +]--	08.12.2025
@@ -263,7 +263,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." vs Groaners and Poxwalkers",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." ворчунам и чумным ходокам в дальнем бою",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Grogneurs et Scrofuleux",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage_ranged", "Damage_ranged_rgb_tw").." vs 呻吟者和瘟疫行者", -- 呻吟者、瘟疫行者
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage_ranged", "Damage_ranged_rgb_tw").." vs 呻吟者和瘟疫行者", -- 呻吟者、瘟疫行者
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（呻吟者、瘟疫行者）", --呻吟者、瘟疫行者
 		},
 		--[+ +DAMAGE VS SPECIALISTS +]--	08.12.2025
@@ -271,7 +271,7 @@ local weapon_localizations = {
 			en = CNumb("{damage:%s}", "dmg_var_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." vs Specialists",
 			ru = CNumb("{damage:%s}", "dmg_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." специалистам в дальнем бою",
 			-- fr = CNumb("{damage:%s}", "dmg_var_rgb").." "..COLORS_KWords_fr.Damage_rgb_fr.." de Distance vs Spécialistes",
-			-- ["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage_ranged", "Damage_ranged_rgb_tw").." vs 專家", -- 專家
+			["zh-tw"] = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Damage_ranged", "Damage_ranged_rgb_tw").." vs 專家", -- 專家
 			-- ["zh-cn"] = CNumb("{damage:%s}", "dmg_var_rgb").." 远程"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."（专家）", -- 专家
 		},
 		--[+ +STAMINA +]--	08.12.2025
@@ -279,7 +279,7 @@ local weapon_localizations = {
 			en = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Stamina", "Stamina_rgb").." when Weapon is Active",
 			ru = CNumb("{stamina:%s}", "stam_var_rgb").." ячейки "..CKWord("выносливости", "vynoslivosti_rgb_ru").." с этим оружием в руках",
 			-- fr = CNumb("{stamina:%s}", "stam_var_rgb").." "..COLORS_KWords_fr.Stamina_rgb_fr,
-			-- ["zh-tw"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Stamina", "Stamina_rgb_tw"), -- 耐力
+			["zh-tw"] = CNumb("{stamina:%s}", "stam_var_rgb").." "..CKWord("Stamina", "Stamina_rgb_tw"), -- 耐力
 			-- ["zh-cn"] = CNumb("{stamina:%s}", "stam_var_rgb").." 最大"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."（使用武器时）", -- 耐力
 		},
 		--[+ +WEAKSPOT DAMAGE +]--	08.12.2025
@@ -287,7 +287,7 @@ local weapon_localizations = {
 			en = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." Ranged "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb"),
 			ru = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." в дальнем бою",
 			-- fr = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..COLORS_KWords_fr.Weakspot_dmg_rgb_fr.." à Distance",
-			-- ["zh-tw"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Weakspot_r_dmg", "Weakspot_r_dmg_rgb_tw"), -- 弱點傷害
+			["zh-tw"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." "..CKWord("Weakspot_r_dmg", "Weakspot_r_dmg_rgb_tw"), -- 弱點傷害
 			-- ["zh-cn"] = CNumb("{weakspot_damage:%s}", "wkspdmg_var_rgb").." 远程"..COLORS_KWords_zh_cn.Weakspot_dmg_rgb_zh_cn, -- 弱点伤害
 		},
 		--[+ +RELOAD SPEED +]--	08.12.2025
@@ -295,7 +295,7 @@ local weapon_localizations = {
 			en = CNumb("{reload_speed:%s}", "reload_var_rgb").." Reload Speed",
 			ru = CNumb("{reload_speed:%s}", "reload_var_rgb").." к скорости перезарядки",
 			-- fr = CNumb("{reload_speed:%s}", "reload_var_rgb").." Vitesse de rechargement de l'arme",
-			-- ["zh-tw"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 裝填速度", -- 裝填速度
+			["zh-tw"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 裝填速度", -- 裝填速度
 			-- ["zh-cn"] = CNumb("{reload_speed:%s}", "reload_var_rgb").." 装弹速度", -- 装弹速度
 		},
 
