@@ -37,6 +37,7 @@ local CONFIG = {
 		Corrupted = "腐敗",
 		Corruptdmg = "腐敗傷害",
 		Corruption = "腐敗",
+		Corruption_r = "腐敗抗性", -- Resistance
 	},
 	crit_text_colour = {
 		Crit = "暴擊",
@@ -62,6 +63,7 @@ local CONFIG = {
 	},
 	damage_text_colour = {
 		Damage = "傷害",
+		Damage_r = "傷害抗性", -- Resistance
 		Damagewrp = "亞空間傷害",
 	},
 	electrocuted_text_colour = {
@@ -82,7 +84,7 @@ local CONFIG = {
 		Wounds = "傷痕",
 	},
 	hit_mass_text_colour = {
-		Hit_mass = "打擊質量",
+		Hit_mass = "順劈目標",
 	},
 	impact_text_colour = {
 		Impact = "衝擊",
@@ -121,6 +123,7 @@ local CONFIG = {
 		Tghns_dmg_red = "韌性傷害減免",
 		Toughness = "韌性",
 		Toughness_m = "最大韌性",
+		Toughness_rs = "韌性恢復速度",
 	},
 	weakspot_text_colour = {
 		Weak_spot = "弱點部位",
