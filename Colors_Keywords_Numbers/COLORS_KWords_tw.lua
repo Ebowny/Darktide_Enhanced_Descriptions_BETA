@@ -45,11 +45,15 @@ local CONFIG = {
 
 		Crit_chance = "暴擊機率",
 		Crt_chance = "暴擊機率",
+		Crit_m_chance = "近戰暴擊機率", -- Melee Crit Chance
+		Crit_r_chance = "遠程暴擊機率", -- Ranged Crit Chance
 
 		Crit_hit = "暴擊命中",
 		Crit_hits = "暴擊命中",
 		Crt_hit_chnc = "暴擊命中機率",
 		Crt_hit_col = "暴擊傷害",
+		Crit_hit_m_dmg = "近戰暴擊傷害", -- Melee Crit Damage
+		Crit_hit_r_dmg = "遠程暴擊傷害", -- Ranged Crit Damage
 
 		Crit_strike = "暴擊打擊",
 		Crt_chnc_r = "暴擊打擊機率",
@@ -64,6 +68,7 @@ local CONFIG = {
 	damage_text_colour = {
 		Damage = "傷害",
 		Damage_res = "傷害抗性", -- Resistance
+		Damage_r = "遠程傷害", -- Ranged Damage
 		Damagewrp = "亞空間傷害",
 	},
 	electrocuted_text_colour = {
@@ -132,6 +137,8 @@ local CONFIG = {
 
 		Weakspothit = "命中弱點",
 		Weakspothits = "弱點命中",
+		Weakspot_m_dmg = "近戰弱點傷害", -- Melee Weakspot Damage
+		Weakspot_r_dmg = "遠程弱點傷害", -- Ranged Weakspot Damage
 
 		Weakspot_dmg = "弱點傷害",
 	},
