@@ -51,6 +51,7 @@ local CONFIG = {
 		Crt_hit_col =	"Critical Hit Damage",
 
 		Crit_strike =	"Critical Strike",
+		Crit_strikes =	"Critical Strikes",
 		Crt_chnc_r =	"Critical Strike Chance",
 		Crt_strk_dmg =	"Critical Strike Damage",
 
@@ -178,7 +179,7 @@ local CONFIG = {
 			Taunted =		"Taunted",				-- Ogryn
 			Taunting =		"Taunting",				-- Ogryn
 
-			Adren =			"Adrenaline",			-- Hive Scum
+			Adren =			"Adrenaline",			-- Hive Scum ???
 			AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 		},
 		stealth_text_colour = {
@@ -353,6 +354,10 @@ local CONFIG = {
 	dump_stat2_text_colour = {
 		Ammo =			"Ammo",
 		Defences =		"Defences",
+		Heat_mngt =		"Heat Management",
+	},
+	dump_stat3_text_colour = {
+		Damage =		"Damage",
 	},
 }
 

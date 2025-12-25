@@ -2174,24 +2174,36 @@ local talent_localizations = {
 			.."\n"
 			..Dot_green.." Срабатывает независимо от того, находитесь ли вы в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с союзниками или нет.",
 	},
-	--[+ Passive 27 - Reciprocity +]--	08.12.2025
+	--[+ Passive 27 - Reciprocity +]--	25.12.2025
 	["loc_talent_veteran_dodging_grants_crit_description"] = { -- crit_chance: +5%, duration: 8, stacks: 5, s->seconds, +colors
 		en = Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit", "Crit_hit_rgb").." Chance for {duration:%s} seconds on successful Dodge.\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
 			.."\n"
-			.." Ineffective against:\n"
-			.."   "..Dot_red.." Gunner/Reaper/Sniper shots,\n"
-			.."   "..Dot_red.." Pox Hound leap,\n"
-			.."   "..Dot_red.." Trapper net,\n"
-			.."   "..Dot_red.." Mutant grab.",
+			.." Effect triggers on dodging:\n"
+			.."   "..Dot_green.." Melee attacks,\n"
+			.."   "..Dot_green.." Ranged attacks,\n"
+			.."   "..Dot_green.." Pox Hound jump,\n"
+			.."   "..Dot_green.." Trapper net and\n"
+			.."   "..Dot_green.." Mutant grab.\n"
+			.."\n"
+			.." Effect does not trigger on dodging:\n"
+			.."   "..Dot_red.." Gunner's burst fire,\n"
+			.."   "..Dot_red.." Reaper's shooting, and\n"
+			.."   "..Dot_red.." Sniper's shot.",
 		ru = Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." на {duration:%s} секунд при успешном уклонении.\n" -- Взаимообмен -- руоф Взаимная выгода
 			..Dot_nc.." Суммируется {stacks:%s} раз.\n"
 			.."\n"
-			.." Не работает против:\n"
-			.."   "..Dot_red.." Прыжка заражённой гончей,\n"
-			.."   "..Dot_red.." Сети скаба-сеточника,\n"
-			.."   "..Dot_red.." Захвата мутанта,\n"
-			.."   "..Dot_red.." Выстрелов пулемётчика, жнеца и снайпера.",
+			.." Эффект срабатывает при уклонении от:\n"
+			.."   "..Dot_green.." Атак ближнего боя,\n"
+			.."   "..Dot_green.." Атак дальнего боя,\n"
+			.."   "..Dot_green.." Прыжка гончей,\n"
+			.."   "..Dot_green.." Сетки Скаба-ловца и \n"
+			.."   "..Dot_green.." Захвата мутанта.\n"
+			.."\n"
+			.." Эффект не срабатывает при уклонении от:\n"
+			.."   "..Dot_red.." Очереди пулемётчика,\n"
+			.."   "..Dot_red.." Стрельбы жнеца и\n"
+			.."   "..Dot_red.." Выстрела снайпера.",
 	},
 	--[+ Passive 28 - Duck and Dive +]--	08.12.2025
 	["loc_talent_veteran_stamina_on_ranged_dodge_desc"] = { -- stamina: +30%
@@ -4108,7 +4120,7 @@ local talent_localizations = {
 			.."Срабатывает при:\n"
 			..Dot_nc.." Получении или блокировании удара,\n"
 			..Dot_nc.." Уклонении от вражеских атак ближнего и дальнего боя (исключая выстрелы пулемётчиков, жнецов или снайперов),\n"
-			..Dot_nc.." Уклонении от атак обездвиживающих врагов (прыжка чумной гончей, сети скаба-сеточника, захвата мутанта).\n"
+			..Dot_nc.." Уклонении от атак обездвиживающих врагов (прыжка чумной гончей, сети скаба-ловца, захвата мутанта).\n"
 			.."\n"
 			..CPhrs("Can_be_refr"), -- Время расплаты
 		-- fr = "Vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." durant {duration:%s} secondes en subbisant ou en bloquant une attaque de mélée, ainsi qu'une esquive réussie d'une attaque de mélée ou d'une attaque à distance (sauf Mitrailleurs, Faucheurs, Snipers), et les attaques des spéciaux (saut de cerbère, filet de trappeuse, Mutant).",
@@ -5840,21 +5852,28 @@ local talent_localizations = {
 		-- ru = "",
 	},
 	--[+ ABILITY 3-3 - Fast Acting Stimms +]--	24.12.2025
-	["loc_talent_broker_ability_stimm_field_sub_1_desc"] = { -- stimm_field: Stimm Supply, duration: 5, linger_duration: 15, +colors
-		en = "The duration of {stimm_field:%s} is shortened from "..CNumb("20", "n_20_rgb").." to {duration:%s} seconds, but its effects linger after leaving its area for {linger_duration:%s} seconds.",
+	["loc_talent_broker_ability_stimm_field_sub_1_desc"] = { -- stimm_field: Stimm Supply, duration: 5, linger_duration: 15, s->seconds, +colors
+		en = Dot_red.." Duration of {stimm_field:%s} reduced from "..CNumb("20", "n_20_rgb").." to {duration:%s} seconds.\n"
+			.."\n"
+			..Dot_green.." Lingering effect continues for {linger_duration:%s} seconds after leaving the area.",
 		-- ru = "",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ KEYSTONE 1 - Vulture’s Mark +]--
-	-- ["loc_talent_veteran_snipers_focus_duration_desc"] = { -- : , : , : , : , +colors
-		-- en = "Killing Specials or Elites with a Ranged Weapon gives you Stacks of "..CKWord("Vulture's Mark", "VultsMark_rgb")..".\n"
-			-- .." For every Stack you gain:\n"
-			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
-			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." Movement Speed, and\n"
-			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("33%", "pc_33_rgb").." Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb")..".\n"
-			-- .."\n"
-			-- .." At Max Stacks you also replenish:\n"
-			-- ..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("Toughness", "Toughness_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on Ranged Special and Elite kills.",
+	["loc_talent_broker_keystone_vultures_mark_on_kill_desc"] = { -- duration: 8, max_stacks: 3, ranged_damage: +5%, movement_speed: +5%, crit_chance: +5%, toughness: 15%, s->seconds, +colors
+		en = "Killing Special or Elite enemy with a Ranged weapon grants you a Stacks of "..CKWord("Vulture's Mark", "VultsMark_rgb")..".\n"
+			.."\n"
+			..Dot_nc.." Lasts {duration:%s} seconds.\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..CPhrs("Can_be_refr").."\n"
+			.."\n"
+			.." Per Stack you gain:\n"
+			..Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
+			..Dot_green.." {movement_speed:%s} Movement Speed, and\n"
+			..Dot_green.." {crit_chance:%s} Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb")..".\n"
+			.."\n"
+			.." While at Max Stacks, Special and Elite Ranged Kills restore to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..":\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
 		-- ru = "Убийство элитных врагов или специалистов оружием дальнего боя даёт вам заряды "..CKWord("Метки стервятника", "VultsMark_rgb_ru")..".\n"
 			-- .."За каждый заряд вы получаете:\n"
 			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2%", "pc_2_rgb").." к дальнобойному "..CKWord("урону", "uronu_rgb_ru")..",\n"
@@ -5863,147 +5882,138 @@ local talent_localizations = {
 			-- .."\n"
 			-- .." При максимуме зарядов вы также восстанавливаете:\n"
 			-- ..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").." при убийствах элитных врагов или специалистов оружием дальнего боя.", -- Метка стервятника
-	-- },
-	--[+ KEYSTONE 1 - Vulture’s Mark +]--
-	-- ["loc_talent_veteran_snipers_focus"] = { -- : , : , : , : , +colors
-		-- en = "Vulture’s Mark",
-		--[+ КЛЮЧЕВОЙ 1 - Метка стервятника +]--
-		-- ru = "Метка стервятника",
-	-- },
-	--[+ KEYSTONE 1-1 -  +]--
-	-- ["loc_talent__desc"] = { -- :  +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 1-1 -  +]--
+	},
+	--[+ KEYSTONE 1-1 - Vulture's Push +]--
+	["loc_talent_broker_keystone_vultures_mark_aoe_stagger_desc"] = { -- +colors
+		en = "Killing Elite or Special enemies with Ranged Attacks creates a non-damaging explosion that "..CKWord("Staggers", "Staggers_rgb").." barely anything at your location.\n"
+			.."\n"
+			..Dot_nc.." Radius "..CNumb("3", "n_3_rgb").." meters.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 1-2 -  +]--
-	-- ["loc_talent__desc"] = { -- : , : , s->seconds, +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 1-2 -  +]--
+	},
+	--[+ KEYSTONE 1-2 - Vulture's Dodge +]--
+	["loc_talent_broker_keystone_vultures_mark_dodge_on_ranged_crit_desc"] = { -- duration: 1, s->second, +colors
+		en = "Ranged "..CKWord("Critical Strikes", "Crit_strikes_rgb").." grant for {duration:%s} second:\n"
+			..Dot_green.." Immunity to All attacks.\n"
+			.."\n"
+			..CPhrs("Can_be_refr"),
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 1-3 -  +]--
-	-- ["loc_talent__desc"] = { -- : 
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 1-3 -  +]--
+	},
+	--[+ KEYSTONE 1-3 - Patient Hunter +]--
+	["loc_talent_broker_keystone_vultures_mark_increased_duration_desc"] = { -- duration: 12, s->seconds, +colors
+		en = Dot_green.." Increased duration of "..CKWord("Vulture's Mark", "VultsMark_rgb").." from "..CNumb("8", "n_8_rgb").." to {duration:%s} seconds.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 1-4 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 1-4 -  +]--
-		-- ru = "",
-	-- },
-	--[+ KEYSTONE 1-5 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 1-5 -  +]--
-		-- ru = "",
-	-- },
+	},
 	--[+ KEYSTONE 2 - Adrenaline Frenzy +]--
-	-- ["loc_talent_veteran_improved_tag_description"] = { -- : , +colors
-		-- en = "Melee hits grant Stacks of "..CKWord("Adrenaline", "Adren_rgb")..", which are lost over time when not attacking.\n"
-			-- .."\n"
-			-- .." At Max "..CNumb("20", "n_20_rgb").." Stacks you lose all Stacks and gain "..CKWord("Adrenaline Frenzy", "AdrenFr_rgb").." for a "..CNumb("6", "n_6_rgb").." seconds which gives you per Stack:\n"
-			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." Attack Speed and\n"
-			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." Melee "..CKWord("Damage", "Damage_rgb")..".",
-		--[+ КЛЮЧЕВОЙ 2 - Адреналиновое безумие +]--
+	["loc_talent_broker_keystone_adrenaline_junkie_desc"] = { -- adrenaline: Adrenaline, on_crit: +1, duration: 2, max_stacks: 30, frenzy: Adrenaline Frenzy, melee_damage: +25%, attack_speed: +10%, frenzy_duration: 10, s->seconds, +colors
+		en = "Melee Hits grants you a Stacks of "..CKWord("Adrenaline", "Adren_rgb")..".\n"
+			.."\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..Dot_nc.." Stacks last {duration:%s} seconds and are dropped one by one.\n"
+			..CPhrs("Can_proc_mult")
+			-- ..CPhrs("Can_be_refr").."\n"
+			.."\n"
+			..CKWord("Critical", "Critical_rgb").." Melee Hits grants:\n"
+			..Dot_green.." {on_crit:%s} additional Stack.\n"
+			.."\n"
+			.."At Max Stacks, remove All Stacks of "..CKWord("Adrenaline", "Adren_rgb").." and gain {frenzy:%s} for {frenzy_duration:%s} seconds.\n"
+			.."\n"
+			.."{frenzy:%s} grants:\n"
+			..Dot_green.." {melee_damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." and\n"
+			..Dot_green.." {attack_speed:%s} Attack Speed.",
 		-- ru =  "Атаки ближнего боя дают вам заряды "..CKWord("Адреналина", "Adren_rgb_ru")..", которые расходуются со временем, если вы не атакуете врага.\n"
 			-- .."\n"
 			-- .."Набрав максимальные "..CNumb("20", "n_20_rgb").." зарядов, вы тратите все заряды и получаете "..CKWord("Адреналиновое безумие", "AdrenFr_rgb_ru").." на "..CNumb("6", "n_6_rgb").." секунд, которое даёт вам за заряд:\n"
 			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к скорости атаки и\n"
-			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.",
-	-- },
-	-- ["loc_talent_veteran_improved_tag"] = { -- : , +colors
-		-- en = "Adrenaline Frenzy",
-		--[+ КЛЮЧЕВОЙ 2 - Адреналиновое безумие +]--
-		-- ru =  "Адреналиновое безумие",
-	-- },
-	--[+ KEYSTONE 2-1 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 2-1 -  +]--
+			-- ..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1%", "pc_1_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.", -- Адреналиновое безумие
+	},
+	--[+ KEYSTONE 2-1 - Adrenaline Assassin +]--
+	["loc_talent_broker_keystone_adrenaline_junkie_sub_1_desc"] = { -- stacks: +2, +colors
+		en = CKWord("Weakspot Hits", "Weakspothits_rgb").." now grants:\n"
+			..Dot_green.." {stacks:%s} additional Stacks of "..CKWord("Adrenaline", "Adren_rgb")..". Increased from "..CNumb("1", "n_1_rgb").." to "..CNumb("3", "n_3_rgb").." Stacks.\n"
+			.."\n"
+			..Dot_red.." Regular Melee Hits grants none.\n"
+			.."\n"
+			..Dot_green.." Non-"..CKWord("Weakspot", "Weakspot_rgb").." Melee hits that are "..CKWord("Critical", "Critical_rgb").." still generate "..CNumb("2", "n_2_rgb").." Stacks.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 2-2 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 2-2 -  +]--
+	},
+	--[+ KEYSTONE 2-2 - Adrenaline Smiter +]--
+	["loc_talent_broker_keystone_adrenaline_junkie_sub_2_desc"] = { -- stacks: +4, adrenaline: Adrenaline, elite_stacks: +10, +colors
+		en = "Killing Blows now grants:\n"
+			..Dot_green.." {stacks:%s} additional Stacks of "..CKWord("Adrenaline", "Adren_rgb")..". Increased from "..CNumb("1", "n_1_rgb").." to "..CNumb("5", "n_5_rgb").." Stacks.\n"
+			.."\n"
+			.."Elite Killing Blows grants:\n"
+			..Dot_green.." {elite_stacks:%s} additional Stacks.\n"
+			-- .."Increased to "..CNumb("15", "n_15_rgb").." Stacks.\n" --???
+			.."\n"
+			.."If the Attack is "..CKWord("Critical", "Critical_rgb")..", generates:\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." Stack of "..CKWord("Adrenaline", "Adren_rgb").." per enemy killed.\n"
+			.."\n"
+			..Dot_red.." Non-Killing Blows grants none.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 2-3 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 2-3 -  +]--
+	},
+	--[+ KEYSTONE 2-3 - Stoked Rage +]--
+	["loc_talent_broker_keystone_adrenaline_junkie_sub_3_desc"] = { -- frenzy: Adrenaline Frenzy, duration: 20, +colors
+		en = Dot_green.." Increased duration of {frenzy:%s} from "..CNumb("10", "n_10_rgb").." to {duration:%s} seconds.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 2-4 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 2-4 -  +]--
+	},
+	--[+ KEYSTONE 2-4 - Adrenaline Unbound +]--
+	["loc_talent_broker_keystone_adrenaline_junkie_sub_5_desc"] = { -- frenzy: Adrenaline Frenzy, toughness: 5%, +colors
+		en = "While {frenzy:%s} is active, you replenish:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per second.",
 		-- ru = "",
-	-- },
+	},
+	--[+ KEYSTONE 2-5 - Uncontrolled Aggression +]--
+	["loc_talent_broker_keystone_adrenaline_junkie_sub_4_desc"] = { -- adrenaline: Adrenaline, duration: 4, +colors
+		en = Dot_green.." Increased duration of "..CKWord("Adrenaline", "Adren_rgb").." from "..CNumb("2", "n_2_rgb").." to {duration:%s} seconds.",
+		-- ru = "",
+	},
 	--[+ KEYSTONE 3 - Chemical Dependency +]--
-	-- ["loc_talent_veteran_weapon_switch_new_description"] = { -- : , +colors
-		-- en = "Using a Stimm grants a Stack of "..CKWord("Dependency", "Depend_rgb").." for "..CNumb("20", "n_20_rgb").." seconds. Each Stack grants:\n"
-			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("Ability Cooldown", "Ability_cd_rgb")..", up to "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".",
-		--[+ КЛЮЧЕВОЙ 3 - Зависимость от химии - Химическая зависимость +]--
+	["loc_talent_broker_keystone_chemical_dependency_desc"] = { -- dependency: Dependency, duration: 90, : +10%, : 3, +colors
+		en = "Using a Stimm grants you a Stack of {dependency:%s} for {duration:%s} seconds.\n"
+			.."\n"
+			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
+			..CPhrs("Can_be_refr_drop_1").."\n"
+			.."\n"
+			.."Per Stack gain:\n"
+			..Dot_green.." {cooldown_reduction:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Reduction.",
 		-- ru = "Использование стима даёт заряд "..CKWord("Зависимости", "Depend_rgb_ru").." на "..CNumb("20", "n_20_rgb").." секунд. Каждый заряд даёт:\n"
-			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..", вплоть до "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".",
-	-- },
-	-- ["loc_talent_veteran_weapon_switch"] = { -- : , +colors
-		-- en = "Chemical Dependency",
-		--[+ КЛЮЧЕВОЙ 3 - Зависимость от химии - Химическая зависимость +]--
-		-- ru = "Зависимость от химии",
-	-- },
-	--[+ KEYSTONE 3-1 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 3-1 -  +]--
+			-- ..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1%", "pc_1_rgb").." "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..", вплоть до "..CNumb("-", "n_minus_rgb")..CNumb("10%", "pc_10_rgb")..".", -- Зависимость от химии - Химическая зависимость
+	},
+	--[+ KEYSTONE 3-1 - Chem Enhanced +]--
+	["loc_talent_broker_keystone_chemical_dependency_sub_1_desc"] = { -- dependency: Dependency, critical_chance: +5%, +colors
+		en = Dot_green.." {critical_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." per Stack of {dependency:%s}.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 3-2 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 3-2 -  +]--
+	},
+	--[+ KEYSTONE 3-2 - Chem Fortified +]--
+	["loc_talent_broker_keystone_chemical_dependency_sub_2_desc"] = { -- toughness: 50%, toughness: +5%, dependency: Dependency, +colors
+		en = "Using a Stimm replenishes:\n"
+			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
+			.."\n"
+			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per Stack of {dependency:%s}.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 3-3 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 3-3 -  +]--
+	},
+	--[+ KEYSTONE 3-3 - Maxed Out Chems +]--
+	["loc_talent_broker_keystone_chemical_dependency_sub_3_desc"] = { -- : , +colors
+		en = Dot_red.." Duration of {dependency:%s} Stacks reduced from "..CNumb("90", "n_90_rgb").." to {duration:%s} seconds.\n"
+			.."\n"
+			..Dot_green.." Max Stacks are increased from "..CNumb("3", "n_3_rgb").." to {max_stacks:%s}.",
 		-- ru = "",
-	-- },
-	--[+ KEYSTONE 3-4 -  +]--
-	-- ["loc_talent__desc"] = { -- : , +colors
-		-- en = "",
-		--[+ КЛЮЧЕВОЙ 3-4 -  +]--
-		-- ru = "",
-	-- },
+	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
-	--[+ Passive 1 -  +]--
+	--[+ Passive 1 - In Your Face +]--
+	-- ["loc_talent_broker_passive_close_ranged_damage_desc"] = { -- : , : , : , : , +colors
+		-- en = Dot_green.." {damage_near:%s} Ranged "..CKWord("Damage", "Damage_rgb").." against targets within {range_near:%s} meters, scaling down to a minimum of {damage_far:%s} at {range_far:%s} meters and beyond.",
+		-- ru = "", -- Прямо в харю - Прямо в лицо
+	-- },
+
 	-- ["loc_talent__desc"] = { -- : , +colors
 		-- en = "",
-		--[+ Пассивный 1 -  +]--
 		-- ru = "",
 	-- },
 	--[+ Passive 2 -  +]--
 	-- ["loc_talent__desc"] = { -- : , +colors
 		-- en = "",
-		--[+ Пассивный 2 -  +]--
 		-- ru = "",
-	-- },
-
---[+ Passive  - In Your Face +]--
-	-- ["loc_talent_veteran_increased_damage_based_on_range_new_desc"] = { -- : , +colors
-		-- en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." Ranged "..CKWord("Damage", "Damage_rgb").." at a distance within "..CNumb("12.5", "n_12_5_rgb").." meters, which is further increased for a short while after Reloading.",
-		--[+ Пассивный 2 - Прямо в харю - Прямо в лицо +]--
-		-- ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10%", "pc_10_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." в дальнем бою на расстоянии до "..CNumb("12.5", "n_12_5_rgb").." метров. Эффект усиливается на некоторое время после перезарядки.",
-	-- },
-	-- ["loc_talent_veteran_increased_damage_based_on_range"] = { -- : , +colors
-		-- en = "In Your Face",
-		--[+ Пассивный 2 - Прямо в харю - Прямо в лицо +]--
-		-- ru = "Прямо в харю",
 	-- },
 
 --[+ Passive  - Like the Wind +]--

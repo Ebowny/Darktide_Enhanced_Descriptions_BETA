@@ -441,6 +441,10 @@ local CONFIG = {
 	dump_stat2_text_colour = {
 		Ammo =				"Боеприпасы",
 		Defences =			"Защита",
+		Heat_mngt =			"Отведение тепла",
+	},
+	dump_stat3_text_colour = {
+		Damage =			"Урон",
 	},
 }
 

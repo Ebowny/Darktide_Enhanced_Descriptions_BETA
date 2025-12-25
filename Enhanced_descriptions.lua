@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_veteran_elite_kills_reduce_cooldown_alt_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_broker_passive_close_ranged_damage_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит
@@ -23,10 +23,10 @@ function mod.get_utils()
 
 	if success and result then
 		mod._utils_cache = result
-		mod:info("Utils loaded and cached successfully")
+		mod:info("// ✅ Utils loaded and cached successfully")
 		return result
 	else
-		mod:error("Failed to load utils: %s", tostring(result))
+		mod:error("{#color(255, 35, 5)}{#reset()} Failed to load utils: %s", tostring(result))
 		-- Возвращаем минимальные утилиты
 		local fallback_utils = {
 			CKWord = function(fallback, key) return fallback end,
@@ -54,7 +54,7 @@ end
 -- Функция для очистки кэша утилит
 function mod.clear_utils_cache()
 	mod._utils_cache = nil
-	mod:info("Utils cache cleared")
+	mod:info("// ⚙ Utils cache cleared")
 end
 
 -- Main Modules Location
@@ -64,6 +64,7 @@ local location = "Enhanced_descriptions/Main_Modules/"
 local VERSION = "4.95b"
 local LOCALIZATION_FILES = {
 	WEAPONS_Blessings_Perks =		"enable_weapons_file",
+	-- TALENTS_Modular =			"enable_talents_file",
 	TALENTS =						"enable_talents_file",
 	CURIOS_Blessings_Perks =		"enable_curious_file",
 	MENUS =							"enable_menus_file",
@@ -112,14 +113,34 @@ local LANGUAGE_FILE_MAP = {
 	["fr"] =		"fr",
 	["zh-cn"] =		"zh_cn",
 	["zh-tw"] =		"tw",
-	-- ["de"] =		"de",
-	-- ["it"] =		"it",
-	-- ["ja"] =		"ja",
-	-- ["ko"] =		"ko",
-	-- ["pl"] =		"pl",
-	-- ["pt-br"] =	"pt_br",
-	-- ["es"] =		"es",
+	["de"] =		"de",
+	["it"] =		"it",
+	["ja"] =		"ja",
+	["ko"] =		"ko",
+	["pl"] =		"pl",
+	["pt-br"] =		"pt_br",
+	["es"] =		"es",
 }
+
+-- Функция для преобразования кода языка в его название
+local function get_language_name(lang_code)
+	local language_names = {
+		["en"] =	"English",
+		["ru"] =	"Russian",
+		["fr"] =	"French",
+		["zh-cn"] =	"Chinese Simplified",
+		["zh-tw"] =	"Chinese Traditional",
+		["de"] =	"German",
+		["it"] =	"Italian",
+		["ja"] =	"Japanese",
+		["ko"] =	"Korean",
+		["pl"] =	"Polish",
+		["pt-br"] =	"Portuguese (Brazil)",
+		["es"] =	"Spanish",
+	}
+	return language_names[lang_code] or lang_code
+end
+
 
 -- МЕТА-ФАБРИКА ФИКСОВ
 local MFF = {}
@@ -303,13 +324,13 @@ function mod.load_colors_keywords(language)
 			colors = colors_func or {}
 		end
 
-		mod:info("Loaded colors for language: %s", language)
+		mod:info("// 📑 Loaded colors for language: %s", language)
 	else
-		mod:warning("Failed to load colors for language: %s, file: %s, error: %s", 
+		mod:warning("{#color(255, 35, 5)}{#reset()} Failed to load colors for language: %s, file: %s, error: %s", 
 					language, file_name, tostring(err))
 
 		if language ~= "en" then
-			mod:info("Falling back to English colors for language: %s", language)
+			mod:info("// 🔄 Falling back to English colors for language: %s", language)
 			colors = mod.load_colors_keywords("en")
 		else
 			colors = {
@@ -351,7 +372,23 @@ function mod.get_current_language_colors()
 	end
 
 	if not is_supported then
-		mod:info("Language %s is not supported, falling back to English", current_lang)
+		-- Преобразуем список поддерживаемых языков в их названия
+		local supported_names = {}
+		for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
+			table.insert(supported_names, get_language_name(lang))
+		end
+		local supported_list = table.concat(supported_names, ", ")
+		
+		-- Также получаем читаемое название текущего языка
+		local current_lang_name = get_language_name(current_lang)
+		
+		mod:warning(
+[[Sorry!
+{#color(255, 35, 5)} Localization for '%s' is not available!{#reset()}
+Currently supported languages: {#color(124, 252, 0)}%s{#reset()}.]],
+			current_lang_name, -- Используем название вместо кода
+			supported_list
+		)
 		current_lang = "en"
 	end
 
@@ -407,7 +444,7 @@ local function safe_load_localization_file(file_path, setting_name)
 		mod:info("Loaded localization file: %s", file_path)
 		return file_templates
 	else
-		mod:error("Failed to load localization file: %s", file_path)
+		mod:error("{#color(255, 35, 5)}{#reset()} Failed to load localization file: %s", file_path)
 		return {}
 	end
 end
@@ -485,7 +522,7 @@ local function setup_button_offsets()
 				end
 			end)
 		else
-			mod:warning("Class not found for button offset: " .. class_name)
+			mod:warning("{#color(255, 35, 5)}{#reset()} Class not found for button offset: " .. class_name)
 		end
 	end
 end
@@ -587,8 +624,4 @@ function mod.reload_localization()
 	return success
 end
 
-mod:command("reload_ed_localization", "Reload Enhanced Descriptions localization", function()
-	mod.reload_localization()
-end)
-
-mod:info("Enhanced Descriptions mod loaded version: %s", VERSION)
+mod:info("// ✅ Enhanced Descriptions mod loaded version: %s", VERSION)
