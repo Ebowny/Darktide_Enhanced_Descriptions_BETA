@@ -493,8 +493,8 @@ local menus_templates = {
 
 --[+ +DUMP STATS 3+ +]--
 	["loc_stats_display_damage_stat"] = { -- Damage -- DoT guns: Needle Gun, Flamethrower, etc. This stat only affect direct damage and not DoT. //Thanks Hater
-		en = CKWord("Damage", "Damage_rgb"),
-		ru = CKWord("Урон", "Damage_rgb_ru"),
+		en = CKWord("Damage", "DamageDS_rgb"),
+		ru = CKWord("Урон", "DamageDS_rgb_ru"),
 	},
 
 
