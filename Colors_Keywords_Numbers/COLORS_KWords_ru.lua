@@ -268,6 +268,8 @@ local CONFIG = {
 		focus_text_colour = {
 			Focus =				"Концентрации",
 			Forceful =			"Неудержимости",
+
+			Shout =				"Крик",						-- Hive Scum
 		},
 		focust_text_colour = {
 			Focus_Target =		"Важной цели",
