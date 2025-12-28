@@ -109,6 +109,7 @@ local CONFIG = {
 	-- Symbols
 		n_plus =	"+",
 		n_minus =	"-",
+		n_equal =	"=",
 		n_meter =	"m",
 		n_metr =	"м",
 		n_second =	"s",
@@ -307,6 +308,13 @@ local CONFIG = {
 		pc_p10 =	"+10%",
 		pc_p12 =	"+12%",
 		pc_p19 =	"+19%",
+	},
+
+	DEGREES = {
+		dg_20 =		"20°",
+		dg_35 =		"35°",
+		dg_55 =		"55°",
+		dg_70 =		"70°",
 	}
 }
 

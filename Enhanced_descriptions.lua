@@ -5,7 +5,7 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_broker_passive_damage_on_reload_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_broker_toughness_on_toxined_kill_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
 
 -- Кэш утилит
@@ -256,6 +256,15 @@ local FIXES = {
 		loc_talent_broker_ability_punk_rage_desc_2 = {
 			damage_taken =						MFF.fixes.all_plus
 		},
+		--[+ KEYSTONE 3 - Chemical Dependency +]--
+		loc_talent_broker_keystone_chemical_dependency_desc = {
+			cooldown_reduction =				MFF.fixes.all_plus
+		},
+		--[+ Passive 4 - Voice of Tertium +]--
+		loc_talent_broker_passive_restore_toughness_on_close_ranged_kill_desc = {
+			toughness =							MFF.fixes.all_plus,
+			toughness_elites =					MFF.fixes.all_plus
+		},
 		--[+ Passive 7 - Burst of Energy +]--
 		loc_talent_broker_passive_stun_immunity_on_toughness_broken_desc = {
 			toughness =							MFF.fixes.all_plus
@@ -263,6 +272,18 @@ local FIXES = {
 		--[+ Passive 9 - Calling for a Time Out +]--
 		loc_talent_broker_passive_reduced_toughness_damage_during_reload_desc = {
 			toughness_damage_taken_modifier =	MFF.fixes.all_minus
+		},
+		--[+ Passive 29 - Pickpocket +]--
+		loc_talent_broker_passive_low_ammo_regen_desc = {
+			ammo_threshold =					MFF.fixes.all_plus
+		},
+		--[+ Passive 33 - Hyper-Violence +]--
+		loc_talent_broker_passive_melee_damage_carry_over_desc = {
+			percentage =						MFF.fixes.all_plus
+		},
+		--[+ Passive 42 - Toxic Renewal +]--
+		loc_talent_broker_toughness_on_toxined_kill_desc = {
+			toughness =							MFF.fixes.all_plus
 		},
 }
 

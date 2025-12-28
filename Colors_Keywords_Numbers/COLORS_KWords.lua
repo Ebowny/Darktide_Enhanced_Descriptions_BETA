@@ -124,6 +124,7 @@ local CONFIG = {
 	toughness_text_colour = {
 		TDR =			"TDR",
 		TGHN =			"TGHN",
+		Tghns_dmg =		"Toughness Damage",
 		Tghns_dmg_red =	"Toughness Damage Reduction",
 		Toughness =		"Toughness",
 	},
@@ -148,7 +149,7 @@ local CONFIG = {
 		precision_text_colour = {
 			Precision =		"Precision",
 
-			Celerity_Stimm =		"Celerity Stimm",
+			Celerity_Stimm = "Celerity Stimm",
 		},
 	-- Ogryn
 	class_ogryn_text_colour = {
@@ -157,6 +158,7 @@ local CONFIG = {
 	},
 		fnp_text_colour = {
 			Feel_no_pain =	"Feel No Pain",
+
 			Desperado =		"Desperado",			-- Hive Scum
 		},
 		luckyb_text_colour = {
