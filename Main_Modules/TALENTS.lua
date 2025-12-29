@@ -4496,12 +4496,12 @@ local talent_localizations = {
 	["loc_talent_ogryn_rending_on_elite_kills_desc"] = { -- rending_multiplier: +10%, duration: 10, s->seconds, +colors
 		en = Dot_green.." {rending_multiplier:%s} "..CKWord("Rending", "Rending_rgb").." for {duration:%s} seconds on Elite kill.\n"
 			.."\n"
-			..CPhrs("Cant_be_refr").."\n"
+			..CPhrs("Can_be_refr").."\n"
 			.."\n"
 			..CNote("Rend_note"),
 		ru = Dot_green.." {rending_multiplier:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони на {duration:%s} секунд при убийстве элитного врага.\n"
 			.."\n"
-			..CPhrs("Cant_be_refr").."\n"
+			..CPhrs("Can_be_refr").."\n"
 			.."\n"
 			..CNote("Rend_note"), -- Доминируй -- руоф Господство
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." pendant {duration:%s} secondes après une élimination d'élite.",
